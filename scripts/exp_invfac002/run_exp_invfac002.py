@@ -39,6 +39,7 @@ import argparse
 import json
 import os
 import sqlite3
+import subprocess
 import sys
 from datetime import datetime
 
@@ -103,6 +104,22 @@ OOS_START = "20240701"
 OOS_END = "20251231"
 
 RANDOM_SEED = 42
+
+
+# ── 版本标记 ──
+def get_version_tag() -> str:
+    """获取 git HEAD hash (short) 作为版本标记"""
+    try:
+        result = subprocess.run(
+            ["git", "rev-parse", "--short", "HEAD"],
+            capture_output=True, text=True, cwd=PROJECT_ROOT,
+        )
+        if result.returncode == 0:
+            return result.stdout.strip()
+    except Exception:
+        pass
+    return "unknown"
+
 
 # 三因子配置
 # 每位因子需要的 data dict 字段（按顺序作为 func(*fields) 参数）
@@ -606,7 +623,12 @@ def main(dry_run: bool = False, skip_qc: bool = False, skip_sensitivity: bool = 
     os.makedirs(REPORT_DIR, exist_ok=True)
     print(f"报告目录: {REPORT_DIR}")
 
+    version_tag = get_version_tag()
+    run_timestamp = datetime.now().strftime("%Y-%m-%dT%H:%M:%S+08:00")
+
     if dry_run:
+        print(f"\n[Dry-Run] 版本标记: {version_tag}")
+        print(f"[Dry-Run] 运行时间: {run_timestamp}")
         print("\n[Dry-Run] 架构验证通过，核心函数就绪:")
         for fname in FACTORS:
             print(f"  [OK] {fname}")
@@ -635,6 +657,8 @@ def main(dry_run: bool = False, skip_qc: bool = False, skip_sensitivity: bool = 
                 "task_id": "EXP-2026-INVFAC-002",
                 "step": "qc",
                 "error": "数据质量前置检查未通过",
+                "version_tag": version_tag,
+                "run_timestamp": run_timestamp,
                 "completed_time": datetime.now().strftime("%Y-%m-%dT%H:%M:%S+08:00"),
             }
             failed_path = os.path.join(REPORT_DIR, "qc_failed.json")
@@ -778,6 +802,8 @@ def main(dry_run: bool = False, skip_qc: bool = False, skip_sensitivity: bool = 
     # 完整 JSON 输出
     output = {
         "task_id": "EXP-2026-INVFAC-002",
+        "version_tag": version_tag,
+        "run_timestamp": run_timestamp,
         "completed_time": timestamp,
         "status": "READY",
         "factors": list(FACTORS.keys()),
@@ -809,20 +835,28 @@ def main(dry_run: bool = False, skip_qc: bool = False, skip_sensitivity: bool = 
     # 敏感性分析独立输出
     if sensitivity_report:
         sens_path = os.path.join(REPORT_DIR, "sensitivity_analysis.json")
+        sens_report_with_meta = dict(sensitivity_report)
+        sens_report_with_meta["version_tag"] = version_tag
+        sens_report_with_meta["run_timestamp"] = run_timestamp
         with open(sens_path, "w", encoding="utf-8") as f:
-            json.dump(sensitivity_report, f, ensure_ascii=False, indent=2, cls=NumpyEncoder)
+            json.dump(sens_report_with_meta, f, ensure_ascii=False, indent=2, cls=NumpyEncoder)
         print(f"  ✅ {sens_path}")
 
     # 稳定性检验独立输出
     stab_path = os.path.join(REPORT_DIR, "stability_results.json")
+    stab_result_with_meta = dict(stability_result)
+    stab_result_with_meta["version_tag"] = version_tag
+    stab_result_with_meta["run_timestamp"] = run_timestamp
     with open(stab_path, "w", encoding="utf-8") as f:
-        json.dump(stability_result, f, ensure_ascii=False, indent=2, cls=NumpyEncoder)
+        json.dump(stab_result_with_meta, f, ensure_ascii=False, indent=2, cls=NumpyEncoder)
     print(f"  ✅ {stab_path}")
 
     # 摘要报告
     summary_lines = [
         f"# EXP-2026-INVFAC-002 回测结果摘要\n",
         f"> completed: {timestamp}\n",
+        f"> version_tag: {version_tag}\n",
+        f"> run_timestamp: {run_timestamp}\n",
         f"## Bootstrap 检验汇总\n\n",
         f"| 因子 | 状态 | 持有期 | IC | p值 | 显著 | FDR_BH |\n",
         f"|:---|:---:|:---:|:---:|:---:|:---:|:---:|\n",
