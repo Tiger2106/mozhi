@@ -1,0 +1,72 @@
+{
+  "incoming": {
+    "stale": 0,
+    "files": []
+  },
+  "drafts": {
+    "total": 0,
+    "drafts": []
+  },
+  "backtests": {
+    "total": 689,
+    "week_start": "2026-05-11",
+    "by_strategy": {
+      "grid": 661,
+      "reversal": 22,
+      "trend": 6
+    }
+  },
+  "unregistered": {
+    "unregistered": 12,
+    "files": [
+      {
+        "filename": "benchmark_data_source.py",
+        "path": "src\\backtest\\benchmark_data_source.py"
+      },
+      {
+        "filename": "data_historical_fill.py",
+        "path": "src\\backtest\\data_historical_fill.py"
+      },
+      {
+        "filename": "data_loader.py",
+        "path": "src\\backtest\\data_loader.py"
+      },
+      {
+        "filename": "data_source.py",
+        "path": "src\\backtest\\data_source.py"
+      },
+      {
+        "filename": "test_benchmark_data_source.py",
+        "path": "src\\backtest\\tests\\test_benchmark_data_source.py"
+      },
+      {
+        "filename": "test_data_loader.py",
+        "path": "src\\backtest\\tests\\test_data_loader.py"
+      },
+      {
+        "filename": "test_data_source.py",
+        "path": "src\\backtest\\tests\\test_data_source.py"
+      },
+      {
+        "filename": "test_data_source_cache.py",
+        "path": "src\\backtest\\tests\\test_data_source_cache.py"
+      },
+      {
+        "filename": "test_fetch_daily_sina_fallback.py",
+        "path": "src\\backtest\\tests\\test_fetch_daily_sina_fallback.py"
+      },
+      {
+        "filename": "test_generate_comparison_bh.py",
+        "path": "src\\backtest\\tests\\test_generate_comparison_bh.py"
+      },
+      {
+        "filename": "test_run_grid_benchmark.py",
+        "path": "src\\backtest\\tests\\test_run_grid_benchmark.py"
+      },
+      {
+        "filename": "daily_maintenance.py",
+        "path": "scripts\\daily_maintenance.py"
+      }
+    ]
+  }
+}

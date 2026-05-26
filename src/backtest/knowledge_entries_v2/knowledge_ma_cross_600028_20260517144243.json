@@ -1,0 +1,53 @@
+{
+  "task_id": "ma_cross_600028_20260517144243",
+  "method_name": "ma_cross",
+  "symbol": "600028",
+  "completed_time": "2026-05-17T14:42:43+08:00",
+  "regime": "unknown",
+  "timeframe": "",
+  "tags": [
+    "trend",
+    "ma"
+  ],
+  "source_run_id": "ma_cross_20260517144243",
+  "quality_score": 0.8400000000000001,
+  "total_return": 8.7,
+  "sharpe": 1.22,
+  "max_drawdown": -3.8,
+  "win_rate": 55.0,
+  "insight_summary": "总收益率 8.70%; 夏普比率 1.22; 最大回撤 -3.80%; 胜率 55.00%; 信号密度 28.0%",
+  "insight_category": "technical_signal",
+  "confidence": 0.7000000000000001,
+  "parameters": {
+    "params": {
+      "fast_period": 5,
+      "slow_period": 20
+    },
+    "timeframe": "1d",
+    "tags": [
+      "test",
+      "e2e"
+    ],
+    "source_run_id": "e2e_001"
+  },
+  "statistics": {
+    "total_return_pct": 8.7,
+    "sharpe_ratio": 1.22,
+    "max_drawdown_pct": -3.8,
+    "win_rate_pct": 55.0,
+    "signal_ratio": 0.28,
+    "n_trades": 8
+  },
+  "normalized_params": {
+    "strategy_type": "trend_following",
+    "_original_keys": [
+      "params",
+      "timeframe",
+      "tags",
+      "source_run_id"
+    ]
+  },
+  "schema_version": "2.0",
+  "created_at": "2026-05-17T14:42:43+08:00",
+  "updated_at": "2026-05-17T14:42:43+08:00"
+}

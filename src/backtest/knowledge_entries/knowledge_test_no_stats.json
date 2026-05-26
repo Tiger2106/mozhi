@@ -1,0 +1,16 @@
+{
+  "task_id": "test_no_stats",
+  "method_name": "",
+  "symbol": "",
+  "params": {},
+  "insight_summary": "信号密度 66.7%",
+  "data_range": "",
+  "data_frequency": "daily",
+  "completed_time": "2026-05-17T10:00:31+08:00",
+  "confidence": 0.44999999999999996,
+  "source_file": "",
+  "review_status": "pending",
+  "metadata": {},
+  "created_at": "2026-05-17T10:00:31+08:00",
+  "updated_at": "2026-05-17T10:00:31+08:00"
+}

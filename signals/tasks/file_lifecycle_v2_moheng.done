@@ -1,0 +1,23 @@
+{
+  "status": "DONE",
+  "task_id": "file_lifecycle_v2_moheng",
+  "summary": "Upgraded file_lifecycle.py with source column support, archive-scan, daily-maintenance",
+  "timestamp": "2026-05-15 17:26 +08:00",
+  "author": "moheng",
+  "changes": [
+    "DDL: added source TEXT NOT NULL DEFAULT 'incoming' column to files table",
+    "rebuild_db(): DROP + CREATE for structure migration",
+    "register_incoming: sets source='incoming' on all new records",
+    "archive_scan(): scan mo_zhi_sharereports/ → source='archive', Top20 dirs, excludes signals/.git/__pycache__",
+    "daily_maintenance(): auto-generates missing .meta.json for incoming files",
+    "search: added --source filter (incoming/platform/archive)",
+    "scan_registry/status: shows source distribution",
+    "init --force: calls rebuild_db()",
+    "44 pytest test cases all passing"
+  ],
+  "files_modified": [
+    "src/utils/file_lifecycle.py",
+    "tests/test_file_lifecycle.py",
+    "registry/file_registry.db (rebuilt)"
+  ]
+}

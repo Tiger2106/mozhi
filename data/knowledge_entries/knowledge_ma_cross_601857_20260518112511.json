@@ -1,0 +1,43 @@
+{
+  "task_id": "ma_cross_601857_20260518112511",
+  "method_name": "ma_cross",
+  "symbol": "601857",
+  "completed_time": "2026-05-18T11:25:11+08:00",
+  "regime": "unknown",
+  "timeframe": "",
+  "tags": [
+    "trend",
+    "short_term",
+    "ma"
+  ],
+  "source_run_id": "ma_cross_20260518112511",
+  "quality_score": 0.825,
+  "total_return": null,
+  "sharpe": null,
+  "max_drawdown": null,
+  "win_rate": null,
+  "insight_summary": "信号密度 5.8%",
+  "insight_category": "technical_signal",
+  "confidence": 0.65,
+  "parameters": {
+    "ma_fast": 5,
+    "ma_slow": 20
+  },
+  "statistics": {
+    "n_bars": 120.0,
+    "n_signals": 7.0,
+    "n_buy": 4.0,
+    "n_sell": 3.0,
+    "signal_ratio": 0.058333333333333334
+  },
+  "normalized_params": {
+    "strategy_type": "trend_following",
+    "_original_keys": [
+      "ma_fast",
+      "ma_slow"
+    ]
+  },
+  "schema_version": "2.0",
+  "created_at": "2026-05-18T11:25:11+08:00",
+  "updated_at": "2026-05-18T11:25:11+08:00"
+}

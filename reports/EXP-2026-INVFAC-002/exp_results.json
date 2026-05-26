@@ -1,0 +1,268 @@
+{
+  "task_id": "EXP-2026-INVFAC-002",
+  "completed_time": "2026-05-25T17:59:43+08:00",
+  "status": "READY",
+  "factors": [
+    "TrendQuality",
+    "l_vol_rsi_std",
+    "l_str_kdj_k"
+  ],
+  "stocks": [
+    "601857",
+    "000001",
+    "600519",
+    "601318",
+    "600036",
+    "600276",
+    "600887",
+    "600030",
+    "000333",
+    "002415",
+    "600436"
+  ],
+  "results": {
+    "TrendQuality": {
+      "low_vol": {},
+      "mid_vol": {},
+      "high_vol": {
+        "5": {
+          "p_value": 0.2652,
+          "significant": false,
+          "ci_lower": -0.015432003534334764,
+          "ci_upper": 0.01519409390104325,
+          "ic_mean": -0.008658888010403487
+        },
+        "10": {
+          "p_value": 0.1059,
+          "significant": false,
+          "ci_lower": -0.015109199847558392,
+          "ci_upper": 0.015122876019383027,
+          "ic_mean": -0.012432879375412487
+        },
+        "20": {
+          "p_value": 0.007,
+          "significant": true,
+          "ci_lower": -0.015258651979184851,
+          "ci_upper": 0.015028555319062198,
+          "ic_mean": -0.020249605269491378
+        }
+      }
+    },
+    "l_vol_rsi_std": {
+      "low_vol": {},
+      "mid_vol": {},
+      "high_vol": {
+        "5": {
+          "p_value": 0.0562,
+          "significant": false,
+          "ci_lower": -0.015177842888736168,
+          "ci_upper": 0.01531015332406017,
+          "ic_mean": 0.014822593082288837
+        },
+        "10": {
+          "p_value": 0.0928,
+          "significant": false,
+          "ci_lower": -0.014567596690055128,
+          "ci_upper": 0.015340281662688195,
+          "ic_mean": 0.012978379442583399
+        },
+        "20": {
+          "p_value": 0.0,
+          "significant": true,
+          "ci_lower": -0.014799885631430093,
+          "ci_upper": 0.015189464100876456,
+          "ic_mean": 0.04781174935206578
+        }
+      }
+    },
+    "l_str_kdj_k": {
+      "low_vol": {},
+      "mid_vol": {
+        "5": {
+          "p_value": 0.9536,
+          "significant": false,
+          "ci_lower": -0.17499556490114948,
+          "ci_upper": 0.1697314938978257,
+          "ic_mean": -0.005092537033075439
+        },
+        "10": {
+          "p_value": 0.7258,
+          "significant": false,
+          "ci_lower": -0.17529741251115305,
+          "ci_upper": 0.1659745738391779,
+          "ic_mean": 0.030659577465523613
+        },
+        "20": {
+          "p_value": 0.3447,
+          "significant": false,
+          "ci_lower": -0.17139935195379152,
+          "ci_upper": 0.1704686334156,
+          "ic_mean": -0.08233630571919037
+        }
+      },
+      "high_vol": {
+        "5": {
+          "p_value": 0.0931,
+          "significant": false,
+          "ci_lower": -0.015109810047465626,
+          "ci_upper": 0.015697787624955207,
+          "ic_mean": 0.013085459782644415
+        },
+        "10": {
+          "p_value": 0.0101,
+          "significant": true,
+          "ci_lower": -0.015193519252038329,
+          "ci_upper": 0.015144128128971292,
+          "ic_mean": 0.01973210134883796
+        },
+        "20": {
+          "p_value": 0.2902,
+          "significant": false,
+          "ci_lower": -0.015052038575740884,
+          "ci_upper": 0.015213930195862502,
+          "ic_mean": -0.008148470642306282
+        }
+      }
+    }
+  },
+  "fdr_correction": {
+    "q": 0.05,
+    "rejected_count": 3,
+    "total_tests": 12,
+    "details": {
+      "fdr_q": 0.05,
+      "total": 12,
+      "rejected_count": 3,
+      "fdr_is_significant": true,
+      "corrections": [
+        {
+          "p_value": 0.0,
+          "factor": "l_vol_rsi_std",
+          "state": "high_vol",
+          "period": 20,
+          "significant_original": true,
+          "q_value": 0.0,
+          "rejected": true,
+          "q_value_monotonic": 0.0
+        },
+        {
+          "p_value": 0.007,
+          "factor": "TrendQuality",
+          "state": "high_vol",
+          "period": 20,
+          "significant_original": true,
+          "q_value": 0.042,
+          "rejected": true,
+          "q_value_monotonic": 0.0404
+        },
+        {
+          "p_value": 0.0101,
+          "factor": "l_str_kdj_k",
+          "state": "high_vol",
+          "period": 10,
+          "significant_original": true,
+          "q_value": 0.0404,
+          "rejected": true,
+          "q_value_monotonic": 0.0404
+        },
+        {
+          "p_value": 0.0562,
+          "factor": "l_vol_rsi_std",
+          "state": "high_vol",
+          "period": 5,
+          "significant_original": false,
+          "q_value": 0.1686,
+          "rejected": false,
+          "q_value_monotonic": 0.1686
+        },
+        {
+          "p_value": 0.0928,
+          "factor": "l_vol_rsi_std",
+          "state": "high_vol",
+          "period": 10,
+          "significant_original": false,
+          "q_value": 0.22271999999999997,
+          "rejected": false,
+          "q_value_monotonic": 0.18154285714285714
+        },
+        {
+          "p_value": 0.0931,
+          "factor": "l_str_kdj_k",
+          "state": "high_vol",
+          "period": 5,
+          "significant_original": false,
+          "q_value": 0.1862,
+          "rejected": false,
+          "q_value_monotonic": 0.18154285714285714
+        },
+        {
+          "p_value": 0.1059,
+          "factor": "TrendQuality",
+          "state": "high_vol",
+          "period": 10,
+          "significant_original": false,
+          "q_value": 0.18154285714285714,
+          "rejected": false,
+          "q_value_monotonic": 0.18154285714285714
+        },
+        {
+          "p_value": 0.2652,
+          "factor": "TrendQuality",
+          "state": "high_vol",
+          "period": 5,
+          "significant_original": false,
+          "q_value": 0.3978,
+          "rejected": false,
+          "q_value_monotonic": 0.38693333333333335
+        },
+        {
+          "p_value": 0.2902,
+          "factor": "l_str_kdj_k",
+          "state": "high_vol",
+          "period": 20,
+          "significant_original": false,
+          "q_value": 0.38693333333333335,
+          "rejected": false,
+          "q_value_monotonic": 0.38693333333333335
+        },
+        {
+          "p_value": 0.3447,
+          "factor": "l_str_kdj_k",
+          "state": "mid_vol",
+          "period": 20,
+          "significant_original": false,
+          "q_value": 0.41364,
+          "rejected": false,
+          "q_value_monotonic": 0.41364
+        },
+        {
+          "p_value": 0.7258,
+          "factor": "l_str_kdj_k",
+          "state": "mid_vol",
+          "period": 10,
+          "significant_original": false,
+          "q_value": 0.7917818181818181,
+          "rejected": false,
+          "q_value_monotonic": 0.7917818181818181
+        },
+        {
+          "p_value": 0.9536,
+          "factor": "l_str_kdj_k",
+          "state": "mid_vol",
+          "period": 5,
+          "significant_original": false,
+          "q_value": 0.9536000000000001,
+          "rejected": false,
+          "q_value_monotonic": 0.9536000000000001
+        }
+      ]
+    }
+  },
+  "stability_L3": {
+    "summary": {
+      "total_combinations": 27,
+      "L3_passed_count": 12,
+      "L3_pass_rate": 0.4444444444444444
+    }
+  }
+}

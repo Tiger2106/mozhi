@@ -1,0 +1,220 @@
+{
+  "_meta": {
+    "document": "数据源注册表（Data Source Registry）",
+    "based_on": "docs/data_ingestion_standard.md",
+    "author": "墨衡 (moheng)",
+    "created_time": "2026-05-22T16:52+08:00",
+    "version": "v1.0",
+    "description": "记录所有接入的数据源信息，含来源标识、字段映射、归一化规则、接入时间范围"
+  },
+  "sources": [
+    {
+      "source_id": "tushare_pro",
+      "name": "Tushare Pro",
+      "type": "API",
+      "readme": "https://tushare.pro/document/2",
+      "api_version": "pro",
+      "rate_limit": {
+        "max_per_minute": 200,
+        "batch_size": 3000,
+        "notes": "积分越高，调用频率限制越宽松；推荐单次拉取 ≤3000 行"
+      },
+      "tables": [
+        {
+          "table_name": "stock_daily",
+          "api_interface": "daily",
+          "api_params_example": {
+            "ts_code": "601857.SH",
+            "start_date": "20200101",
+            "end_date": "20260522",
+            "fields": [
+              "ts_code",
+              "trade_date",
+              "open",
+              "high",
+              "low",
+              "close",
+              "pre_close",
+              "change",
+              "pct_chg",
+              "vol",
+              "amount",
+              "turnover_rate",
+              "turnover_rate_f",
+              "volume_ratio",
+              "pe",
+              "pe_ttm",
+              "pb",
+              "total_share",
+              "float_share",
+              "free_float_share",
+              "total_mv",
+              "circ_mv"
+            ]
+          },
+          "field_mapping": {
+            "ts_code": "ts_code",
+            "trade_date": "trade_date",
+            "open": "open",
+            "high": "high",
+            "low": "low",
+            "close": "close",
+            "pre_close": "pre_close",
+            "change": "change",
+            "pct_chg": "pct_chg",
+            "vol": "volume",
+            "amount": "amount",
+            "turnover_rate": "turnover_rate",
+            "turnover_rate_f": "turnover_rate_f",
+            "volume_ratio": "volume_ratio",
+            "pe": "pe",
+            "pe_ttm": "pe_ttm",
+            "pb": "pb",
+            "total_share": "total_share",
+            "float_share": "float_share",
+            "free_float_share": "free_float_share",
+            "total_mv": "total_mv",
+            "circ_mv": "circ_mv"
+          },
+          "normalization_rules": {
+            "volume": {
+              "description": "成交量转换：手 → 股",
+              "operation": "multiply",
+              "factor": 100,
+              "input_unit": "手",
+              "output_unit": "股",
+              "rationale": "Tushare Pro daily 接口返回 vol 单位为手，DB 统一存储为股"
+            },
+            "amount": {
+              "description": "成交额转换：千元 → 元",
+              "operation": "multiply",
+              "factor": 1000,
+              "input_unit": "千元",
+              "output_unit": "元",
+              "rationale": "Tushare Pro daily 接口返回 amount 单位为千元，DB 统一存储为元"
+            },
+            "trade_date": {
+              "description": "日期格式：直接存储 YYYYMMDD INT",
+              "operation": "passthrough",
+              "input_format": "YYYYMMDD",
+              "output_format": "YYYYMMDD",
+              "rationale": "Tushare 返回格式与 DB 存储格式一致，无需转换"
+            },
+            "null_fields": {
+              "description": "部分字段可能为 NULL（如 turnover_rate/turnover_rate_f），保留 NULL 不做插值",
+              "operation": "passthrough_null",
+              "rationale": "下游消费方自行处理 NULL 值"
+            }
+          },
+          "enrichment_fields": [
+            {
+              "db_field": "data_source",
+              "value": "tushare_pro",
+              "assign_method": "static",
+              "description": "标记每行数据来自 Tushare Pro"
+            },
+            {
+              "db_field": "version",
+              "value": null,
+              "assign_method": "dynamic_version",
+              "description": "标记当前清洗版本号（运行时从 config 读取）"
+            },
+            {
+              "db_field": "created_at",
+              "value": null,
+              "assign_method": "datetime_now",
+              "description": "入库时间戳"
+            }
+          ],
+          "raw_backup_table": "stock_daily_raw",
+          "raw_backup_policy": {
+            "schema": "与 Tushare 返回结构一致，不做任何归一化，额外增加 batch_id + created_at 字段",
+            "purpose": [
+              "溯源验证：清洗逻辑变更后从 raw 重新清洗",
+              "调试：归一化出错时直接比对原始值"
+            ],
+            "retention": "永久保留（不主动删除）"
+          },
+          "quality_checks": {
+            "QC-001": "volume > 0",
+            "QC-002": "amount > 0",
+            "QC-003": "close > 0",
+            "QC-004": "ABS(volume * close - amount) / amount < tolerance（默认2%，可配置）",
+            "QC-005": "turnover_rate ∈ [0, 100]（允许 NULL）",
+            "QC-006": "trade_date 格式校验（8位整数，年月日合规）",
+            "QC-007": "high >= low",
+            "QC-008": "close ∈ [low, high]（99%+ 通过）",
+            "QC-009": "data_source 和 version 均非空",
+            "QC-010": "(ts_code, trade_date) 无重复"
+          }
+        }
+      ],
+      "supported_symbols": []
+    },
+    {
+      "source_id": "akshare",
+      "name": "AKShare",
+      "type": "API",
+      "readme": "https://akshare.akfamily.xyz/",
+      "api_version": "latest",
+      "rate_limit": {
+        "max_per_minute": 60,
+        "batch_size": 5000,
+        "notes": "免费接口，无认证限制，但频繁调用可能触发限流"
+      },
+      "tables": [
+        {
+          "table_name": "stock_zh_index_daily",
+          "api_interface": "stock_zh_index_daily",
+          "api_params_example": {
+            "symbol": "sh000300"
+          },
+          "applicable_symbols": [
+            "000300.SH",
+            "000016.SH",
+            "000001.SH"
+          ],
+          "field_mapping": {
+            "date": "trade_date",
+            "open": "open",
+            "close": "close",
+            "high": "high",
+            "low": "low",
+            "volume": "volume",
+            "symbol": "ts_code"
+          },
+          "normalization_rules": {
+            "volume": {
+              "description": "指数成交量原始单位即为股，无需转换"
+            },
+            "trade_date": {
+              "description": "akshare 返回日期为 object 类型，需转为 YYYYMMDD INT",
+              "operation": "parse_date_to_int",
+              "input_format": "YYYY-MM-DD",
+              "output_format": "YYYYMMDD"
+            }
+          },
+          "notes": "指数标的首选数据源；仅用于指数数据（000300/000016/000001），个股仍用 Tushare Pro"
+        },
+        {
+          "table_name": "stock_zh_a_hist",
+          "api_interface": "stock_zh_a_hist",
+          "api_params_example": {
+            "symbol": "600519",
+            "period": "daily",
+            "adjust": "qfq"
+          },
+          "notes": "个股历史行情数据，含复权因子"
+        }
+      ]
+    }
+  ],
+  "version_history": [
+    {
+      "version": "v1.0",
+      "date": "2026-05-22",
+      "changes": "初版发布",
+      "author": "墨衡"
+    }
+  ]
+}

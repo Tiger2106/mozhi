@@ -1,0 +1,42 @@
+{
+  "task_id": "bollinger_TEST_20260517150355",
+  "method_name": "bollinger",
+  "symbol": "TEST",
+  "completed_time": "2026-05-17T15:03:55+08:00",
+  "regime": "unknown",
+  "timeframe": "",
+  "tags": [
+    "bollinger",
+    "mean_reversion"
+  ],
+  "source_run_id": "bollinger_20260517150355",
+  "quality_score": 0.825,
+  "total_return": null,
+  "sharpe": null,
+  "max_drawdown": null,
+  "win_rate": null,
+  "insight_summary": "信号密度 10.8%",
+  "insight_category": "technical_signal",
+  "confidence": 0.65,
+  "parameters": {
+    "bollinger_period": 20,
+    "bollinger_std": 2.0
+  },
+  "statistics": {
+    "n_bars": 120.0,
+    "n_signals": 13.0,
+    "n_buy": 7.0,
+    "n_sell": 6.0,
+    "signal_ratio": 0.10833333333333334
+  },
+  "normalized_params": {
+    "strategy_type": "mean_reversion",
+    "_original_keys": [
+      "bollinger_period",
+      "bollinger_std"
+    ]
+  },
+  "schema_version": "2.0",
+  "created_at": "2026-05-17T15:03:55+08:00",
+  "updated_at": "2026-05-17T15:03:55+08:00"
+}

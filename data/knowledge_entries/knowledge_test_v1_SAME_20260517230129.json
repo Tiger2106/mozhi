@@ -1,0 +1,33 @@
+{
+  "task_id": "test_v1_SAME_20260517230129",
+  "method_name": "test_v1",
+  "symbol": "SAME",
+  "completed_time": "2026-05-17T23:01:29+08:00",
+  "regime": "unknown",
+  "timeframe": "",
+  "tags": [],
+  "source_run_id": "test_v1_20260517230129",
+  "quality_score": 0.765,
+  "total_return": 8.0,
+  "sharpe": null,
+  "max_drawdown": null,
+  "win_rate": null,
+  "insight_summary": "总收益率 8.00%; 信号密度 0.0%",
+  "insight_category": "general_signal",
+  "confidence": 0.44999999999999996,
+  "parameters": {
+    "version": 2
+  },
+  "statistics": {
+    "total_return_pct": 8.0
+  },
+  "normalized_params": {
+    "strategy_type": "unknown",
+    "_original_keys": [
+      "version"
+    ]
+  },
+  "schema_version": "2.0",
+  "created_at": "2026-05-17T23:01:29+08:00",
+  "updated_at": "2026-05-17T23:01:29+08:00"
+}

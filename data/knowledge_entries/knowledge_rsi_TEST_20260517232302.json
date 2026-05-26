@@ -1,0 +1,41 @@
+{
+  "task_id": "rsi_TEST_20260517232302",
+  "method_name": "rsi",
+  "symbol": "TEST",
+  "completed_time": "2026-05-17T23:23:02+08:00",
+  "regime": "unknown",
+  "timeframe": "",
+  "tags": [
+    "mean_reversion",
+    "mid_term",
+    "rsi"
+  ],
+  "source_run_id": "rsi_20260517232302",
+  "quality_score": 0.825,
+  "total_return": null,
+  "sharpe": null,
+  "max_drawdown": null,
+  "win_rate": null,
+  "insight_summary": "信号密度 6.7%",
+  "insight_category": "technical_signal",
+  "confidence": 0.65,
+  "parameters": {
+    "rsi_period": 14
+  },
+  "statistics": {
+    "n_bars": 120.0,
+    "n_signals": 8.0,
+    "n_buy": 8.0,
+    "n_sell": 0.0,
+    "signal_ratio": 0.06666666666666667
+  },
+  "normalized_params": {
+    "strategy_type": "mean_reversion",
+    "_original_keys": [
+      "rsi_period"
+    ]
+  },
+  "schema_version": "2.0",
+  "created_at": "2026-05-17T23:23:02+08:00",
+  "updated_at": "2026-05-17T23:23:02+08:00"
+}

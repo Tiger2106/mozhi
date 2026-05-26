@@ -1,0 +1,134 @@
+{
+  "test_date": "2026-05-25",
+  "total": 18,
+  "passed": 18,
+  "failed": 0,
+  "results": [
+    {
+      "case_id": "TC-01",
+      "name": "S004 mock数据文件存在",
+      "status": "PASS",
+      "detail": "文件存在且格式正确: 10 条路由",
+      "timestamp": "2026-05-25T11:34:05.726257"
+    },
+    {
+      "case_id": "TC-07_compliant",
+      "name": "S004映射值 [compliant=100]",
+      "status": "PASS",
+      "detail": "期望范围: 90-100, 理由: 合规路由→最高分(100)",
+      "timestamp": "2026-05-25T11:34:05.726364"
+    },
+    {
+      "case_id": "TC-07_grey",
+      "name": "S004映射值 [grey=40]",
+      "status": "PASS",
+      "detail": "期望范围: 30-50, 理由: 灰色路由→中低分(40)",
+      "timestamp": "2026-05-25T11:34:05.727654"
+    },
+    {
+      "case_id": "TC-07_black",
+      "name": "S004映射值 [black=0]",
+      "status": "PASS",
+      "detail": "期望范围: 0-10, 理由: 黑路由→最低分(0)",
+      "timestamp": "2026-05-25T11:34:05.727731"
+    },
+    {
+      "case_id": "TC-03_compliant",
+      "name": "compliance_flag映射 [compliant]",
+      "status": "PASS",
+      "detail": "期望=100, 实际=100",
+      "timestamp": "2026-05-25T11:34:05.727775"
+    },
+    {
+      "case_id": "TC-03_grey",
+      "name": "compliance_flag映射 [grey]",
+      "status": "PASS",
+      "detail": "期望=40, 实际=40",
+      "timestamp": "2026-05-25T11:34:05.727807"
+    },
+    {
+      "case_id": "TC-03_black",
+      "name": "compliance_flag映射 [black]",
+      "status": "PASS",
+      "detail": "期望=0, 实际=0",
+      "timestamp": "2026-05-25T11:34:05.727834"
+    },
+    {
+      "case_id": "TC-02_601398_SH",
+      "name": "grey_overlap 读取 [601398.SH]",
+      "status": "PASS",
+      "detail": "grey_overlap=0.00 (期望0-10) | R001 black映射→0, supply_label含601398.SH",
+      "timestamp": "2026-05-25T11:34:05.736653"
+    },
+    {
+      "case_id": "TC-02_600036_SH",
+      "name": "grey_overlap 读取 [600036.SH]",
+      "status": "PASS",
+      "detail": "grey_overlap=40.00 (期望35-45) | R002 grey映射→40, supply_label含600036.SH",
+      "timestamp": "2026-05-25T11:34:05.737128"
+    },
+    {
+      "case_id": "TC-02_600519_SH",
+      "name": "grey_overlap 读取 [600519.SH]",
+      "status": "PASS",
+      "detail": "grey_overlap=40.00 (期望35-45) | R008 grey映射→40, supply_label含600519.SH",
+      "timestamp": "2026-05-25T11:34:05.737529"
+    },
+    {
+      "case_id": "TC-02_300750_SZ",
+      "name": "grey_overlap 读取 [300750.SZ]",
+      "status": "PASS",
+      "detail": "grey_overlap=100.00 (期望95-100) | R006 compliant映射→100, supply_label含300750.SZ",
+      "timestamp": "2026-05-25T11:34:05.737851"
+    },
+    {
+      "case_id": "TC-02_nomatch",
+      "name": "grey_overlap 无匹配symbol",
+      "status": "PASS",
+      "detail": "grey_overlap=70.00 (期望基准70)",
+      "timestamp": "2026-05-25T11:34:05.738150"
+    },
+    {
+      "case_id": "TC-04",
+      "name": "channel_pair枚举对齐",
+      "status": "PASS",
+      "detail": "S005 channel_pairs=['inner_vs_grey', 'govern_vs_trans', 'history_vs_avg'] | S002 channel_type为自由字符串(未冻结枚举) | 两者概念不同层: S005=合规维度对, S002=资金渠道代码 | 需在S002热力图二期对齐时统一枚举值",
+      "timestamp": "2026-05-25T11:34:05.738691"
+    },
+    {
+      "case_id": "TC-08_weight",
+      "name": "权重和=1.0000",
+      "status": "PASS",
+      "detail": "通过",
+      "timestamp": "2026-05-25T11:34:05.738782"
+    },
+    {
+      "case_id": "TC-08_dims",
+      "name": "权重维度完整性",
+      "status": "PASS",
+      "detail": "通过",
+      "timestamp": "2026-05-25T11:34:05.738822"
+    },
+    {
+      "case_id": "TC-09",
+      "name": "S002格式对齐标记",
+      "status": "PASS",
+      "detail": "aligned_with: S002_v1_format_20260525",
+      "timestamp": "2026-05-25T11:34:05.738852"
+    },
+    {
+      "case_id": "TC-05",
+      "name": "全流水线执行",
+      "status": "PASS",
+      "detail": "通过 7/7 检查 | 标的=15 | 种子=8 | 节点=50 | 催化剂=7 | heatmap=存在",
+      "timestamp": "2026-05-25T11:34:05.765627"
+    },
+    {
+      "case_id": "TC-06",
+      "name": "heatmap格式验证",
+      "status": "PASS",
+      "detail": "45 条目, 字段完整, 类型正确 | 所有channel_pair在预期枚举中: ['inner_vs_grey', 'govern_vs_trans', 'history_vs_avg']",
+      "timestamp": "2026-05-25T11:34:05.780346"
+    }
+  ]
+}

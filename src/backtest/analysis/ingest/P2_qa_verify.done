@@ -1,0 +1,22 @@
+{
+  "status": "SUCCESS",
+  "task": "P2: --qa-verify 改进",
+  "completed_time": "2026-05-23T16:02:00+08:00",
+  "summary": "实现 QaReport/QaCheckItem Pydantic 模型（TMPL-003 对齐），增强 _generate_qa_report 返回结构化 JSON QA 报告",
+  "changes": [
+    "model.py: 新增 QaCheckItem, QaReport Pydantic 模型，WriteResult.qa_report 改为 QaReport | None",
+    "writer.py: _generate_qa_report 重构为返回 QaReport，覆盖 5 维度检查（行数核验/外键/偏差/文档/DB错误）",
+    "pipeline.py: PipelineResult 中 qa_report 序列化为 dict 以支持 JSON 输出",
+    "__init__.py: 导出 QaCheckItem, QaReport",
+    "tests: 新增 22 个测试（TestSuite 9/10/11），覆盖 QaReport 全部场景 + Writer 的 QA 报告生成"
+  ],
+  "test_count": 62,
+  "tests_passed": 62,
+  "files_modified": [
+    "src/backtest/analysis/ingest/model.py",
+    "src/backtest/analysis/ingest/writer.py",
+    "src/backtest/analysis/ingest/pipeline.py",
+    "src/backtest/analysis/ingest/__init__.py",
+    "src/backtest/analysis/ingest/tests/test_ingest_analysis.py"
+  ]
+}

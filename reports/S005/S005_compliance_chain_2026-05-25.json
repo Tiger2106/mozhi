@@ -1,0 +1,760 @@
+{
+  "meta": {
+    "strategy": "S005",
+    "strategy_name": "合规受益链",
+    "run_date": "2026-05-25",
+    "generated_at": "2026-05-25T11:34:05.763842",
+    "version": "1.0.0"
+  },
+  "compliance": {
+    "scored_count": 15,
+    "top_scores": [
+      {
+        "rank": 1,
+        "symbol": "600900.SH",
+        "total_score": 82.7,
+        "dimension_scores": {
+          "inner_control": 100.0,
+          "governance": 60.0,
+          "history": 100.0,
+          "grey_overlap": 70.0,
+          "transparency": 78.0
+        }
+      },
+      {
+        "rank": 2,
+        "symbol": "601857.SH",
+        "total_score": 75.11,
+        "dimension_scores": {
+          "inner_control": 100.0,
+          "governance": 57.5,
+          "history": 75.0,
+          "grey_overlap": 70.0,
+          "transparency": 64.1
+        }
+      },
+      {
+        "rank": 3,
+        "symbol": "601628.SH",
+        "total_score": 74.94,
+        "dimension_scores": {
+          "inner_control": 100.0,
+          "governance": 63.3,
+          "history": 70.0,
+          "grey_overlap": 70.0,
+          "transparency": 61.9
+        }
+      },
+      {
+        "rank": 4,
+        "symbol": "600519.SH",
+        "total_score": 74.22,
+        "dimension_scores": {
+          "inner_control": 100.0,
+          "governance": 44.2,
+          "history": 100.0,
+          "grey_overlap": 40.0,
+          "transparency": 82.55
+        }
+      },
+      {
+        "rank": 5,
+        "symbol": "601318.SH",
+        "total_score": 73.33,
+        "dimension_scores": {
+          "inner_control": 100.0,
+          "governance": 40.0,
+          "history": 80.0,
+          "grey_overlap": 70.0,
+          "transparency": 68.85
+        }
+      },
+      {
+        "rank": 6,
+        "symbol": "601688.SH",
+        "total_score": 72.61,
+        "dimension_scores": {
+          "inner_control": 100.0,
+          "governance": 52.1,
+          "history": 65.0,
+          "grey_overlap": 70.0,
+          "transparency": 67.95
+        }
+      },
+      {
+        "rank": 7,
+        "symbol": "300750.SZ",
+        "total_score": 72.46,
+        "dimension_scores": {
+          "inner_control": 66.0,
+          "governance": 68.3,
+          "history": 75.0,
+          "grey_overlap": 100.0,
+          "transparency": 48.65
+        }
+      },
+      {
+        "rank": 8,
+        "symbol": "601939.SH",
+        "total_score": 71.85,
+        "dimension_scores": {
+          "inner_control": 100.0,
+          "governance": 51.2,
+          "history": 90.0,
+          "grey_overlap": 40.0,
+          "transparency": 70.75
+        }
+      },
+      {
+        "rank": 9,
+        "symbol": "600036.SH",
+        "total_score": 69.32,
+        "dimension_scores": {
+          "inner_control": 100.0,
+          "governance": 66.4,
+          "history": 70.0,
+          "grey_overlap": 40.0,
+          "transparency": 60.25
+        }
+      },
+      {
+        "rank": 10,
+        "symbol": "601288.SH",
+        "total_score": 68.23,
+        "dimension_scores": {
+          "inner_control": 100.0,
+          "governance": 68.0,
+          "history": 55.0,
+          "grey_overlap": 40.0,
+          "transparency": 70.85
+        }
+      }
+    ],
+    "score_distribution": {
+      "0-30": 0,
+      "30-50": 0,
+      "50-70": 7,
+      "70-90": 8,
+      "90-100": 0
+    }
+  },
+  "bfs_chain": {
+    "total_nodes": 50,
+    "seed_count": 8,
+    "level1_count": 15,
+    "level2_count": 24,
+    "level3_count": 3,
+    "nodes": [
+      {
+        "id": "bfs_0039",
+        "symbol": "300750.SZ",
+        "name": "300750.SZ",
+        "level": 0,
+        "chain_type": "seed",
+        "confidence": 1.0,
+        "path": "300750.SZ",
+        "source_seed": "300750.SZ"
+      },
+      {
+        "id": "bfs_0022",
+        "symbol": "600519.SH",
+        "name": "600519.SH",
+        "level": 0,
+        "chain_type": "seed",
+        "confidence": 1.0,
+        "path": "600519.SH",
+        "source_seed": "600519.SH"
+      },
+      {
+        "id": "bfs_0001",
+        "symbol": "600900.SH",
+        "name": "600900.SH",
+        "level": 0,
+        "chain_type": "seed",
+        "confidence": 1.0,
+        "path": "600900.SH",
+        "source_seed": "600900.SH"
+      },
+      {
+        "id": "bfs_0028",
+        "symbol": "601318.SH",
+        "name": "601318.SH",
+        "level": 0,
+        "chain_type": "seed",
+        "confidence": 1.0,
+        "path": "601318.SH",
+        "source_seed": "601318.SH"
+      },
+      {
+        "id": "bfs_0016",
+        "symbol": "601628.SH",
+        "name": "601628.SH",
+        "level": 0,
+        "chain_type": "seed",
+        "confidence": 1.0,
+        "path": "601628.SH",
+        "source_seed": "601628.SH"
+      },
+      {
+        "id": "bfs_0033",
+        "symbol": "601688.SH",
+        "name": "601688.SH",
+        "level": 0,
+        "chain_type": "seed",
+        "confidence": 1.0,
+        "path": "601688.SH",
+        "source_seed": "601688.SH"
+      },
+      {
+        "id": "bfs_0010",
+        "symbol": "601857.SH",
+        "name": "601857.SH",
+        "level": 0,
+        "chain_type": "seed",
+        "confidence": 1.0,
+        "path": "601857.SH",
+        "source_seed": "601857.SH"
+      },
+      {
+        "id": "bfs_0045",
+        "symbol": "601939.SH",
+        "name": "601939.SH",
+        "level": 0,
+        "chain_type": "seed",
+        "confidence": 1.0,
+        "path": "601939.SH",
+        "source_seed": "601939.SH"
+      },
+      {
+        "id": "bfs_0029",
+        "symbol": "601601.SH",
+        "name": "中国太保",
+        "level": 1,
+        "chain_type": "direct",
+        "confidence": 0.6,
+        "path": "601318.SH→601601.SH",
+        "source_seed": "601318.SH"
+      },
+      {
+        "id": "bfs_0040",
+        "symbol": "MOCK_L1_300750_SZ_1",
+        "name": "同业竞争者(300750.SZ)",
+        "level": 1,
+        "chain_type": "direct",
+        "confidence": 0.6,
+        "path": "300750.SZ→MOCK_L1_300750_SZ_1",
+        "source_seed": "300750.SZ"
+      },
+      {
+        "id": "bfs_0041",
+        "symbol": "MOCK_L1_300750_SZ_2",
+        "name": "替代品提供商(300750.SZ)",
+        "level": 1,
+        "chain_type": "direct",
+        "confidence": 0.6,
+        "path": "300750.SZ→MOCK_L1_300750_SZ_2",
+        "source_seed": "300750.SZ"
+      },
+      {
+        "id": "bfs_0023",
+        "symbol": "MOCK_L1_600519_SH_1",
+        "name": "同业竞争者(600519.SH)",
+        "level": 1,
+        "chain_type": "direct",
+        "confidence": 0.6,
+        "path": "600519.SH→MOCK_L1_600519_SH_1",
+        "source_seed": "600519.SH"
+      },
+      {
+        "id": "bfs_0024",
+        "symbol": "MOCK_L1_600519_SH_2",
+        "name": "替代品提供商(600519.SH)",
+        "level": 1,
+        "chain_type": "direct",
+        "confidence": 0.6,
+        "path": "600519.SH→MOCK_L1_600519_SH_2",
+        "source_seed": "600519.SH"
+      },
+      {
+        "id": "bfs_0002",
+        "symbol": "MOCK_L1_600900_SH_1",
+        "name": "同业竞争者(600900.SH)",
+        "level": 1,
+        "chain_type": "direct",
+        "confidence": 0.6,
+        "path": "600900.SH→MOCK_L1_600900_SH_1",
+        "source_seed": "600900.SH"
+      },
+      {
+        "id": "bfs_0003",
+        "symbol": "MOCK_L1_600900_SH_2",
+        "name": "替代品提供商(600900.SH)",
+        "level": 1,
+        "chain_type": "direct",
+        "confidence": 0.6,
+        "path": "600900.SH→MOCK_L1_600900_SH_2",
+        "source_seed": "600900.SH"
+      },
+      {
+        "id": "bfs_0017",
+        "symbol": "MOCK_L1_601628_SH_1",
+        "name": "同业竞争者(601628.SH)",
+        "level": 1,
+        "chain_type": "direct",
+        "confidence": 0.6,
+        "path": "601628.SH→MOCK_L1_601628_SH_1",
+        "source_seed": "601628.SH"
+      },
+      {
+        "id": "bfs_0018",
+        "symbol": "MOCK_L1_601628_SH_2",
+        "name": "替代品提供商(601628.SH)",
+        "level": 1,
+        "chain_type": "direct",
+        "confidence": 0.6,
+        "path": "601628.SH→MOCK_L1_601628_SH_2",
+        "source_seed": "601628.SH"
+      },
+      {
+        "id": "bfs_0034",
+        "symbol": "MOCK_L1_601688_SH_1",
+        "name": "同业竞争者(601688.SH)",
+        "level": 1,
+        "chain_type": "direct",
+        "confidence": 0.6,
+        "path": "601688.SH→MOCK_L1_601688_SH_1",
+        "source_seed": "601688.SH"
+      },
+      {
+        "id": "bfs_0035",
+        "symbol": "MOCK_L1_601688_SH_2",
+        "name": "替代品提供商(601688.SH)",
+        "level": 1,
+        "chain_type": "direct",
+        "confidence": 0.6,
+        "path": "601688.SH→MOCK_L1_601688_SH_2",
+        "source_seed": "601688.SH"
+      },
+      {
+        "id": "bfs_0011",
+        "symbol": "MOCK_L1_601857_SH_1",
+        "name": "同业竞争者(601857.SH)",
+        "level": 1,
+        "chain_type": "direct",
+        "confidence": 0.6,
+        "path": "601857.SH→MOCK_L1_601857_SH_1",
+        "source_seed": "601857.SH"
+      },
+      {
+        "id": "bfs_0012",
+        "symbol": "MOCK_L1_601857_SH_2",
+        "name": "替代品提供商(601857.SH)",
+        "level": 1,
+        "chain_type": "direct",
+        "confidence": 0.6,
+        "path": "601857.SH→MOCK_L1_601857_SH_2",
+        "source_seed": "601857.SH"
+      },
+      {
+        "id": "bfs_0046",
+        "symbol": "MOCK_L1_601939_SH_1",
+        "name": "同业竞争者(601939.SH)",
+        "level": 1,
+        "chain_type": "direct",
+        "confidence": 0.6,
+        "path": "601939.SH→MOCK_L1_601939_SH_1",
+        "source_seed": "601939.SH"
+      },
+      {
+        "id": "bfs_0047",
+        "symbol": "MOCK_L1_601939_SH_2",
+        "name": "替代品提供商(601939.SH)",
+        "level": 1,
+        "chain_type": "direct",
+        "confidence": 0.6,
+        "path": "601939.SH→MOCK_L1_601939_SH_2",
+        "source_seed": "601939.SH"
+      },
+      {
+        "id": "bfs_0030",
+        "symbol": "MOCK_L2_601601_SH_1",
+        "name": "供应商链(601601.SH)",
+        "level": 2,
+        "chain_type": "synergy",
+        "confidence": 0.36,
+        "path": "601318.SH→601601.SH→MOCK_L2_601601_SH_1",
+        "source_seed": "601318.SH"
+      },
+      {
+        "id": "bfs_0031",
+        "symbol": "MOCK_L2_601601_SH_2",
+        "name": "战略客户(601601.SH)",
+        "level": 2,
+        "chain_type": "synergy",
+        "confidence": 0.36,
+        "path": "601318.SH→601601.SH→MOCK_L2_601601_SH_2",
+        "source_seed": "601318.SH"
+      },
+      {
+        "id": "bfs_0032",
+        "symbol": "MOCK_L2_601601_SH_3",
+        "name": "合作伙伴(601601.SH)",
+        "level": 2,
+        "chain_type": "synergy",
+        "confidence": 0.36,
+        "path": "601318.SH→601601.SH→MOCK_L2_601601_SH_3",
+        "source_seed": "601318.SH"
+      },
+      {
+        "id": "bfs_0042",
+        "symbol": "MOCK_L2_MOCK_L1_300750_SZ_1_1",
+        "name": "供应商链(MOCK_L1_300750_SZ_1)",
+        "level": 2,
+        "chain_type": "synergy",
+        "confidence": 0.36,
+        "path": "300750.SZ→MOCK_L1_300750_SZ_1→MOCK_L2_MOCK_L1_300750_SZ_1_1",
+        "source_seed": "300750.SZ"
+      },
+      {
+        "id": "bfs_0043",
+        "symbol": "MOCK_L2_MOCK_L1_300750_SZ_1_2",
+        "name": "战略客户(MOCK_L1_300750_SZ_1)",
+        "level": 2,
+        "chain_type": "synergy",
+        "confidence": 0.36,
+        "path": "300750.SZ→MOCK_L1_300750_SZ_1→MOCK_L2_MOCK_L1_300750_SZ_1_2",
+        "source_seed": "300750.SZ"
+      },
+      {
+        "id": "bfs_0044",
+        "symbol": "MOCK_L2_MOCK_L1_300750_SZ_1_3",
+        "name": "合作伙伴(MOCK_L1_300750_SZ_1)",
+        "level": 2,
+        "chain_type": "synergy",
+        "confidence": 0.36,
+        "path": "300750.SZ→MOCK_L1_300750_SZ_1→MOCK_L2_MOCK_L1_300750_SZ_1_3",
+        "source_seed": "300750.SZ"
+      },
+      {
+        "id": "bfs_0025",
+        "symbol": "MOCK_L2_MOCK_L1_600519_SH_1_1",
+        "name": "供应商链(MOCK_L1_600519_SH_1)",
+        "level": 2,
+        "chain_type": "synergy",
+        "confidence": 0.36,
+        "path": "600519.SH→MOCK_L1_600519_SH_1→MOCK_L2_MOCK_L1_600519_SH_1_1",
+        "source_seed": "600519.SH"
+      },
+      {
+        "id": "bfs_0026",
+        "symbol": "MOCK_L2_MOCK_L1_600519_SH_1_2",
+        "name": "战略客户(MOCK_L1_600519_SH_1)",
+        "level": 2,
+        "chain_type": "synergy",
+        "confidence": 0.36,
+        "path": "600519.SH→MOCK_L1_600519_SH_1→MOCK_L2_MOCK_L1_600519_SH_1_2",
+        "source_seed": "600519.SH"
+      },
+      {
+        "id": "bfs_0027",
+        "symbol": "MOCK_L2_MOCK_L1_600519_SH_1_3",
+        "name": "合作伙伴(MOCK_L1_600519_SH_1)",
+        "level": 2,
+        "chain_type": "synergy",
+        "confidence": 0.36,
+        "path": "600519.SH→MOCK_L1_600519_SH_1→MOCK_L2_MOCK_L1_600519_SH_1_3",
+        "source_seed": "600519.SH"
+      },
+      {
+        "id": "bfs_0004",
+        "symbol": "MOCK_L2_MOCK_L1_600900_SH_1_1",
+        "name": "供应商链(MOCK_L1_600900_SH_1)",
+        "level": 2,
+        "chain_type": "synergy",
+        "confidence": 0.36,
+        "path": "600900.SH→MOCK_L1_600900_SH_1→MOCK_L2_MOCK_L1_600900_SH_1_1",
+        "source_seed": "600900.SH"
+      },
+      {
+        "id": "bfs_0005",
+        "symbol": "MOCK_L2_MOCK_L1_600900_SH_1_2",
+        "name": "战略客户(MOCK_L1_600900_SH_1)",
+        "level": 2,
+        "chain_type": "synergy",
+        "confidence": 0.36,
+        "path": "600900.SH→MOCK_L1_600900_SH_1→MOCK_L2_MOCK_L1_600900_SH_1_2",
+        "source_seed": "600900.SH"
+      },
+      {
+        "id": "bfs_0006",
+        "symbol": "MOCK_L2_MOCK_L1_600900_SH_1_3",
+        "name": "合作伙伴(MOCK_L1_600900_SH_1)",
+        "level": 2,
+        "chain_type": "synergy",
+        "confidence": 0.36,
+        "path": "600900.SH→MOCK_L1_600900_SH_1→MOCK_L2_MOCK_L1_600900_SH_1_3",
+        "source_seed": "600900.SH"
+      },
+      {
+        "id": "bfs_0019",
+        "symbol": "MOCK_L2_MOCK_L1_601628_SH_1_1",
+        "name": "供应商链(MOCK_L1_601628_SH_1)",
+        "level": 2,
+        "chain_type": "synergy",
+        "confidence": 0.36,
+        "path": "601628.SH→MOCK_L1_601628_SH_1→MOCK_L2_MOCK_L1_601628_SH_1_1",
+        "source_seed": "601628.SH"
+      },
+      {
+        "id": "bfs_0020",
+        "symbol": "MOCK_L2_MOCK_L1_601628_SH_1_2",
+        "name": "战略客户(MOCK_L1_601628_SH_1)",
+        "level": 2,
+        "chain_type": "synergy",
+        "confidence": 0.36,
+        "path": "601628.SH→MOCK_L1_601628_SH_1→MOCK_L2_MOCK_L1_601628_SH_1_2",
+        "source_seed": "601628.SH"
+      },
+      {
+        "id": "bfs_0021",
+        "symbol": "MOCK_L2_MOCK_L1_601628_SH_1_3",
+        "name": "合作伙伴(MOCK_L1_601628_SH_1)",
+        "level": 2,
+        "chain_type": "synergy",
+        "confidence": 0.36,
+        "path": "601628.SH→MOCK_L1_601628_SH_1→MOCK_L2_MOCK_L1_601628_SH_1_3",
+        "source_seed": "601628.SH"
+      },
+      {
+        "id": "bfs_0036",
+        "symbol": "MOCK_L2_MOCK_L1_601688_SH_1_1",
+        "name": "供应商链(MOCK_L1_601688_SH_1)",
+        "level": 2,
+        "chain_type": "synergy",
+        "confidence": 0.36,
+        "path": "601688.SH→MOCK_L1_601688_SH_1→MOCK_L2_MOCK_L1_601688_SH_1_1",
+        "source_seed": "601688.SH"
+      },
+      {
+        "id": "bfs_0037",
+        "symbol": "MOCK_L2_MOCK_L1_601688_SH_1_2",
+        "name": "战略客户(MOCK_L1_601688_SH_1)",
+        "level": 2,
+        "chain_type": "synergy",
+        "confidence": 0.36,
+        "path": "601688.SH→MOCK_L1_601688_SH_1→MOCK_L2_MOCK_L1_601688_SH_1_2",
+        "source_seed": "601688.SH"
+      },
+      {
+        "id": "bfs_0038",
+        "symbol": "MOCK_L2_MOCK_L1_601688_SH_1_3",
+        "name": "合作伙伴(MOCK_L1_601688_SH_1)",
+        "level": 2,
+        "chain_type": "synergy",
+        "confidence": 0.36,
+        "path": "601688.SH→MOCK_L1_601688_SH_1→MOCK_L2_MOCK_L1_601688_SH_1_3",
+        "source_seed": "601688.SH"
+      },
+      {
+        "id": "bfs_0013",
+        "symbol": "MOCK_L2_MOCK_L1_601857_SH_1_1",
+        "name": "供应商链(MOCK_L1_601857_SH_1)",
+        "level": 2,
+        "chain_type": "synergy",
+        "confidence": 0.36,
+        "path": "601857.SH→MOCK_L1_601857_SH_1→MOCK_L2_MOCK_L1_601857_SH_1_1",
+        "source_seed": "601857.SH"
+      },
+      {
+        "id": "bfs_0014",
+        "symbol": "MOCK_L2_MOCK_L1_601857_SH_1_2",
+        "name": "战略客户(MOCK_L1_601857_SH_1)",
+        "level": 2,
+        "chain_type": "synergy",
+        "confidence": 0.36,
+        "path": "601857.SH→MOCK_L1_601857_SH_1→MOCK_L2_MOCK_L1_601857_SH_1_2",
+        "source_seed": "601857.SH"
+      },
+      {
+        "id": "bfs_0015",
+        "symbol": "MOCK_L2_MOCK_L1_601857_SH_1_3",
+        "name": "合作伙伴(MOCK_L1_601857_SH_1)",
+        "level": 2,
+        "chain_type": "synergy",
+        "confidence": 0.36,
+        "path": "601857.SH→MOCK_L1_601857_SH_1→MOCK_L2_MOCK_L1_601857_SH_1_3",
+        "source_seed": "601857.SH"
+      },
+      {
+        "id": "bfs_0048",
+        "symbol": "MOCK_L2_MOCK_L1_601939_SH_1_1",
+        "name": "供应商链(MOCK_L1_601939_SH_1)",
+        "level": 2,
+        "chain_type": "synergy",
+        "confidence": 0.36,
+        "path": "601939.SH→MOCK_L1_601939_SH_1→MOCK_L2_MOCK_L1_601939_SH_1_1",
+        "source_seed": "601939.SH"
+      },
+      {
+        "id": "bfs_0049",
+        "symbol": "MOCK_L2_MOCK_L1_601939_SH_1_2",
+        "name": "战略客户(MOCK_L1_601939_SH_1)",
+        "level": 2,
+        "chain_type": "synergy",
+        "confidence": 0.36,
+        "path": "601939.SH→MOCK_L1_601939_SH_1→MOCK_L2_MOCK_L1_601939_SH_1_2",
+        "source_seed": "601939.SH"
+      },
+      {
+        "id": "bfs_0050",
+        "symbol": "MOCK_L2_MOCK_L1_601939_SH_1_3",
+        "name": "合作伙伴(MOCK_L1_601939_SH_1)",
+        "level": 2,
+        "chain_type": "synergy",
+        "confidence": 0.36,
+        "path": "601939.SH→MOCK_L1_601939_SH_1→MOCK_L2_MOCK_L1_601939_SH_1_3",
+        "source_seed": "601939.SH"
+      },
+      {
+        "id": "bfs_0007",
+        "symbol": "002439.SZ",
+        "name": "启明星辰(安全合规)",
+        "level": 3,
+        "chain_type": "systemic",
+        "confidence": 0.216,
+        "path": "600900.SH→MOCK_L1_600900_SH_1→MOCK_L2_MOCK_L1_600900_SH_1_1→002439.SZ",
+        "source_seed": "600900.SH"
+      },
+      {
+        "id": "bfs_0008",
+        "symbol": "300454.SZ",
+        "name": "深信服(安全服务)",
+        "level": 3,
+        "chain_type": "systemic",
+        "confidence": 0.216,
+        "path": "600900.SH→MOCK_L1_600900_SH_1→MOCK_L2_MOCK_L1_600900_SH_1_1→300454.SZ",
+        "source_seed": "600900.SH"
+      },
+      {
+        "id": "bfs_0009",
+        "symbol": "688111.SH",
+        "name": "金山办公(文档合规)",
+        "level": 3,
+        "chain_type": "systemic",
+        "confidence": 0.216,
+        "path": "600900.SH→MOCK_L1_600900_SH_1→MOCK_L2_MOCK_L1_600900_SH_1_1→688111.SH",
+        "source_seed": "600900.SH"
+      }
+    ]
+  },
+  "catalyst": {
+    "matched_count": 7,
+    "signals": [
+      {
+        "signal_id": "REGULATION_ACTION",
+        "signal_name": "监管处罚事件",
+        "target_symbol": "601601.SH",
+        "target_name": "中国太保",
+        "chain_level": 1,
+        "source_seed": "",
+        "base_confidence": 0.45,
+        "chain_multiplier": 0.6,
+        "final_confidence": 0.27,
+        "direction": "long",
+        "direction_confidence": 0.216,
+        "validity_date": "2026-05-30",
+        "trigger_reason": "监管处罚事件 触发条件: 证监会/交易所重大处罚公告涉及同行业 | 传导层级: 直接受益层 | 匹配标的: 601601.SH"
+      },
+      {
+        "signal_id": "QDII_QUOTA",
+        "signal_name": "QDII新额度发放",
+        "target_symbol": "601601.SH",
+        "target_name": "中国太保",
+        "chain_level": 1,
+        "source_seed": "",
+        "base_confidence": 0.4,
+        "chain_multiplier": 0.6,
+        "final_confidence": 0.24,
+        "direction": "long",
+        "direction_confidence": 0.192,
+        "validity_date": "2026-05-30",
+        "trigger_reason": "QDII新额度发放 触发条件: 外管局公告新QDII额度 | 传导层级: 直接受益层 | 匹配标的: 601601.SH"
+      },
+      {
+        "signal_id": "COMPLIANCE_POLICY",
+        "signal_name": "合规新规出台",
+        "target_symbol": "601601.SH",
+        "target_name": "中国太保",
+        "chain_level": 1,
+        "source_seed": "",
+        "base_confidence": 0.4,
+        "chain_multiplier": 0.6,
+        "final_confidence": 0.24,
+        "direction": "long",
+        "direction_confidence": 0.192,
+        "validity_date": "2026-05-30",
+        "trigger_reason": "合规新规出台 触发条件: 国务院/央行/证监会新规发布 | 传导层级: 直接受益层 | 匹配标的: 601601.SH"
+      },
+      {
+        "signal_id": "SOUTHBOUND_FLOW",
+        "signal_name": "港股通资金净流入",
+        "target_symbol": "601601.SH",
+        "target_name": "中国太保",
+        "chain_level": 1,
+        "source_seed": "",
+        "base_confidence": 0.35,
+        "chain_multiplier": 0.6,
+        "final_confidence": 0.21,
+        "direction": "long",
+        "direction_confidence": 0.168,
+        "validity_date": "2026-05-30",
+        "trigger_reason": "港股通资金净流入 触发条件: 南向资金单日净流入>50亿且连续3日 | 传导层级: 直接受益层 | 匹配标的: 601601.SH"
+      },
+      {
+        "signal_id": "CROSS_BORDER_WECHAT",
+        "signal_name": "跨境理财通扩容",
+        "target_symbol": "601601.SH",
+        "target_name": "中国太保",
+        "chain_level": 1,
+        "source_seed": "",
+        "base_confidence": 0.3,
+        "chain_multiplier": 0.6,
+        "final_confidence": 0.18,
+        "direction": "long",
+        "direction_confidence": 0.144,
+        "validity_date": "2026-05-30",
+        "trigger_reason": "跨境理财通扩容 触发条件: 监管机构公告扩容方案 | 传导层级: 直接受益层 | 匹配标的: 601601.SH"
+      },
+      {
+        "signal_id": "AH_PREMIUM",
+        "signal_name": "AH溢价率异常",
+        "target_symbol": "601601.SH",
+        "target_name": "中国太保",
+        "chain_level": 1,
+        "source_seed": "",
+        "base_confidence": 0.3,
+        "chain_multiplier": 0.6,
+        "final_confidence": 0.18,
+        "direction": "short",
+        "direction_confidence": 0.144,
+        "validity_date": "2026-05-30",
+        "trigger_reason": "AH溢价率异常 触发条件: AH溢价率>130或<110 | 传导层级: 直接受益层 | 匹配标的: 601601.SH"
+      },
+      {
+        "signal_id": "BROKER_MONTHLY",
+        "signal_name": "券商月度经营数据",
+        "target_symbol": "601601.SH",
+        "target_name": "中国太保",
+        "chain_level": 1,
+        "source_seed": "",
+        "base_confidence": 0.25,
+        "chain_multiplier": 0.6,
+        "final_confidence": 0.15,
+        "direction": "long",
+        "direction_confidence": 0.12,
+        "validity_date": "2026-05-30",
+        "trigger_reason": "券商月度经营数据 触发条件: 每月10日前券商月报披露 | 传导层级: 直接受益层 | 匹配标的: 601601.SH"
+      }
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "task_id": "bias_TEST_20260517230131",
+  "method_name": "bias",
+  "symbol": "TEST",
+  "completed_time": "2026-05-17T23:01:31+08:00",
+  "regime": "unknown",
+  "timeframe": "",
+  "tags": [
+    "mean_reversion",
+    "bias",
+    "mid_term"
+  ],
+  "source_run_id": "bias_20260517230131",
+  "quality_score": 0.81,
+  "total_return": null,
+  "sharpe": null,
+  "max_drawdown": null,
+  "win_rate": null,
+  "insight_summary": "信号密度 0.0%",
+  "insight_category": "technical_signal",
+  "confidence": 0.6,
+  "parameters": {
+    "bias_period": 20
+  },
+  "statistics": {
+    "n_bars": 120.0,
+    "n_signals": 0.0,
+    "n_buy": 0.0,
+    "n_sell": 0.0,
+    "signal_ratio": 0.0
+  },
+  "normalized_params": {
+    "strategy_type": "mean_reversion",
+    "_original_keys": [
+      "bias_period"
+    ]
+  },
+  "schema_version": "2.0",
+  "created_at": "2026-05-17T23:01:31+08:00",
+  "updated_at": "2026-05-17T23:01:31+08:00"
+}

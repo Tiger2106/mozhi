@@ -1,0 +1,30 @@
+{
+  "task_id": "knowledge_db_design_P0_fix_moheng",
+  "status": "SUCCESS",
+  "summary": "修复墨萱审查发现的 2 个 P0 问题 + 汇入路径修正",
+  "fixes": [
+    {
+      "id": "P0-1",
+      "description": "knowledge_entries 外键语义错误",
+      "action": "删除 `FOREIGN KEY (symbol) REFERENCES backtest_runs(symbol)` 外键约束（聚合表不直接引用单条 run）"
+    },
+    {
+      "id": "P0-2",
+      "description": "_find_project_root() 回退分支缺陷",
+      "action": "删除不可靠的硬编码回退 return，改为：① 优先 MOZHI_PLATFORM_ROOT 环境变量兜底 ② 两者均无则 raise RuntimeError"
+    },
+    {
+      "id": "import-path-1",
+      "description": "回填脚本扫描目录修正",
+      "action": "backfill_knowledge_db.py 说明更新为扫描 src/backtest_results/ + mo_zhi_sharereports/backtest_results/ 两目录"
+    },
+    {
+      "id": "import-path-2",
+      "description": "data/backtest_results/ 用途明确",
+      "action": "中间文件路径表新增 data/backtest_results/ 条目（生成图表/CSV 报告）"
+    }
+  ],
+  "file_updated": "docs/02_development/knowledge_db_design.md",
+  "version": "v2.1",
+  "completed_time": "2026-05-16T10:02:00+08:00"
+}

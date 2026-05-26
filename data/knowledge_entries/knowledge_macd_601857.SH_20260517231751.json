@@ -1,0 +1,46 @@
+{
+  "task_id": "macd_601857.SH_20260517231751",
+  "method_name": "macd",
+  "symbol": "601857.SH",
+  "completed_time": "2026-05-17T23:17:51+08:00",
+  "regime": "unknown",
+  "timeframe": "",
+  "tags": [
+    "trend",
+    "macd"
+  ],
+  "source_run_id": "macd_20260517231751",
+  "quality_score": 0.825,
+  "total_return": null,
+  "sharpe": null,
+  "max_drawdown": null,
+  "win_rate": null,
+  "insight_summary": "信号密度 5.0%",
+  "insight_category": "technical_signal",
+  "confidence": 0.65,
+  "parameters": {
+    "fast_period": 12,
+    "slow_period": 26,
+    "signal_period": 9
+  },
+  "statistics": {
+    "n_bars": 100.0,
+    "n_signals": 5.0,
+    "n_buy": 2.0,
+    "n_sell": 3.0,
+    "signal_ratio": 0.05
+  },
+  "normalized_params": {
+    "strategy_type": "trend_following",
+    "_original_keys": [
+      "fast_period",
+      "slow_period",
+      "signal_period"
+    ],
+    "fast_period": 12,
+    "slow_period": 26
+  },
+  "schema_version": "2.0",
+  "created_at": "2026-05-17T23:17:51+08:00",
+  "updated_at": "2026-05-17T23:17:51+08:00"
+}

@@ -1,0 +1,17 @@
+{
+  "status": "DONE",
+  "task_id": "P0-MH-11",
+  "agent": "moheng",
+  "step": "implementation",
+  "completed_time": "2026-05-15T13:35:49.002378+08:00",
+  "summary": "实现 signal_converter.py：convert_report_to_signal（分析报告→信号JSON）+ validate_signal（输入schema校验）+ HOLD跳过+_errors错误标记",
+  "file": "automation_v2/paper_trade/signal_converter.py",
+  "functions": [
+    "convert_report_to_signal(report: dict) -> Optional[dict]",
+    "validate_signal(signal: dict) -> (bool, errors: list)",
+    "AnalysisToSignalConverter.convert_from_step2_format(dict, source_path)"
+  ],
+  ".done_timestamp": "2026-05-15T13:35:49.002378+08:00",
+  "author": "moheng",
+  "confirmation_file": "signals/moheng/mh_signal_converter_done.txt"
+}

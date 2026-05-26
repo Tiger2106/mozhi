@@ -1,0 +1,21 @@
+{
+  "status": "DONE",
+  "task_id": "phase_4a_601857",
+  "step": "Phase 4a",
+  "produced": [
+    "P1_return_decomposition_601857_20260518.md",
+    "P2_tail_risk_601857_20260518.md",
+    "P3_param_stability_601857_20260518.md",
+    "P6_position_comparison_601857_20260518.md",
+    "P8_benchmark_601857_20260518.md"
+  ],
+  "completed_time": "2026-05-18T21:52:00+08:00",
+  "summary": "Phase 4a complete — 5 research reports produced for 601857 grid strategy analysis. Parallel group A: P3 parameter stability heatmap, P6 position mode cross-comparison, P8 buy-hold benchmark. Parallel group B: P2 VaR/CVaR tail risk, P1 return decomposition.",
+  "data_sources": [
+    "src/backtest_results/*.json (grid scan results)",
+    "data/market/601857_SH.csv (price data)",
+    "reports/backtest/grid_full_report.md",
+    "reports/backtest/backtest_report_20260518_research_v2.md"
+  ],
+  "key_finding": "Grid strategy (n5_fixed) achieves excellent risk-adjusted returns (Sharpe 2.64, Calmar 16.34) but suffers from 0.20% capital utilization. Multi-instrument expansion is the critical next step."
+}

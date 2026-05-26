@@ -1,0 +1,16 @@
+﻿{
+    "depends_on":  [
+                       "morning_report_20260526_step0"
+                   ],
+    "triggered_by":  "mochen",
+    "step":  1,
+    "version":  "2.1",
+    "expected_duration":  600,
+    "agent":  "moheng",
+    "created_at":  "2026-05-26T08:05:00+08:00",
+    "date":  "20260526",
+    "report_type":  "morning",
+    "task_id":  "morning_report_20260526_step1",
+    "status":  "PENDING",
+    "priority":  "normal"
+}

@@ -1,0 +1,112 @@
+{
+  "cleanup": {
+    "cleaned": 0,
+    "failed": 0,
+    "cutoff_days": 7,
+    "details": []
+  },
+  "report_check": {
+    "missing": false,
+    "found": 1,
+    "date": "2026-05-16",
+    "files": [
+      "daily\\daily_doc_report_2026-05-16.md"
+    ]
+  },
+  "archive": {
+    "archived_groups": 0,
+    "total_files": 0
+  },
+  "knowledge_backup": {
+    "backup_path": "C:\\Users\\17699\\mozhi_platform\\data\\db\\knowledge_backup_20260516.db",
+    "exists": false,
+    "dry_run": true
+  },
+  "engine_backup": {
+    "backup_path": "C:\\Users\\17699\\mozhi_platform\\data\\db\\trade_engine_backup_20260516.db",
+    "exists": false,
+    "source_size_kb": 0.0,
+    "dry_run": true
+  },
+  "incoming": {
+    "stale": 0,
+    "files": []
+  },
+  "drafts": {
+    "total": 0,
+    "drafts": []
+  },
+  "backtests": {
+    "total": 689,
+    "week_start": "2026-05-11",
+    "by_strategy": {
+      "grid": 661,
+      "reversal": 22,
+      "trend": 6
+    }
+  },
+  "unregistered": {
+    "unregistered": 12,
+    "files": [
+      {
+        "filename": "benchmark_data_source.py",
+        "path": "src\\backtest\\benchmark_data_source.py"
+      },
+      {
+        "filename": "data_historical_fill.py",
+        "path": "src\\backtest\\data_historical_fill.py"
+      },
+      {
+        "filename": "data_loader.py",
+        "path": "src\\backtest\\data_loader.py"
+      },
+      {
+        "filename": "data_source.py",
+        "path": "src\\backtest\\data_source.py"
+      },
+      {
+        "filename": "test_benchmark_data_source.py",
+        "path": "src\\backtest\\tests\\test_benchmark_data_source.py"
+      },
+      {
+        "filename": "test_data_loader.py",
+        "path": "src\\backtest\\tests\\test_data_loader.py"
+      },
+      {
+        "filename": "test_data_source.py",
+        "path": "src\\backtest\\tests\\test_data_source.py"
+      },
+      {
+        "filename": "test_data_source_cache.py",
+        "path": "src\\backtest\\tests\\test_data_source_cache.py"
+      },
+      {
+        "filename": "test_fetch_daily_sina_fallback.py",
+        "path": "src\\backtest\\tests\\test_fetch_daily_sina_fallback.py"
+      },
+      {
+        "filename": "test_generate_comparison_bh.py",
+        "path": "src\\backtest\\tests\\test_generate_comparison_bh.py"
+      },
+      {
+        "filename": "test_run_grid_benchmark.py",
+        "path": "src\\backtest\\tests\\test_run_grid_benchmark.py"
+      },
+      {
+        "filename": "daily_maintenance.py",
+        "path": "scripts\\daily_maintenance.py"
+      }
+    ]
+  },
+  "aggregate": {
+    "aggregated": 0,
+    "dry_run": true
+  },
+  "decay": {
+    "decayed": 0,
+    "dry_run": true
+  },
+  "_report": {
+    "report_path": "C:\\Users\\17699\\mozhi_platform\\reports\\daily\\daily_doc_report_2026-05-16.md"
+  }
+}

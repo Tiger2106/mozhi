@@ -1,0 +1,60 @@
+{
+  "settle_date": "20260525",
+  "created_at": "2026-05-25T19:00:44.693766+08:00",
+  "author": "moheng",
+  "summary": {
+    "cancelled_orders": 0,
+    "unfrozen_total": 0.0,
+    "inprogress_cleaned": 0,
+    "daily_pnl": 0.0,
+    "profit_settlement": 0.0,
+    "total_fees": 0.0,
+    "principal_return": 0.0,
+    "loss_streak_before": 0,
+    "loss_streak_after": 0
+  },
+  "cancelled_orders": [],
+  "pnl_detail": {
+    "profit_settlement": 0.0,
+    "filled_settle": 0.0,
+    "fees": 0.0,
+    "daily_pnl": 0.0
+  },
+  "loss_streak_update": {
+    "before": 0,
+    "after": 0,
+    "per_account": [
+      {
+        "account_id": "acct_agg",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "account_id": "acct_bal",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "account_id": "acct_con",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "account_id": "acct_tech_trend",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "account_id": "acct_tech_reversal",
+        "before": 0,
+        "after": 0
+      },
+      {
+        "account_id": "acct_tech_grid",
+        "before": 0,
+        "after": 0
+      }
+    ]
+  },
+  "errors": null
+}

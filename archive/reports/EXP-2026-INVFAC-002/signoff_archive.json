@@ -1,0 +1,25 @@
+{
+  "experiment": "EXP-2026-INVFAC-002",
+  "summary_date": "2026-05-25",
+  "stage_1_report_filing": "mohan",
+  "stage_2a_qa": "mohan",
+  "stage_2b_tech_review": "mohan",
+  "stage_2b_xuanzhi_signoff": "xuanshi",
+  "stage_2b_knowledge_review": "mohan",
+  "stage_3_owner_signoff": "owner",
+  "stage_4_archive": "mohan",
+  "archived_files": [
+    "summary_report.md",
+    "analysis_report.md",
+    "design.md",
+    "signoff_record.md",
+    "technical_review_xuanzhi.md"
+  ],
+  "archive_path": "archive/reports/EXP-2026-INVFAC-002/",
+  "qa_conclusion": "PASS",
+  "tech_review_conclusion": "CONDITIONAL_PASS (TrendQuality labeled as negative enhancement, fixed)",
+  "xuanzhi_signoff": "PASS",
+  "knowledge_review": "PASS (no draft entries to activate)",
+  "owner_verdict": "AGREE",
+  "final_status": "ARCHIVED"
+}

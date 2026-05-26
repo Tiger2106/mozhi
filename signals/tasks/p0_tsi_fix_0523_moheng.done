@@ -1,0 +1,1 @@
+{"task_id":"p0_tsi_fix_0523","agent":"moheng","timestamp":"2026-05-23T18:31:00+08:00","status":"SUCCESS","summary":"P0 TSI修复完成：3标的回测，validation_check污染标记写入，前复权数据已统一"}

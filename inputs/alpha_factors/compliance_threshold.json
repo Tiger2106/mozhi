@@ -1,0 +1,23 @@
+{
+  "meta": {
+    "source": "compliance_threshold_monitor",
+    "author": "xuanzhi",
+    "generated_at": "2026-05-25T09:00:00+08:00",
+    "version": "1.0"
+  },
+  "compliance_index": {
+    "value": 0.92,
+    "description": "合规门槛综合指数。1.0=无新增合规约束，0.0=全面严控",
+    "components": {
+      "aml_scrutiny_level": 0.95,
+      "anti_money_laundering": 0.90,
+      "know_your_customer": 0.93,
+      "record_keeping": 0.88
+    },
+    "recent_changes": [],
+    "trend": "stable",
+    "trend_note": "近一月无重大监管规则变更"
+  },
+  "regulatory_events": [],
+  "next_expected_change": null
+}

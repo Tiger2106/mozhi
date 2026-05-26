@@ -1,0 +1,10 @@
+{
+    "source":  "finalize_report",
+    "original_path":  "src\\metrics\\metrics_registry.py",
+    "source_type":  "python",
+    "registered_at":  "2026-05-17T23:30:04+08:00",
+    "tags":  [
+                 "metrics_registry"
+             ],
+    "category":  "backtest"
+}

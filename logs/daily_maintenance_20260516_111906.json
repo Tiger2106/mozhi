@@ -1,0 +1,10 @@
+{
+  "aggregate": {
+    "aggregated": 0,
+    "dry_run": true
+  },
+  "decay": {
+    "decayed": 0,
+    "dry_run": true
+  }
+}

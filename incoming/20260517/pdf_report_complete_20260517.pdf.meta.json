@@ -1,0 +1,10 @@
+{
+    "source":  "finalize_report",
+    "original_path":  "reports\\pdf\\pdf_report_complete_20260517.pdf",
+    "source_type":  "python",
+    "registered_at":  "2026-05-17T23:30:04+08:00",
+    "tags":  [
+                 "pdf_final"
+             ],
+    "category":  "reports"
+}

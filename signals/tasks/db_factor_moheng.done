@@ -1,0 +1,1 @@
+{"task_id":"db_factor","agent":"moheng","timestamp":"2026-05-18T13:15:00+08:00","status":"SUCCESS","summary":"factor_repository.db copied from mo_zhi_sharereports to mozhi_platform/data/factors/ (7.8MB). Code references already updated to new path. Verified: daily_factors=242 rows, oil_daily_factors=35863 rows. Old path retained for 48h."}

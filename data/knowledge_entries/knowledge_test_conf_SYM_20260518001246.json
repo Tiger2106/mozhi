@@ -1,0 +1,27 @@
+{
+  "task_id": "test_conf_SYM_20260518001246",
+  "method_name": "test_conf",
+  "symbol": "SYM",
+  "completed_time": "2026-05-18T00:12:46+08:00",
+  "regime": "unknown",
+  "timeframe": "",
+  "tags": [],
+  "source_run_id": "test_conf_20260518001246",
+  "quality_score": 0.71,
+  "total_return": null,
+  "sharpe": null,
+  "max_drawdown": null,
+  "win_rate": null,
+  "insight_summary": "信号密度 0.0%",
+  "insight_category": "general_signal",
+  "confidence": 0.6,
+  "parameters": {},
+  "statistics": {},
+  "normalized_params": {
+    "strategy_type": "unknown",
+    "_original_keys": []
+  },
+  "schema_version": "2.0",
+  "created_at": "2026-05-18T00:12:46+08:00",
+  "updated_at": "2026-05-18T00:12:46+08:00"
+}

@@ -1,0 +1,21 @@
+2026-05-25 03:01:14 [INFO] logs_archiver: ============================================================
+2026-05-25 03:01:14 [INFO] logs_archiver: logs_archiver 启动
+2026-05-25 03:01:14 [INFO] logs_archiver: 开始日志归档，保留期=7天，截止日期=2026-05-18，大小阈值=50MB
+2026-05-25 03:01:14 [INFO] logs_archiver: 标记归档（超过7天）: C:\Users\17699\mozhi_platform\logs\daily_maintenance.log
+2026-05-25 03:01:14 [INFO] logs_archiver: [DRY RUN] 将归档: C:\Users\17699\mozhi_platform\logs\daily_maintenance.log (0.0MB)
+2026-05-25 03:01:14 [INFO] logs_archiver: [DRY RUN] 将打包: logs_202605.tar.gz (1 个文件)
+2026-05-25 03:01:14 [INFO] logs_archiver: 日志归档完成，共归档 1 个文件
+2026-05-25 03:01:14 [INFO] logs_archiver: 存档目录不存在: C:\Users\17699\mozhi_platform\archive\logs
+2026-05-25 03:01:14 [INFO] logs_archiver: logs_archiver 正常结束
+2026-05-25 03:01:14 [INFO] logs_archiver: ============================================================
+2026-05-25 03:01:19 [INFO] logs_archiver: ============================================================
+2026-05-25 03:01:19 [INFO] logs_archiver: logs_archiver 启动
+2026-05-25 03:01:19 [INFO] logs_archiver: 开始日志归档，保留期=7天，截止日期=2026-05-18，大小阈值=50MB
+2026-05-25 03:01:19 [INFO] logs_archiver: 标记归档（超过7天）: C:\Users\17699\mozhi_platform\logs\daily_maintenance.log
+2026-05-25 03:01:19 [INFO] logs_archiver: 归档包已更新: C:\Users\17699\mozhi_platform\archive\logs\202605\logs_202605.tar.gz (1 个文件)
+2026-05-25 03:01:19 [INFO] logs_archiver: 已删除源文件: C:\Users\17699\mozhi_platform\logs\daily_maintenance.log
+2026-05-25 03:01:19 [INFO] logs_archiver: 日志归档完成，共归档 1 个文件
+2026-05-25 03:01:19 [INFO] logs_archiver: 清理旧归档，保留期=180天，截止月份=202511
+2026-05-25 03:01:19 [INFO] logs_archiver: 没有需要清理的过期归档
+2026-05-25 03:01:19 [INFO] logs_archiver: logs_archiver 正常结束
+2026-05-25 03:01:19 [INFO] logs_archiver: ============================================================

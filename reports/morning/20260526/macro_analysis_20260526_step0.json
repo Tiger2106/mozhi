@@ -1,0 +1,129 @@
+{
+  "status": "READY",
+  "author": "xuanzhi",
+  "task_id": "morning_report_20260526_step0",
+  "step": 0,
+  "completed_time": "2026-05-26T08:03:15+08:00",
+  "time_context": "Pre-market (A-share opens 09:30 CST). Data reflects previous session close (2026-05-25).",
+  "crude_oil": {
+    "WTI": {
+      "price": 91.03,
+      "change": -5.57,
+      "change_pct": -5.77,
+      "unit": "USD/bbl",
+      "note": "Sharp decline amid demand concerns and OPEC+ supply increase expectations"
+    },
+    "Brent": {
+      "price": 96.14,
+      "change": -7.40,
+      "change_pct": -7.15,
+      "unit": "USD/bbl",
+      "note": "Falling alongside WTI, pressured by global economic slowdown fears"
+    }
+  },
+  "a_share_major_indices": {
+    "上证指数": {
+      "code": "000001",
+      "last_close": 4152.57,
+      "change_pct": "+0.96%",
+      "note": "A-share market pre-market; data is previous session's close"
+    },
+    "沪深300": {
+      "code": "000300",
+      "last_close": 4921.60,
+      "change_pct": "+1.58%",
+      "note": "Broad rally driven by semiconductor and tech sector"
+    },
+    "上证50": {
+      "code": "000016",
+      "last_close": 2968.70,
+      "change_pct": "+1.55%",
+      "note": "Large caps tracking the broader rally"
+    },
+    "科创50": {
+      "code": "000688",
+      "last_close": 1896.04,
+      "change_pct": "+5.88%",
+      "note": "Sci-tech board surged significantly, semiconductor theme dominant"
+    }
+  },
+  "top_sectors_industry": [
+    {
+      "name": "集成电路制造",
+      "code": "BK1329",
+      "change_pct": "+11.01%",
+      "logic": "National chip self-sufficiency push + policy subsidy expectations; strongest performer in the semiconductor chain"
+    },
+    {
+      "name": "集成电路封测",
+      "code": "BK1328",
+      "change_pct": "+9.42%",
+      "logic": "Packaging & testing sector following IC manufacturing; high utilization rates driving margins"
+    },
+    {
+      "name": "分立器件",
+      "code": "BK1327",
+      "change_pct": "+5.99%",
+      "logic": "Discrete device demand recovery in downstream consumer electronics"
+    },
+    {
+      "name": "玻纤制造",
+      "code": "BK1462",
+      "change_pct": "+5.92%",
+      "logic": "Fiberglass demand driven by infrastructure and wind power capacity additions"
+    },
+    {
+      "name": "焦煤",
+      "code": "BK1494",
+      "change_pct": "+5.45%",
+      "logic": "Coking coal rebound on steel restocking demand and supply constraints"
+    }
+  ],
+  "top_sectors_concept": [
+    {
+      "name": "先进封装",
+      "code": "BK1101",
+      "change_pct": "+7.04%",
+      "logic": "Advanced packaging AI chip demand; CoWoS capacity expansion driving theme"
+    },
+    {
+      "name": "高带宽内存",
+      "code": "BK1152",
+      "change_pct": "+5.72%",
+      "logic": "HBM memory related to AI compute demand; tied to semiconductor rally"
+    },
+    {
+      "name": "EDA概念",
+      "code": "BK0946",
+      "change_pct": "+5.69%",
+      "logic": "EDA software localization theme benefiting from semiconductor ecosystem boom"
+    },
+    {
+      "name": "第四代半导体",
+      "code": "BK1121",
+      "change_pct": "+5.07%",
+      "logic": "Next-gen semiconductor material (GaN/SiC) play on electrification trends"
+    },
+    {
+      "name": "MLCC",
+      "code": "BK0890",
+      "change_pct": "+4.99%",
+      "logic": "MLCC passive components on restocking cycle and automotive electronics demand"
+    }
+  ],
+  "capital_flow": {
+    "observation_time": "Previous session (2026-05-25); pre-market capital flow data not yet available",
+    "outflow_from": "Energy/oil-related sectors (in sympathy with sharp crude decline)",
+    "inflow_to": "Semiconductor/tech sector (dominant theme, highest turnover)",
+    "pattern": "抱团 (Concentrated)",
+    "note": "Capital concentrated in semiconductor ecosystem (IC manufacturing, packaging, equipment, EDA); energy sector facing outflow on oil price collapse"
+  },
+  "market_sentiment": {
+    "verdict": "偏多",
+    "reason": "科创50 +5.88% and multiple semiconductor sub-sectors >+9% indicate strong risk appetite; broad-based rally with 上证 +0.96% and 沪深300 +1.58%; however energy sector is a significant drag"
+  },
+  "risk_flags": [
+    "国际油价暴跌：WTI -5.77% / Brent -7.15%，可能拖累石化能源板块及相关指数权重股，影响大盘持续性",
+    "半导体板块过热风险：集成电路制造单日+11%，概念集中度过高，短期获利回吐压力增大，需警惕板块轮动回撤"
+  ]
+}

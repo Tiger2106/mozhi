@@ -1,0 +1,20 @@
+{
+  "signal_filter_funnel": {
+    "total_bars": 1540,
+    "total_signals": 88,
+    "filtered_market": 0,
+    "filtered_cooldown": 0,
+    "filtered_drawdown": 0,
+    "signal_pass_rate_pct": 5.71,
+    "trade_conversion_pct": 100.0,
+    "note": "filter_logs为空，0次过滤=100%信号→成交转化率"
+  },
+  "capital_efficiency": {
+    "total_trading_days": 1540,
+    "total_trades": 44,
+    "avg_holding_days": 9.8,
+    "total_holding_days_est": 430,
+    "capital_utilization_pct": 27.9,
+    "idle_rate_pct": 72.1
+  }
+}

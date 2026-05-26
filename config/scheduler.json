@@ -1,0 +1,26 @@
+[
+  {
+    "id": "morning_pipeline",
+    "description": "晨报管线（交易日 06:30）",
+    "cron": "30 6 * * 1-5",
+    "command": "python src/morning_pipeline/scheduler_agent.py",
+    "cwd": "C:\\Users\\17699\\mozhi_platform",
+    "enabled": true
+  },
+  {
+    "id": "daily_maintenance",
+    "description": "每日运维（02:00 每日）",
+    "cron": "0 2 * * *",
+    "command": "python scripts/daily_maintenance.py --report",
+    "cwd": "C:\\Users\\17699\\mozhi_platform",
+    "enabled": true
+  },
+  {
+    "id": "async_pdf_cleanup",
+    "description": "异步 PDF 任务清理（每 15 分钟）",
+    "cron": "*/15 * * * *",
+    "command": "python src/backtest/pipeline/async_pdf_task.py --cleanup",
+    "cwd": "C:\\Users\\17699\\mozhi_platform",
+    "enabled": true
+  }
+]

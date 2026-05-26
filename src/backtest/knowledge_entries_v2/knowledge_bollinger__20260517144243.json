@@ -1,0 +1,53 @@
+{
+  "task_id": "bollinger__20260517144243",
+  "method_name": "bollinger",
+  "symbol": "",
+  "completed_time": "2026-05-17T14:42:43+08:00",
+  "regime": "unknown",
+  "timeframe": "",
+  "tags": [
+    "bollinger",
+    "mean_reversion"
+  ],
+  "source_run_id": "bollinger_20260517144243",
+  "quality_score": 0.8400000000000001,
+  "total_return": 5.5,
+  "sharpe": 0.95,
+  "max_drawdown": -2.1,
+  "win_rate": 52.0,
+  "insight_summary": "总收益率 5.50%; 夏普比率 0.95; 最大回撤 -2.10%; 胜率 52.00%; 信号密度 22.0%",
+  "insight_category": "technical_signal",
+  "confidence": 0.7000000000000001,
+  "parameters": {
+    "params": {
+      "period": 20,
+      "std_dev": 2
+    },
+    "timeframe": "1d",
+    "tags": [
+      "test",
+      "e2e"
+    ],
+    "source_run_id": "e2e_001"
+  },
+  "statistics": {
+    "total_return_pct": 5.5,
+    "sharpe_ratio": 0.95,
+    "max_drawdown_pct": -2.1,
+    "win_rate_pct": 52.0,
+    "signal_ratio": 0.22,
+    "n_trades": 6
+  },
+  "normalized_params": {
+    "strategy_type": "mean_reversion",
+    "_original_keys": [
+      "params",
+      "timeframe",
+      "tags",
+      "source_run_id"
+    ]
+  },
+  "schema_version": "2.0",
+  "created_at": "2026-05-17T14:42:43+08:00",
+  "updated_at": "2026-05-17T14:42:43+08:00"
+}

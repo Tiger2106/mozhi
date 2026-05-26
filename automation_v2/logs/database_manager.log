@@ -1,0 +1,5 @@
+2026-05-25 19:50:56 [INFO] database_manager_extended: _init_master: path=C:\Users\17699\mo_zhi_sharereports\trade_engine.db, exists=True
+2026-05-25 19:50:56 [INFO] database_manager_extended: master DB 文件已存在，跳过初始化
+2026-05-25 19:50:56 [INFO] database_manager_extended: master DB 文件确认存在: C:\Users\17699\mo_zhi_sharereports\trade_engine.db
+2026-05-25 19:50:56 [INFO] database_manager_extended: _init_slave: master=C:\Users\17699\mo_zhi_sharereports\trade_engine.db, slave=C:\Users\17699\mo_zhi_sharereports\trade_engine_readonly.db, master_exists=True, slave_exists=True
+2026-05-25 19:50:56 [INFO] database_manager_extended: DatabaseManagerEx 初始化完成

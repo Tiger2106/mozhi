@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "source": "S002_synchronicity_index",
+    "author": "mochen",
+    "generated_at": "2026-05-25T09:00:00+08:00",
+    "version": "1.0"
+  },
+  "policy_block_index": {
+    "value": 0.85,
+    "description": "政策限制综合指数。1.0=无限制，0.0=全面封锁",
+    "components": {
+      "regulatory_crackdown_score": 0.90,
+      "capital_flow_restriction_score": 0.80,
+      "industry_policy_score": 0.85
+    },
+    "trend": "stable",
+    "trend_note": "近5日无明显政策变化，北向资金呈温和净流入"
+  },
+  "synchronicity_index": {
+    "value": 0.78,
+    "description": "政策同步性指数。衡量资金面与政策面的协调程度",
+    "status": "moderate_alignment",
+    "trend_5d": "slight_improvement"
+  },
+  "forecast": {
+    "next_week_trend": "stable_to_slight_easing",
+    "key_risk": "海外利率决议可能影响跨境资金流动"
+  }
+}

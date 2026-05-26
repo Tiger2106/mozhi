@@ -1,0 +1,23 @@
+{
+  "symbol": "601857.SH",
+  "bars": 1540,
+  "trades": 0,
+  "return_pct": 0.0,
+  "sharpe_ratio": 0.0,
+  "max_dd_pct": 0.0,
+  "signal_events": 20,
+  "filter_logs": 0,
+  "trade_decisions": 0,
+  "breakout_detected": 94,
+  "features_extracted": 30,
+  "false_breakouts": 0,
+  "lifecycle_bars": 1540,
+  "lifecycle_phases": 4,
+  "modules": [
+    "BacktestEngine",
+    "SignalEventCollector",
+    "BreakoutFeatureExtractor",
+    "BreakoutScoringCard",
+    "TrendLifecycleDetector"
+  ]
+}

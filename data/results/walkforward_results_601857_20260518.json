@@ -1,0 +1,239 @@
+{
+  "symbol": "601857",
+  "plan": [
+    {
+      "fold_id": 1,
+      "label": "W1",
+      "train_start": "20260101",
+      "train_end": "20260208",
+      "test_start": "20260209",
+      "test_end": "20260228"
+    },
+    {
+      "fold_id": 2,
+      "label": "W2",
+      "train_start": "20260121",
+      "train_end": "20260228",
+      "test_start": "20260301",
+      "test_end": "20260320"
+    },
+    {
+      "fold_id": 3,
+      "label": "W3",
+      "train_start": "20260208",
+      "train_end": "20260320",
+      "test_start": "20260321",
+      "test_end": "20260409"
+    },
+    {
+      "fold_id": 4,
+      "label": "W4",
+      "train_start": "20260228",
+      "train_end": "20260409",
+      "test_start": "20260410",
+      "test_end": "20260429"
+    },
+    {
+      "fold_id": 5,
+      "label": "W5",
+      "train_start": "20260320",
+      "train_end": "20260429",
+      "test_start": "20260430",
+      "test_end": "20260514"
+    }
+  ],
+  "n_folds": 5,
+  "window_results": [
+    {
+      "fold": {
+        "fold_id": 1,
+        "label": "W1",
+        "train_start": "20260101",
+        "train_end": "20260208",
+        "test_start": "20260209",
+        "test_end": "20260228"
+      },
+      "optimal_params": {
+        "config_key": "arit_n5_cd1_fixed_nosl_vt0p5",
+        "grid_type": "arithmetic",
+        "n_levels": 5,
+        "cool_down_bars": 1,
+        "position_mode": "fixed",
+        "vote_threshold": 0.5
+      },
+      "train_metrics": {
+        "total_return_pct": 0.0,
+        "annual_return_pct": 0.0,
+        "max_drawdown_pct": 0.0,
+        "sharpe_ratio": 0.0,
+        "win_rate_pct": 0.0,
+        "total_trades": 0
+      },
+      "test_metrics": {
+        "total_return_pct": 0.0,
+        "annual_return_pct": 0.0,
+        "max_drawdown_pct": 0.0,
+        "sharpe_ratio": 0.0,
+        "win_rate_pct": 0.0,
+        "total_trades": 0
+      },
+      "wfe": 0.0,
+      "status": "NO_TRADES",
+      "error": ""
+    },
+    {
+      "fold": {
+        "fold_id": 2,
+        "label": "W2",
+        "train_start": "20260121",
+        "train_end": "20260228",
+        "test_start": "20260301",
+        "test_end": "20260320"
+      },
+      "optimal_params": {
+        "config_key": "arit_n5_cd1_fixed_nosl_vt0p5",
+        "grid_type": "arithmetic",
+        "n_levels": 5,
+        "cool_down_bars": 1,
+        "position_mode": "fixed",
+        "vote_threshold": 0.5
+      },
+      "train_metrics": {
+        "total_return_pct": 0.0,
+        "annual_return_pct": 0.0,
+        "max_drawdown_pct": 0.0,
+        "sharpe_ratio": 0.0,
+        "win_rate_pct": 0.0,
+        "total_trades": 0
+      },
+      "test_metrics": {
+        "total_return_pct": 0.0,
+        "annual_return_pct": 0.0,
+        "max_drawdown_pct": 0.0,
+        "sharpe_ratio": 0.0,
+        "win_rate_pct": 0.0,
+        "total_trades": 0
+      },
+      "wfe": 0.0,
+      "status": "NO_TRADES",
+      "error": ""
+    },
+    {
+      "fold": {
+        "fold_id": 3,
+        "label": "W3",
+        "train_start": "20260208",
+        "train_end": "20260320",
+        "test_start": "20260321",
+        "test_end": "20260409"
+      },
+      "optimal_params": {
+        "config_key": "arit_n5_cd1_fixed_nosl_vt0p5",
+        "grid_type": "arithmetic",
+        "n_levels": 5,
+        "cool_down_bars": 1,
+        "position_mode": "fixed",
+        "vote_threshold": 0.5
+      },
+      "train_metrics": {
+        "total_return_pct": 0.0,
+        "annual_return_pct": 0.0,
+        "max_drawdown_pct": 0.0,
+        "sharpe_ratio": 0.0,
+        "win_rate_pct": 0.0,
+        "total_trades": 0
+      },
+      "test_metrics": {
+        "total_return_pct": 0.0,
+        "annual_return_pct": 0.0,
+        "max_drawdown_pct": 0.0,
+        "sharpe_ratio": 0.0,
+        "win_rate_pct": 0.0,
+        "total_trades": 0
+      },
+      "wfe": 0.0,
+      "status": "NO_TRADES",
+      "error": ""
+    },
+    {
+      "fold": {
+        "fold_id": 4,
+        "label": "W4",
+        "train_start": "20260228",
+        "train_end": "20260409",
+        "test_start": "20260410",
+        "test_end": "20260429"
+      },
+      "optimal_params": {
+        "config_key": "arit_n5_cd1_fixed_nosl_vt0p5",
+        "grid_type": "arithmetic",
+        "n_levels": 5,
+        "cool_down_bars": 1,
+        "position_mode": "fixed",
+        "vote_threshold": 0.5
+      },
+      "train_metrics": {
+        "total_return_pct": 0.0,
+        "annual_return_pct": 0.0,
+        "max_drawdown_pct": 0.0,
+        "sharpe_ratio": 0.0,
+        "win_rate_pct": 0.0,
+        "total_trades": 0
+      },
+      "test_metrics": {
+        "total_return_pct": 0.0,
+        "annual_return_pct": 0.0,
+        "max_drawdown_pct": 0.0,
+        "sharpe_ratio": 0.0,
+        "win_rate_pct": 0.0,
+        "total_trades": 0
+      },
+      "wfe": 0.0,
+      "status": "NO_TRADES",
+      "error": ""
+    },
+    {
+      "fold": {
+        "fold_id": 5,
+        "label": "W5",
+        "train_start": "20260320",
+        "train_end": "20260429",
+        "test_start": "20260430",
+        "test_end": "20260514"
+      },
+      "optimal_params": {
+        "config_key": "arit_n5_cd1_fixed_nosl_vt0p5",
+        "grid_type": "arithmetic",
+        "n_levels": 5,
+        "cool_down_bars": 1,
+        "position_mode": "fixed",
+        "vote_threshold": 0.5
+      },
+      "train_metrics": {
+        "total_return_pct": 0.0,
+        "annual_return_pct": 0.0,
+        "max_drawdown_pct": 0.0,
+        "sharpe_ratio": 0.0,
+        "win_rate_pct": 0.0,
+        "total_trades": 0
+      },
+      "test_metrics": {
+        "total_return_pct": 0.0,
+        "annual_return_pct": 0.0,
+        "max_drawdown_pct": 0.0,
+        "sharpe_ratio": 0.0,
+        "win_rate_pct": 0.0,
+        "total_trades": 0
+      },
+      "wfe": 0.0,
+      "status": "NO_TRADES",
+      "error": ""
+    }
+  ],
+  "avg_wfe": 0.0,
+  "wfe_std": 0.0,
+  "param_reuse_rate": 0.0,
+  "dominant_param_key": "",
+  "non_trading_windows": 5,
+  "completed_time": "2026-05-18T22:23:01.724337+08:00"
+}

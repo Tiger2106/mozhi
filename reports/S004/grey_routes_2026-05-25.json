@@ -1,0 +1,92 @@
+{
+  "meta": {
+    "source": "S004_mock",
+    "generated_at": "2026-05-25T11:00:00+08:00",
+    "version": "1.0",
+    "description": "S004 Phase1 Mock Data — 模拟三层打标路由输出",
+    "interface_format": "6_fields_v1",
+    "note": "此mock数据用于S005联调测试。正式数据由墨衡S004 Phase1交付后替换。"
+  },
+  "active_routes": [
+    {
+      "route_id": "R001",
+      "supply_label": "601398.SH_影子银行通道",
+      "demand_label": "灰色理财_借壳通道",
+      "route_topology": "601398.SH → 嵌套信托Shell1 → 壳公司A → 隐性杠杆账户",
+      "flow_volume": 50000000.0,
+      "compliance_flag": "black"
+    },
+    {
+      "route_id": "R002",
+      "supply_label": "600036.SH_跨境支付平台",
+      "demand_label": "灰色理财_加密货币桥接",
+      "route_topology": "600036.SH → 跨境支付平台P → 加密货币兑换 → 离岸账户",
+      "flow_volume": 120000000.0,
+      "compliance_flag": "grey"
+    },
+    {
+      "route_id": "R003",
+      "supply_label": "600030.SH_私募基金通道",
+      "demand_label": "灰色理财_多层嵌套",
+      "route_topology": "600030.SH → 私募基金F1 → F2 → F3 → 最终受益人",
+      "flow_volume": 80000000.0,
+      "compliance_flag": "grey"
+    },
+    {
+      "route_id": "R004",
+      "supply_label": "601166.SH_虚假贸易",
+      "demand_label": "灰色理财_虚假贸易开票",
+      "route_topology": "601166.SH → 空壳贸易公司X → 关联企业Y → 资金回流",
+      "flow_volume": 35000000.0,
+      "compliance_flag": "black"
+    },
+    {
+      "route_id": "R005",
+      "supply_label": "601939.SH_同业通道",
+      "demand_label": "灰色理财_同业嵌套",
+      "route_topology": "601939.SH → 同业理财A → 券商资管计划B → 结构化产品C",
+      "flow_volume": 200000000.0,
+      "compliance_flag": "grey"
+    },
+    {
+      "route_id": "R006",
+      "supply_label": "300750.SZ_供应链金融",
+      "demand_label": "灰色理财_供应链票据",
+      "route_topology": "300750.SZ 供应商 → 保理公司D → 票据贴现流转 → 空转套利",
+      "flow_volume": 60000000.0,
+      "compliance_flag": "compliant"
+    },
+    {
+      "route_id": "R007",
+      "supply_label": "601288.SH_跨境折返通道",
+      "demand_label": "灰色理财_跨境折返",
+      "route_topology": "601288.SH → 香港子公司 → 自贸区FT账户 → 境内A股盘口",
+      "flow_volume": 150000000.0,
+      "compliance_flag": "grey"
+    },
+    {
+      "route_id": "R008",
+      "supply_label": "600519.SH_名酒配额套利",
+      "demand_label": "灰色理财_名酒分销渠道",
+      "route_topology": "600519.SH 经销商体系 → 囤货商C → 灰色分销网络 → 终端价格操纵",
+      "flow_volume": 25000000.0,
+      "compliance_flag": "grey"
+    },
+    {
+      "route_id": "R009",
+      "supply_label": "600837.SH_配资通道",
+      "demand_label": "灰色理财_杠杆配资",
+      "route_topology": "600837.SH → 场外配资公司P1 → 伞形信托 → A股盘口",
+      "flow_volume": 95000000.0,
+      "compliance_flag": "black"
+    },
+    {
+      "route_id": "R010",
+      "supply_label": "000858.SZ_经销商囤货",
+      "demand_label": "灰色理财_名酒配额套利",
+      "route_topology": "000858.SZ → 经销商L → 囤货商M → 灰色批发 → 终端倒卖",
+      "flow_volume": 18000000.0,
+      "compliance_flag": "grey"
+    }
+  ]
+}

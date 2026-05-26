@@ -1,0 +1,288 @@
+{
+  "test_name": "r1_complete_e2e",
+  "date": "20260518",
+  "timestamp": "2026-05-18T11:32:17.011816+08:00",
+  "symbols_tested": [
+    "601857",
+    "600036",
+    "000333",
+    "300750",
+    "002594"
+  ],
+  "symbol_results": {
+    "601857": {
+      "symbol": "601857",
+      "passed": true,
+      "error": null,
+      "timing_ms": {
+        "market_data": 12.3,
+        "factor_registry": 4.4,
+        "signal_fusion": 0.0,
+        "backtest": 9.5,
+        "total": 38.3
+      },
+      "factor_scores": {
+        "ma_trend": -0.25,
+        "macd_bull": 0.4117,
+        "volume_ratio": 0.1069,
+        "vwap_deviation": -0.0363,
+        "volatility": 0.8958,
+        "bollinger_pos": 0.2474,
+        "structure": 0.7112,
+        "regime_strength": 0.0126,
+        "momentum": 0.7414
+      },
+      "composite_signal": {
+        "action": "BUY",
+        "confidence": "中",
+        "composite_score": 0.69,
+        "regime": "MarketRegime.UNKNOWN",
+        "reasoning": "融合 4/9 个有效因子信号，加权净评分=0.6900，置信度=0.6900，市场状态=N/A"
+      },
+      "backtest_summary": {
+        "method": "breakout_retest",
+        "total_bars": 120,
+        "total_trades": 0,
+        "equity_final": 0.0,
+        "total_return_pct": 0.0,
+        "sharpe": 0.0,
+        "max_drawdown_pct": 0.0,
+        "win_rate": 0.0
+      },
+      "data_shape": [
+        120,
+        6
+      ],
+      "data_columns": [
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume",
+        "amount"
+      ],
+      "factor_count": 9
+    },
+    "600036": {
+      "symbol": "600036",
+      "passed": true,
+      "error": null,
+      "timing_ms": {
+        "market_data": 4.8,
+        "factor_registry": 3.6,
+        "signal_fusion": 0.0,
+        "backtest": 9.1,
+        "total": 17.6
+      },
+      "factor_scores": {
+        "ma_trend": 0.25,
+        "macd_bull": -0.6004,
+        "volume_ratio": 0.2415,
+        "vwap_deviation": -0.4191,
+        "volatility": 0.9374,
+        "bollinger_pos": -0.86,
+        "structure": 0.7006,
+        "regime_strength": 0.0378,
+        "momentum": -0.9351
+      },
+      "composite_signal": {
+        "action": "HOLD",
+        "confidence": "低",
+        "composite_score": -0.1961,
+        "regime": "MarketRegime.UNKNOWN",
+        "reasoning": "融合 6/9 个有效因子信号，加权净评分=-0.1961，置信度=0.1471，市场状态=N/A"
+      },
+      "backtest_summary": {
+        "method": "breakout_retest",
+        "total_bars": 120,
+        "total_trades": 0,
+        "equity_final": 0.0,
+        "total_return_pct": 0.0,
+        "sharpe": 0.0,
+        "max_drawdown_pct": 0.0,
+        "win_rate": 0.0
+      },
+      "data_shape": [
+        120,
+        6
+      ],
+      "data_columns": [
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume",
+        "amount"
+      ],
+      "factor_count": 9
+    },
+    "000333": {
+      "symbol": "000333",
+      "passed": true,
+      "error": null,
+      "timing_ms": {
+        "market_data": 4.4,
+        "factor_registry": 3.5,
+        "signal_fusion": 0.0,
+        "backtest": 16.7,
+        "total": 24.8
+      },
+      "factor_scores": {
+        "ma_trend": -1.0,
+        "macd_bull": -0.5169,
+        "volume_ratio": -0.2994,
+        "vwap_deviation": -0.1383,
+        "volatility": 1.0,
+        "bollinger_pos": -0.3006,
+        "structure": 0.6881,
+        "regime_strength": 0.0378,
+        "momentum": -0.3203
+      },
+      "composite_signal": {
+        "action": "HOLD",
+        "confidence": "低",
+        "composite_score": -0.075,
+        "regime": "MarketRegime.UNKNOWN",
+        "reasoning": "融合 6/9 个有效因子信号，加权净评分=-0.0750，置信度=0.0562，市场状态=N/A"
+      },
+      "backtest_summary": {
+        "method": "breakout_retest",
+        "total_bars": 120,
+        "total_trades": 1,
+        "equity_final": -0.001,
+        "total_return_pct": -0.001,
+        "sharpe": 0.0,
+        "max_drawdown_pct": 0.0,
+        "win_rate": 0.0
+      },
+      "data_shape": [
+        120,
+        6
+      ],
+      "data_columns": [
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume",
+        "amount"
+      ],
+      "factor_count": 9
+    },
+    "300750": {
+      "symbol": "300750",
+      "passed": true,
+      "error": null,
+      "timing_ms": {
+        "market_data": 5.4,
+        "factor_registry": 3.5,
+        "signal_fusion": 0.0,
+        "backtest": 9.7,
+        "total": 18.8
+      },
+      "factor_scores": {
+        "ma_trend": 0.25,
+        "macd_bull": -0.2218,
+        "volume_ratio": -0.1892,
+        "vwap_deviation": -0.2435,
+        "volatility": 0.9697,
+        "bollinger_pos": -0.4262,
+        "structure": 0.7036,
+        "regime_strength": 0.0882,
+        "momentum": -1.0
+      },
+      "composite_signal": {
+        "action": "HOLD",
+        "confidence": "低",
+        "composite_score": 0.0618,
+        "regime": "MarketRegime.UNKNOWN",
+        "reasoning": "融合 4/9 个有效因子信号，加权净评分=0.0618，置信度=0.0309，市场状态=N/A"
+      },
+      "backtest_summary": {
+        "method": "breakout_retest",
+        "total_bars": 120,
+        "total_trades": 1,
+        "equity_final": -0.0006,
+        "total_return_pct": -0.0006,
+        "sharpe": 0.0,
+        "max_drawdown_pct": 0.0,
+        "win_rate": 0.0
+      },
+      "data_shape": [
+        120,
+        6
+      ],
+      "data_columns": [
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume",
+        "amount"
+      ],
+      "factor_count": 9
+    },
+    "002594": {
+      "symbol": "002594",
+      "passed": true,
+      "error": null,
+      "timing_ms": {
+        "market_data": 4.6,
+        "factor_registry": 3.3,
+        "signal_fusion": 0.0,
+        "backtest": 9.6,
+        "total": 17.7
+      },
+      "factor_scores": {
+        "ma_trend": -1.0,
+        "macd_bull": 0.7836,
+        "volume_ratio": 0.3457,
+        "vwap_deviation": -0.0199,
+        "volatility": 1.0,
+        "bollinger_pos": 0.2058,
+        "structure": 0.6955,
+        "regime_strength": 0.0882,
+        "momentum": -0.2322
+      },
+      "composite_signal": {
+        "action": "BUY",
+        "confidence": "低",
+        "composite_score": 0.365,
+        "regime": "MarketRegime.UNKNOWN",
+        "reasoning": "融合 5/9 个有效因子信号，加权净评分=0.3650，置信度=0.3193，市场状态=N/A"
+      },
+      "backtest_summary": {
+        "method": "breakout_retest",
+        "total_bars": 120,
+        "total_trades": 1,
+        "equity_final": -0.0008,
+        "total_return_pct": -0.0008,
+        "sharpe": 0.0,
+        "max_drawdown_pct": 0.0,
+        "win_rate": 0.0
+      },
+      "data_shape": [
+        120,
+        6
+      ],
+      "data_columns": [
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume",
+        "amount"
+      ],
+      "factor_count": 9
+    }
+  },
+  "summary": {
+    "total_symbols": 5,
+    "passed": 5,
+    "failed": 0,
+    "pass_rate": "100.0%",
+    "all_passed": true,
+    "timestamp": "2026-05-18T11:32:17.129409+08:00",
+    "note": "新旧管线同时工作: R1BacktestEngine 负责新系统回测, legacy_runner_adapter 标注 _legacy 存档"
+  }
+}

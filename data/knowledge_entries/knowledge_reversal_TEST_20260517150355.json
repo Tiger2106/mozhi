@@ -1,0 +1,45 @@
+{
+  "task_id": "reversal_TEST_20260517150355",
+  "method_name": "reversal",
+  "symbol": "TEST",
+  "completed_time": "2026-05-17T15:03:55+08:00",
+  "regime": "unknown",
+  "timeframe": "",
+  "tags": [
+    "mid_term",
+    "reversal",
+    "mean_reversion"
+  ],
+  "source_run_id": "reversal_20260517150355",
+  "quality_score": 0.825,
+  "total_return": null,
+  "sharpe": null,
+  "max_drawdown": null,
+  "win_rate": null,
+  "insight_summary": "信号密度 0.8%",
+  "insight_category": "technical_signal",
+  "confidence": 0.65,
+  "parameters": {
+    "rsi_period": 14,
+    "kdj_n": 9,
+    "cooldown_bars": 5
+  },
+  "statistics": {
+    "n_bars": 120.0,
+    "n_signals": 1.0,
+    "n_buy": 1.0,
+    "n_sell": 0.0,
+    "signal_ratio": 0.008333333333333333
+  },
+  "normalized_params": {
+    "strategy_type": "mean_reversion",
+    "_original_keys": [
+      "rsi_period",
+      "kdj_n",
+      "cooldown_bars"
+    ]
+  },
+  "schema_version": "2.0",
+  "created_at": "2026-05-17T15:03:55+08:00",
+  "updated_at": "2026-05-17T15:03:55+08:00"
+}

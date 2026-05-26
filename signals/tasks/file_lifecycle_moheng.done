@@ -1,0 +1,14 @@
+{
+  "status": "DONE",
+  "task_id": "file_lifecycle_moheng",
+  "completed_time": "2026-05-15 17:11+08:00",
+  "summary": "文件准入+注册库系统实现完成",
+  "deliverables": [
+    "registry/ — SQLite注册库目录（含空目录）",
+    "src/utils/file_lifecycle.py — 文件生命周期管理脚本（register-incoming/scan-registry/search/update/status/export/init）",
+    "tests/test_file_lifecycle.py — 33项pytest测试，全部通过",
+    "docs/06_operations/cron_schedule.md — 更新 incoming_meta_scan cron 说明，新增文件生命周期管线章节"
+  ],
+  "test_results": "33 passed in 0.81s",
+  "notes": "backtest 已合并到 ta_backtest 分类（移除独立 backtest 分类以避免映射冲突）"
+}

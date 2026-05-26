@@ -1,0 +1,15 @@
+{
+  "status": "SUCCESS",
+  "task": "fix_ingest_design_6_conditions",
+  "target": "C:\\Users\\17699\\mozhi_platform\\docs\\ingest_analysis_design_v1.0.md",
+  "version": "v1.1",
+  "completed_time": "2026-05-23T15:16:00+08:00",
+  "fixes": [
+    "1. 补充 DataSource 类接口设计 (§2.6)：四阶段对称 → DataSource→Transformer→Validator→Writer",
+    "2. 修复项目根路径计算：__file__ ../../.. 链 → 搜索 pyproject.toml 定位",
+    "3. 统一时间戳策略：Python 侧 _now_iso() 生成 +08:00，SQL 使用 ? 绑定参数，移除 strftime",
+    "4. Validator 增加显式外键约束检查：_check_foreign_key() 检查 analysis_metrics_core.analysis_id → analysis_meta.id",
+    "5. Transformer perf_row 为空语义化错误：raise DataSourceError('未找到 performance_summary 记录：run_id=...')",
+    "6. 指定测试文件路径：src/backtest/tests/test_ingest_analysis.py"
+  ]
+}

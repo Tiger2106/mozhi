@@ -1,0 +1,45 @@
+{
+  "task_id": "exp001_nan_isolation",
+  "method_name": "ema_nan_safe",
+  "symbol": "INFRA",
+  "completed_time": "2026-05-24T20:05:00+08:00",
+  "regime": "infrastructure",
+  "timeframe": "",
+  "tags": [
+    "infrastructure",
+    "nan_isolation",
+    "ema",
+    "validation"
+  ],
+  "source_run_id": "EXP-001",
+  "quality_score": 0.95,
+  "total_return": null,
+  "sharpe": null,
+  "max_drawdown": null,
+  "win_rate": null,
+  "insight_summary": "EMA NaN隔离防护策略验证通过：统一封装于src/core/ema_nan_safe.py，CORE-0~6全验收标准通过，4个EMA函数版本（pure_python/numpy/pandas_ewm）输出完全一致。连续NaN场景中递归EMA状态不污染，输入NaN→输出None保持等长。",
+  "insight_category": "nan_isolation_validation",
+  "confidence": 0.95,
+  "parameters": {
+    "period": 25,
+    "min_periods": 25,
+    "strategy": "dropna+min_periods"
+  },
+  "statistics": {
+    "core_0_6_pass_rate": 1.0,
+    "version_count": 4,
+    "alignment_pass": true,
+    "boundary_pass": true
+  },
+  "normalized_params": {
+    "strategy_type": "ema_nan_safe",
+    "_original_keys": [
+      "period",
+      "min_periods",
+      "strategy"
+    ]
+  },
+  "schema_version": "2.0",
+  "created_at": "2026-05-24T20:05:00+08:00",
+  "updated_at": "2026-05-24T20:05:00+08:00"
+}

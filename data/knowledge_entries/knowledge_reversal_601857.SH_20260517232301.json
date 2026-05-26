@@ -1,0 +1,49 @@
+{
+  "task_id": "reversal_601857.SH_20260517232301",
+  "method_name": "reversal",
+  "symbol": "601857.SH",
+  "completed_time": "2026-05-17T23:23:01+08:00",
+  "regime": "unknown",
+  "timeframe": "",
+  "tags": [
+    "mean_reversion",
+    "mid_term",
+    "reversal"
+  ],
+  "source_run_id": "reversal_20260517232301",
+  "quality_score": 0.875,
+  "total_return": null,
+  "sharpe": null,
+  "max_drawdown": null,
+  "win_rate": null,
+  "insight_summary": "信号密度 1.7%",
+  "insight_category": "technical_signal",
+  "confidence": 0.65,
+  "parameters": {
+    "rsi_period": 14,
+    "kdj_n": 9,
+    "bias_period": 20,
+    "cooldown_bars": 5,
+    "min_votes": 2
+  },
+  "statistics": {
+    "n_bars": 60.0,
+    "n_signals": 1.0,
+    "n_buy": 0.0,
+    "n_sell": 1.0,
+    "signal_ratio": 0.016666666666666666
+  },
+  "normalized_params": {
+    "strategy_type": "mean_reversion",
+    "_original_keys": [
+      "rsi_period",
+      "kdj_n",
+      "bias_period",
+      "cooldown_bars",
+      "min_votes"
+    ]
+  },
+  "schema_version": "2.0",
+  "created_at": "2026-05-17T23:23:01+08:00",
+  "updated_at": "2026-05-17T23:23:01+08:00"
+}

@@ -1,0 +1,37 @@
+{
+  "task_id": "grid_TEST_20260518111907",
+  "method_name": "grid",
+  "symbol": "TEST",
+  "completed_time": "2026-05-18T11:19:07+08:00",
+  "regime": "unknown",
+  "timeframe": "",
+  "tags": [
+    "grid"
+  ],
+  "source_run_id": "grid_20260518111907",
+  "quality_score": 0.81,
+  "total_return": null,
+  "sharpe": null,
+  "max_drawdown": null,
+  "win_rate": null,
+  "insight_summary": "信号密度 0.0%",
+  "insight_category": "grid_parameter",
+  "confidence": 0.6,
+  "parameters": {
+    "grid_lower": 93.23652734918022,
+    "grid_upper": 102.24030555849379,
+    "grid_n_levels": 8
+  },
+  "statistics": {},
+  "normalized_params": {
+    "strategy_type": "grid",
+    "_original_keys": [
+      "grid_lower",
+      "grid_upper",
+      "grid_n_levels"
+    ]
+  },
+  "schema_version": "2.0",
+  "created_at": "2026-05-18T11:19:07+08:00",
+  "updated_at": "2026-05-18T11:19:07+08:00"
+}

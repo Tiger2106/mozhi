@@ -1,0 +1,19 @@
+{
+  "task_id": "I6_test_001",
+  "method_name": "ma_cross",
+  "symbol": "601857",
+  "params": {
+    "ma_fast": 5,
+    "ma_slow": 20
+  },
+  "insight_summary": "信号密度 5.8%",
+  "data_range": "2025-01-01~2025-05-01",
+  "data_frequency": "daily",
+  "completed_time": "2026-05-17T13:34:41+08:00",
+  "confidence": 0.65,
+  "source_file": "",
+  "review_status": "pending",
+  "metadata": {},
+  "created_at": "2026-05-17T13:34:41+08:00",
+  "updated_at": "2026-05-17T13:34:41+08:00"
+}

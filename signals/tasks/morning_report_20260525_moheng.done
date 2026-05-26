@@ -1,0 +1,8 @@
+{
+  "task_id": "morning_report_20260525",
+  "agent": "moheng",
+  "timestamp": "2026-05-25T08:15:55+08:00",
+  "status": "SUCCESS",
+  "summary": "完成早报Step1结构化分析：布伦特暴跌5%根因推断（地缘溢价出清+多头踩踏），601857技术面分析（11.08收盘，今日承压），八部门整治方案资金面影响评估，输出5节分析框架含signal_mapping。",
+  "output_path": "C:\\Users\\17699\\.openclaw\\workspace-mochen\\reports\\morning_report_20260525\\moheng_analysis_morning_report_20260525.json"
+}

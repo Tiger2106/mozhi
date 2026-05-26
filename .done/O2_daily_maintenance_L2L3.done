@@ -1,0 +1,16 @@
+{
+  "task_id": "O2_daily_maintenance_L2L3",
+  "status": "SUCCESS",
+  "summary": "Layer2（状态追踪）+ Layer3（知识沉淀）已追加到 scripts/daily_maintenance.py",
+  "completed_time": "2026-05-16T11:19:30+08:00",
+  "details": {
+    "layer2_funcs": ["scan_incoming", "scan_knowledge_drafts", "scan_recent_backtests", "check_unregistered_files"],
+    "layer3_funcs": ["trigger_knowledge_extractor", "trigger_decay_check"],
+    "file_version": "1.1",
+    "test": {
+      "layer2_dry_run": "PASS (incoming=0, drafts=0, backtests=689, unregistered=12)",
+      "layer3_dry_run": "PASS (aggregate=0 dry-run, decay=0 dry-run)",
+      "layer1_dry_run": "PASS"
+    }
+  }
+}

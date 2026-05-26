@@ -1,0 +1,13 @@
+{
+  "status": "SUCCESS",
+  "task_id": "1j_moheng",
+  "step": "implement",
+  "summary": "在 _persist_result() 末尾追加 KnowledgeDB().store_run() 调用",
+  "timestamp": "2026-05-16T10:40:00+08:00",
+  "file": "src/backtest/strategies/run_trend.py",
+  "changes": [
+    "添加 from pathlib import Path; from src.backtest.pipeline.knowledge_db import KnowledgeDB 导入",
+    "添加 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent",
+    "在 _persist_result() 末尾添加 KnowledgeDB store_run 调用 (strategy='trend', try/except 包裹, 不阻塞JSON主流程)"
+  ]
+}

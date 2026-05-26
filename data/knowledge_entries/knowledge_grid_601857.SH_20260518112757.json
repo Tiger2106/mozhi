@@ -1,0 +1,40 @@
+{
+  "task_id": "grid_601857.SH_20260518112757",
+  "method_name": "grid",
+  "symbol": "601857.SH",
+  "completed_time": "2026-05-18T11:27:57+08:00",
+  "regime": "unknown",
+  "timeframe": "",
+  "tags": [
+    "grid",
+    "mid_term"
+  ],
+  "source_run_id": "grid_20260518112757",
+  "quality_score": 0.81,
+  "total_return": null,
+  "sharpe": null,
+  "max_drawdown": null,
+  "win_rate": null,
+  "insight_summary": "信号密度 0.0%",
+  "insight_category": "grid_parameter",
+  "confidence": 0.6,
+  "parameters": {
+    "n_levels": 10,
+    "grid_type": "arithmetic",
+    "lookback": 20,
+    "width_multiplier": 2.0
+  },
+  "statistics": {},
+  "normalized_params": {
+    "strategy_type": "grid",
+    "_original_keys": [
+      "n_levels",
+      "grid_type",
+      "lookback",
+      "width_multiplier"
+    ]
+  },
+  "schema_version": "2.0",
+  "created_at": "2026-05-18T11:27:57+08:00",
+  "updated_at": "2026-05-18T11:27:57+08:00"
+}

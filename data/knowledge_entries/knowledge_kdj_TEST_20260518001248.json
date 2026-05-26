@@ -1,0 +1,45 @@
+{
+  "task_id": "kdj_TEST_20260518001248",
+  "method_name": "kdj",
+  "symbol": "TEST",
+  "completed_time": "2026-05-18T00:12:48+08:00",
+  "regime": "unknown",
+  "timeframe": "",
+  "tags": [
+    "kdj",
+    "mean_reversion",
+    "short_term"
+  ],
+  "source_run_id": "kdj_20260518001248",
+  "quality_score": 0.825,
+  "total_return": null,
+  "sharpe": null,
+  "max_drawdown": null,
+  "win_rate": null,
+  "insight_summary": "信号密度 1.7%",
+  "insight_category": "technical_signal",
+  "confidence": 0.65,
+  "parameters": {
+    "kdj_n": 9,
+    "kdj_k_buy": 20.0,
+    "kdj_k_sell": 80.0
+  },
+  "statistics": {
+    "n_bars": 120.0,
+    "n_signals": 2.0,
+    "n_buy": 2.0,
+    "n_sell": 0.0,
+    "signal_ratio": 0.016666666666666666
+  },
+  "normalized_params": {
+    "strategy_type": "mean_reversion",
+    "_original_keys": [
+      "kdj_n",
+      "kdj_k_buy",
+      "kdj_k_sell"
+    ]
+  },
+  "schema_version": "2.0",
+  "created_at": "2026-05-18T00:12:48+08:00",
+  "updated_at": "2026-05-18T00:12:48+08:00"
+}

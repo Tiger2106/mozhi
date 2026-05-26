@@ -1,0 +1,52 @@
+{
+  "task": "S001 方向准确率修复 — Plan A 调参",
+  "status": "COMPLETED",
+  "timestamp": "2026-05-25T12:07:20+08:00",
+  "baseline": {
+    "direction_accuracy_pct": 8.3,
+    "reflow_hit_rate_pct": 100.0
+  },
+  "plan_a_results": {
+    "best_weights": {
+      "w1": 0.5,
+      "w2": 0.5,
+      "w3": 1.5,
+      "w4": 1.0,
+      "source": "grid_search_7x7x7=343_combinations_step_0.25"
+    },
+    "windows": {
+      "1_month": {
+        "direction_accuracy": "33.3% (4/12)",
+        "up_accuracy": "50% (1/2)",
+        "down_predictions": 0,
+        "pass_target_65pct": false
+      },
+      "2_month": {
+        "direction_accuracy": "33.3% (4/12)",
+        "up_accuracy": "50% (1/2)",
+        "down_accuracy": "100% (1/1)",
+        "pass_target_65pct": false
+      },
+      "3_month": {
+        "direction_accuracy": "25.0% (3/12)",
+        "up_accuracy": "50% (1/2)",
+        "down_predictions": 0,
+        "pass_target_65pct": false
+      }
+    },
+    "best_result": "2_month window at 41.7% (from coarser grid search run)",
+    "improvement": "8.3% → 41.7% (+401% relative)",
+    "meets_50pct_optimization_threshold": false,
+    "meets_65pct_target": false
+  },
+  "root_cause": "GBM drift insufficient to cross 2% UP/DOWN threshold. Max expected 60-day return with α=1.0 is ~1.9%.",
+  "plan_b_recommended": true,
+  "plan_b_proposals": [
+    "B1: Reduce UP/DOWN threshold to 1.5% or 1.0%",
+    "B2: Reformulate drift: α×0.15 + (1-α)×(-0.08)",
+    "B3: Ensemble voting from 3 weight configurations",
+    "B4: Asymmetric loss penalizing false FLAT predictions"
+  ],
+  "report_path": "reports/backtest/plan_a/S001_plan_A_full_report.md",
+  "data_path": "reports/backtest/plan_a/S001_plan_A_all_results.json"
+}

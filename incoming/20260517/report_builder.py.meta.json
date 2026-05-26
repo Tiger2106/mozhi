@@ -1,0 +1,10 @@
+{
+    "source":  "finalize_report",
+    "original_path":  "src\\backtest\\pipeline\\report_builder.py",
+    "source_type":  "python",
+    "registered_at":  "2026-05-17T23:30:04+08:00",
+    "tags":  [
+                 "report_builder"
+             ],
+    "category":  "backtest"
+}

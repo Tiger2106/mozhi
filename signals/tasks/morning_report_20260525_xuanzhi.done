@@ -1,0 +1,8 @@
+{
+  "task_id": "morning_report_20260525",
+  "agent": "xuanzhi",
+  "timestamp": "2026-05-25T08:10:35+08:00",
+  "status": "SUCCESS",
+  "summary": "市场数据采集完成：布伦特原油跌5%至95.157美元(财联社快讯)，中国石油(601857)上一交易日收盘11.08元(-1.86%)，银价大涨逾4%，美股期货上涨，日经创新高。产出：xuanzhi_data_morning_report_20260525.json",
+  "output_path": "C:\\Users\\17699\\.openclaw\\workspace-mochen\\reports\\morning_report_20260525\\xuanzhi_data_morning_report_20260525.json"
+}

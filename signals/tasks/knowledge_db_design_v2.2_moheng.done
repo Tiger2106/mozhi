@@ -1,0 +1,16 @@
+{
+  "status": "SUCCESS",
+  "task_id": "knowledge_db_design_v2.2",
+  "agent": "moheng",
+  "completed_time": "2026-05-16T10:15:00+08:00",
+  "summary": "设计方案 v2.2 已按主人审阅意见完成全部 5 项修改",
+  "changes_applied": [
+    "新增关联表 knowledge_run_links（DDL + 数据模型 + 类图）",
+    "knowledge_entries 增加 UNIQUE(symbol, strategy, param_version, market_regime, insight_category) 复合唯一约束",
+    "更新 _find_project_root() 异常信息为可操作指令",
+    "新增 VALID_INSIGHT_CATEGORIES frozenset 常量",
+    "添加模块文档字符串，定位在 mozhi_platform 整体架构中的位置"
+  ],
+  "file_updated": "docs/02_development/knowledge_db_design.md",
+  "new_version": "v2.2"
+}

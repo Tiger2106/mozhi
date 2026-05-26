@@ -1,0 +1,28 @@
+{
+  "task_id": "r1_phase1_batch1",
+  "agent": "moheng",
+  "status": "SUCCESS",
+  "completed_time": "2026-05-18T10:34:00+08:00",
+  "summary": {
+    "task_a": {
+      "status": "PASS",
+      "files": ["pipeline_paths.py"],
+      "functions_added": 7
+    },
+    "task_b": {
+      "status": "PASS",
+      "files": [
+        "src/backtest/models/signal_types.py",
+        "src/backtest/adapter/__init__.py",
+        "src/backtest/adapter/legacy_signal_adapter.py"
+      ]
+    },
+    "task_c": {
+      "status": "PASS",
+      "files": ["src/backtest/factors/volume/vwap_factor.py"],
+      "methods_added": ["calc_anchored_vwap", "calc_vwap_bands"],
+      "version_bump": "1.0.0 → 1.1.0"
+    }
+  },
+  "_note": "此 .done 文件是 Announce 的单一数据源。status/summary/timestamp 从本文件复制到 Announce。"
+}

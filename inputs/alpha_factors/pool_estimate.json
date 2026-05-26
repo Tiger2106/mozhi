@@ -1,0 +1,30 @@
+{
+  "meta": {
+    "source": "out_of_market_pool_estimate",
+    "author": "moxuan",
+    "generated_at": "2026-05-25T09:00:00+08:00",
+    "version": "1.0",
+    "refresh_schedule": "daily at 09:00"
+  },
+  "pool_estimate": {
+    "domestic_retail_pending": {
+      "value_billion_cny": 1250.0,
+      "trend_5d": "slight_increase",
+      "note": "散户场外资金估算，基于银证转账数据"
+    },
+    "institutional_pending": {
+      "value_billion_cny": 3800.0,
+      "trend_5d": "stable",
+      "note": "机构待入场资金(公募+私募)，基于仓位估算"
+    },
+    "northbound_pending": {
+      "value_billion_cny": 680.0,
+      "trend_5d": "increasing",
+      "note": "北向资金待入场，基于近5日净流入趋势"
+    },
+    "total_pending_billion": 5730.0,
+    "total_pending_trend": "slight_increase",
+    "confidence_level": "medium",
+    "note": "估算模型精度±15%，基于存量资金法"
+  }
+}

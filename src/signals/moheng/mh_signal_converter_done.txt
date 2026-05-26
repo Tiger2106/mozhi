@@ -1,0 +1,28 @@
+# signal_converter — 实现确认文件
+# author: moheng
+# created_time: 2026-05-15T13:35:49.002378+08:00
+# task_id: P0-MH-11
+# step: implementation
+
+实现清单：
+  1. convert_report_to_signal(report: dict) → Optional[dict]
+     - 分析报告 dict → 标准化信号 dict
+     - 校验必需字段：symbol/action/confidence/confidence_label/suggested_price/position_ratio
+     - base_verdict=FAIL → HOLD 信号（fail-closed）
+     - HOLD 信号直接跳过（不下单、不冻结）
+     - 校验失败写 _errors 标记 + 不下单
+
+  2. validate_signal(signal: dict) → (bool, errors: list)
+     - 信号 schema 全字段校验
+     - 类型、取值、范围检查
+
+  3. AnalysisToSignalConverter.convert_from_step2_format(dict, source_path)
+     - 类方法：从 dict 直接转换，支持 fail-closed
+
+  4. 错误处理
+     - 缺失/无效字段 → signals/paper_trade/{date}/_errors/{task_id}_error.json
+     - WARNING 日志记录错误原因
+     - HOLD 信号跳过不写 error
+
+文件位置：automation_v2/paper_trade/signal_converter.py
+包依赖：  paper_trade.time_utils

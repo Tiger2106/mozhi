@@ -1,0 +1,10 @@
+{
+    "source":  "finalize_report",
+    "original_path":  "src\\backtest\\engine\\portfolio_integration.py",
+    "source_type":  "python",
+    "registered_at":  "2026-05-17T23:30:04+08:00",
+    "tags":  [
+                 "portfolio_integration"
+             ],
+    "category":  "backtest"
+}

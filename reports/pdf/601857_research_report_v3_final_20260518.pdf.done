@@ -1,0 +1,10 @@
+{
+  "status": "DONE",
+  "task_id": "generate_v3_final_pdf",
+  "step": "pdf_generation",
+  "completed_time": "2026-05-18T22:58:30+08:00",
+  "output_pdf": "C:\\Users\\17699\\mozhi_platform\\reports\\pdf\\601857_research_report_v3_final_20260518.pdf",
+  "file_size_bytes": 2449713,
+  "file_size_kb": 2392,
+  "source": "C:\\Users\\17699\\mozhi_platform\\reports\\backtest\\backtest_report_20260518_research_v3_final.md"
+}

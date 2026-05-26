@@ -1,0 +1,22 @@
+{
+  "status": "DONE",
+  "task_id": "step1_infrastructure_0523",
+  "agent": "moheng",
+  "step": 1,
+  "summary": "Step 1 基础设施已完成：集成了 get_mozhihome()，统一了 config.py 路径，修正了 backtest_engine 下 7 个文件的 MOZHIHOME 语义，修复了 2 个新产出脚本的硬编码路径",
+  "completed_time": "2026-05-23T18:02:00+08:00",
+  "files_modified": [
+    "src/config.py",
+    "pipeline_paths.py",
+    "backtest_engine/calc/float_share_cache.py",
+    "backtest_engine/calc/volume_ratio.py",
+    "backtest_engine/calc/vwap_channel.py",
+    "backtest_engine/collector/minute_collector.py",
+    "backtest_engine/pipeline/data_pipeline.py",
+    "backtest_engine/pipeline/pipeline_orchestrator.py",
+    "backtest_engine/pipeline/signal_pipeline.py",
+    "src/generate_pdf_from_knowledgedb.py",
+    "src/generate_backtest_pdf.py"
+  ],
+  "migration_log": "signals/tasks/migration_adj_unification_0523.md"
+}
