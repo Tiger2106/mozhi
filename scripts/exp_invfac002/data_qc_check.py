@@ -43,7 +43,7 @@ def validate_adj_factor_null(cursor, ts_code: str, start: str, end: str) -> bool
     """检查 adj_factor NULL（硬阻断）"""
     cursor.execute("""
         SELECT COUNT(*) FROM stock_daily
-        WHERE code=? AND date BETWEEN ? AND ?
+        WHERE ts_code=? AND trade_date BETWEEN ? AND ?
         AND adj_factor IS NULL
     """, (ts_code, start, end))
     null_count = cursor.fetchone()[0]
@@ -57,10 +57,10 @@ def validate_adj_factor_null(cursor, ts_code: str, start: str, end: str) -> bool
 def validate_adj_factor_jump(cursor, ts_code: str, start: str, end: str) -> bool:
     """检查 adj_factor 异常跳变 >50%（硬阻断）"""
     cursor.execute("""
-        SELECT date, adj_factor FROM stock_daily
-        WHERE code=? AND date BETWEEN ? AND ?
+        SELECT trade_date, adj_factor FROM stock_daily
+        WHERE ts_code=? AND trade_date BETWEEN ? AND ?
         AND adj_factor IS NOT NULL
-        ORDER BY date
+        ORDER BY trade_date
     """, (ts_code, start, end))
     rows = cursor.fetchall()
 
@@ -101,7 +101,7 @@ def validate_data_continuity(cursor, ts_code: str, start: str, end: str) -> bool
     """数据连续性和字段完整性检查（硬阻断）"""
     cursor.execute("""
         SELECT COUNT(*) FROM stock_daily
-        WHERE code=? AND date BETWEEN ? AND ?
+        WHERE ts_code=? AND trade_date BETWEEN ? AND ?
     """, (ts_code, start, end))
     total_count = cursor.fetchone()[0]
 
@@ -128,7 +128,7 @@ def validate_data_continuity(cursor, ts_code: str, start: str, end: str) -> bool
             SUM(CASE WHEN close IS NULL THEN 1 ELSE 0 END) AS null_close,
             SUM(CASE WHEN volume IS NULL THEN 1 ELSE 0 END) AS null_vol
         FROM stock_daily
-        WHERE code=? AND date BETWEEN ? AND ?
+        WHERE ts_code=? AND trade_date BETWEEN ? AND ?
     """, (ts_code, start, end))
     null_counts = cursor.fetchone()
     col_names = ["open", "high", "low", "close", "volume"]
@@ -148,10 +148,10 @@ def validate_data_continuity(cursor, ts_code: str, start: str, end: str) -> bool
 def validate_buy_and_hold(cursor, ts_code: str, start: str, end: str) -> dict:
     """Buy & Hold 收益率验证（信息校验，不阻断）"""
     cursor.execute("""
-        SELECT date, close FROM stock_daily
-        WHERE code=? AND date BETWEEN ? AND ?
+        SELECT trade_date, close FROM stock_daily
+        WHERE ts_code=? AND trade_date BETWEEN ? AND ?
         AND close IS NOT NULL
-        ORDER BY date
+        ORDER BY trade_date
     """, (ts_code, start, end))
     rows = cursor.fetchall()
     if len(rows) < 2:

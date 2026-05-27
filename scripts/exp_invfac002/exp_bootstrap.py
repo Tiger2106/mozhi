@@ -110,13 +110,20 @@ def bootstrap_ic_test(
             "ic_mean": ic_mean,
         }
 
-    # 置换检验
-    rng = np.random.default_rng(random_seed)
+    # 置换检验 — 优化版：fr_rank 外提（避免循环内重复 argsort）
+    # P2: 锁定随机种子确保可复现
+    np.random.seed(random_seed)
+    rng = np.random.RandomState(random_seed)
     bootstrap_means = np.zeros(n_bootstrap)
+
+    # 预计算 fr 的秩，循环内只需计算 shuffled 的秩
+    fr_rank = np.argsort(np.argsort(fr)).astype(float)
 
     for i in range(n_bootstrap):
         shuffled = rng.permutation(fv)
-        bootstrap_means[i] = spearman_correlation(shuffled, fr)
+        shuffled_rank = np.argsort(np.argsort(shuffled)).astype(float)
+        d2 = np.sum((shuffled_rank - fr_rank) ** 2)
+        bootstrap_means[i] = 1.0 - (6.0 * d2) / (n * (n * n - 1.0))
 
     # 双尾 p 值
     p_value = np.mean(np.abs(bootstrap_means) >= np.abs(ic_mean))
@@ -182,6 +189,51 @@ def compute_forward_ic(
         ic_by_period[period] = ic_series
 
     return ic_by_period
+
+
+def apply_verdict_degradation(
+    verdict: str,
+    n_samples: int,
+    threshold: int = 3000,
+) -> tuple[str, str]:
+    """
+    样本量门限自动降级规则（验证期适用）。
+
+    当验证期的样本量 n_samples < threshold 时，统计检验力受限，
+    按以下规则自动降级 verdict：
+      - PASS  → WARN
+      - WARN  → FAIL
+      - FAIL  → FAIL（不变）
+
+    这是引擎层面的硬逻辑，用于预防因样本量不足导致的错误结论。
+
+    Parameters
+    ----------
+    verdict : 原始 verdict（PASS / WARN / FAIL）
+    n_samples : 该组合的实际样本量
+    threshold : 样本量门限（默认 3000）
+
+    Returns
+    -------
+    tuple[str, str]:
+      - degraded_verdict: 降级后的 verdict
+      - note: 降级原因标注（空字符串表示无需降级）
+    """
+    if n_samples >= threshold:
+        return verdict, ""
+
+    # 降级映射
+    degradation_map = {
+        "PASS": "WARN",
+        "WARN": "FAIL",
+        "FAIL": "FAIL",
+    }
+
+    note = (f"检验力受限，结论置信度降低"
+            f"（n_samples={n_samples}<{threshold}，"
+            f"verdict从{verdict}自动降级至{degradation_map.get(verdict, verdict)}）")
+
+    return degradation_map.get(verdict, verdict), note
 
 
 def compute_forward_returns(
