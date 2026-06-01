@@ -1,0 +1,32 @@
+name: Daily Full Regression
+on:
+  schedule:
+    - cron: '0 21 * * *'  # 北京时间 05:00（UTC 21:00）
+  workflow_dispatch:       # 手动触发
+
+jobs:
+  full-regression:
+    runs-on: [self-hosted, windows, fzm-zenbook]
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - name: Install Dependencies
+        run: pip install -e .
+      - name: Collect-Only
+        run: .\run_verify_ci.ps1 -CollectOnly
+        shell: powershell
+      - name: Full Regression (core + moheng)
+        run: .\run_verify_ci.ps1 -SkipVerify -XmlReport
+        shell: powershell
+      - name: Full Regression (verify suites)
+        run: .\run_verify_ci.ps1 -SkipCore -SkipMoheng -XmlReport
+        shell: powershell
+      - name: Upload Reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-reports
+          path: tests/_junit_*.xml
