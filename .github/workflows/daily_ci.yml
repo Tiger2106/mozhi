@@ -26,3 +26,23 @@ jobs:
         with:
           name: test-reports
           path: tests/_junit_*.xml
+
+      - name: Notify Feishu on Failure
+        if: failure()
+        continue-on-error: true
+        shell: powershell
+        env:
+          FEISHU_CI_WEBHOOK: ${{ secrets.FEISHU_CI_WEBHOOK }}
+        run: |
+          .\scripts\feishu_ci_notify.ps1 `
+            -WebhookUrl "$env:FEISHU_CI_WEBHOOK" `
+            -WorkflowName "${{ github.workflow }}" `
+            -TriggerEvent "${{ github.event_name }}" `
+            -Branch "${{ github.ref_name }}" `
+            -CommitSha "${{ github.sha }}" `
+            -CommitUrl "${{ github.server_url }}/${{ github.repository }}/commit/${{ github.sha }}" `
+            -RunId "${{ github.run_id }}" `
+            -RunUrl "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" `
+            -FailedStep "See run logs" `
+            -Actor "${{ github.actor }}" `
+            -Repo "${{ github.repository }}"
