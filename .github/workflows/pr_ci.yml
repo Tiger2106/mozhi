@@ -11,8 +11,18 @@ jobs:
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
+      - name: Check Python
+        run: |
+          Write-Host "PATH: $env:Path"
+          python --version
+          python -m pip --version
+          Write-Host "Done"
       - name: Install Dependencies
-        run: python -m pip install -e .
+        run: |
+          python -m pip install -e . --verbose 2>&1
+          $ec = $LASTEXITCODE
+          Write-Host "PIP_EXIT_CODE: $ec"
+          if ($ec -ne 0) { exit $ec }
       - name: Verify Import
         run: python -c "from automation_v2 import *; print('Import OK')"
       - name: Collect-Only Dry Run
