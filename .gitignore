@@ -37,11 +37,25 @@ coverage.xml
 .coverage
 backtest_storage_report.txt
 
+# Generated outputs — exclude from tracking
+reports/
+logs/
+signals/
+src/backtest_results/
+
+# Databases
+*.db
+!data/registry/*.md  # allow registry docs
+
+# Test output
+test_output_*.txt
+
 # Runtime temp & scratch
 tmp/
 _temp_*
 _tmp_*
 _workitem*
+_*runner*.py
 *.bak
 *.bat
 *.cmd
