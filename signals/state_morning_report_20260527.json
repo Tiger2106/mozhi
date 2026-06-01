@@ -1,0 +1,89 @@
+﻿{
+    "created_at":  "2026-05-27T08:00:00+08:00",
+    "status":  "COMPLETED",
+    "task_id":  "morning_report_20260527",
+    "current_step":  5,
+    "steps":  {
+                  "3":  {
+                            "name":  "审查",
+                            "agent":  "moheng",
+                            "output_file":  "reports/morning/20260527/review_feedback_20260527_step3.md",
+                            "scheduled":  "08:08",
+                            "summary":  "审查完成，待读取详细评分",
+                            "status":  "SUCCESS",
+                            "completed_at":  "2026-05-27T08:20:00+08:00"
+                        },
+                  "3.5":  {
+                              "name":  "战略复核",
+                              "agent":  "xuanzhi",
+                              "output_file":  "reports/morning/20260527/strategic_review_20260527_step3.5.md",
+                              "scheduled":  "08:09",
+                              "summary":  "5项历史锚定完成. 发现3盲区(缺PlanB/中海油比价/霍尔木兹参照). Brent破%",
+                              "status":  "SUCCESS",
+                              "completed_at":  "2026-05-27T08:23:00+08:00"
+                          },
+                  "4":  {
+                            "name":  "汇总定稿",
+                            "agent":  "moxuan",
+                            "output_file":  "reports/morning/20260527/final_report_20260527_step4.md",
+                            "scheduled":  "08:11",
+                            "summary":  "定稿完成,吸收审查+战略复核共8项建议. 新增Plan B/中海油比价/对冲建议",
+                            "status":  "SUCCESS",
+                            "completed_at":  "2026-05-27T08:25:00+08:00"
+                        },
+                  "0.5":  {
+                              "name":  "注册扫描结果文档、检查知识接入点",
+                              "agent":  "mochen",
+                              "output_file":  "reports/morning/20260527/doc_registry_step0.5.json",
+                              "scheduled":  "08:02",
+                              "summary":  "Step0文档注册完成, 知识接入点检查无新增条目",
+                              "status":  "SUCCESS",
+                              "completed_at":  "2026-05-27T08:11:20+08:00"
+                          },
+                  "3.6":  {
+                              "name":  "知识审查",
+                              "agent":  "mochen",
+                              "output_file":  "inline_knowledge_review",
+                              "scheduled":  "08:10",
+                              "summary":  "常规早报,无新增knowledge_entries需激活. 无需入库",
+                              "status":  "SUCCESS",
+                              "completed_at":  "2026-05-27T08:23:30+08:00"
+                          },
+                  "2":  {
+                            "name":  "报告草稿",
+                            "agent":  "moxuan",
+                            "output_file":  "reports/morning/20260527/morning_draft_20260527_step2.md",
+                            "scheduled":  "08:06",
+                            "summary":  "7章节草稿完成. Brent-, 防御轮动, 601857 BUY. 推荐均衡型",
+                            "status":  "SUCCESS",
+                            "completed_at":  "2026-05-27T08:17:30+08:00"
+                        },
+                  "1":  {
+                            "name":  "结构化分析",
+                            "agent":  "moheng",
+                            "output_file":  "reports/morning/20260527/structured_analysis_20260527_step1.json",
+                            "scheduled":  "08:04",
+                            "summary":  "Brent-WTI价差.37=地缘风险溢价确认. 601857 BUY(置信中,仓位0.35,止损10.00). 防御性轮动:能源/大宗流入←芯片流出. 风险MODERATE-HIGH",
+                            "status":  "SUCCESS",
+                            "completed_at":  "2026-05-27T08:28:30+08:00"
+                        },
+                  "0":  {
+                            "name":  "市场扫描",
+                            "agent":  "xuanzhi",
+                            "output_file":  "reports/morning/20260527/macro_analysis_20260527_step0.json",
+                            "scheduled":  "08:00",
+                            "summary":  "Brent+3.58%冲向, WTI-0.72%. 上证-0.17%. 601857+2.14%. 钼+10%领涨. 批量减持公告",
+                            "status":  "SUCCESS",
+                            "completed_at":  "2026-05-27T08:11:00+08:00"
+                        },
+                  "5":  {
+                            "name":  "飞书推送+文档归档+knowledge_entries激活",
+                            "agent":  "mochen",
+                            "output_file":  "飞书已推送",
+                            "scheduled":  "08:12",
+                            "summary":  "报告推送至飞书闲聊群",
+                            "status":  "SUCCESS",
+                            "completed_at":  "2026-05-27T08:26:00+08:00"
+                        }
+              }
+}

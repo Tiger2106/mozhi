@@ -1,0 +1,5012 @@
+{
+  "meta": {
+    "symbol": "601857",
+    "signal_type": "StaticGridSignal",
+    "signal_params": {
+      "lower_bound": 7.75,
+      "upper_bound": 10.49,
+      "n_levels": 10,
+      "grid_type": "geometric",
+      "cool_down_bars": 1,
+      "reverse_order": false,
+      "default_quantity": 100
+    },
+    "position_params": {
+      "position_logic": {
+        "quantity": 200,
+        "mode": "grid_fixed"
+      },
+      "mode": "grid_manager",
+      "cool_down": {
+        "cool_down_bars": 1,
+        "mode": "grid_cool_down"
+      },
+      "stop_loss": {
+        "stop_loss_pct": 0.03,
+        "trailing_stop_pct": null,
+        "mode": "grid_stop_loss"
+      }
+    },
+    "initial_capital": 1000000.0,
+    "fee_rate": 0.0003,
+    "slippage_rate": 0.001,
+    "tag": "walk_geome_n10_cd1_fixed_sl3pct_vt0.5",
+    "config_key": "static_n10_geometric_fixed_cd1_sl3pct",
+    "timestamp": "20260518_224124"
+  },
+  "result": {
+    "config": {
+      "start_date": "20250605",
+      "end_date": "20260211",
+      "initial_capital": 1000000.0,
+      "fee_rate": 0.0003,
+      "slippage_rate": 0.001
+    },
+    "actual_range": {
+      "start": "20250605",
+      "end": "20260211"
+    },
+    "total_bars": 172,
+    "total_trades": 2,
+    "trades": [
+      {
+        "date": "20250606",
+        "symbol": "601857",
+        "side": "buy",
+        "price": 8.0681,
+        "quantity": 200,
+        "fee": 5.0,
+        "slippage": 0.001,
+        "order_type": "market"
+      },
+      {
+        "date": "20251024",
+        "symbol": "601857",
+        "side": "sell",
+        "price": 9.0509,
+        "quantity": 200,
+        "fee": 5.0,
+        "slippage": 0.001,
+        "order_type": "market"
+      }
+    ],
+    "equity_curve": [
+      {
+        "date": "20250605",
+        "total_equity": 1000000.0
+      },
+      {
+        "date": "20250606",
+        "total_equity": 999993.38
+      },
+      {
+        "date": "20250609",
+        "total_equity": 1000017.38
+      },
+      {
+        "date": "20250610",
+        "total_equity": 1000033.38
+      },
+      {
+        "date": "20250611",
+        "total_equity": 1000057.38
+      },
+      {
+        "date": "20250612",
+        "total_equity": 1000063.38
+      },
+      {
+        "date": "20250613",
+        "total_equity": 1000085.38
+      },
+      {
+        "date": "20250616",
+        "total_equity": 1000091.38
+      },
+      {
+        "date": "20250617",
+        "total_equity": 1000121.38
+      },
+      {
+        "date": "20250618",
+        "total_equity": 1000121.38
+      },
+      {
+        "date": "20250619",
+        "total_equity": 1000133.38
+      },
+      {
+        "date": "20250620",
+        "total_equity": 1000117.38
+      },
+      {
+        "date": "20250623",
+        "total_equity": 1000103.38
+      },
+      {
+        "date": "20250624",
+        "total_equity": 1000079.38
+      },
+      {
+        "date": "20250625",
+        "total_equity": 1000075.38
+      },
+      {
+        "date": "20250626",
+        "total_equity": 1000085.38
+      },
+      {
+        "date": "20250627",
+        "total_equity": 1000061.38
+      },
+      {
+        "date": "20250630",
+        "total_equity": 1000047.38
+      },
+      {
+        "date": "20250701",
+        "total_equity": 1000065.38
+      },
+      {
+        "date": "20250702",
+        "total_equity": 1000057.38
+      },
+      {
+        "date": "20250703",
+        "total_equity": 1000047.38
+      },
+      {
+        "date": "20250704",
+        "total_equity": 1000057.38
+      },
+      {
+        "date": "20250707",
+        "total_equity": 1000043.38
+      },
+      {
+        "date": "20250708",
+        "total_equity": 1000051.38
+      },
+      {
+        "date": "20250709",
+        "total_equity": 1000053.38
+      },
+      {
+        "date": "20250710",
+        "total_equity": 1000069.38
+      },
+      {
+        "date": "20250711",
+        "total_equity": 1000067.38
+      },
+      {
+        "date": "20250714",
+        "total_equity": 1000111.38
+      },
+      {
+        "date": "20250715",
+        "total_equity": 1000121.38
+      },
+      {
+        "date": "20250716",
+        "total_equity": 1000131.38
+      },
+      {
+        "date": "20250717",
+        "total_equity": 1000117.38
+      },
+      {
+        "date": "20250718",
+        "total_equity": 1000117.38
+      },
+      {
+        "date": "20250721",
+        "total_equity": 1000121.38
+      },
+      {
+        "date": "20250722",
+        "total_equity": 1000137.38
+      },
+      {
+        "date": "20250723",
+        "total_equity": 1000123.38
+      },
+      {
+        "date": "20250724",
+        "total_equity": 1000095.38
+      },
+      {
+        "date": "20250725",
+        "total_equity": 1000071.38
+      },
+      {
+        "date": "20250728",
+        "total_equity": 1000049.38
+      },
+      {
+        "date": "20250729",
+        "total_equity": 1000081.38
+      },
+      {
+        "date": "20250730",
+        "total_equity": 1000111.38
+      },
+      {
+        "date": "20250731",
+        "total_equity": 1000109.38
+      },
+      {
+        "date": "20250801",
+        "total_equity": 1000039.38
+      },
+      {
+        "date": "20250804",
+        "total_equity": 1000031.38
+      },
+      {
+        "date": "20250805",
+        "total_equity": 1000055.38
+      },
+      {
+        "date": "20250806",
+        "total_equity": 1000065.38
+      },
+      {
+        "date": "20250807",
+        "total_equity": 1000073.38
+      },
+      {
+        "date": "20250808",
+        "total_equity": 1000091.38
+      },
+      {
+        "date": "20250811",
+        "total_equity": 1000055.38
+      },
+      {
+        "date": "20250812",
+        "total_equity": 1000091.38
+      },
+      {
+        "date": "20250813",
+        "total_equity": 1000079.38
+      },
+      {
+        "date": "20250814",
+        "total_equity": 1000067.38
+      },
+      {
+        "date": "20250815",
+        "total_equity": 1000063.38
+      },
+      {
+        "date": "20250818",
+        "total_equity": 1000053.38
+      },
+      {
+        "date": "20250819",
+        "total_equity": 1000041.38
+      },
+      {
+        "date": "20250820",
+        "total_equity": 1000061.38
+      },
+      {
+        "date": "20250821",
+        "total_equity": 1000087.38
+      },
+      {
+        "date": "20250822",
+        "total_equity": 1000075.38
+      },
+      {
+        "date": "20250825",
+        "total_equity": 1000091.38
+      },
+      {
+        "date": "20250826",
+        "total_equity": 1000091.38
+      },
+      {
+        "date": "20250827",
+        "total_equity": 1000063.38
+      },
+      {
+        "date": "20250828",
+        "total_equity": 1000065.38
+      },
+      {
+        "date": "20250829",
+        "total_equity": 1000081.38
+      },
+      {
+        "date": "20250901",
+        "total_equity": 1000079.38
+      },
+      {
+        "date": "20250902",
+        "total_equity": 1000151.38
+      },
+      {
+        "date": "20250903",
+        "total_equity": 1000155.38
+      },
+      {
+        "date": "20250904",
+        "total_equity": 1000133.38
+      },
+      {
+        "date": "20250905",
+        "total_equity": 1000115.38
+      },
+      {
+        "date": "20250908",
+        "total_equity": 1000113.38
+      },
+      {
+        "date": "20250909",
+        "total_equity": 1000095.38
+      },
+      {
+        "date": "20250910",
+        "total_equity": 1000089.38
+      },
+      {
+        "date": "20250911",
+        "total_equity": 1000083.38
+      },
+      {
+        "date": "20250912",
+        "total_equity": 1000075.38
+      },
+      {
+        "date": "20250915",
+        "total_equity": 1000091.38
+      },
+      {
+        "date": "20250916",
+        "total_equity": 1000065.38
+      },
+      {
+        "date": "20250917",
+        "total_equity": 1000073.38
+      },
+      {
+        "date": "20250918",
+        "total_equity": 1000023.38
+      },
+      {
+        "date": "20250919",
+        "total_equity": 1000011.38
+      },
+      {
+        "date": "20250922",
+        "total_equity": 1000001.38
+      },
+      {
+        "date": "20250923",
+        "total_equity": 1000009.38
+      },
+      {
+        "date": "20250924",
+        "total_equity": 1000007.38
+      },
+      {
+        "date": "20250925",
+        "total_equity": 1000009.38
+      },
+      {
+        "date": "20250926",
+        "total_equity": 1000013.38
+      },
+      {
+        "date": "20250929",
+        "total_equity": 1000015.38
+      },
+      {
+        "date": "20250930",
+        "total_equity": 999993.38
+      },
+      {
+        "date": "20251009",
+        "total_equity": 1000037.38
+      },
+      {
+        "date": "20251010",
+        "total_equity": 1000037.38
+      },
+      {
+        "date": "20251013",
+        "total_equity": 1000027.38
+      },
+      {
+        "date": "20251014",
+        "total_equity": 1000047.38
+      },
+      {
+        "date": "20251015",
+        "total_equity": 1000039.38
+      },
+      {
+        "date": "20251016",
+        "total_equity": 1000067.38
+      },
+      {
+        "date": "20251017",
+        "total_equity": 1000063.38
+      },
+      {
+        "date": "20251020",
+        "total_equity": 1000105.38
+      },
+      {
+        "date": "20251021",
+        "total_equity": 1000133.38
+      },
+      {
+        "date": "20251022",
+        "total_equity": 1000161.38
+      },
+      {
+        "date": "20251023",
+        "total_equity": 1000217.38
+      },
+      {
+        "date": "20251024",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251027",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251028",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251029",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251030",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251031",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251103",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251104",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251105",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251106",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251107",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251110",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251111",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251112",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251113",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251114",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251117",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251118",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251119",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251120",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251121",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251124",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251125",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251126",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251127",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251128",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251201",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251202",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251203",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251204",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251205",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251208",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251209",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251210",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251211",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251212",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251215",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251216",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251217",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251218",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251219",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251222",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251223",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251224",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251225",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251226",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251229",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251230",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251231",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260105",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260106",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260107",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260108",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260109",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260112",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260113",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260114",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260115",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260116",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260119",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260120",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260121",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260122",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260123",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260126",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260127",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260128",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260129",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260130",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260202",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260203",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260204",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260205",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260206",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260209",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260210",
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260211",
+        "total_equity": 1000186.56
+      }
+    ],
+    "snapshots": [
+      {
+        "date": "20250605",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000000.0,
+          "frozen": 0.0,
+          "total_assets": 1000000.0
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000000.0
+      },
+      {
+        "date": "20250606",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1612.0,
+            "unrealized_pnl": -6.62,
+            "lots": []
+          }
+        },
+        "position_market_value": 1612.0,
+        "total_equity": 999993.38
+      },
+      {
+        "date": "20250609",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1636.0,
+            "unrealized_pnl": 17.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1636.0,
+        "total_equity": 1000017.38
+      },
+      {
+        "date": "20250610",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1652.0,
+            "unrealized_pnl": 33.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1652.0,
+        "total_equity": 1000033.38
+      },
+      {
+        "date": "20250611",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1676.0,
+            "unrealized_pnl": 57.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1676.0,
+        "total_equity": 1000057.38
+      },
+      {
+        "date": "20250612",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1682.0,
+            "unrealized_pnl": 63.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1682.0,
+        "total_equity": 1000063.38
+      },
+      {
+        "date": "20250613",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1704.0,
+            "unrealized_pnl": 85.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1704.0,
+        "total_equity": 1000085.38
+      },
+      {
+        "date": "20250616",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1710.0,
+            "unrealized_pnl": 91.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1710.0,
+        "total_equity": 1000091.38
+      },
+      {
+        "date": "20250617",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1740.0,
+            "unrealized_pnl": 121.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1740.0,
+        "total_equity": 1000121.38
+      },
+      {
+        "date": "20250618",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1740.0,
+            "unrealized_pnl": 121.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1740.0,
+        "total_equity": 1000121.38
+      },
+      {
+        "date": "20250619",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1752.0,
+            "unrealized_pnl": 133.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1752.0,
+        "total_equity": 1000133.38
+      },
+      {
+        "date": "20250620",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1736.0,
+            "unrealized_pnl": 117.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1736.0,
+        "total_equity": 1000117.38
+      },
+      {
+        "date": "20250623",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1722.0,
+            "unrealized_pnl": 103.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1722.0,
+        "total_equity": 1000103.38
+      },
+      {
+        "date": "20250624",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1698.0,
+            "unrealized_pnl": 79.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1698.0,
+        "total_equity": 1000079.38
+      },
+      {
+        "date": "20250625",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1694.0,
+            "unrealized_pnl": 75.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1694.0,
+        "total_equity": 1000075.38
+      },
+      {
+        "date": "20250626",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1704.0,
+            "unrealized_pnl": 85.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1704.0,
+        "total_equity": 1000085.38
+      },
+      {
+        "date": "20250627",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1680.0,
+            "unrealized_pnl": 61.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1680.0,
+        "total_equity": 1000061.38
+      },
+      {
+        "date": "20250630",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1666.0,
+            "unrealized_pnl": 47.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1666.0,
+        "total_equity": 1000047.38
+      },
+      {
+        "date": "20250701",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1684.0,
+            "unrealized_pnl": 65.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1684.0,
+        "total_equity": 1000065.38
+      },
+      {
+        "date": "20250702",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1676.0,
+            "unrealized_pnl": 57.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1676.0,
+        "total_equity": 1000057.38
+      },
+      {
+        "date": "20250703",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1666.0,
+            "unrealized_pnl": 47.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1666.0,
+        "total_equity": 1000047.38
+      },
+      {
+        "date": "20250704",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1676.0,
+            "unrealized_pnl": 57.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1676.0,
+        "total_equity": 1000057.38
+      },
+      {
+        "date": "20250707",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1662.0,
+            "unrealized_pnl": 43.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1662.0,
+        "total_equity": 1000043.38
+      },
+      {
+        "date": "20250708",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1670.0,
+            "unrealized_pnl": 51.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1670.0,
+        "total_equity": 1000051.38
+      },
+      {
+        "date": "20250709",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1672.0,
+            "unrealized_pnl": 53.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1672.0,
+        "total_equity": 1000053.38
+      },
+      {
+        "date": "20250710",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1688.0,
+            "unrealized_pnl": 69.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1688.0,
+        "total_equity": 1000069.38
+      },
+      {
+        "date": "20250711",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1686.0,
+            "unrealized_pnl": 67.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1686.0,
+        "total_equity": 1000067.38
+      },
+      {
+        "date": "20250714",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1730.0,
+            "unrealized_pnl": 111.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1730.0,
+        "total_equity": 1000111.38
+      },
+      {
+        "date": "20250715",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1740.0,
+            "unrealized_pnl": 121.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1740.0,
+        "total_equity": 1000121.38
+      },
+      {
+        "date": "20250716",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1750.0,
+            "unrealized_pnl": 131.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1750.0,
+        "total_equity": 1000131.38
+      },
+      {
+        "date": "20250717",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1736.0,
+            "unrealized_pnl": 117.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1736.0,
+        "total_equity": 1000117.38
+      },
+      {
+        "date": "20250718",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1736.0,
+            "unrealized_pnl": 117.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1736.0,
+        "total_equity": 1000117.38
+      },
+      {
+        "date": "20250721",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1740.0,
+            "unrealized_pnl": 121.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1740.0,
+        "total_equity": 1000121.38
+      },
+      {
+        "date": "20250722",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1756.0,
+            "unrealized_pnl": 137.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1756.0,
+        "total_equity": 1000137.38
+      },
+      {
+        "date": "20250723",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1742.0,
+            "unrealized_pnl": 123.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1742.0,
+        "total_equity": 1000123.38
+      },
+      {
+        "date": "20250724",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1714.0,
+            "unrealized_pnl": 95.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1714.0,
+        "total_equity": 1000095.38
+      },
+      {
+        "date": "20250725",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1690.0,
+            "unrealized_pnl": 71.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1690.0,
+        "total_equity": 1000071.38
+      },
+      {
+        "date": "20250728",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1668.0,
+            "unrealized_pnl": 49.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1668.0,
+        "total_equity": 1000049.38
+      },
+      {
+        "date": "20250729",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1700.0,
+            "unrealized_pnl": 81.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1700.0,
+        "total_equity": 1000081.38
+      },
+      {
+        "date": "20250730",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1730.0,
+            "unrealized_pnl": 111.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1730.0,
+        "total_equity": 1000111.38
+      },
+      {
+        "date": "20250731",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1728.0,
+            "unrealized_pnl": 109.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1728.0,
+        "total_equity": 1000109.38
+      },
+      {
+        "date": "20250801",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1658.0,
+            "unrealized_pnl": 39.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1658.0,
+        "total_equity": 1000039.38
+      },
+      {
+        "date": "20250804",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1650.0,
+            "unrealized_pnl": 31.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1650.0,
+        "total_equity": 1000031.38
+      },
+      {
+        "date": "20250805",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1674.0,
+            "unrealized_pnl": 55.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1674.0,
+        "total_equity": 1000055.38
+      },
+      {
+        "date": "20250806",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1684.0,
+            "unrealized_pnl": 65.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1684.0,
+        "total_equity": 1000065.38
+      },
+      {
+        "date": "20250807",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1692.0,
+            "unrealized_pnl": 73.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1692.0,
+        "total_equity": 1000073.38
+      },
+      {
+        "date": "20250808",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1710.0,
+            "unrealized_pnl": 91.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1710.0,
+        "total_equity": 1000091.38
+      },
+      {
+        "date": "20250811",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1674.0,
+            "unrealized_pnl": 55.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1674.0,
+        "total_equity": 1000055.38
+      },
+      {
+        "date": "20250812",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1710.0,
+            "unrealized_pnl": 91.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1710.0,
+        "total_equity": 1000091.38
+      },
+      {
+        "date": "20250813",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1698.0,
+            "unrealized_pnl": 79.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1698.0,
+        "total_equity": 1000079.38
+      },
+      {
+        "date": "20250814",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1686.0,
+            "unrealized_pnl": 67.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1686.0,
+        "total_equity": 1000067.38
+      },
+      {
+        "date": "20250815",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1682.0,
+            "unrealized_pnl": 63.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1682.0,
+        "total_equity": 1000063.38
+      },
+      {
+        "date": "20250818",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1672.0,
+            "unrealized_pnl": 53.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1672.0,
+        "total_equity": 1000053.38
+      },
+      {
+        "date": "20250819",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1660.0,
+            "unrealized_pnl": 41.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1660.0,
+        "total_equity": 1000041.38
+      },
+      {
+        "date": "20250820",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1680.0,
+            "unrealized_pnl": 61.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1680.0,
+        "total_equity": 1000061.38
+      },
+      {
+        "date": "20250821",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1706.0,
+            "unrealized_pnl": 87.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1706.0,
+        "total_equity": 1000087.38
+      },
+      {
+        "date": "20250822",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1694.0,
+            "unrealized_pnl": 75.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1694.0,
+        "total_equity": 1000075.38
+      },
+      {
+        "date": "20250825",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1710.0,
+            "unrealized_pnl": 91.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1710.0,
+        "total_equity": 1000091.38
+      },
+      {
+        "date": "20250826",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1710.0,
+            "unrealized_pnl": 91.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1710.0,
+        "total_equity": 1000091.38
+      },
+      {
+        "date": "20250827",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1682.0,
+            "unrealized_pnl": 63.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1682.0,
+        "total_equity": 1000063.38
+      },
+      {
+        "date": "20250828",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1684.0,
+            "unrealized_pnl": 65.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1684.0,
+        "total_equity": 1000065.38
+      },
+      {
+        "date": "20250829",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1700.0,
+            "unrealized_pnl": 81.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1700.0,
+        "total_equity": 1000081.38
+      },
+      {
+        "date": "20250901",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1698.0,
+            "unrealized_pnl": 79.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1698.0,
+        "total_equity": 1000079.38
+      },
+      {
+        "date": "20250902",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1770.0,
+            "unrealized_pnl": 151.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1770.0,
+        "total_equity": 1000151.38
+      },
+      {
+        "date": "20250903",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1774.0,
+            "unrealized_pnl": 155.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1774.0,
+        "total_equity": 1000155.38
+      },
+      {
+        "date": "20250904",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1752.0,
+            "unrealized_pnl": 133.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1752.0,
+        "total_equity": 1000133.38
+      },
+      {
+        "date": "20250905",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1734.0,
+            "unrealized_pnl": 115.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1734.0,
+        "total_equity": 1000115.38
+      },
+      {
+        "date": "20250908",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1732.0,
+            "unrealized_pnl": 113.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1732.0,
+        "total_equity": 1000113.38
+      },
+      {
+        "date": "20250909",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1714.0,
+            "unrealized_pnl": 95.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1714.0,
+        "total_equity": 1000095.38
+      },
+      {
+        "date": "20250910",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1708.0,
+            "unrealized_pnl": 89.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1708.0,
+        "total_equity": 1000089.38
+      },
+      {
+        "date": "20250911",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1702.0,
+            "unrealized_pnl": 83.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1702.0,
+        "total_equity": 1000083.38
+      },
+      {
+        "date": "20250912",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1694.0,
+            "unrealized_pnl": 75.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1694.0,
+        "total_equity": 1000075.38
+      },
+      {
+        "date": "20250915",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1710.0,
+            "unrealized_pnl": 91.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1710.0,
+        "total_equity": 1000091.38
+      },
+      {
+        "date": "20250916",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1684.0,
+            "unrealized_pnl": 65.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1684.0,
+        "total_equity": 1000065.38
+      },
+      {
+        "date": "20250917",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1692.0,
+            "unrealized_pnl": 73.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1692.0,
+        "total_equity": 1000073.38
+      },
+      {
+        "date": "20250918",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1642.0,
+            "unrealized_pnl": 23.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1642.0,
+        "total_equity": 1000023.38
+      },
+      {
+        "date": "20250919",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1630.0,
+            "unrealized_pnl": 11.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1630.0,
+        "total_equity": 1000011.38
+      },
+      {
+        "date": "20250922",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1620.0,
+            "unrealized_pnl": 1.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1620.0,
+        "total_equity": 1000001.38
+      },
+      {
+        "date": "20250923",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1628.0,
+            "unrealized_pnl": 9.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1628.0,
+        "total_equity": 1000009.38
+      },
+      {
+        "date": "20250924",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1626.0,
+            "unrealized_pnl": 7.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1626.0,
+        "total_equity": 1000007.38
+      },
+      {
+        "date": "20250925",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1628.0,
+            "unrealized_pnl": 9.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1628.0,
+        "total_equity": 1000009.38
+      },
+      {
+        "date": "20250926",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1632.0,
+            "unrealized_pnl": 13.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1632.0,
+        "total_equity": 1000013.38
+      },
+      {
+        "date": "20250929",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1634.0,
+            "unrealized_pnl": 15.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1634.0,
+        "total_equity": 1000015.38
+      },
+      {
+        "date": "20250930",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1612.0,
+            "unrealized_pnl": -6.62,
+            "lots": []
+          }
+        },
+        "position_market_value": 1612.0,
+        "total_equity": 999993.38
+      },
+      {
+        "date": "20251009",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1656.0,
+            "unrealized_pnl": 37.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1656.0,
+        "total_equity": 1000037.38
+      },
+      {
+        "date": "20251010",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1656.0,
+            "unrealized_pnl": 37.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1656.0,
+        "total_equity": 1000037.38
+      },
+      {
+        "date": "20251013",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1646.0,
+            "unrealized_pnl": 27.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1646.0,
+        "total_equity": 1000027.38
+      },
+      {
+        "date": "20251014",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1666.0,
+            "unrealized_pnl": 47.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1666.0,
+        "total_equity": 1000047.38
+      },
+      {
+        "date": "20251015",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1658.0,
+            "unrealized_pnl": 39.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1658.0,
+        "total_equity": 1000039.38
+      },
+      {
+        "date": "20251016",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1686.0,
+            "unrealized_pnl": 67.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1686.0,
+        "total_equity": 1000067.38
+      },
+      {
+        "date": "20251017",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1682.0,
+            "unrealized_pnl": 63.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1682.0,
+        "total_equity": 1000063.38
+      },
+      {
+        "date": "20251020",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1724.0,
+            "unrealized_pnl": 105.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1724.0,
+        "total_equity": 1000105.38
+      },
+      {
+        "date": "20251021",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1752.0,
+            "unrealized_pnl": 133.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1752.0,
+        "total_equity": 1000133.38
+      },
+      {
+        "date": "20251022",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1780.0,
+            "unrealized_pnl": 161.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1780.0,
+        "total_equity": 1000161.38
+      },
+      {
+        "date": "20251023",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 998381.38,
+          "frozen": 0.0,
+          "total_assets": 998381.38
+        },
+        "positions": {
+          "601857": {
+            "symbol": "601857",
+            "quantity": 200,
+            "avg_cost": 8.0931,
+            "cost_basis": 1618.62,
+            "market_value": 1836.0,
+            "unrealized_pnl": 217.38,
+            "lots": []
+          }
+        },
+        "position_market_value": 1836.0,
+        "total_equity": 1000217.38
+      },
+      {
+        "date": "20251024",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251027",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251028",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251029",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251030",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251031",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251103",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251104",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251105",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251106",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251107",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251110",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251111",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251112",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251113",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251114",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251117",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251118",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251119",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251120",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251121",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251124",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251125",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251126",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251127",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251128",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251201",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251202",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251203",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251204",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251205",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251208",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251209",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251210",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251211",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251212",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251215",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251216",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251217",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251218",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251219",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251222",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251223",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251224",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251225",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251226",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251229",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251230",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20251231",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260105",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260106",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260107",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260108",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260109",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260112",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260113",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260114",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260115",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260116",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260119",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260120",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260121",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260122",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260123",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260126",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260127",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260128",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260129",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260130",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260202",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260203",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260204",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260205",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260206",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260209",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260210",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      },
+      {
+        "date": "20260211",
+        "symbol": "601857",
+        "capital": {
+          "initial_capital": 1000000.0,
+          "available": 1000186.56,
+          "frozen": 0.0,
+          "total_assets": 1000186.56
+        },
+        "positions": {},
+        "position_market_value": 0.0,
+        "total_equity": 1000186.56
+      }
+    ],
+    "metrics": {
+      "total_return_pct": 0.0187,
+      "annual_return_pct": 0.0271,
+      "max_drawdown": 162.0,
+      "max_drawdown_pct": 0.0162,
+      "calmar_ratio": 1.6742,
+      "daily_returns": [
+        -6.62e-06,
+        2.4e-05,
+        1.6e-05,
+        2.4e-05,
+        6e-06,
+        2.2e-05,
+        6e-06,
+        3e-05,
+        0.0,
+        1.2e-05,
+        -1.6e-05,
+        -1.4e-05,
+        -2.4e-05,
+        -4e-06,
+        1e-05,
+        -2.4e-05,
+        -1.4e-05,
+        1.8e-05,
+        -8e-06,
+        -1e-05,
+        1e-05,
+        -1.4e-05,
+        8e-06,
+        2e-06,
+        1.6e-05,
+        -2e-06,
+        4.4e-05,
+        1e-05,
+        1e-05,
+        -1.4e-05,
+        0.0,
+        4e-06,
+        1.6e-05,
+        -1.4e-05,
+        -2.8e-05,
+        -2.4e-05,
+        -2.2e-05,
+        3.2e-05,
+        3e-05,
+        -2e-06,
+        -6.999e-05,
+        -8e-06,
+        2.4e-05,
+        1e-05,
+        8e-06,
+        1.8e-05,
+        -3.6e-05,
+        3.6e-05,
+        -1.2e-05,
+        -1.2e-05,
+        -4e-06,
+        -1e-05,
+        -1.2e-05,
+        2e-05,
+        2.6e-05,
+        -1.2e-05,
+        1.6e-05,
+        0.0,
+        -2.8e-05,
+        2e-06,
+        1.6e-05,
+        -2e-06,
+        7.199e-05,
+        4e-06,
+        -2.2e-05,
+        -1.8e-05,
+        -2e-06,
+        -1.8e-05,
+        -6e-06,
+        -6e-06,
+        -8e-06,
+        1.6e-05,
+        -2.6e-05,
+        8e-06,
+        -5e-05,
+        -1.2e-05,
+        -1e-05,
+        8e-06,
+        -2e-06,
+        2e-06,
+        4e-06,
+        2e-06,
+        -2.2e-05,
+        4.4e-05,
+        0.0,
+        -1e-05,
+        2e-05,
+        -8e-06,
+        2.8e-05,
+        -4e-06,
+        4.2e-05,
+        2.8e-05,
+        2.8e-05,
+        5.599e-05,
+        -3.081e-05,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "equity_curve": [
+        {
+          "date": "20250605",
+          "total_equity": 1000000.0,
+          "cumulative_return_pct": 0.0
+        },
+        {
+          "date": "20250606",
+          "total_equity": 999993.38,
+          "cumulative_return_pct": -0.0007
+        },
+        {
+          "date": "20250609",
+          "total_equity": 1000017.38,
+          "cumulative_return_pct": 0.0017
+        },
+        {
+          "date": "20250610",
+          "total_equity": 1000033.38,
+          "cumulative_return_pct": 0.0033
+        },
+        {
+          "date": "20250611",
+          "total_equity": 1000057.38,
+          "cumulative_return_pct": 0.0057
+        },
+        {
+          "date": "20250612",
+          "total_equity": 1000063.38,
+          "cumulative_return_pct": 0.0063
+        },
+        {
+          "date": "20250613",
+          "total_equity": 1000085.38,
+          "cumulative_return_pct": 0.0085
+        },
+        {
+          "date": "20250616",
+          "total_equity": 1000091.38,
+          "cumulative_return_pct": 0.0091
+        },
+        {
+          "date": "20250617",
+          "total_equity": 1000121.38,
+          "cumulative_return_pct": 0.0121
+        },
+        {
+          "date": "20250618",
+          "total_equity": 1000121.38,
+          "cumulative_return_pct": 0.0121
+        },
+        {
+          "date": "20250619",
+          "total_equity": 1000133.38,
+          "cumulative_return_pct": 0.0133
+        },
+        {
+          "date": "20250620",
+          "total_equity": 1000117.38,
+          "cumulative_return_pct": 0.0117
+        },
+        {
+          "date": "20250623",
+          "total_equity": 1000103.38,
+          "cumulative_return_pct": 0.0103
+        },
+        {
+          "date": "20250624",
+          "total_equity": 1000079.38,
+          "cumulative_return_pct": 0.0079
+        },
+        {
+          "date": "20250625",
+          "total_equity": 1000075.38,
+          "cumulative_return_pct": 0.0075
+        },
+        {
+          "date": "20250626",
+          "total_equity": 1000085.38,
+          "cumulative_return_pct": 0.0085
+        },
+        {
+          "date": "20250627",
+          "total_equity": 1000061.38,
+          "cumulative_return_pct": 0.0061
+        },
+        {
+          "date": "20250630",
+          "total_equity": 1000047.38,
+          "cumulative_return_pct": 0.0047
+        },
+        {
+          "date": "20250701",
+          "total_equity": 1000065.38,
+          "cumulative_return_pct": 0.0065
+        },
+        {
+          "date": "20250702",
+          "total_equity": 1000057.38,
+          "cumulative_return_pct": 0.0057
+        },
+        {
+          "date": "20250703",
+          "total_equity": 1000047.38,
+          "cumulative_return_pct": 0.0047
+        },
+        {
+          "date": "20250704",
+          "total_equity": 1000057.38,
+          "cumulative_return_pct": 0.0057
+        },
+        {
+          "date": "20250707",
+          "total_equity": 1000043.38,
+          "cumulative_return_pct": 0.0043
+        },
+        {
+          "date": "20250708",
+          "total_equity": 1000051.38,
+          "cumulative_return_pct": 0.0051
+        },
+        {
+          "date": "20250709",
+          "total_equity": 1000053.38,
+          "cumulative_return_pct": 0.0053
+        },
+        {
+          "date": "20250710",
+          "total_equity": 1000069.38,
+          "cumulative_return_pct": 0.0069
+        },
+        {
+          "date": "20250711",
+          "total_equity": 1000067.38,
+          "cumulative_return_pct": 0.0067
+        },
+        {
+          "date": "20250714",
+          "total_equity": 1000111.38,
+          "cumulative_return_pct": 0.0111
+        },
+        {
+          "date": "20250715",
+          "total_equity": 1000121.38,
+          "cumulative_return_pct": 0.0121
+        },
+        {
+          "date": "20250716",
+          "total_equity": 1000131.38,
+          "cumulative_return_pct": 0.0131
+        },
+        {
+          "date": "20250717",
+          "total_equity": 1000117.38,
+          "cumulative_return_pct": 0.0117
+        },
+        {
+          "date": "20250718",
+          "total_equity": 1000117.38,
+          "cumulative_return_pct": 0.0117
+        },
+        {
+          "date": "20250721",
+          "total_equity": 1000121.38,
+          "cumulative_return_pct": 0.0121
+        },
+        {
+          "date": "20250722",
+          "total_equity": 1000137.38,
+          "cumulative_return_pct": 0.0137
+        },
+        {
+          "date": "20250723",
+          "total_equity": 1000123.38,
+          "cumulative_return_pct": 0.0123
+        },
+        {
+          "date": "20250724",
+          "total_equity": 1000095.38,
+          "cumulative_return_pct": 0.0095
+        },
+        {
+          "date": "20250725",
+          "total_equity": 1000071.38,
+          "cumulative_return_pct": 0.0071
+        },
+        {
+          "date": "20250728",
+          "total_equity": 1000049.38,
+          "cumulative_return_pct": 0.0049
+        },
+        {
+          "date": "20250729",
+          "total_equity": 1000081.38,
+          "cumulative_return_pct": 0.0081
+        },
+        {
+          "date": "20250730",
+          "total_equity": 1000111.38,
+          "cumulative_return_pct": 0.0111
+        },
+        {
+          "date": "20250731",
+          "total_equity": 1000109.38,
+          "cumulative_return_pct": 0.0109
+        },
+        {
+          "date": "20250801",
+          "total_equity": 1000039.38,
+          "cumulative_return_pct": 0.0039
+        },
+        {
+          "date": "20250804",
+          "total_equity": 1000031.38,
+          "cumulative_return_pct": 0.0031
+        },
+        {
+          "date": "20250805",
+          "total_equity": 1000055.38,
+          "cumulative_return_pct": 0.0055
+        },
+        {
+          "date": "20250806",
+          "total_equity": 1000065.38,
+          "cumulative_return_pct": 0.0065
+        },
+        {
+          "date": "20250807",
+          "total_equity": 1000073.38,
+          "cumulative_return_pct": 0.0073
+        },
+        {
+          "date": "20250808",
+          "total_equity": 1000091.38,
+          "cumulative_return_pct": 0.0091
+        },
+        {
+          "date": "20250811",
+          "total_equity": 1000055.38,
+          "cumulative_return_pct": 0.0055
+        },
+        {
+          "date": "20250812",
+          "total_equity": 1000091.38,
+          "cumulative_return_pct": 0.0091
+        },
+        {
+          "date": "20250813",
+          "total_equity": 1000079.38,
+          "cumulative_return_pct": 0.0079
+        },
+        {
+          "date": "20250814",
+          "total_equity": 1000067.38,
+          "cumulative_return_pct": 0.0067
+        },
+        {
+          "date": "20250815",
+          "total_equity": 1000063.38,
+          "cumulative_return_pct": 0.0063
+        },
+        {
+          "date": "20250818",
+          "total_equity": 1000053.38,
+          "cumulative_return_pct": 0.0053
+        },
+        {
+          "date": "20250819",
+          "total_equity": 1000041.38,
+          "cumulative_return_pct": 0.0041
+        },
+        {
+          "date": "20250820",
+          "total_equity": 1000061.38,
+          "cumulative_return_pct": 0.0061
+        },
+        {
+          "date": "20250821",
+          "total_equity": 1000087.38,
+          "cumulative_return_pct": 0.0087
+        },
+        {
+          "date": "20250822",
+          "total_equity": 1000075.38,
+          "cumulative_return_pct": 0.0075
+        },
+        {
+          "date": "20250825",
+          "total_equity": 1000091.38,
+          "cumulative_return_pct": 0.0091
+        },
+        {
+          "date": "20250826",
+          "total_equity": 1000091.38,
+          "cumulative_return_pct": 0.0091
+        },
+        {
+          "date": "20250827",
+          "total_equity": 1000063.38,
+          "cumulative_return_pct": 0.0063
+        },
+        {
+          "date": "20250828",
+          "total_equity": 1000065.38,
+          "cumulative_return_pct": 0.0065
+        },
+        {
+          "date": "20250829",
+          "total_equity": 1000081.38,
+          "cumulative_return_pct": 0.0081
+        },
+        {
+          "date": "20250901",
+          "total_equity": 1000079.38,
+          "cumulative_return_pct": 0.0079
+        },
+        {
+          "date": "20250902",
+          "total_equity": 1000151.38,
+          "cumulative_return_pct": 0.0151
+        },
+        {
+          "date": "20250903",
+          "total_equity": 1000155.38,
+          "cumulative_return_pct": 0.0155
+        },
+        {
+          "date": "20250904",
+          "total_equity": 1000133.38,
+          "cumulative_return_pct": 0.0133
+        },
+        {
+          "date": "20250905",
+          "total_equity": 1000115.38,
+          "cumulative_return_pct": 0.0115
+        },
+        {
+          "date": "20250908",
+          "total_equity": 1000113.38,
+          "cumulative_return_pct": 0.0113
+        },
+        {
+          "date": "20250909",
+          "total_equity": 1000095.38,
+          "cumulative_return_pct": 0.0095
+        },
+        {
+          "date": "20250910",
+          "total_equity": 1000089.38,
+          "cumulative_return_pct": 0.0089
+        },
+        {
+          "date": "20250911",
+          "total_equity": 1000083.38,
+          "cumulative_return_pct": 0.0083
+        },
+        {
+          "date": "20250912",
+          "total_equity": 1000075.38,
+          "cumulative_return_pct": 0.0075
+        },
+        {
+          "date": "20250915",
+          "total_equity": 1000091.38,
+          "cumulative_return_pct": 0.0091
+        },
+        {
+          "date": "20250916",
+          "total_equity": 1000065.38,
+          "cumulative_return_pct": 0.0065
+        },
+        {
+          "date": "20250917",
+          "total_equity": 1000073.38,
+          "cumulative_return_pct": 0.0073
+        },
+        {
+          "date": "20250918",
+          "total_equity": 1000023.38,
+          "cumulative_return_pct": 0.0023
+        },
+        {
+          "date": "20250919",
+          "total_equity": 1000011.38,
+          "cumulative_return_pct": 0.0011
+        },
+        {
+          "date": "20250922",
+          "total_equity": 1000001.38,
+          "cumulative_return_pct": 0.0001
+        },
+        {
+          "date": "20250923",
+          "total_equity": 1000009.38,
+          "cumulative_return_pct": 0.0009
+        },
+        {
+          "date": "20250924",
+          "total_equity": 1000007.38,
+          "cumulative_return_pct": 0.0007
+        },
+        {
+          "date": "20250925",
+          "total_equity": 1000009.38,
+          "cumulative_return_pct": 0.0009
+        },
+        {
+          "date": "20250926",
+          "total_equity": 1000013.38,
+          "cumulative_return_pct": 0.0013
+        },
+        {
+          "date": "20250929",
+          "total_equity": 1000015.38,
+          "cumulative_return_pct": 0.0015
+        },
+        {
+          "date": "20250930",
+          "total_equity": 999993.38,
+          "cumulative_return_pct": -0.0007
+        },
+        {
+          "date": "20251009",
+          "total_equity": 1000037.38,
+          "cumulative_return_pct": 0.0037
+        },
+        {
+          "date": "20251010",
+          "total_equity": 1000037.38,
+          "cumulative_return_pct": 0.0037
+        },
+        {
+          "date": "20251013",
+          "total_equity": 1000027.38,
+          "cumulative_return_pct": 0.0027
+        },
+        {
+          "date": "20251014",
+          "total_equity": 1000047.38,
+          "cumulative_return_pct": 0.0047
+        },
+        {
+          "date": "20251015",
+          "total_equity": 1000039.38,
+          "cumulative_return_pct": 0.0039
+        },
+        {
+          "date": "20251016",
+          "total_equity": 1000067.38,
+          "cumulative_return_pct": 0.0067
+        },
+        {
+          "date": "20251017",
+          "total_equity": 1000063.38,
+          "cumulative_return_pct": 0.0063
+        },
+        {
+          "date": "20251020",
+          "total_equity": 1000105.38,
+          "cumulative_return_pct": 0.0105
+        },
+        {
+          "date": "20251021",
+          "total_equity": 1000133.38,
+          "cumulative_return_pct": 0.0133
+        },
+        {
+          "date": "20251022",
+          "total_equity": 1000161.38,
+          "cumulative_return_pct": 0.0161
+        },
+        {
+          "date": "20251023",
+          "total_equity": 1000217.38,
+          "cumulative_return_pct": 0.0217
+        },
+        {
+          "date": "20251024",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20251027",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20251028",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20251029",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20251030",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20251031",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20251103",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20251104",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20251105",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20251106",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20251107",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20251110",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20251111",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20251112",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20251113",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20251114",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20251117",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20251118",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20251119",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20251120",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20251121",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20251124",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20251125",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20251126",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20251127",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20251128",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20251201",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20251202",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20251203",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20251204",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20251205",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20251208",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20251209",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20251210",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20251211",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20251212",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20251215",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20251216",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20251217",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20251218",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20251219",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20251222",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20251223",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20251224",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20251225",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20251226",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20251229",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20251230",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20251231",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20260105",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20260106",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20260107",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20260108",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20260109",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20260112",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20260113",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20260114",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20260115",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20260116",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20260119",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20260120",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20260121",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20260122",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20260123",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20260126",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20260127",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20260128",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20260129",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20260130",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20260202",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20260203",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20260204",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20260205",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20260206",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20260209",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20260210",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        },
+        {
+          "date": "20260211",
+          "total_equity": 1000186.56,
+          "cumulative_return_pct": 0.0187
+        }
+      ],
+      "sharpe_ratio": 1.0559,
+      "volatility": 0.000258,
+      "downside_volatility": 0.000205,
+      "sortino_ratio": 1.3293,
+      "var_95_pct": -0.0024,
+      "win_rate_pct": 100.0,
+      "profit_loss_ratio": 0.0,
+      "profit_factor": 999.99,
+      "max_consecutive_wins": 1,
+      "max_consecutive_losses": 0,
+      "total_trades": 2,
+      "final_equity": 1000186.56
+    },
+    "buy_hold_kpi": {
+      "symbol": "601857",
+      "name": "601857",
+      "start_date": "2025-06-05",
+      "end_date": "2026-02-11",
+      "start_close": 7.95,
+      "end_close": 10.85,
+      "total_return_pct": 36.48,
+      "total_return": 0.3648,
+      "annualized_return_pct": 93.48,
+      "max_drawdown_pct": -9.13,
+      "max_drawdown_duration": 29,
+      "win_rate": 0.52,
+      "calmar_ratio": 10.24,
+      "trading_days": 172
+    }
+  }
+}

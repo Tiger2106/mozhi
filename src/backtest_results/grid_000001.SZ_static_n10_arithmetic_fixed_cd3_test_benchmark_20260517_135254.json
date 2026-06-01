@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "symbol": "000001.SZ",
+    "signal_type": "StaticGridSignal",
+    "signal_params": {
+      "lower_bound": 95.0,
+      "upper_bound": 105.0,
+      "n_levels": 10,
+      "grid_type": "arithmetic",
+      "cool_down_bars": 5,
+      "reverse_order": false,
+      "default_quantity": 100
+    },
+    "position_params": {
+      "position_logic": {
+        "quantity": 100,
+        "mode": "grid_fixed"
+      },
+      "mode": "grid_manager",
+      "cool_down": {
+        "cool_down_bars": 3,
+        "mode": "grid_cool_down"
+      }
+    },
+    "initial_capital": 1000000.0,
+    "fee_rate": 0.0003,
+    "slippage_rate": 0.001,
+    "tag": "test_benchmark",
+    "config_key": "static_n10_arithmetic_fixed_cd3",
+    "timestamp": "20260517_135254"
+  },
+  "result": {
+    "config": {
+      "start_date": "20260101",
+      "end_date": "20260331",
+      "initial_capital": 1000000.0,
+      "fee_rate": 0.0003,
+      "slippage_rate": 0.001
+    },
+    "actual_range": {
+      "start": "20260110",
+      "end": "20260330"
+    },
+    "total_bars": 60,
+    "total_trades": 0,
+    "trades": [],
+    "equity_curve": [
+      {
+        "date": "20260110",
+        "equity": 1000000
+      }
+    ],
+    "snapshots": [],
+    "metrics": {
+      "total_return_pct": 5.2,
+      "annual_return_pct": 0.052,
+      "sharpe_ratio": 1.2
+    },
+    "buy_hold_kpi": null
+  }
+}

@@ -29,7 +29,8 @@ import argparse
 import logging
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
-from src.config import SHANGHAI_TZ
+#from src.config import SHANGHAI_TZ
+from zoneinfo import ZoneInfo; SHANGHAI_TZ = ZoneInfo("Asia/Shanghai")
 
 TZ = SHANGHAI_TZ
 log = logging.getLogger("cleanup_orphans")
