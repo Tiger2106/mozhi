@@ -22,7 +22,7 @@ jobs:
         run: python -m pip install --no-build-isolation -e .
       - name: Verify Import
         shell: cmd
-        run: python -c "from automation_v2 import *; print('Import OK')"
+        run: python -c "from signals import *; print('Import OK')"
       - name: Collect-Only Dry Run
         shell: cmd
         run: powershell -NoProfile -ExecutionPolicy Bypass -File .\run_verify_ci.ps1 -CollectOnly
