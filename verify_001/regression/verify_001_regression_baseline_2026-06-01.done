@@ -1,0 +1,14 @@
+{
+  "status": "SUCCESS",
+  "task": "VERIFY_001_regression_baseline",
+  "task_id": "verify_001_regression_20260601",
+  "summary": "VERIFY_001 回归基线建立完成。全部 69/69 用例通过。",
+  "timestamp": "2026-06-01T07:22:10+08:00",
+  "files": [
+    "regression/baseline/2026-06-01_report.html",
+    "regression/baseline/2026-06-01_summary.txt",
+    "regression/regression_report.md"
+  ],
+  "author": "moheng",
+  "done_timestamp": "2026-06-01T07:22:10+08:00"
+}

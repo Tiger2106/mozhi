@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "version": "2.0",
+    "description": "WI4 Golden Samples - Backtest pipeline regression verification",
+    "symbol": "601857.SH",
+    "strategy": {
+      "type": "ma_cross",
+      "params": {
+        "fast": 5,
+        "slow": 20
+      }
+    },
+    "initial_capital": 1000000.0,
+    "fee_rate": 0.0003,
+    "slippage_rate": 0.001,
+    "generated_at": "2026-06-01T16:16:00+08:00",
+    "generated_by": "moheng",
+    "task_id": "wi4_golden_select_moheng",
+    "source_db": "data/analysis.db.bak.20260525",
+    "data_coverage": "2020-01-02 to 2026-05-15 (1540 trading days)"
+  },
+  "samples": [
+    {
+      "id": "gs_bull_2023q2q3",
+      "description": "Bull market scenario - 601857.SH sustained uptrend (4.27 to 7.19, +68%), positive IC stable, momentum signals effective",
+      "scenario": "bull",
+      "market_context": "2023 Feb-Oct: State-owned enterprise revaluation theme drove 601857.SH higher. Started at 4.27, +12.22% in Mar, +31.45% in Apr, consolidation May-Jun, continued rising Jul-Sep to 7.19. Only Aug showed mild correction (-4.09%). Strong capital inflow throughout.",
+      "input": {
+        "start_date": "2023-02-01",
+        "end_date": "2023-10-31"
+      },
+      "expected_output": {
+        "ic_mean_min": 0.04,
+        "ic_mean_max": 0.15,
+        "win_rate_min": 0.50,
+        "win_rate_max": 0.80,
+        "turnover_min": 0.03,
+        "turnover_max": 0.25
+      },
+      "rationale": "Strong uptrend should generate many long signals. IC positive (trend following effective), win rate moderate-high. Turnover moderate - clear trend avoids excessive signals."
+    },
+    {
+      "id": "gs_oscillating_2024h2",
+      "description": "Oscillating/neutral scenario - 601857.SH range-bound (9.15 to 8.55, -6.6%), IC near zero, directional signals weak",
+      "scenario": "oscillating",
+      "market_context": "2024 Jun-Sep: Jun sideways (9.15-9.51), Jul spike and crash (-13.94%), Aug lows (-1.08%), Sep rebound (+3.01%). Price oscillates 7.67-9.61 range without clear direction. Long-short seesaw, trend strategies underperform.",
+      "input": {
+        "start_date": "2024-06-01",
+        "end_date": "2024-09-30"
+      },
+      "expected_output": {
+        "ic_mean_min": -0.05,
+        "ic_mean_max": 0.05,
+        "win_rate_min": 0.40,
+        "win_rate_max": 0.60,
+        "turnover_min": 0.04,
+        "turnover_max": 0.30
+      },
+      "rationale": "Range-bound market, no clear direction. IC near zero (alternating signs). Win rate near 50% (random level). Turnover slightly higher - price oscillating around MAs triggers frequent signal flips."
+    },
+    {
+      "id": "gs_extreme_2021h2_2022q1",
+      "description": "Extreme volatility scenario - 601857.SH wild swings (3.68 to 4.65, +26% but with -12%/-13% monthly drawdowns), IC highly volatile",
+      "scenario": "extreme",
+      "market_context": "2021 Aug to 2022 Mar: Energy sector extreme volatility driven by oil price spikes and Russia-Ukraine tensions. Aug +5.71%, Sep +24.42% (surge), Oct -12.65% (crash), Nov -12.24% (continued drop), Dec +1.02%, Feb 2022 +5.20% (geopolitical), Mar -3.68% (range 16.45%). Price oscillates 3.68-4.84 with monthly amplitude up to 34.45%.",
+      "input": {
+        "start_date": "2021-08-01",
+        "end_date": "2022-03-31"
+      },
+      "expected_output": {
+        "ic_mean_min": -0.10,
+        "ic_mean_max": 0.06,
+        "win_rate_min": 0.30,
+        "win_rate_max": 0.55,
+        "turnover_min": 0.06,
+        "turnover_max": 0.40
+      },
+      "rationale": "Extreme volatility causes frequent trend reversals. IC potentially negative (chasing trends gets whipsawed). Low win rate. Highest turnover - violent price swings trigger repeated buy-sell signals."
+    }
+  ]
+}

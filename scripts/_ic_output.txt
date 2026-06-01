@@ -1,0 +1,10 @@
+﻿python :   File "C:\Users\17699\mozhi_platform\src\pipeline\cross_sectional_ic_pipeline.py", line 59
+所在位置 行:1 字符: 84
++ ... _platform"; python src/pipeline/cross_sectional_ic_pipeline.py --star ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (  File "C:\User...ne.py", line 59:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+    FactorRegistration('momentum_5d',   'normal', enabled=True, requires_db=['close'],       description='5鏃ュ姩閲?),
+                                                                                                         ^
+SyntaxError: unterminated string literal (detected at line 59)
