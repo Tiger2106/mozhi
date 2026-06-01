@@ -12,16 +12,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Check Python
-        run: |
-          python --version
-          python -m pip --version
+        shell: cmd
+        run: python --version && pip --version
       - name: Install Dependencies
+        shell: cmd
         env:
           HTTP_PROXY: http://127.0.0.1:10809
           HTTPS_PROXY: http://127.0.0.1:10809
-          PIP_INDEX_URL: https://pypi.org/simple
         run: python -m pip install -e .
       - name: Verify Import
+        shell: cmd
         run: python -c "from automation_v2 import *; print('Import OK')"
       - name: Collect-Only Dry Run
         run: .\run_verify_ci.ps1 -CollectOnly
