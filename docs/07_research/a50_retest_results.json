@@ -1,0 +1,142 @@
+{
+  "600276": {
+    "code": "600276",
+    "ok": false,
+    "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+  },
+  "600887": {
+    "code": "600887",
+    "ok": false,
+    "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+  },
+  "600030": {
+    "code": "600030",
+    "ok": false,
+    "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+  },
+  "600028": {
+    "code": "600028",
+    "ok": false,
+    "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+  },
+  "601088": {
+    "code": "601088",
+    "ok": false,
+    "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+  },
+  "600585": {
+    "code": "600585",
+    "ok": false,
+    "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+  },
+  "600690": {
+    "code": "600690",
+    "ok": false,
+    "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+  },
+  "601398": {
+    "code": "601398",
+    "ok": true,
+    "rows": 818,
+    "earliest": "2023-01-03",
+    "latest": "2026-05-25"
+  },
+  "600000": {
+    "code": "600000",
+    "ok": false,
+    "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+  },
+  "600016": {
+    "code": "600016",
+    "ok": false,
+    "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+  },
+  "688981": {
+    "code": "688981",
+    "ok": false,
+    "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+  },
+  "000333": {
+    "code": "000333",
+    "ok": true,
+    "rows": 818,
+    "earliest": "2023-01-03",
+    "latest": "2026-05-25"
+  },
+  "002714": {
+    "code": "002714",
+    "ok": true,
+    "rows": 818,
+    "earliest": "2023-01-03",
+    "latest": "2026-05-25"
+  },
+  "300059": {
+    "code": "300059",
+    "ok": true,
+    "rows": 818,
+    "earliest": "2023-01-03",
+    "latest": "2026-05-25"
+  },
+  "000651": {
+    "code": "000651",
+    "ok": true,
+    "rows": 818,
+    "earliest": "2023-01-03",
+    "latest": "2026-05-25"
+  },
+  "002142": {
+    "code": "002142",
+    "ok": false,
+    "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+  },
+  "000100": {
+    "code": "000100",
+    "ok": false,
+    "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+  },
+  "002013": {
+    "code": "002013",
+    "ok": false,
+    "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+  },
+  "300124": {
+    "code": "300124",
+    "ok": false,
+    "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+  },
+  "000538": {
+    "code": "000538",
+    "ok": false,
+    "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+  },
+  "002049": {
+    "code": "002049",
+    "ok": false,
+    "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+  },
+  "002352": {
+    "code": "002352",
+    "ok": false,
+    "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+  },
+  "300782": {
+    "code": "300782",
+    "ok": false,
+    "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+  },
+  "002916": {
+    "code": "002916",
+    "ok": false,
+    "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+  },
+  "300274": {
+    "code": "300274",
+    "ok": false,
+    "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+  },
+  "002129": {
+    "code": "002129",
+    "ok": false,
+    "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+  }
+}

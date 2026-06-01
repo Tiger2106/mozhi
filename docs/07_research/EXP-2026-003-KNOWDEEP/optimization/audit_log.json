@@ -1,0 +1,64 @@
+{
+  "task_id": "EXP-003-Q1-PHASE1",
+  "title": "EXP-003 Q1 回测性能优化 Phase 1 审计日志",
+  "author": "墨衡 (moheng)",
+  "created_time": "2026-05-26T22:10+08:00",
+  "status": "READY",
+  "optimizations": [
+    {
+      "step": 1,
+      "name": "fr_rank 外提 — bootstrap_ic_test 置换检验优化",
+      "file": "scripts/exp_invfac002/exp_bootstrap.py",
+      "function": "bootstrap_ic_test",
+      "change_summary": "将 spearman_correlation 的内联计算展开，预计算 fr_rank 提到 10000 次循环外，循环内只计算 shuffled_rank 一次 argsort",
+      "before": "循环内每次调用 spearman_correlation(shuffled, fr)，每轮 2 次 argsort",
+      "after": "循环内直接计算秩差平方 Spearman rho，每轮 1 次 argsort（fr 的 argsort 预计算）",
+      "timing_original": {
+        "n=50000, n_boot=10000": 342.12
+      },
+      "timing_optimized": {
+        "n=50000, n_boot=10000": 180.00
+      },
+      "speedup": 1.90,
+      "p2_consistency": {
+        "ic_diff": "0.00e+00",
+        "p_diff": "0.00e+00",
+        "verdict": "PASS"
+      }
+    },
+    {
+      "step": 2,
+      "name": "forward_returns 缓存 — compute_window_results 预计算查表",
+      "file": "scripts/exp003_knowdeep/run_exp003_q1.py",
+      "function": "main + compute_window_results",
+      "change_summary": "在 main() 中预计算所有标的 × 所有持有期的 forward_returns 缓存，传递给 compute_window_results 查表，避免三重循环内重复计算",
+      "before": "compute_window_results 在每个 (factor, state, period, stock) 组合中重算 forward_returns，共 50×2×3×3 = 900 次调用",
+      "after": "main() 中预计算 50×3 = 150 次，compute_window_results 直接查表，0 次重复计算",
+      "redundant_calls_saved": 750,
+      "estimated_time_saved": "~1-2s（相对 bootstrap 可忽略，但避免 CPU cache miss 和 GC 压力）"
+    }
+  ],
+  "total_speedup_estimate": {
+    "bootstrap_only": "~1.9x (327.68s → 169.14s on n=50000/10k iterations)",
+    "full_pipeline_estimate": {
+      "bootstrap_calls": 18,
+      "approx_bootstrap_time_per_call_original": "~20s",
+      "approx_bootstrap_time_per_call_optimized": "~10s",
+      "original_estimated": "~360s",
+      "optimized_estimated": "~180s",
+      "forward_returns_savings": "~1-2s"
+    },
+    "can_finish_in_15min": true
+  },
+  "files_modified": [
+    "scripts/exp_invfac002/exp_bootstrap.py",
+    "scripts/exp003_knowdeep/run_exp003_q1.py"
+  ],
+  "files_backed_up": [
+    "scripts/exp_invfac002/exp_bootstrap.py.bak",
+    "scripts/exp003_knowdeep/run_exp003_q1.py.bak"
+  ],
+  "verification_outputs": [
+    "reports/EXP-2026-003-KNOWDEEP/optimization/p2_self_consistency.json"
+  ]
+}

@@ -21,7 +21,7 @@ updated: 2026-05-25T17:17+08:00
 
 配置:
   - 数据源: market_data.db
-  - 标的: 11 只 A50 (见 STOCK_CODES; 剔除 300750)
+  - 标的: 12 只 A50 (见 STOCK_CODES; 含 300750)
   - 时间窗口: 2021-01-01 ~ 2025-12-31
   - 复权方式: qfq（通过 adj_factor 前复权）
   - 随机种子: 42
@@ -60,6 +60,21 @@ class NumpyEncoder(json.JSONEncoder):
         return super().default(obj)
 
 # ── 项目路径 ──
+# 控制台编码修复（Windows GBK 兼容）
+# 仅当未启用外部日志重定向时执行
+if not os.environ.get('MOZHI_DISABLE_IO_WRAP'):
+    import io
+    import locale
+    try:
+        sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
+    except Exception:
+        pass
+
+    try:
+        sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8', errors='replace')
+    except Exception:
+        pass
+
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 sys.path.insert(0, PROJECT_ROOT)
 
@@ -86,9 +101,9 @@ from scripts.exp_invfac002.data_qc_check import run_all_checks as run_data_qc
 # ── 全局配置 ──
 
 STOCK_CODES = [
-    "601857", "000001", "600519", "601318",
-    "600036", "300750", "600276", "600887",
-    "600030", "000333", "002415", "600436",
+    "601857.SH", "000001.SZ", "600519.SH", "601318.SH",
+    "600036.SH", "300750.SZ", "600276.SH", "600887.SH",
+    "600030.SH", "000333.SZ", "002415.SZ", "600585.SH",
     # 300750 已加入: adj_factor 跳变 +81.2% (2023-04-26) 已确认为合法除权除息 (Step 1 QC PASS)
 ]
 
@@ -157,10 +172,10 @@ def load_stock_data(ts_code: str) -> dict:
     cursor = conn.cursor()
 
     cursor.execute("""
-        SELECT date, open, high, low, close, volume, adj_factor
+        SELECT trade_date, open, high, low, close, volume, adj_factor
         FROM stock_daily
-        WHERE code=?
-        ORDER BY date
+        WHERE ts_code=?
+        ORDER BY trade_date
     """, (ts_code,))
     rows = cursor.fetchall()
     conn.close()
@@ -211,9 +226,9 @@ def step_qc_preamble() -> bool:
     print(f"{'─' * 50}")
     result = run_data_qc(STOCK_CODES, start=WARMUP_START, end=OOS_END, skip_bh=True)
     if not result["overall_passed"]:
-        print(f"\n  ❌ 数据质量检查未通过，流水线终止。")
+        print(f"\n  [FAIL] 数据质量检查未通过，流水线终止。")
         return False
-    print(f"\n  ✅ 数据质量检查全部通过。继续执行主流程。")
+    print(f"\n  [OK] 数据质量检查全部通过。继续执行主流程。")
     return True
 
 
@@ -578,7 +593,7 @@ def run_stability_tests(
                 checks_passed = sum([ts_passed, roll_passed, cross_passed, oos_passed])
                 l3_passed = checks_passed >= STABILITY_L3_REQUIRED
                 print(f"    L3 整体: {checks_passed}/4 通过 -> "
-                      f"{'✅ PASS' if l3_passed else '❌ FAIL'}")
+                      f"{'PASS' if l3_passed else 'FAIL'}")
 
                 stability_results[fname][state_label][period] = {
                     "overall_ic": overall_ic,
@@ -664,7 +679,7 @@ def main(dry_run: bool = False, skip_qc: bool = False, skip_sensitivity: bool = 
             failed_path = os.path.join(REPORT_DIR, "qc_failed.json")
             with open(failed_path, "w", encoding="utf-8") as f:
                 json.dump(failed_info, f, ensure_ascii=False, indent=2)
-            print(f"\n  ❌ 流水线因数据质量检查未通过而终止。")
+            print(f"\n  [FAIL] 流水线因数据质量检查未通过而终止。")
             return
     else:
         print(f"\n[Skipped] 数据质量前置检查 (§2.3) — skip_qc=True")
@@ -700,9 +715,11 @@ def main(dry_run: bool = False, skip_qc: bool = False, skip_sensitivity: bool = 
         warmup_start, warmup_end = find_date_range(
             d["dates"], WARMUP_START, WARMUP_END
         )
-        warmup_returns = np.diff(d["close"][warmup_start:warmup_end]) / \
-                         d["close"][warmup_start:warmup_end - 1]
-        warmup_vol = np.concatenate([[0.0], warmup_returns])
+        # 暖机期年化波动率（滚动 std * sqrt(252)，与 classify_market_state 内部计算一致）
+        wu_returns = np.diff(d["close"][warmup_start:warmup_end]) / d["close"][warmup_start:warmup_end - 1]
+        warmup_vol = np.full(warmup_end - warmup_start, np.nan)
+        for i in range(20, len(wu_returns)):
+            warmup_vol[i] = np.std(wu_returns[i - 20 + 1:i + 1]) * np.sqrt(252)
         warmup_vol_by_stock[code] = warmup_vol
 
         states, hi_thr, lo_thr = classify_market_state(
@@ -830,7 +847,7 @@ def main(dry_run: bool = False, skip_qc: bool = False, skip_sensitivity: bool = 
     result_path = os.path.join(REPORT_DIR, "exp_results.json")
     with open(result_path, "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2, cls=NumpyEncoder)
-    print(f"  ✅ {result_path}")
+    print(f"  [OK] {result_path}")
 
     # 敏感性分析独立输出
     if sensitivity_report:
@@ -840,7 +857,7 @@ def main(dry_run: bool = False, skip_qc: bool = False, skip_sensitivity: bool = 
         sens_report_with_meta["run_timestamp"] = run_timestamp
         with open(sens_path, "w", encoding="utf-8") as f:
             json.dump(sens_report_with_meta, f, ensure_ascii=False, indent=2, cls=NumpyEncoder)
-        print(f"  ✅ {sens_path}")
+        print(f"  [OK] {sens_path}")
 
     # 稳定性检验独立输出
     stab_path = os.path.join(REPORT_DIR, "stability_results.json")
@@ -849,7 +866,7 @@ def main(dry_run: bool = False, skip_qc: bool = False, skip_sensitivity: bool = 
     stab_result_with_meta["run_timestamp"] = run_timestamp
     with open(stab_path, "w", encoding="utf-8") as f:
         json.dump(stab_result_with_meta, f, ensure_ascii=False, indent=2, cls=NumpyEncoder)
-    print(f"  ✅ {stab_path}")
+    print(f"  [OK] {stab_path}")
 
     # 摘要报告
     summary_lines = [
@@ -906,7 +923,7 @@ def main(dry_run: bool = False, skip_qc: bool = False, skip_sensitivity: bool = 
     summary_path = os.path.join(REPORT_DIR, "exp_summary.md")
     with open(summary_path, "w", encoding="utf-8") as f:
         f.writelines(summary_lines)
-    print(f"  ✅ {summary_path}")
+    print(f"  [OK] {summary_path}")
 
     print(f"\n{'=' * 50}")
     print("回测完成。（完整流水线含 §2.3 QC / §4.1 敏感性 / §5.2 FDR / §5.3 稳定性）")

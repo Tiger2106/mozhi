@@ -1,0 +1,124 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.pytest_cache/
+
+# Root-level scratch scripts
+_check*.py
+_debug*.py
+_p2_*.py
+_run_*.py
+_q1_*
+_check_*.*
+_update_*.py
+_generate_*.py
+__check*.py
+__find*.py
+__fix*.py
+__compile*.py
+__test*.py
+__try*.py
+temp_*.py
+tmp_*.py
+check_*.py
+e2e_verify_*.py
+generate_dashboard*.py
+fix_tests.py
+pipeline_paths.py
+temp_check_db*.py
+temp_full_data.json
+test_*.py
+validate_*.py
+verify_*.py
+mozhi_dashboard.html
+coverage.xml
+.coverage
+backtest_storage_report.txt
+
+# Runtime temp & scratch
+tmp/
+_temp_*
+_tmp_*
+_workitem*
+*.bak
+*.bat
+*.cmd
+*.err.txt
+*.out.txt
+
+# Logs
+logs/
+*.log
+**/logs/*.log
+
+# Data — large binary/db files (keep only source-defined fixtures)
+data/market/*.db
+data/factors/*.db
+data/*.db
+data/bridge_cache/
+data/signal_history/
+data/rsm_state/
+data/db/
+data/signals/
+data/knowledge_entries/*.json
+data/reports/
+backup/
+backtest_data_cache/
+
+# Databases at root
+*.db
+*.db-shm
+*.db-wal
+
+# Reports (regenerated)
+reports/
+results/
+experiments/
+tasks/
+schedules/
+meetings/
+
+# Pipeline / automation artifacts
+pipeline/
+pipeline_logs/
+signals/pipeline/
+signals/tasks/
+signals/consensus/
+signals/paper_trade/
+signals/triggers/
+.done/
+.pipeline/
+.workflows/
+
+# Incoming / archive / audit
+incoming/
+archive/
+audit/
+workflows/
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Coverage
+.coverage
+coverage.xml
+htmlcov/
+
+# HTML dashboards (regenerated)
+mozhi_dashboard.html
+
+# knowledge_base
+knowledge_base/
+knowledge_entries/
+
+# Submodule
+.workflows/
+.openclaw/

@@ -1,0 +1,72 @@
+{
+  "experiment_id": "EXP-2026-003-KNOWDEEP",
+  "status": "CLOSED",
+  "overall_verdict": "Q1: OBSERVE（单因子衰减）→ Q2: PASS（复合信号有效）→ Q3: PASS（统计显著+稳健性确认）",
+  "closed_at": "2026-05-27T12:50:00+08:00",
+  "phases": {
+    "q1_factor_decay": {
+      "status": "PASS (6/18 → OBSERVE)",
+      "summary": "l_vol_rsi_std与TrendQuality因子衰减分析，18组合中6个PASS(33.3%)。P1修复后墨萱技术评级从WARN升级为PASS",
+      "reviewers": "墨萱QA+技术→玄知→墨涵→Owner",
+      "knowledge_entry": "KID-EXP003-001 DRAFT (low)"
+    },
+    "p1_fixes": {
+      "status": "COMPLETED",
+      "items": ["样本量门限引擎级硬逻辑(apply_verdict_degradation)", "超时自检模块(self_check.py)"],
+      "tests": ["9/9门限测试", "4/4超时场景"]
+    },
+    "q2_composite_signal": {
+      "status": "PASS (12/12)",
+      "summary": "4种复合加权方案全部通过，C1-RWC最优(IC=0.1384 20d,+34.6%)。HV不可替代(排除后IC降87.5%)。跨状态协同效应确认",
+      "reviewers": "墨萱QA(98/100)→第1次退回修复→墨萱技术→玄知(5项条件)→墨涵→Owner",
+      "knowledge_entry": "KID-EXP003-001 → ACTIVE (medium)"
+    },
+    "q2_prerequisites": {
+      "status": "COMPLETED",
+      "items": ["Q2代码Git commit+Tag(exp003-q2-v1)", "C1-RWC权重灵敏度(±20%稳健)", "C2-RFS低信噪比标注", "随机种子锁定"]
+    },
+    "q3_full_validation": {
+      "status": "PASS (5/5)",
+      "summary": "Bootstrap(p<0.00001)+FDR(3/3 rejected)+L3(flip_rate=0%)+reverse_factor(6/6一致)+费用扣除(Net IC为正)。墨萱复核PASS(2 WARN)→玄知复核PASS→墨涵知识审查→Owner终签",
+      "reviewers": "墨萱→玄知→墨涵→Owner"
+    },
+    "q4_combo_backtest": {
+      "status": "FAIL (做多)",
+      "summary": "P0 bug（买入资金重复扣减）修复后重跑，墨萱复核验证通过。C1-RWC净收益-60.20%(基准+163.35%)。零费用毛收益-39.80%，排除费用后仍为负。核心结论：截面IC有效≠做多组合正收益",
+      "failure_pattern": "market_structure_mismatch",
+      "zero_fee_gross_return_pct": -39.80,
+      "total_fees": 40816,
+      "md_pct": 68.34,
+      "reviewers": "墨衡(修复+执行)→墨萱(代码审查+结果验证)→墨涵(归档)"
+    }
+  },
+  "core_findings": [
+    "单一因子(l_vol_rsi_std)存在显著性衰减(Q1 6/18,33.3%)，但跨状态复合加权(C1-RWC)可有效恢复信号质量(Q2 12/12)",
+    "C1-RWC最优方案通过三级验证链(Bootstrap+FDR+L3+reverse_factor+费用扣除)，统计显著(p<0.00001)且参数稳健",
+    "HV高波状态信号贡献不可替代(排除后IC降87.5%)，跨状态协同效应源于cross-term非线性叠加(+0.0562~+0.0744)",
+    "Q1衰减与Q2/Q3增强不矛盾——不同分析粒度下的互补结论",
+    "【Q4核心发现】IC=0.1384(p<0.00001)统计显著，但零费用毛收益-39.80% → 截面IC有效≠做多组合正收益",
+    "失败根因：market_structure_mismatch（A股单边做多约束），非signal_quality_failure",
+    "P0 bug经验教训：试验必须走完整管线，墨萱复核不可跳过（跳过即发现了双扣费bug）"
+  ],
+  "failure_entries": [
+    "FLR-EXP003-001 (market_structure_mismatch)"
+  ],
+  "pending_risks": [
+    "已全部覆盖：极端行情压力测试→Q4含2015股灾+2018熊市完整覆盖",
+    "已全部覆盖：费用扣除净收益→Q4含零费用假设检验",
+    "已全部覆盖：完整资金曲线→Q4含2015-2025全周期净值序列",
+    "风险结论：C1-RWC在A股做多约束下不可行"
+  ],
+  "next_steps": []
+  "archive_location": "C:/Users/17699/mozhi_platform/docs/07_research/EXP-2026-003-KNOWDEEP/",
+  "knowledge_entries": {
+    "KID-EXP003-001": {"status": "active", "confidence": "medium", "activated_at": "2026-05-27T11:03+08:00"}
+  },
+  "signatures": {
+    "moxuan": "技术实现正确（Q1技术审核WARN→PASS + Q2初审→修复→重检 + Q3复核PASS）",
+    "xuanzhi": "架构+数据一致性确认（Q1有条件通过→Q2 5条件执行→Q3 PASS，无退回）",
+    "mohan": "知识产出完整、文档归档到位、KID-EXP003-001已激活并Q3升级",
+    "owner": "APPROVED：Q1 OBSERVE→P1修复→Q2确认→Q3确认→全流程闭环"
+  }
+}

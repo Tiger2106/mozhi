@@ -1,0 +1,315 @@
+{
+  "version": "1.0",
+  "phase": "P0.2",
+  "parent_doc": "右交共振Phase0详细设计方案_v1.md",
+  "created_time": "2026-05-29T09:20:00+08:00",
+  "author": "moheng",
+  "total_estimate_minutes": 412,
+  "tasks": [
+    {
+      "id": "task_01",
+      "name": "constants.py — 全局常量定义",
+      "type": "coding",
+      "estimate_minutes": 5,
+      "depends_on": [],
+      "section": "§1",
+      "description": "定义所有全局数学常量(RESONANCE_MIN_STRENGTH, LOOKBACK_WINDOW, QUANTILE_THRESHOLD等)和路径常量(SIGNAL_OUTPUT_DIR, LB_PERSIST_PATH等)",
+      "review_fixes": ["D1"]
+    },
+    {
+      "id": "task_01_test",
+      "name": "test_constants.py — 全局常量测试",
+      "type": "test",
+      "estimate_minutes": 10,
+      "depends_on": ["task_01"],
+      "description": "验证常量完整性：确认所有模块引用的常量均在此定义，值类型/范围正确，RESONANCE_MIN_STRENGTH 0.6 被 GKV/CPE 同时引用"
+    },
+    {
+      "id": "task_02",
+      "name": "models.py — 核心数据结构",
+      "type": "coding",
+      "estimate_minutes": 10,
+      "depends_on": [],
+      "section": "§2 (2.1~2.4)",
+      "description": "定义 LB_DailyRecord/LookbackBuffer/ResonanceSignal/ModuleResult 数据类、ResonanceState/SignalDirection 枚举、serialize/deserialize 方法、zscore_series/previous_state/append 辅助方法",
+      "review_fixes": ["C3", "X-B1", "X-B2"]
+    },
+    {
+      "id": "task_02_test",
+      "name": "test_models.py — 数据结构测试",
+      "type": "test",
+      "estimate_minutes": 15,
+      "depends_on": ["task_02"],
+      "description": "验证 dataclass 字段完整、LookbackBuffer.append 自动裁剪、serialize/deserialize 往返一致、previous_state 缺省返回 NONE"
+    },
+    {
+      "id": "task_03",
+      "name": "lookback_buffer.py — Lookback Buffer 持久化",
+      "type": "coding",
+      "estimate_minutes": 10,
+      "depends_on": ["task_02"],
+      "section": "§2.1, §13.5",
+      "description": "实现 LB load()/save() 方法（JSON 文件读写）、覆盖写入（以 date 为键）、文件锁保护、异常时降级为内存模式",
+      "review_fixes": ["C2", "C3", "X-B2"]
+    },
+    {
+      "id": "task_03_test",
+      "name": "test_lookback_buffer.py — LB 持久化测试",
+      "type": "test",
+      "estimate_minutes": 20,
+      "depends_on": ["task_03"],
+      "description": "测试文件读写、覆盖写入幂等性、路径不存在时自动创建、损坏文件降级、并发写保护"
+    },
+    {
+      "id": "task_04",
+      "name": "data_bridge.py — DataBridge 数据桥",
+      "type": "coding",
+      "estimate_minutes": 15,
+      "depends_on": [],
+      "section": "§3",
+      "description": "实现 DataBridge 静态接口：get_latest_date()、get_history(days)（≥40日OHLCV）、available_dimensions()；DataBridgeError 异常类；数据可用性契约(X-C1)；missing_data 返回 None 不抛异常",
+      "review_fixes": ["X-C1", "X-C2"]
+    },
+    {
+      "id": "task_04_test",
+      "name": "test_data_bridge.py — DataBridge 测试",
+      "type": "test",
+      "estimate_minutes": 20,
+      "depends_on": ["task_04"],
+      "description": "测试正常数据返回（≥40行）、数据不可用返回 None、字段类型 float、缺失列兼容、dimensions 动态清单"
+    },
+    {
+      "id": "task_05",
+      "name": "dcm.py — DCM 波动率代理模块",
+      "type": "coding",
+      "estimate_minutes": 12,
+      "depends_on": ["task_01", "task_02"],
+      "section": "§4",
+      "description": "实现 compute_hv() (log return→年化HV, 20日滚动) 和 run() 入口；前值填充策略(max_fill_forward=3)；序列不足/skip 返回 ModuleResult(status=SKIPPED)",
+      "review_fixes": []
+    },
+    {
+      "id": "task_05_test",
+      "name": "test_dcm.py — DCM 波动率测试",
+      "type": "test",
+      "estimate_minutes": 15,
+      "depends_on": ["task_05"],
+      "description": "验证 HV 计算逻辑（manual fixture）、序列<21 返回 SKIPPED、NaN 填充≤3日、全部相等 std=0→SUCCESS、大 dropout→SKIPPED"
+    },
+    {
+      "id": "task_06",
+      "name": "lqm.py — LQM 换手率计算模块",
+      "type": "coding",
+      "estimate_minutes": 8,
+      "depends_on": ["task_01", "task_02"],
+      "section": "§5",
+      "description": "实现 compute_turnover(volume, free_float) 和 run() 入口；free_float=0→SKIPPED、volume=0→SUCCESS(turnover=0)",
+      "review_fixes": []
+    },
+    {
+      "id": "task_06_test",
+      "name": "test_lqm.py — LQM 换手率测试",
+      "type": "test",
+      "estimate_minutes": 12,
+      "depends_on": ["task_06"],
+      "description": "验证正常换手率计算、free_float=0→SKIPPED、volume=0→SUCCESS(turnover=0)、turnover>1.0（合法极值）"
+    },
+    {
+      "id": "task_07",
+      "name": "znm.py — ZNM z-score 归一化模块",
+      "type": "coding",
+      "estimate_minutes": 10,
+      "depends_on": ["task_01", "task_02"],
+      "section": "§6",
+      "description": "实现 compute_zscore(values, new_value) 和 run(hv_series, turnover_series, new_hv, new_turnover)；std=0→zscore=0；诊断输出 mean/std",
+      "review_fixes": []
+    },
+    {
+      "id": "task_07_test",
+      "name": "test_znm.py — ZNM 归一化测试",
+      "type": "test",
+      "estimate_minutes": 15,
+      "depends_on": ["task_07"],
+      "description": "验证 z-score 计算正确性、std=0→0.0（非None）、历史序列<2→FAILED、new_value=None→FAILED、诊断字段完整"
+    },
+    {
+      "id": "task_08",
+      "name": "rsm.py — RSM 共振状态机模块",
+      "type": "coding",
+      "estimate_minutes": 15,
+      "depends_on": ["task_01", "task_02", "task_07"],
+      "section": "§7",
+      "description": "实现 compute_strength() 算法层 + _transition_state() 状态层；共振强度计算(sqrt(vol_z²+turn_z²)/(threshold*√2), clip[0,1])；13条状态转移规则矩阵；WARN 5日/DECAY 10日过期策略",
+      "review_fixes": ["C1", "A2", "B1"]
+    },
+    {
+      "id": "task_08_test",
+      "name": "test_rsm.py — RSM 状态机测试",
+      "type": "test",
+      "estimate_minutes": 25,
+      "depends_on": ["task_08"],
+      "description": "覆盖13条状态转换规则全部路径（NONE→WARN→ACTIVE→DECAY→NONE 完整链路）、过期策略、单极端尾部不触发共振、首次运行 previous_state=None→NONE、强度clip边界"
+    },
+    {
+      "id": "task_09",
+      "name": "dsv.py — DSV 双源校验模块",
+      "type": "coding",
+      "estimate_minutes": 15,
+      "depends_on": ["task_01", "task_02", "task_07"],
+      "section": "§8",
+      "description": "实现 _compute_correlation()（Spearman rank + Parkison HV 辅源降级）、run() 入口；辅源不可用→partial=True；std=0 guard clause；无额外数据源→单源+置信度衰减",
+      "review_fixes": ["D2", "B2", "X-C2", "X-E1", "O2"]
+    },
+    {
+      "id": "task_09_test",
+      "name": "test_dsv.py — DSV 双源校验测试",
+      "type": "test",
+      "estimate_minutes": 20,
+      "depends_on": ["task_09"],
+      "description": "测试正常双源校验打分、辅源降级(partial=True)、std=0 guard clause返回passed=False、高分/零分边界情况"
+    },
+    {
+      "id": "task_10",
+      "name": "gkv.py — GKV 门控/否决模块",
+      "type": "coding",
+      "estimate_minutes": 10,
+      "depends_on": ["task_01", "task_02"],
+      "section": "§9",
+      "description": "实现 run(resonance_state, resonance_strength, dsv_passed, dsv_partial)；否决条件：状态=NONE 或 strength<0.6 或 DSV 未通过；否决不可绕过（单向门）",
+      "review_fixes": ["X-A1", "D1"]
+    },
+    {
+      "id": "task_10_test",
+      "name": "test_gkv.py — GKV 门控测试",
+      "type": "test",
+      "estimate_minutes": 15,
+      "depends_on": ["task_10"],
+      "description": "测试否决条件全覆盖（NONE、strength<0.6、DSV failed）、pass 路径（ACTIVE+strength≥0.6+DSV passed）、否决理由传递"
+    },
+    {
+      "id": "task_11",
+      "name": "cpe.py — CPE 条件放行评估模块",
+      "type": "coding",
+      "estimate_minutes": 12,
+      "depends_on": ["task_01", "task_02"],
+      "section": "§10",
+      "description": "实现 run(resonance_strength_today, lb, dsv_passed, dsv_partial)；条件：连续5日strength>0.6 + DSV passed→CONDITIONAL_PASS(position_cap=0.5)；partial=True自动→FULL_PASS；信号生效窗口 T+1 开盘30分钟；position_cap=min(0.5, 风控上限)",
+      "review_fixes": ["O1", "D1", "D2", "X-D1"]
+    },
+    {
+      "id": "task_11_test",
+      "name": "test_cpe.py — CPE 条件放行测试",
+      "type": "test",
+      "estimate_minutes": 15,
+      "depends_on": ["task_11"],
+      "description": "测试连续5日>0.6+DSV通过→CONDITIONAL_PASS(cap=0.5)、不足5日→FULL_PASS(cap=1.0)、partial=True→FULL_PASS、生效窗口模拟"
+    },
+    {
+      "id": "task_12",
+      "name": "sg.py — SG 信号生成模块",
+      "type": "coding",
+      "estimate_minutes": 12,
+      "depends_on": ["task_02"],
+      "section": "§11",
+      "description": "实现 build_signal() 组装 ResonanceSignal、write_signal() 写到 SIGNAL_OUTPUT_DIR、write_done() 写到 SIGNAL_DONE_DIR；写入后 read 验证（重试3次）；EMPTY_SIGNAL 常量（pipeline跳过用）",
+      "review_fixes": []
+    },
+    {
+      "id": "task_12_test",
+      "name": "test_sg.py — SG 信号生成测试",
+      "type": "test",
+      "estimate_minutes": 15,
+      "depends_on": ["task_12"],
+      "description": "测试信号 JSON 格式符合 Signal Protocol v1、UUID 生成、写入验证重试3次、EMPTY_SIGNAL 格式正确的"
+    },
+    {
+      "id": "task_13",
+      "name": "scl.py — SCL 调度层适配器",
+      "type": "coding",
+      "estimate_minutes": 15,
+      "depends_on": ["task_01", "task_04"],
+      "section": "§12",
+      "description": "实现 SchedulingAdapter 抽象基类、PollingAdapter(interval=30min, max_retries=1, fallback=skip_silently)；_has_new_data() 检查 DataBridge；force_run(date) 回测接口（YYYY-MM-DD）；事件驱动 EventAdapter(Phase 1预留骨架)",
+      "review_fixes": ["A1", "E1", "E2"]
+    },
+    {
+      "id": "task_13_test",
+      "name": "test_scl.py — SCL 调度层测试",
+      "type": "test",
+      "estimate_minutes": 15,
+      "depends_on": ["task_13"],
+      "description": "测试 PollingAdapter.run_once() 数据检查、重试1次后静默跳过、force_run 日期格式校验、_has_new_data 返回 None→跳过"
+    },
+    {
+      "id": "task_14",
+      "name": "pipeline.py — 管线编排逻辑",
+      "type": "coding",
+      "estimate_minutes": 15,
+      "depends_on": ["task_01", "task_02", "task_03", "task_04", "task_05", "task_06", "task_07", "task_08", "task_09", "task_10", "task_11", "task_12"],
+      "section": "§13",
+      "description": "实现 ResonancePipeline 类（组装全部模块）；run(force_date) 方法按13步流程编排（Step0.5A→Step1→...→Step9.5B）；SKIP_PIPELINE 判定（DataBridge无数据/DCM跳过/LQM跳过/ZNM失败→返回空信号）；RSM∥DSV 并行；错误处理ERR-1~ERR-8；幂等性（同日期覆盖写入、seq递增信号命名）",
+      "review_fixes": ["C1", "C2", "X-B2", "O3", "X-A1"]
+    },
+    {
+      "id": "task_14_test",
+      "name": "test_pipeline.py — 管线集成测试",
+      "type": "test",
+      "estimate_minutes": 25,
+      "depends_on": ["task_14"],
+      "description": "集成测试：完整路径（正常共振判定→信号输出）、SKIP_PIPELINE 路径（DataBridge无数据、DCM失败）、force_date回测模式、幂等性验证（同日期多次调用→同一LB状态）、空信号格式"
+    },
+    {
+      "id": "task_15",
+      "name": "conftest.py — 测试夹具",
+      "type": "test",
+      "estimate_minutes": 10,
+      "depends_on": ["task_02", "task_04"],
+      "description": "pytest fixtures：mock DataBridge 返回有/无数据、已知 HV 序列（用于 DCM/ZNM 测试）、LB 完整/空状态、共振信号样本"
+    }
+  ],
+  "review_fixes_traced": [
+    "C1",
+    "X-A1",
+    "O1",
+    "X-C1",
+    "C2",
+    "C3",
+    "X-B1",
+    "X-B2",
+    "A1",
+    "A2",
+    "B1",
+    "D1",
+    "D2",
+    "B2",
+    "E1",
+    "E2",
+    "O2",
+    "O3",
+    "X-C2",
+    "X-D1",
+    "X-E1"
+  ],
+  "summary": {
+    "total_coding_tasks": 14,
+    "total_test_tasks": 15,
+    "total_tasks": 29,
+    "total_coding_minutes": 164,
+    "total_test_minutes": 248,
+    "total_minutes": 412,
+    "total_estimate_hours": "6.9h",
+    "encoding_order": [
+      "task_01 (constants), task_02 (models) — 基础设施（无依赖）",
+      "task_15 (conftest) — 测试夹具（依赖 task_02）",
+      "task_03 (LB), task_04 (DataBridge) — 数据持久化/入口（并行，依赖 task_02/无依赖）",
+      "task_05 (DCM), task_06 (LQM) — 数据采集层（并行，依赖 task_01/02）",
+      "task_07 (ZNM) — 归一化层（依赖 task_01/02）",
+      "task_08 (RSM), task_09 (DSV) — 并行检测层（并行，依赖 task_07）",
+      "task_10 (GKV) — 门控层（依赖 task_01/02）",
+      "task_11 (CPE) — 条件层（依赖 task_01/02）",
+      "task_12 (SG) — 输出层（依赖 task_02）",
+      "task_13 (SCL) — 调度层（依赖 task_01/04）",
+      "task_14 (pipeline) — 集成层（依赖全部编码模块）"
+    ]
+  }
+}

@@ -1,0 +1,1129 @@
+{
+  "meta": {
+    "author": "moheng",
+    "date": "2026-05-26",
+    "version": "v2",
+    "task_id": "S002_real_line_20260526",
+    "data_sources": {
+      "market_db": "stock_daily@2026-05-26",
+      "alpha_factors": "policy=0.85, compliance=0.92, pool=5730.0亿",
+      "real_symbols": 10,
+      "estimated_symbols": 39
+    }
+  },
+  "summary": {
+    "total_symbols_core": 49,
+    "total_symbols_extended": 0,
+    "aggregate_index": 0.7898,
+    "channel_types": [
+      "资金流入流出比",
+      "主力净流向",
+      "成交量异动",
+      "价格动量"
+    ],
+    "real_data_ratio": 0.2041
+  },
+  "records": [
+    {
+      "date": "2026-05-26",
+      "symbol": "600519",
+      "pool": "core",
+      "channel_type": "资金流入流出比",
+      "value": 0.38,
+      "confidence": 0.97,
+      "data_source": "real"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600519",
+      "pool": "core",
+      "channel_type": "主力净流向",
+      "value": 0.48,
+      "confidence": 0.84,
+      "data_source": "real"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600519",
+      "pool": "core",
+      "channel_type": "成交量异动",
+      "value": 0.59,
+      "confidence": 0.96,
+      "data_source": "real"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600519",
+      "pool": "core",
+      "channel_type": "价格动量",
+      "value": 0.48,
+      "confidence": 0.82,
+      "data_source": "real"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601857",
+      "pool": "core",
+      "channel_type": "资金流入流出比",
+      "value": 0.32,
+      "confidence": 0.99,
+      "data_source": "real"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601857",
+      "pool": "core",
+      "channel_type": "主力净流向",
+      "value": 0.34,
+      "confidence": 0.8,
+      "data_source": "real"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601857",
+      "pool": "core",
+      "channel_type": "成交量异动",
+      "value": 0.54,
+      "confidence": 0.98,
+      "data_source": "real"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601857",
+      "pool": "core",
+      "channel_type": "价格动量",
+      "value": 0.34,
+      "confidence": 0.77,
+      "data_source": "real"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600036",
+      "pool": "core",
+      "channel_type": "资金流入流出比",
+      "value": 0.34,
+      "confidence": 0.95,
+      "data_source": "real"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600036",
+      "pool": "core",
+      "channel_type": "主力净流向",
+      "value": 0.49,
+      "confidence": 0.85,
+      "data_source": "real"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600036",
+      "pool": "core",
+      "channel_type": "成交量异动",
+      "value": 0.53,
+      "confidence": 0.99,
+      "data_source": "real"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600036",
+      "pool": "core",
+      "channel_type": "价格动量",
+      "value": 0.49,
+      "confidence": 0.82,
+      "data_source": "real"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600276",
+      "pool": "core",
+      "channel_type": "资金流入流出比",
+      "value": 0.79,
+      "confidence": 0.96,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600276",
+      "pool": "core",
+      "channel_type": "主力净流向",
+      "value": 0.85,
+      "confidence": 0.95,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600276",
+      "pool": "core",
+      "channel_type": "成交量异动",
+      "value": 0.48,
+      "confidence": 0.99,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600276",
+      "pool": "core",
+      "channel_type": "价格动量",
+      "value": 0.93,
+      "confidence": 0.98,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601166",
+      "pool": "core",
+      "channel_type": "资金流入流出比",
+      "value": 0.98,
+      "confidence": 0.97,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601166",
+      "pool": "core",
+      "channel_type": "主力净流向",
+      "value": 0.78,
+      "confidence": 0.93,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601166",
+      "pool": "core",
+      "channel_type": "成交量异动",
+      "value": 0.51,
+      "confidence": 1.0,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601166",
+      "pool": "core",
+      "channel_type": "价格动量",
+      "value": 0.87,
+      "confidence": 0.95,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600900",
+      "pool": "core",
+      "channel_type": "资金流入流出比",
+      "value": 0.94,
+      "confidence": 0.87,
+      "data_source": "real"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600900",
+      "pool": "core",
+      "channel_type": "主力净流向",
+      "value": 0.52,
+      "confidence": 0.86,
+      "data_source": "real"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600900",
+      "pool": "core",
+      "channel_type": "成交量异动",
+      "value": 0.54,
+      "confidence": 0.98,
+      "data_source": "real"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600900",
+      "pool": "core",
+      "channel_type": "价格动量",
+      "value": 0.52,
+      "confidence": 0.83,
+      "data_source": "real"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600887",
+      "pool": "core",
+      "channel_type": "资金流入流出比",
+      "value": 0.91,
+      "confidence": 0.97,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600887",
+      "pool": "core",
+      "channel_type": "主力净流向",
+      "value": 0.82,
+      "confidence": 0.95,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600887",
+      "pool": "core",
+      "channel_type": "成交量异动",
+      "value": 0.66,
+      "confidence": 0.94,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600887",
+      "pool": "core",
+      "channel_type": "价格动量",
+      "value": 0.8,
+      "confidence": 0.93,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601318",
+      "pool": "core",
+      "channel_type": "资金流入流出比",
+      "value": 0.97,
+      "confidence": 0.87,
+      "data_source": "real"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601318",
+      "pool": "core",
+      "channel_type": "主力净流向",
+      "value": 0.55,
+      "confidence": 0.86,
+      "data_source": "real"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601318",
+      "pool": "core",
+      "channel_type": "成交量异动",
+      "value": 0.59,
+      "confidence": 0.96,
+      "data_source": "real"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601318",
+      "pool": "core",
+      "channel_type": "价格动量",
+      "value": 0.55,
+      "confidence": 0.84,
+      "data_source": "real"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600030",
+      "pool": "core",
+      "channel_type": "资金流入流出比",
+      "value": 0.89,
+      "confidence": 1.0,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600030",
+      "pool": "core",
+      "channel_type": "主力净流向",
+      "value": 0.92,
+      "confidence": 0.98,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600030",
+      "pool": "core",
+      "channel_type": "成交量异动",
+      "value": 0.6,
+      "confidence": 0.96,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600030",
+      "pool": "core",
+      "channel_type": "价格动量",
+      "value": 0.89,
+      "confidence": 0.96,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600028",
+      "pool": "core",
+      "channel_type": "资金流入流出比",
+      "value": 0.97,
+      "confidence": 0.95,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600028",
+      "pool": "core",
+      "channel_type": "主力净流向",
+      "value": 0.83,
+      "confidence": 0.95,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600028",
+      "pool": "core",
+      "channel_type": "成交量异动",
+      "value": 0.44,
+      "confidence": 0.98,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600028",
+      "pool": "core",
+      "channel_type": "价格动量",
+      "value": 0.79,
+      "confidence": 0.93,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601088",
+      "pool": "core",
+      "channel_type": "资金流入流出比",
+      "value": 0.76,
+      "confidence": 0.96,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601088",
+      "pool": "core",
+      "channel_type": "主力净流向",
+      "value": 0.8,
+      "confidence": 0.94,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601088",
+      "pool": "core",
+      "channel_type": "成交量异动",
+      "value": 0.35,
+      "confidence": 0.94,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601088",
+      "pool": "core",
+      "channel_type": "价格动量",
+      "value": 0.9,
+      "confidence": 0.97,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600585",
+      "pool": "core",
+      "channel_type": "资金流入流出比",
+      "value": 0.7,
+      "confidence": 1.0,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600585",
+      "pool": "core",
+      "channel_type": "主力净流向",
+      "value": 0.8,
+      "confidence": 0.94,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600585",
+      "pool": "core",
+      "channel_type": "成交量异动",
+      "value": 0.33,
+      "confidence": 0.93,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600585",
+      "pool": "core",
+      "channel_type": "价格动量",
+      "value": 0.71,
+      "confidence": 0.9,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600690",
+      "pool": "core",
+      "channel_type": "资金流入流出比",
+      "value": 0.78,
+      "confidence": 0.98,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600690",
+      "pool": "core",
+      "channel_type": "主力净流向",
+      "value": 0.92,
+      "confidence": 0.98,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600690",
+      "pool": "core",
+      "channel_type": "成交量异动",
+      "value": 0.41,
+      "confidence": 0.96,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600690",
+      "pool": "core",
+      "channel_type": "价格动量",
+      "value": 0.71,
+      "confidence": 0.9,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601398",
+      "pool": "core",
+      "channel_type": "资金流入流出比",
+      "value": 0.9,
+      "confidence": 0.95,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601398",
+      "pool": "core",
+      "channel_type": "主力净流向",
+      "value": 0.78,
+      "confidence": 0.93,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601398",
+      "pool": "core",
+      "channel_type": "成交量异动",
+      "value": 0.48,
+      "confidence": 0.99,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601398",
+      "pool": "core",
+      "channel_type": "价格动量",
+      "value": 0.74,
+      "confidence": 0.91,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601939",
+      "pool": "core",
+      "channel_type": "资金流入流出比",
+      "value": 0.71,
+      "confidence": 1.0,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601939",
+      "pool": "core",
+      "channel_type": "主力净流向",
+      "value": 0.86,
+      "confidence": 0.96,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601939",
+      "pool": "core",
+      "channel_type": "成交量异动",
+      "value": 0.7,
+      "confidence": 0.92,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601939",
+      "pool": "core",
+      "channel_type": "价格动量",
+      "value": 0.71,
+      "confidence": 0.9,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600000",
+      "pool": "core",
+      "channel_type": "资金流入流出比",
+      "value": 0.78,
+      "confidence": 0.98,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600000",
+      "pool": "core",
+      "channel_type": "主力净流向",
+      "value": 0.88,
+      "confidence": 0.96,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600000",
+      "pool": "core",
+      "channel_type": "成交量异动",
+      "value": 0.36,
+      "confidence": 0.94,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600000",
+      "pool": "core",
+      "channel_type": "价格动量",
+      "value": 0.85,
+      "confidence": 0.95,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600016",
+      "pool": "core",
+      "channel_type": "资金流入流出比",
+      "value": 0.98,
+      "confidence": 0.96,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600016",
+      "pool": "core",
+      "channel_type": "主力净流向",
+      "value": 0.76,
+      "confidence": 0.93,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600016",
+      "pool": "core",
+      "channel_type": "成交量异动",
+      "value": 0.47,
+      "confidence": 0.99,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600016",
+      "pool": "core",
+      "channel_type": "价格动量",
+      "value": 0.86,
+      "confidence": 0.95,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600019",
+      "pool": "core",
+      "channel_type": "资金流入流出比",
+      "value": 1.0,
+      "confidence": 0.99,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600019",
+      "pool": "core",
+      "channel_type": "主力净流向",
+      "value": 0.88,
+      "confidence": 0.96,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600019",
+      "pool": "core",
+      "channel_type": "成交量异动",
+      "value": 0.5,
+      "confidence": 1.0,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600019",
+      "pool": "core",
+      "channel_type": "价格动量",
+      "value": 0.97,
+      "confidence": 0.99,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600104",
+      "pool": "core",
+      "channel_type": "资金流入流出比",
+      "value": 0.99,
+      "confidence": 1.0,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600104",
+      "pool": "core",
+      "channel_type": "主力净流向",
+      "value": 0.84,
+      "confidence": 0.95,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600104",
+      "pool": "core",
+      "channel_type": "成交量异动",
+      "value": 0.31,
+      "confidence": 0.92,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600104",
+      "pool": "core",
+      "channel_type": "价格动量",
+      "value": 1.0,
+      "confidence": 1.0,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601328",
+      "pool": "core",
+      "channel_type": "资金流入流出比",
+      "value": 0.75,
+      "confidence": 0.97,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601328",
+      "pool": "core",
+      "channel_type": "主力净流向",
+      "value": 0.82,
+      "confidence": 0.95,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601328",
+      "pool": "core",
+      "channel_type": "成交量异动",
+      "value": 0.36,
+      "confidence": 0.94,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601328",
+      "pool": "core",
+      "channel_type": "价格动量",
+      "value": 0.85,
+      "confidence": 0.95,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601288",
+      "pool": "core",
+      "channel_type": "资金流入流出比",
+      "value": 0.79,
+      "confidence": 0.97,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601288",
+      "pool": "core",
+      "channel_type": "主力净流向",
+      "value": 0.92,
+      "confidence": 0.98,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601288",
+      "pool": "core",
+      "channel_type": "成交量异动",
+      "value": 0.32,
+      "confidence": 0.93,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601288",
+      "pool": "core",
+      "channel_type": "价格动量",
+      "value": 0.7,
+      "confidence": 0.9,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601988",
+      "pool": "core",
+      "channel_type": "资金流入流出比",
+      "value": 0.87,
+      "confidence": 0.96,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601988",
+      "pool": "core",
+      "channel_type": "主力净流向",
+      "value": 0.92,
+      "confidence": 0.98,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601988",
+      "pool": "core",
+      "channel_type": "成交量异动",
+      "value": 0.63,
+      "confidence": 0.95,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601988",
+      "pool": "core",
+      "channel_type": "价格动量",
+      "value": 0.75,
+      "confidence": 0.91,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601668",
+      "pool": "core",
+      "channel_type": "资金流入流出比",
+      "value": 0.71,
+      "confidence": 0.92,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601668",
+      "pool": "core",
+      "channel_type": "主力净流向",
+      "value": 0.84,
+      "confidence": 0.95,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601668",
+      "pool": "core",
+      "channel_type": "成交量异动",
+      "value": 0.62,
+      "confidence": 0.95,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601668",
+      "pool": "core",
+      "channel_type": "价格动量",
+      "value": 0.99,
+      "confidence": 1.0,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "002415",
+      "pool": "core",
+      "channel_type": "资金流入流出比",
+      "value": 0.92,
+      "confidence": 0.89,
+      "data_source": "real"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "002415",
+      "pool": "core",
+      "channel_type": "主力净流向",
+      "value": 0.57,
+      "confidence": 0.87,
+      "data_source": "real"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "002415",
+      "pool": "core",
+      "channel_type": "成交量异动",
+      "value": 0.52,
+      "confidence": 0.99,
+      "data_source": "real"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "002415",
+      "pool": "core",
+      "channel_type": "价格动量",
+      "value": 0.57,
+      "confidence": 0.85,
+      "data_source": "real"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "000333",
+      "pool": "core",
+      "channel_type": "资金流入流出比",
+      "value": 0.92,
+      "confidence": 0.99,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "000333",
+      "pool": "core",
+      "channel_type": "主力净流向",
+      "value": 0.84,
+      "confidence": 0.95,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "000333",
+      "pool": "core",
+      "channel_type": "成交量异动",
+      "value": 0.43,
+      "confidence": 0.97,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "000333",
+      "pool": "core",
+      "channel_type": "价格动量",
+      "value": 0.96,
+      "confidence": 0.99,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "000002",
+      "pool": "core",
+      "channel_type": "资金流入流出比",
+      "value": 0.97,
+      "confidence": 0.95,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "000002",
+      "pool": "core",
+      "channel_type": "主力净流向",
+      "value": 0.89,
+      "confidence": 0.97,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "000002",
+      "pool": "core",
+      "channel_type": "成交量异动",
+      "value": 0.56,
+      "confidence": 0.98,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "000002",
+      "pool": "core",
+      "channel_type": "价格动量",
+      "value": 0.81,
+      "confidence": 0.93,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "000001",
+      "pool": "core",
+      "channel_type": "资金流入流出比",
+      "value": 0.89,
+      "confidence": 0.88,
+      "data_source": "real"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "000001",
+      "pool": "core",
+      "channel_type": "主力净流向",
+      "value": 0.5,
+      "confidence": 0.85,
+      "data_source": "real"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "000001",
+      "pool": "core",
+      "channel_type": "成交量异动",
+      "value": 0.48,
+      "confidence": 0.99,
+      "data_source": "real"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "000001",
+      "pool": "core",
+      "channel_type": "价格动量",
+      "value": 0.5,
+      "confidence": 0.82,
+      "data_source": "real"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "002714",
+      "pool": "core",
+      "channel_type": "资金流入流出比",
+      "value": 0.72,
+      "confidence": 1.0,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "002714",
+      "pool": "core",
+      "channel_type": "主力净流向",
+      "value": 0.9,
+      "confidence": 0.97,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "002714",
+      "pool": "core",
+      "channel_type": "成交量异动",
+      "value": 0.43,
+      "confidence": 0.97,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "002714",
+      "pool": "core",
+      "channel_type": "价格动量",
+      "value": 0.72,
+      "confidence": 0.9,
+      "data_source": "estimated"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "300750",
+      "pool": "core",
+      "channel_type": "资金流入流出比",
+      "value": 0.4,
+      "confidence": 1.0,
+      "data_source": "real"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "300750",
+      "pool": "core",
+      "channel_type": "主力净流向",
+      "value": 0.4,
+      "confidence": 0.82,
+      "data_source": "real"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "300750",
+      "pool": "core",
+      "channel_type": "成交量异动",
+      "value": 0.63,
+      "confidence": 0.95,
+      "data_source": "real"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "300750",
+      "pool": "core",
+      "channel_type": "价格动量",
+      "value": 0.4,
+      "confidence": 0.79,
+      "data_source": "real"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "000858",
+      "pool": "core",
+      "channel_type": "资金流入流出比",
+      "value": 0.94,
+      "confidence": 0.87,
+      "data_source": "real"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "000858",
+      "pool": "core",
+      "channel_type": "主力净流向",
+      "value": 0.51,
+      "confidence": 0.85,
+      "data_source": "real"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "000858",
+      "pool": "core",
+      "channel_type": "成交量异动",
+      "value": 0.56,
+      "confidence": 0.98,
+      "data_source": "real"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "000858",
+      "pool": "core",
+      "channel_type": "价格动量",
+      "value": 0.51,
+      "confidence": 0.83,
+      "data_source": "real"
+    }
+  ],
+  "analysis": {
+    "convergent_signals": [
+      "600276",
+      "601166",
+      "600900",
+      "600887",
+      "601318",
+      "600030",
+      "600028",
+      "601088",
+      "600585",
+      "600690"
+    ],
+    "divergent_signals": [
+      "600519",
+      "601857",
+      "600036",
+      "300750"
+    ],
+    "notes": "整体同步性 0.79（实线10/49标的）。政策0.85、合规0.92、场外资金5730亿。分歧率0.08。"
+  }
+}

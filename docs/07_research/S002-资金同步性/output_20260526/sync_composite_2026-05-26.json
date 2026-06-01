@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "author": "moheng",
+    "date": "2026-05-26",
+    "version": "v2",
+    "task_id": "S002_composite_20260526",
+    "generated_at": "2026-05-26T13:37:35+08:00"
+  },
+  "composite": {
+    "composite_index": 0.7468,
+    "moheng_score": 0.7898,
+    "moxuan_score": 0.6333,
+    "xuanzhi_score": 0.8369,
+    "weights": {
+      "moheng": 0.4,
+      "moxuan": 0.35,
+      "xuanzhi": 0.25
+    }
+  },
+  "divergence": {
+    "has_divergence": false,
+    "divergence_count": 0,
+    "total_signals": 3,
+    "divergence_ratio": 0.0,
+    "details": [
+      [
+        "moheng",
+        0.7898,
+        "正向"
+      ],
+      [
+        "moxuan",
+        0.6333,
+        "正向"
+      ],
+      [
+        "xuanzhi",
+        0.8369,
+        "正向"
+      ]
+    ]
+  },
+  "analysis": {
+    "core_logic": "三线综合同步性指数 0.75。墨衡线(同步性0.79)、墨萱线(失配度0.63)、玄知线(相似度0.84)。三者均指向正向区间，市场同步性良好。",
+    "key_findings": [
+      "A50核心池同步性指数0.79，整体趋势健康",
+      "资金-价格失配主要集中于600276, 600028, 601088，失配度可控",
+      "历史参照表明当前结构下的均值回归概率中等"
+    ],
+    "risk_warning": "北向资金为近期主要增量来源。海外利率决议可能导致短期资金流向波动。三线暂无重大分歧。"
+  }
+}

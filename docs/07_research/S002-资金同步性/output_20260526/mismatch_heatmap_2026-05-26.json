@@ -1,0 +1,1587 @@
+{
+  "meta": {
+    "author": "moheng",
+    "date": "2026-05-26",
+    "version": "v2-fallback",
+    "task_id": "S002_real_line_20260526",
+    "note": "降级生成（墨萱实线产出未就绪）"
+  },
+  "summary": {
+    "total_mismatches": 120,
+    "severe_pairs": 34,
+    "moderate_pairs": 20,
+    "mild_pairs": 66,
+    "top_core_mismatches": [
+      "600276",
+      "600028",
+      "601088"
+    ]
+  },
+  "records": [
+    {
+      "date": "2026-05-26",
+      "symbol": "600519",
+      "pool": "core",
+      "channel_type": "价量背离",
+      "value": 0.11,
+      "severity": "mild",
+      "pair": [
+        "volume",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600519",
+      "pool": "core",
+      "channel_type": "资金-价格背离",
+      "value": -0.1,
+      "severity": "mild",
+      "pair": [
+        "fund_flow",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600519",
+      "pool": "core",
+      "channel_type": "多空失衡",
+      "value": -0.02,
+      "severity": "mild",
+      "pair": [
+        "long_flow",
+        "short_flow"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600519",
+      "pool": "core",
+      "channel_type": "期限结构异常",
+      "value": 0.12,
+      "severity": "mild",
+      "pair": [
+        "near_term",
+        "far_term"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601857",
+      "pool": "core",
+      "channel_type": "价量背离",
+      "value": 0.2,
+      "severity": "moderate",
+      "pair": [
+        "volume",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601857",
+      "pool": "core",
+      "channel_type": "资金-价格背离",
+      "value": -0.02,
+      "severity": "mild",
+      "pair": [
+        "fund_flow",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601857",
+      "pool": "core",
+      "channel_type": "多空失衡",
+      "value": -0.16,
+      "severity": "moderate",
+      "pair": [
+        "long_flow",
+        "short_flow"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601857",
+      "pool": "core",
+      "channel_type": "期限结构异常",
+      "value": 0.0,
+      "severity": "mild",
+      "pair": [
+        "near_term",
+        "far_term"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600036",
+      "pool": "core",
+      "channel_type": "价量背离",
+      "value": 0.04,
+      "severity": "mild",
+      "pair": [
+        "volume",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600036",
+      "pool": "core",
+      "channel_type": "资金-价格背离",
+      "value": -0.15,
+      "severity": "mild",
+      "pair": [
+        "fund_flow",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600036",
+      "pool": "core",
+      "channel_type": "多空失衡",
+      "value": -0.01,
+      "severity": "mild",
+      "pair": [
+        "long_flow",
+        "short_flow"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600036",
+      "pool": "core",
+      "channel_type": "期限结构异常",
+      "value": 0.0,
+      "severity": "mild",
+      "pair": [
+        "near_term",
+        "far_term"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600276",
+      "pool": "core",
+      "channel_type": "价量背离",
+      "value": -0.45,
+      "severity": "severe",
+      "pair": [
+        "volume",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600276",
+      "pool": "core",
+      "channel_type": "资金-价格背离",
+      "value": -0.14,
+      "severity": "mild",
+      "pair": [
+        "fund_flow",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600276",
+      "pool": "core",
+      "channel_type": "多空失衡",
+      "value": 0.35,
+      "severity": "severe",
+      "pair": [
+        "long_flow",
+        "short_flow"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600276",
+      "pool": "core",
+      "channel_type": "期限结构异常",
+      "value": 0.17,
+      "severity": "moderate",
+      "pair": [
+        "near_term",
+        "far_term"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601166",
+      "pool": "core",
+      "channel_type": "价量背离",
+      "value": -0.36,
+      "severity": "severe",
+      "pair": [
+        "volume",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601166",
+      "pool": "core",
+      "channel_type": "资金-价格背离",
+      "value": 0.11,
+      "severity": "mild",
+      "pair": [
+        "fund_flow",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601166",
+      "pool": "core",
+      "channel_type": "多空失衡",
+      "value": 0.28,
+      "severity": "moderate",
+      "pair": [
+        "long_flow",
+        "short_flow"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601166",
+      "pool": "core",
+      "channel_type": "期限结构异常",
+      "value": 0.04,
+      "severity": "mild",
+      "pair": [
+        "near_term",
+        "far_term"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600900",
+      "pool": "core",
+      "channel_type": "价量背离",
+      "value": 0.02,
+      "severity": "mild",
+      "pair": [
+        "volume",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600900",
+      "pool": "core",
+      "channel_type": "资金-价格背离",
+      "value": 0.42,
+      "severity": "severe",
+      "pair": [
+        "fund_flow",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600900",
+      "pool": "core",
+      "channel_type": "多空失衡",
+      "value": 0.02,
+      "severity": "mild",
+      "pair": [
+        "long_flow",
+        "short_flow"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600900",
+      "pool": "core",
+      "channel_type": "期限结构异常",
+      "value": 0.14,
+      "severity": "mild",
+      "pair": [
+        "near_term",
+        "far_term"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600887",
+      "pool": "core",
+      "channel_type": "价量背离",
+      "value": -0.14,
+      "severity": "mild",
+      "pair": [
+        "volume",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600887",
+      "pool": "core",
+      "channel_type": "资金-价格背离",
+      "value": 0.11,
+      "severity": "mild",
+      "pair": [
+        "fund_flow",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600887",
+      "pool": "core",
+      "channel_type": "多空失衡",
+      "value": 0.32,
+      "severity": "severe",
+      "pair": [
+        "long_flow",
+        "short_flow"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600887",
+      "pool": "core",
+      "channel_type": "期限结构异常",
+      "value": 0.0,
+      "severity": "mild",
+      "pair": [
+        "near_term",
+        "far_term"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601318",
+      "pool": "core",
+      "channel_type": "价量背离",
+      "value": 0.04,
+      "severity": "mild",
+      "pair": [
+        "volume",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601318",
+      "pool": "core",
+      "channel_type": "资金-价格背离",
+      "value": 0.42,
+      "severity": "severe",
+      "pair": [
+        "fund_flow",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601318",
+      "pool": "core",
+      "channel_type": "多空失衡",
+      "value": 0.05,
+      "severity": "mild",
+      "pair": [
+        "long_flow",
+        "short_flow"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601318",
+      "pool": "core",
+      "channel_type": "期限结构异常",
+      "value": 0.0,
+      "severity": "mild",
+      "pair": [
+        "near_term",
+        "far_term"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600030",
+      "pool": "core",
+      "channel_type": "价量背离",
+      "value": -0.29,
+      "severity": "moderate",
+      "pair": [
+        "volume",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600030",
+      "pool": "core",
+      "channel_type": "资金-价格背离",
+      "value": 0.0,
+      "severity": "mild",
+      "pair": [
+        "fund_flow",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600030",
+      "pool": "core",
+      "channel_type": "多空失衡",
+      "value": 0.42,
+      "severity": "severe",
+      "pair": [
+        "long_flow",
+        "short_flow"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600030",
+      "pool": "core",
+      "channel_type": "期限结构异常",
+      "value": 0.0,
+      "severity": "mild",
+      "pair": [
+        "near_term",
+        "far_term"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600028",
+      "pool": "core",
+      "channel_type": "价量背离",
+      "value": -0.35,
+      "severity": "severe",
+      "pair": [
+        "volume",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600028",
+      "pool": "core",
+      "channel_type": "资金-价格背离",
+      "value": 0.18,
+      "severity": "moderate",
+      "pair": [
+        "fund_flow",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600028",
+      "pool": "core",
+      "channel_type": "多空失衡",
+      "value": 0.33,
+      "severity": "severe",
+      "pair": [
+        "long_flow",
+        "short_flow"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600028",
+      "pool": "core",
+      "channel_type": "期限结构异常",
+      "value": 0.09,
+      "severity": "mild",
+      "pair": [
+        "near_term",
+        "far_term"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601088",
+      "pool": "core",
+      "channel_type": "价量背离",
+      "value": -0.55,
+      "severity": "severe",
+      "pair": [
+        "volume",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601088",
+      "pool": "core",
+      "channel_type": "资金-价格背离",
+      "value": -0.14,
+      "severity": "mild",
+      "pair": [
+        "fund_flow",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601088",
+      "pool": "core",
+      "channel_type": "多空失衡",
+      "value": 0.3,
+      "severity": "moderate",
+      "pair": [
+        "long_flow",
+        "short_flow"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601088",
+      "pool": "core",
+      "channel_type": "期限结构异常",
+      "value": 0.04,
+      "severity": "mild",
+      "pair": [
+        "near_term",
+        "far_term"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600585",
+      "pool": "core",
+      "channel_type": "价量背离",
+      "value": -0.38,
+      "severity": "severe",
+      "pair": [
+        "volume",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600585",
+      "pool": "core",
+      "channel_type": "资金-价格背离",
+      "value": -0.01,
+      "severity": "mild",
+      "pair": [
+        "fund_flow",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600585",
+      "pool": "core",
+      "channel_type": "多空失衡",
+      "value": 0.3,
+      "severity": "moderate",
+      "pair": [
+        "long_flow",
+        "short_flow"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600585",
+      "pool": "core",
+      "channel_type": "期限结构异常",
+      "value": 0.0,
+      "severity": "mild",
+      "pair": [
+        "near_term",
+        "far_term"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600690",
+      "pool": "core",
+      "channel_type": "价量背离",
+      "value": -0.3,
+      "severity": "moderate",
+      "pair": [
+        "volume",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600690",
+      "pool": "core",
+      "channel_type": "资金-价格背离",
+      "value": 0.07,
+      "severity": "mild",
+      "pair": [
+        "fund_flow",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600690",
+      "pool": "core",
+      "channel_type": "多空失衡",
+      "value": 0.42,
+      "severity": "severe",
+      "pair": [
+        "long_flow",
+        "short_flow"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600690",
+      "pool": "core",
+      "channel_type": "期限结构异常",
+      "value": 0.09,
+      "severity": "mild",
+      "pair": [
+        "near_term",
+        "far_term"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601398",
+      "pool": "core",
+      "channel_type": "价量背离",
+      "value": -0.26,
+      "severity": "moderate",
+      "pair": [
+        "volume",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601398",
+      "pool": "core",
+      "channel_type": "资金-价格背离",
+      "value": 0.16,
+      "severity": "moderate",
+      "pair": [
+        "fund_flow",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601398",
+      "pool": "core",
+      "channel_type": "多空失衡",
+      "value": 0.28,
+      "severity": "moderate",
+      "pair": [
+        "long_flow",
+        "short_flow"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601398",
+      "pool": "core",
+      "channel_type": "期限结构异常",
+      "value": 0.0,
+      "severity": "mild",
+      "pair": [
+        "near_term",
+        "far_term"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601939",
+      "pool": "core",
+      "channel_type": "价量背离",
+      "value": -0.01,
+      "severity": "mild",
+      "pair": [
+        "volume",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601939",
+      "pool": "core",
+      "channel_type": "资金-价格背离",
+      "value": 0.0,
+      "severity": "mild",
+      "pair": [
+        "fund_flow",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601939",
+      "pool": "core",
+      "channel_type": "多空失衡",
+      "value": 0.36,
+      "severity": "severe",
+      "pair": [
+        "long_flow",
+        "short_flow"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601939",
+      "pool": "core",
+      "channel_type": "期限结构异常",
+      "value": 0.0,
+      "severity": "mild",
+      "pair": [
+        "near_term",
+        "far_term"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600000",
+      "pool": "core",
+      "channel_type": "价量背离",
+      "value": -0.49,
+      "severity": "severe",
+      "pair": [
+        "volume",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600000",
+      "pool": "core",
+      "channel_type": "资金-价格背离",
+      "value": -0.07,
+      "severity": "mild",
+      "pair": [
+        "fund_flow",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600000",
+      "pool": "core",
+      "channel_type": "多空失衡",
+      "value": 0.38,
+      "severity": "severe",
+      "pair": [
+        "long_flow",
+        "short_flow"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600000",
+      "pool": "core",
+      "channel_type": "期限结构异常",
+      "value": 0.11,
+      "severity": "mild",
+      "pair": [
+        "near_term",
+        "far_term"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600016",
+      "pool": "core",
+      "channel_type": "价量背离",
+      "value": -0.39,
+      "severity": "severe",
+      "pair": [
+        "volume",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600016",
+      "pool": "core",
+      "channel_type": "资金-价格背离",
+      "value": 0.12,
+      "severity": "mild",
+      "pair": [
+        "fund_flow",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600016",
+      "pool": "core",
+      "channel_type": "多空失衡",
+      "value": 0.26,
+      "severity": "moderate",
+      "pair": [
+        "long_flow",
+        "short_flow"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600016",
+      "pool": "core",
+      "channel_type": "期限结构异常",
+      "value": 0.0,
+      "severity": "mild",
+      "pair": [
+        "near_term",
+        "far_term"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600019",
+      "pool": "core",
+      "channel_type": "价量背离",
+      "value": -0.47,
+      "severity": "severe",
+      "pair": [
+        "volume",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600019",
+      "pool": "core",
+      "channel_type": "资金-价格背离",
+      "value": 0.03,
+      "severity": "mild",
+      "pair": [
+        "fund_flow",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600019",
+      "pool": "core",
+      "channel_type": "多空失衡",
+      "value": 0.38,
+      "severity": "severe",
+      "pair": [
+        "long_flow",
+        "short_flow"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600019",
+      "pool": "core",
+      "channel_type": "期限结构异常",
+      "value": 0.18,
+      "severity": "moderate",
+      "pair": [
+        "near_term",
+        "far_term"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600104",
+      "pool": "core",
+      "channel_type": "价量背离",
+      "value": -0.69,
+      "severity": "severe",
+      "pair": [
+        "volume",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600104",
+      "pool": "core",
+      "channel_type": "资金-价格背离",
+      "value": -0.01,
+      "severity": "mild",
+      "pair": [
+        "fund_flow",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600104",
+      "pool": "core",
+      "channel_type": "多空失衡",
+      "value": 0.34,
+      "severity": "severe",
+      "pair": [
+        "long_flow",
+        "short_flow"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "600104",
+      "pool": "core",
+      "channel_type": "期限结构异常",
+      "value": 0.0,
+      "severity": "mild",
+      "pair": [
+        "near_term",
+        "far_term"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601328",
+      "pool": "core",
+      "channel_type": "价量背离",
+      "value": -0.49,
+      "severity": "severe",
+      "pair": [
+        "volume",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601328",
+      "pool": "core",
+      "channel_type": "资金-价格背离",
+      "value": -0.1,
+      "severity": "mild",
+      "pair": [
+        "fund_flow",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601328",
+      "pool": "core",
+      "channel_type": "多空失衡",
+      "value": 0.32,
+      "severity": "severe",
+      "pair": [
+        "long_flow",
+        "short_flow"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601328",
+      "pool": "core",
+      "channel_type": "期限结构异常",
+      "value": 0.16,
+      "severity": "moderate",
+      "pair": [
+        "near_term",
+        "far_term"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601288",
+      "pool": "core",
+      "channel_type": "价量背离",
+      "value": -0.38,
+      "severity": "severe",
+      "pair": [
+        "volume",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601288",
+      "pool": "core",
+      "channel_type": "资金-价格背离",
+      "value": 0.09,
+      "severity": "mild",
+      "pair": [
+        "fund_flow",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601288",
+      "pool": "core",
+      "channel_type": "多空失衡",
+      "value": 0.42,
+      "severity": "severe",
+      "pair": [
+        "long_flow",
+        "short_flow"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601288",
+      "pool": "core",
+      "channel_type": "期限结构异常",
+      "value": 0.0,
+      "severity": "mild",
+      "pair": [
+        "near_term",
+        "far_term"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601988",
+      "pool": "core",
+      "channel_type": "价量背离",
+      "value": -0.12,
+      "severity": "mild",
+      "pair": [
+        "volume",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601988",
+      "pool": "core",
+      "channel_type": "资金-价格背离",
+      "value": 0.12,
+      "severity": "mild",
+      "pair": [
+        "fund_flow",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601988",
+      "pool": "core",
+      "channel_type": "多空失衡",
+      "value": 0.42,
+      "severity": "severe",
+      "pair": [
+        "long_flow",
+        "short_flow"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601988",
+      "pool": "core",
+      "channel_type": "期限结构异常",
+      "value": 0.0,
+      "severity": "mild",
+      "pair": [
+        "near_term",
+        "far_term"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601668",
+      "pool": "core",
+      "channel_type": "价量背离",
+      "value": -0.37,
+      "severity": "severe",
+      "pair": [
+        "volume",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601668",
+      "pool": "core",
+      "channel_type": "资金-价格背离",
+      "value": -0.28,
+      "severity": "moderate",
+      "pair": [
+        "fund_flow",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601668",
+      "pool": "core",
+      "channel_type": "多空失衡",
+      "value": 0.34,
+      "severity": "severe",
+      "pair": [
+        "long_flow",
+        "short_flow"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "601668",
+      "pool": "core",
+      "channel_type": "期限结构异常",
+      "value": 0.0,
+      "severity": "mild",
+      "pair": [
+        "near_term",
+        "far_term"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "002415",
+      "pool": "core",
+      "channel_type": "价量背离",
+      "value": -0.05,
+      "severity": "mild",
+      "pair": [
+        "volume",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "002415",
+      "pool": "core",
+      "channel_type": "资金-价格背离",
+      "value": 0.35,
+      "severity": "severe",
+      "pair": [
+        "fund_flow",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "002415",
+      "pool": "core",
+      "channel_type": "多空失衡",
+      "value": 0.07,
+      "severity": "mild",
+      "pair": [
+        "long_flow",
+        "short_flow"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "002415",
+      "pool": "core",
+      "channel_type": "期限结构异常",
+      "value": 0.0,
+      "severity": "mild",
+      "pair": [
+        "near_term",
+        "far_term"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "000333",
+      "pool": "core",
+      "channel_type": "价量背离",
+      "value": -0.53,
+      "severity": "severe",
+      "pair": [
+        "volume",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "000333",
+      "pool": "core",
+      "channel_type": "资金-价格背离",
+      "value": -0.04,
+      "severity": "mild",
+      "pair": [
+        "fund_flow",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "000333",
+      "pool": "core",
+      "channel_type": "多空失衡",
+      "value": 0.34,
+      "severity": "severe",
+      "pair": [
+        "long_flow",
+        "short_flow"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "000333",
+      "pool": "core",
+      "channel_type": "期限结构异常",
+      "value": 0.0,
+      "severity": "mild",
+      "pair": [
+        "near_term",
+        "far_term"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "000002",
+      "pool": "core",
+      "channel_type": "价量背离",
+      "value": -0.25,
+      "severity": "moderate",
+      "pair": [
+        "volume",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "000002",
+      "pool": "core",
+      "channel_type": "资金-价格背离",
+      "value": 0.16,
+      "severity": "moderate",
+      "pair": [
+        "fund_flow",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "000002",
+      "pool": "core",
+      "channel_type": "多空失衡",
+      "value": 0.39,
+      "severity": "severe",
+      "pair": [
+        "long_flow",
+        "short_flow"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "000002",
+      "pool": "core",
+      "channel_type": "期限结构异常",
+      "value": 0.0,
+      "severity": "mild",
+      "pair": [
+        "near_term",
+        "far_term"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "000001",
+      "pool": "core",
+      "channel_type": "价量背离",
+      "value": -0.02,
+      "severity": "mild",
+      "pair": [
+        "volume",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "000001",
+      "pool": "core",
+      "channel_type": "资金-价格背离",
+      "value": 0.39,
+      "severity": "severe",
+      "pair": [
+        "fund_flow",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "000001",
+      "pool": "core",
+      "channel_type": "多空失衡",
+      "value": 0.0,
+      "severity": "mild",
+      "pair": [
+        "long_flow",
+        "short_flow"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "000001",
+      "pool": "core",
+      "channel_type": "期限结构异常",
+      "value": 0.0,
+      "severity": "mild",
+      "pair": [
+        "near_term",
+        "far_term"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "002714",
+      "pool": "core",
+      "channel_type": "价量背离",
+      "value": -0.29,
+      "severity": "moderate",
+      "pair": [
+        "volume",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "002714",
+      "pool": "core",
+      "channel_type": "资金-价格背离",
+      "value": 0.0,
+      "severity": "mild",
+      "pair": [
+        "fund_flow",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "002714",
+      "pool": "core",
+      "channel_type": "多空失衡",
+      "value": 0.4,
+      "severity": "severe",
+      "pair": [
+        "long_flow",
+        "short_flow"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "002714",
+      "pool": "core",
+      "channel_type": "期限结构异常",
+      "value": 0.0,
+      "severity": "mild",
+      "pair": [
+        "near_term",
+        "far_term"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "300750",
+      "pool": "core",
+      "channel_type": "价量背离",
+      "value": 0.23,
+      "severity": "moderate",
+      "pair": [
+        "volume",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "300750",
+      "pool": "core",
+      "channel_type": "资金-价格背离",
+      "value": 0.0,
+      "severity": "mild",
+      "pair": [
+        "fund_flow",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "300750",
+      "pool": "core",
+      "channel_type": "多空失衡",
+      "value": -0.1,
+      "severity": "mild",
+      "pair": [
+        "long_flow",
+        "short_flow"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "300750",
+      "pool": "core",
+      "channel_type": "期限结构异常",
+      "value": 0.0,
+      "severity": "mild",
+      "pair": [
+        "near_term",
+        "far_term"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "000858",
+      "pool": "core",
+      "channel_type": "价量背离",
+      "value": 0.05,
+      "severity": "mild",
+      "pair": [
+        "volume",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "000858",
+      "pool": "core",
+      "channel_type": "资金-价格背离",
+      "value": 0.43,
+      "severity": "severe",
+      "pair": [
+        "fund_flow",
+        "price_return"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "000858",
+      "pool": "core",
+      "channel_type": "多空失衡",
+      "value": 0.01,
+      "severity": "mild",
+      "pair": [
+        "long_flow",
+        "short_flow"
+      ],
+      "source": "fallback"
+    },
+    {
+      "date": "2026-05-26",
+      "symbol": "000858",
+      "pool": "core",
+      "channel_type": "期限结构异常",
+      "value": 0.0,
+      "severity": "mild",
+      "pair": [
+        "near_term",
+        "far_term"
+      ],
+      "source": "fallback"
+    }
+  ],
+  "heatmap": {
+    "resolution": "30x4",
+    "matrix_available": false,
+    "file_ref": ""
+  }
+}

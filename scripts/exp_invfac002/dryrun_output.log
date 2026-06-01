@@ -1,0 +1,115 @@
+EXP-2026-INVFAC-002: 负向因子反转可行性验证
+==================================================
+dry_run=False, skip_qc=True, skip_sensitivity=True
+报告目录: C:\Users\17699\mozhi_platform\reports\EXP-2026-INVFAC-002
+
+[Skipped] 数据质量前置检查 (§2.3) — skip_qc=True
+
+[Step 1] 加载数据...
+  601857: 1545 交易日, [20200102 ~ 20260522]
+  000001: 1545 交易日, [20200102 ~ 20260522]
+  600519: 1545 交易日, [20200102 ~ 20260522]
+  601318: 1545 交易日, [20200102 ~ 20260522]
+  600036: 1545 交易日, [20200102 ~ 20260522]
+  300750: 1545 交易日, [20200102 ~ 20260522]
+  600276: 1545 交易日, [20200102 ~ 20260522]
+  600887: 1545 交易日, [20200102 ~ 20260522]
+  600030: 1539 交易日, [20200102 ~ 20260522]
+  000333: 1545 交易日, [20200102 ~ 20260522]
+  002415: 1545 交易日, [20200102 ~ 20260522]
+  600436: 1545 交易日, [20200102 ~ 20260522]
+
+[Step 2] 计算三因子...
+
+[Step 3] 市场状态分类 (滚动波动率分位数)...
+  601857: hi_thr=0.0118, lo_thr=-0.0072, 高:1525, 中:20, 低:0
+  000001: hi_thr=0.0141, lo_thr=-0.0117, 高:1525, 中:20, 低:0
+  600519: hi_thr=0.0177, lo_thr=-0.0096, 高:1525, 中:20, 低:0
+  601318: hi_thr=0.0082, lo_thr=-0.0094, 高:1525, 中:20, 低:0
+  600036: hi_thr=0.0167, lo_thr=-0.0085, 高:1525, 中:20, 低:0
+  300750: hi_thr=0.0305, lo_thr=-0.0140, 高:1525, 中:20, 低:0
+  600276: hi_thr=0.0143, lo_thr=-0.0131, 高:1525, 中:20, 低:0
+  600887: hi_thr=0.0128, lo_thr=-0.0088, 高:1525, 中:20, 低:0
+  600030: hi_thr=0.0106, lo_thr=-0.0069, 高:1519, 中:20, 低:0
+  000333: hi_thr=0.0177, lo_thr=-0.0114, 高:1525, 中:20, 低:0
+  002415: hi_thr=0.0183, lo_thr=-0.0120, 高:1525, 中:20, 低:0
+  600436: hi_thr=0.0232, lo_thr=-0.0093, 高:1525, 中:20, 低:0
+
+[Step 4 & 5] IC 计算及三层检验...
+  TrendQuality/high_vol/p5d: IC=-0.0098, p=0.1856 [NS]
+  TrendQuality/high_vol/p10d: IC=-0.0160, p=0.0316 [SIG]
+  TrendQuality/high_vol/p20d: IC=-0.0288, p=0.0001 [SIG]
+  l_vol_rsi_std/high_vol/p5d: IC=0.0146, p=0.0479 [SIG]
+  l_vol_rsi_std/high_vol/p10d: IC=0.0141, p=0.0578 [NS]
+  l_vol_rsi_std/high_vol/p20d: IC=0.0424, p=0.0000 [SIG]
+  l_str_kdj_k/mid_vol/p5d: IC=-0.1063, p=0.2027 [NS]
+  l_str_kdj_k/mid_vol/p10d: IC=-0.0738, p=0.3754 [NS]
+  l_str_kdj_k/mid_vol/p20d: IC=-0.1121, p=0.1789 [NS]
+  l_str_kdj_k/high_vol/p5d: IC=0.0134, p=0.0702 [NS]
+  l_str_kdj_k/high_vol/p10d: IC=0.0139, p=0.0628 [NS]
+  l_str_kdj_k/high_vol/p20d: IC=-0.0192, p=0.0086 [SIG]
+
+[Step 5.2] FDR BH 多重比较校正 (§5.2)...
+──────────────────────────────────────────────────
+
+  FDR BH 校正结果 (q* = 0.05, m = 12):
+  #    Factor           State      Period p_raw      q_BH       Reject  Orig_Sig
+  ───────────────────────────────────────────────────────────────────────────
+  1    l_vol_rsi_std    high_vol   20    d 0.0000     0.0000     YES     SIG     
+  2    TrendQuality     high_vol   20    d 0.0001     0.0006     YES     SIG     
+  3    l_str_kdj_k      high_vol   20    d 0.0086     0.0344     YES     SIG     
+  4    TrendQuality     high_vol   10    d 0.0316     0.0948     NO      SIG     
+  5    l_vol_rsi_std    high_vol   5     d 0.0479     0.1053     NO      SIG     
+  6    l_vol_rsi_std    high_vol   10    d 0.0578     0.1053     NO      NS      
+  7    l_str_kdj_k      high_vol   10    d 0.0628     0.1053     NO      NS      
+  8    l_str_kdj_k      high_vol   5     d 0.0702     0.1053     NO      NS      
+  9    l_str_kdj_k      mid_vol    20    d 0.1789     0.2211     NO      NS      
+  10   TrendQuality     high_vol   5     d 0.1856     0.2211     NO      NS      
+  11   l_str_kdj_k      mid_vol    5     d 0.2027     0.2211     NO      NS      
+  12   l_str_kdj_k      mid_vol    10    d 0.3754     0.3754     NO      NS      
+
+  共 12 组检验，3 组通过 BH 校正 (q<0.05)
+
+[Step 5.3] 三层稳定性检验集成 (§5.3)...
+──────────────────────────────────────────────────
+
+  ── TrendQuality/low_vol/5d ──
+    数据不足，跳过稳定性检验
+
+  ── TrendQuality/low_vol/10d ──
+    数据不足，跳过稳定性检验
+
+  ── TrendQuality/low_vol/20d ──
+    数据不足，跳过稳定性检验
+
+  ── TrendQuality/mid_vol/5d ──
+    数据不足，跳过稳定性检验
+
+  ── TrendQuality/mid_vol/10d ──
+    数据不足，跳过稳定性检验
+
+  ── TrendQuality/mid_vol/20d ──
+    数据不足，跳过稳定性检验
+
+  ── TrendQuality/high_vol/5d ──
+    总体 IC = -0.0100 (n=18234)
+    [PASS] 时间切片: 切片均值=[0.6998, 0.0006, 1.2981, 0.7128]
+    [PASS] 滚动窗口: 翻转率=1.30%
+    [PASS] 标的交叉: 正向=8, 负向=4
+    [PASS] 样本外稳定: IS_IC=-0.0128, OOS_IC=-0.0066
+Traceback (most recent call last):
+  File "C:\Users\17699\mozhi_platform\scripts\exp_invfac002\run_exp_invfac002.py", line 891, in <module>
+    for fname in sorted(FACTORS.keys()):
+  File "C:\Users\17699\mozhi_platform\scripts\exp_invfac002\run_exp_invfac002.py", line 763, in main
+    
+    
+    for period, rets in [
+    ^^^^^^^^^^^^^^^^^^^^^
+        (5, all_returns_5d),
+        ^
+  File "C:\Users\17699\mozhi_platform\scripts\exp_invfac002\run_exp_invfac002.py", line 563, in run_stability_tests
+    print(f"    [{'PASS' if cross_passed else 'FAIL'}] 标的交叉: "
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+          f"正向={pos_stocks}, 负向={neg_stocks}")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'gbk' codec can't encode character '\u2705' in position 21: illegal multibyte sequence

@@ -1,0 +1,7 @@
+TASK: 评审T+21修复方案
+STATUS: COMPLETED
+CONCLUSION: CONDITIONAL APPROVE
+REVIEW_FILE: docs/07_research/A50截面IC/review_t21_solution_by_moxuan.md
+COMPLETED_AT: 2026-05-30 20:56+08:00
+REVIEWER: 墨萱 (moxuan)
+CONDITIONS: 4项 — (1) 运行T+14回归测试 (2) 确认run_batch所有调用方已适配 (3) 验证SQLite≥3.25 (4) Owner书面确认阈值方案

@@ -1,0 +1,531 @@
+{
+  "task_id": "EXP-2026-INVFAC-002",
+  "version_tag": "bc5f464",
+  "run_timestamp": "2026-05-27T21:40:20+08:00",
+  "completed_time": "2026-05-27T21:56:05+08:00",
+  "status": "READY",
+  "factors": [
+    "TrendQuality",
+    "l_vol_rsi_std",
+    "l_str_kdj_k"
+  ],
+  "stocks": [
+    "601857.SH",
+    "000001.SZ",
+    "600519.SH",
+    "601318.SH",
+    "600036.SH",
+    "300750.SZ",
+    "600276.SH",
+    "600887.SH",
+    "600030.SH",
+    "000333.SZ",
+    "002415.SZ",
+    "600585.SH"
+  ],
+  "results": {
+    "TrendQuality": {
+      "low_vol": {
+        "5": {
+          "p_value": 0.0001,
+          "significant": true,
+          "ci_lower": -0.01345795325095096,
+          "ci_upper": 0.013232842698051715,
+          "ic_mean": -0.030447944528909865
+        },
+        "10": {
+          "p_value": 0.0,
+          "significant": true,
+          "ci_lower": -0.013097308087376214,
+          "ci_upper": 0.013085807513871076,
+          "ic_mean": -0.05432503015145351
+        },
+        "20": {
+          "p_value": 0.0,
+          "significant": true,
+          "ci_lower": -0.013368317103950433,
+          "ci_upper": 0.013004805998957675,
+          "ic_mean": -0.051875062823379725
+        }
+      },
+      "mid_vol": {
+        "5": {
+          "p_value": 0.7319,
+          "significant": false,
+          "ci_lower": -0.015135131042153088,
+          "ci_upper": 0.014796187554046186,
+          "ic_mean": -0.00262324577547024
+        },
+        "10": {
+          "p_value": 0.0,
+          "significant": true,
+          "ci_lower": -0.014834718502601707,
+          "ci_upper": 0.015129181507915845,
+          "ic_mean": -0.035606171754609894
+        },
+        "20": {
+          "p_value": 0.2623,
+          "significant": false,
+          "ci_lower": -0.015006641972427058,
+          "ci_upper": 0.01533918105695529,
+          "ic_mean": -0.00885071460995035
+        }
+      },
+      "high_vol": {
+        "5": {
+          "p_value": 0.0,
+          "significant": true,
+          "ci_lower": -0.018237655960482536,
+          "ci_upper": 0.017778089063652438,
+          "ic_mean": 0.05584885960764785
+        },
+        "10": {
+          "p_value": 0.0073,
+          "significant": true,
+          "ci_lower": -0.018225618662471247,
+          "ci_upper": 0.01800591952917823,
+          "ic_mean": 0.025618660054609443
+        },
+        "20": {
+          "p_value": 0.5931,
+          "significant": false,
+          "ci_lower": -0.018663245932997695,
+          "ci_upper": 0.01791385589093619,
+          "ic_mean": 0.0049551868130223164
+        }
+      }
+    },
+    "l_vol_rsi_std": {
+      "low_vol": {
+        "5": {
+          "p_value": 0.7048,
+          "significant": false,
+          "ci_lower": -0.013322939844988618,
+          "ci_upper": 0.013045709730163346,
+          "ic_mean": 0.002612712873513612
+        },
+        "10": {
+          "p_value": 0.3863,
+          "significant": false,
+          "ci_lower": -0.013038245962049926,
+          "ci_upper": 0.013296267541462488,
+          "ic_mean": -0.005897104465408143
+        },
+        "20": {
+          "p_value": 0.2097,
+          "significant": false,
+          "ci_lower": -0.013457049603039756,
+          "ci_upper": 0.013548781262438652,
+          "ic_mean": 0.00850040957454945
+        }
+      },
+      "mid_vol": {
+        "5": {
+          "p_value": 0.0518,
+          "significant": false,
+          "ci_lower": -0.015278688326320981,
+          "ci_upper": 0.015323387009583866,
+          "ic_mean": -0.015193752131262617
+        },
+        "10": {
+          "p_value": 0.0045,
+          "significant": true,
+          "ci_lower": -0.015196768576786068,
+          "ci_upper": 0.01510775533443904,
+          "ic_mean": -0.02190790267390086
+        },
+        "20": {
+          "p_value": 0.5858,
+          "significant": false,
+          "ci_lower": -0.015465757485713766,
+          "ci_upper": 0.015345966471562897,
+          "ic_mean": -0.004177768213329047
+        }
+      },
+      "high_vol": {
+        "5": {
+          "p_value": 0.202,
+          "significant": false,
+          "ci_lower": -0.018311235180387152,
+          "ci_upper": 0.017726137635599572,
+          "ic_mean": 0.011878095343031081
+        },
+        "10": {
+          "p_value": 0.2099,
+          "significant": false,
+          "ci_lower": -0.0179205456693153,
+          "ci_upper": 0.01807610641671672,
+          "ic_mean": 0.011456450343158231
+        },
+        "20": {
+          "p_value": 0.0,
+          "significant": true,
+          "ci_lower": -0.018243257163489745,
+          "ci_upper": 0.0181369306748107,
+          "ic_mean": 0.04642976608051208
+        }
+      }
+    },
+    "l_str_kdj_k": {
+      "low_vol": {
+        "5": {
+          "p_value": 0.1662,
+          "significant": false,
+          "ci_lower": -0.013404671001339352,
+          "ci_upper": 0.013283923465574783,
+          "ic_mean": -0.009474880794733131
+        },
+        "10": {
+          "p_value": 0.0,
+          "significant": true,
+          "ci_lower": -0.013131030189528142,
+          "ci_upper": 0.013153909919856193,
+          "ic_mean": -0.039796843480483624
+        },
+        "20": {
+          "p_value": 0.0,
+          "significant": true,
+          "ci_lower": -0.01328116599570564,
+          "ci_upper": 0.013266813628885299,
+          "ic_mean": -0.05261426944343306
+        }
+      },
+      "mid_vol": {
+        "5": {
+          "p_value": 0.25,
+          "significant": false,
+          "ci_lower": -0.015093267037862707,
+          "ci_upper": 0.01505191365469704,
+          "ic_mean": 0.009038339224394898
+        },
+        "10": {
+          "p_value": 0.002,
+          "significant": true,
+          "ci_lower": -0.01531814752432622,
+          "ci_upper": 0.015009740612579219,
+          "ic_mean": -0.023233252774591096
+        },
+        "20": {
+          "p_value": 0.0208,
+          "significant": true,
+          "ci_lower": -0.015396644358519262,
+          "ci_upper": 0.015171403348846306,
+          "ic_mean": -0.01802825825739629
+        }
+      },
+      "high_vol": {
+        "5": {
+          "p_value": 0.0,
+          "significant": true,
+          "ci_lower": -0.01814822771242298,
+          "ci_upper": 0.018111083273022254,
+          "ic_mean": 0.06878679708778457
+        },
+        "10": {
+          "p_value": 0.0002,
+          "significant": true,
+          "ci_lower": -0.018300131917350238,
+          "ci_upper": 0.01800842637108782,
+          "ic_mean": 0.034238532077213946
+        },
+        "20": {
+          "p_value": 0.504,
+          "significant": false,
+          "ci_lower": -0.01834985344850277,
+          "ci_upper": 0.017896937259501814,
+          "ic_mean": 0.006125267935209733
+        }
+      }
+    }
+  },
+  "fdr_correction": {
+    "q": 0.05,
+    "rejected_count": 14,
+    "total_tests": 27,
+    "details": {
+      "fdr_q": 0.05,
+      "total": 27,
+      "rejected_count": 14,
+      "fdr_is_significant": true,
+      "corrections": [
+        {
+          "p_value": 0.0,
+          "factor": "TrendQuality",
+          "state": "low_vol",
+          "period": 10,
+          "significant_original": true,
+          "q_value": 0.0,
+          "rejected": true,
+          "q_value_monotonic": 0.0
+        },
+        {
+          "p_value": 0.0,
+          "factor": "TrendQuality",
+          "state": "low_vol",
+          "period": 20,
+          "significant_original": true,
+          "q_value": 0.0,
+          "rejected": true,
+          "q_value_monotonic": 0.0
+        },
+        {
+          "p_value": 0.0,
+          "factor": "TrendQuality",
+          "state": "mid_vol",
+          "period": 10,
+          "significant_original": true,
+          "q_value": 0.0,
+          "rejected": true,
+          "q_value_monotonic": 0.0
+        },
+        {
+          "p_value": 0.0,
+          "factor": "TrendQuality",
+          "state": "high_vol",
+          "period": 5,
+          "significant_original": true,
+          "q_value": 0.0,
+          "rejected": true,
+          "q_value_monotonic": 0.0
+        },
+        {
+          "p_value": 0.0,
+          "factor": "l_vol_rsi_std",
+          "state": "high_vol",
+          "period": 20,
+          "significant_original": true,
+          "q_value": 0.0,
+          "rejected": true,
+          "q_value_monotonic": 0.0
+        },
+        {
+          "p_value": 0.0,
+          "factor": "l_str_kdj_k",
+          "state": "low_vol",
+          "period": 10,
+          "significant_original": true,
+          "q_value": 0.0,
+          "rejected": true,
+          "q_value_monotonic": 0.0
+        },
+        {
+          "p_value": 0.0,
+          "factor": "l_str_kdj_k",
+          "state": "low_vol",
+          "period": 20,
+          "significant_original": true,
+          "q_value": 0.0,
+          "rejected": true,
+          "q_value_monotonic": 0.0
+        },
+        {
+          "p_value": 0.0,
+          "factor": "l_str_kdj_k",
+          "state": "high_vol",
+          "period": 5,
+          "significant_original": true,
+          "q_value": 0.0,
+          "rejected": true,
+          "q_value_monotonic": 0.0
+        },
+        {
+          "p_value": 0.0001,
+          "factor": "TrendQuality",
+          "state": "low_vol",
+          "period": 5,
+          "significant_original": true,
+          "q_value": 0.00030000000000000003,
+          "rejected": true,
+          "q_value_monotonic": 0.00030000000000000003
+        },
+        {
+          "p_value": 0.0002,
+          "factor": "l_str_kdj_k",
+          "state": "high_vol",
+          "period": 10,
+          "significant_original": true,
+          "q_value": 0.00054,
+          "rejected": true,
+          "q_value_monotonic": 0.00054
+        },
+        {
+          "p_value": 0.002,
+          "factor": "l_str_kdj_k",
+          "state": "mid_vol",
+          "period": 10,
+          "significant_original": true,
+          "q_value": 0.004909090909090909,
+          "rejected": true,
+          "q_value_monotonic": 0.004909090909090909
+        },
+        {
+          "p_value": 0.0045,
+          "factor": "l_vol_rsi_std",
+          "state": "mid_vol",
+          "period": 10,
+          "significant_original": true,
+          "q_value": 0.010125,
+          "rejected": true,
+          "q_value_monotonic": 0.010125
+        },
+        {
+          "p_value": 0.0073,
+          "factor": "TrendQuality",
+          "state": "high_vol",
+          "period": 10,
+          "significant_original": true,
+          "q_value": 0.01516153846153846,
+          "rejected": true,
+          "q_value_monotonic": 0.01516153846153846
+        },
+        {
+          "p_value": 0.0208,
+          "factor": "l_str_kdj_k",
+          "state": "mid_vol",
+          "period": 20,
+          "significant_original": true,
+          "q_value": 0.04011428571428571,
+          "rejected": true,
+          "q_value_monotonic": 0.04011428571428571
+        },
+        {
+          "p_value": 0.0518,
+          "factor": "l_vol_rsi_std",
+          "state": "mid_vol",
+          "period": 5,
+          "significant_original": false,
+          "q_value": 0.09324,
+          "rejected": false,
+          "q_value_monotonic": 0.09324
+        },
+        {
+          "p_value": 0.1662,
+          "factor": "l_str_kdj_k",
+          "state": "low_vol",
+          "period": 5,
+          "significant_original": false,
+          "q_value": 0.2804625,
+          "rejected": false,
+          "q_value_monotonic": 0.2804625
+        },
+        {
+          "p_value": 0.202,
+          "factor": "l_vol_rsi_std",
+          "state": "high_vol",
+          "period": 5,
+          "significant_original": false,
+          "q_value": 0.32082352941176473,
+          "rejected": false,
+          "q_value_monotonic": 0.29827894736842103
+        },
+        {
+          "p_value": 0.2097,
+          "factor": "l_vol_rsi_std",
+          "state": "low_vol",
+          "period": 20,
+          "significant_original": false,
+          "q_value": 0.31455,
+          "rejected": false,
+          "q_value_monotonic": 0.29827894736842103
+        },
+        {
+          "p_value": 0.2099,
+          "factor": "l_vol_rsi_std",
+          "state": "high_vol",
+          "period": 10,
+          "significant_original": false,
+          "q_value": 0.29827894736842103,
+          "rejected": false,
+          "q_value_monotonic": 0.29827894736842103
+        },
+        {
+          "p_value": 0.25,
+          "factor": "l_str_kdj_k",
+          "state": "mid_vol",
+          "period": 5,
+          "significant_original": false,
+          "q_value": 0.3375,
+          "rejected": false,
+          "q_value_monotonic": 0.3372428571428571
+        },
+        {
+          "p_value": 0.2623,
+          "factor": "TrendQuality",
+          "state": "mid_vol",
+          "period": 20,
+          "significant_original": false,
+          "q_value": 0.3372428571428571,
+          "rejected": false,
+          "q_value_monotonic": 0.3372428571428571
+        },
+        {
+          "p_value": 0.3863,
+          "factor": "l_vol_rsi_std",
+          "state": "low_vol",
+          "period": 10,
+          "significant_original": false,
+          "q_value": 0.47409545454545454,
+          "rejected": false,
+          "q_value_monotonic": 0.47409545454545454
+        },
+        {
+          "p_value": 0.504,
+          "factor": "l_str_kdj_k",
+          "state": "high_vol",
+          "period": 20,
+          "significant_original": false,
+          "q_value": 0.5916521739130435,
+          "rejected": false,
+          "q_value_monotonic": 0.5916521739130435
+        },
+        {
+          "p_value": 0.5858,
+          "factor": "l_vol_rsi_std",
+          "state": "mid_vol",
+          "period": 20,
+          "significant_original": false,
+          "q_value": 0.659025,
+          "rejected": false,
+          "q_value_monotonic": 0.640548
+        },
+        {
+          "p_value": 0.5931,
+          "factor": "TrendQuality",
+          "state": "high_vol",
+          "period": 20,
+          "significant_original": false,
+          "q_value": 0.640548,
+          "rejected": false,
+          "q_value_monotonic": 0.640548
+        },
+        {
+          "p_value": 0.7048,
+          "factor": "l_vol_rsi_std",
+          "state": "low_vol",
+          "period": 5,
+          "significant_original": false,
+          "q_value": 0.7319076923076923,
+          "rejected": false,
+          "q_value_monotonic": 0.7319
+        },
+        {
+          "p_value": 0.7319,
+          "factor": "TrendQuality",
+          "state": "mid_vol",
+          "period": 5,
+          "significant_original": false,
+          "q_value": 0.7319,
+          "rejected": false,
+          "q_value_monotonic": 0.7319
+        }
+      ]
+    }
+  },
+  "stability_L3": {
+    "summary": {
+      "total_combinations": 27,
+      "L3_passed_count": 27,
+      "L3_pass_rate": 1.0
+    }
+  }
+}

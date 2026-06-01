@@ -1,0 +1,9 @@
+{
+  "status": "SUCCESS",
+  "task_id": "rca_t21_consolidation_moheng",
+  "output_file": "C:/Users/17699/mozhi_platform/docs/07_research/A50截面IC/rca_t21_fullrun_20260530_final.md",
+  "summary": "三方根因分析合并完成：提炼共识、标注分歧、去重合并为一份综合文档",
+  "completed_time": "2026-05-30T20:25:30+08:00",
+  "author": "moheng",
+  "done_timestamp": "2026-05-30T20:25:30+08:00"
+}

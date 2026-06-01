@@ -21,6 +21,49 @@ from .order_executor import (
 from .performance import Performance, PerformanceCalculator
 from .position_manager import CostMethod, Position, PositionManager
 from .slippage_model import SlippageModel, NoSlippage, FixedSlippage, RatioSlippage
+from .order_executor import OrderSide
+
+# ── P1 预检集成 ───────────────────────────────────────────
+from src.backtest.p0_fixes.preflight import check_limit_trade
+from src.backtest.p0_fixes.capacity_integration import check_volume_capacity
+
+
+# ── 涨跌停边界 Helper ───────────────────────────────────
+
+
+def _get_limit_pct(stock_code: str) -> float:
+    """
+    根据股票代码判断涨跌停比例。
+    - 60xxxx/00xxxx (主板) → 10%
+    - 30xxxx (创业板) → 20%
+    - 688xxx (科创板) → 20%
+    - 8xxxxx (北交所) → 30%
+    - ST/*ST (代码未涉及, 默认 10%)
+    - 未知 → 10%
+    """
+    if stock_code.startswith("30"):
+        return 0.20
+    elif stock_code.startswith("688"):
+        return 0.20
+    elif stock_code.startswith(("8", "4")):
+        return 0.30
+    else:
+        return 0.10
+
+
+def _clamp_fill_price(fill_price: float, prev_close: float, stock_code: str, side: OrderSide) -> float:
+    """
+    涨跌停 clamp：
+    - BUY: fill_price <= limit_up
+    - SELL: fill_price >= limit_down
+    """
+    limit_pct = _get_limit_pct(stock_code)
+    limit_up = prev_close * (1 + limit_pct)
+    limit_down = prev_close * (1 - limit_pct)
+    if side == OrderSide.BUY:
+        return min(fill_price, limit_up)
+    else:
+        return max(fill_price, limit_down)
 
 # ═══════════════════════════════════════════════════════════════
 # BacktestConfig
@@ -279,6 +322,9 @@ class BacktestEngine:
     trade_history: List[Dict[str, Any]] = field(default_factory=list)
     equity_curve: List[Dict[str, float]] = field(default_factory=list)
 
+    # ── 前收盘价跟踪 ──────────────────────────────────────────
+    _prev_close: Dict[str, float] = field(default_factory=dict)  # symbol → last close
+
     def __post_init__(self):
         """初始化上下文和订单执行器。"""
         self.context = BacktestContext(
@@ -295,6 +341,7 @@ class BacktestEngine:
         )
         self.trade_history = []
         self.equity_curve = []
+        self._prev_close = {}
 
     # ── 主体 run 方法 ────────────────────────────────────────
 
@@ -356,6 +403,9 @@ class BacktestEngine:
             if orders:
                 self._execute_orders(orders, bar)
 
+            # 更新前收盘价（供下一交易日使用）
+            self._prev_close[bar.symbol] = bar.close
+
             # 记录快照 + 净值曲线（使用收盘价估算持仓市值）
             price_map = {bar.symbol: bar.close}
             if self.config.snapshot_enabled:
@@ -401,22 +451,66 @@ class BacktestEngine:
         """
         reports: List[FillReport] = []
         for order in orders:
-            if order.order_type == OrderType.MARKET:
-                fill = self.executor.execute_market(
-                    symbol=order.symbol,
-                    side=order.side,
-                    quantity=order.quantity,
-                    price=bar.close,
-                )
-            else:
-                fill = self.executor.execute_limit(
-                    symbol=order.symbol,
-                    side=order.side,
-                    quantity=order.quantity,
-                    limit_price=order.limit_price,
+            try:
+                # ── P1 预检：涨跌停检查 ──────────────────────
+                prev_close = self._prev_close.get(order.symbol, bar.open)
+                limit_ok, limit_reason, _ = check_limit_trade(
+                    prev_close=prev_close,
                     current_price=bar.close,
+                    stock_code=order.symbol,
+                    side=order.side,
                 )
-            reports.append(fill)
+                if not limit_ok:
+                    fill = FillReport(
+                        filled=False, fill_price=0.0, fill_quantity=0,
+                        fill_fee=0.0, message=f"涨跌停拒绝: {limit_reason}",
+                    )
+                    reports.append(fill)
+                    continue
+
+                # ── P1 预检：成交量容量检查 ──────────────────
+                cap_allowed, max_qty, cap_reason = check_volume_capacity(
+                    order_qty=order.quantity,
+                    bar_volume=bar.volume,
+                )
+                if not cap_allowed and max_qty == 0:
+                    fill = FillReport(
+                        filled=False, fill_price=0.0, fill_quantity=0,
+                        fill_fee=0.0, message=f"容量拒绝: {cap_reason}",
+                    )
+                    reports.append(fill)
+                    continue
+                effective_qty = min(order.quantity, max_qty)
+
+                if order.order_type == OrderType.MARKET:
+                    fill = self.executor.execute_market(
+                        symbol=order.symbol,
+                        side=order.side,
+                        quantity=effective_qty,
+                        price=bar.close,
+                    )
+                else:
+                    fill = self.executor.execute_limit(
+                        symbol=order.symbol,
+                        side=order.side,
+                        quantity=effective_qty,
+                        limit_price=order.limit_price,
+                        current_price=bar.close,
+                    )
+                # ── 涨跌停 clamp ────────────────────────────
+                if fill.filled and fill.fill_price > 0:
+                    fill.fill_price = _clamp_fill_price(
+                        fill_price=fill.fill_price,
+                        prev_close=prev_close,
+                        stock_code=order.symbol,
+                        side=order.side,
+                    )
+                reports.append(fill)
+            except Exception as e:
+                reports.append(FillReport(
+                    filled=False, fill_price=0.0, fill_quantity=0,
+                    fill_fee=0.0, message=f"订单执行异常: {e}",
+                ))
         return reports
 
     # ── 重置 ──────────────────────────────────────────────

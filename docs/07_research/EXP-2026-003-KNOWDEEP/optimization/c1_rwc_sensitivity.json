@@ -1,0 +1,624 @@
+{
+  "title": "C1-RWC 权重灵敏度分析 (±20%)",
+  "created": "2026-05-27T11:45:28+08:00",
+  "baseline_weights": {
+    "high_vol": 0.5,
+    "mid_vol": 0.3,
+    "low_vol": 0.2
+  },
+  "perturbation_count": 8,
+  "perturbations": [
+    {
+      "label": "high_vol_-20%",
+      "weights": {
+        "high_vol": 0.4,
+        "mid_vol": 0.3,
+        "low_vol": 0.2
+      }
+    },
+    {
+      "label": "high_vol_+20%",
+      "weights": {
+        "high_vol": 0.6,
+        "mid_vol": 0.3,
+        "low_vol": 0.2
+      }
+    },
+    {
+      "label": "mid_vol_-20%",
+      "weights": {
+        "high_vol": 0.5,
+        "mid_vol": 0.24,
+        "low_vol": 0.2
+      }
+    },
+    {
+      "label": "mid_vol_+20%",
+      "weights": {
+        "high_vol": 0.5,
+        "mid_vol": 0.36,
+        "low_vol": 0.2
+      }
+    },
+    {
+      "label": "low_vol_-20%",
+      "weights": {
+        "high_vol": 0.5,
+        "mid_vol": 0.3,
+        "low_vol": 0.16
+      }
+    },
+    {
+      "label": "low_vol_+20%",
+      "weights": {
+        "high_vol": 0.5,
+        "mid_vol": 0.3,
+        "low_vol": 0.24
+      }
+    },
+    {
+      "label": "all_-20%_normed",
+      "weights": {
+        "high_vol": 0.5,
+        "mid_vol": 0.3,
+        "low_vol": 0.2
+      }
+    },
+    {
+      "label": "all_+20%_normed",
+      "weights": {
+        "high_vol": 0.5,
+        "mid_vol": 0.3,
+        "low_vol": 0.2
+      }
+    }
+  ],
+  "direction_consistent_maintained": true,
+  "ic_positive_maintained": true,
+  "verdict": "PASS",
+  "complexity_implication": "C1≈C3",
+  "baseline": {
+    "weights": {
+      "high_vol": 0.5,
+      "mid_vol": 0.3,
+      "low_vol": 0.2
+    },
+    "train_ic": {
+      "5": {
+        "ic_mean": 0.09790612400068022,
+        "n_samples": 145662
+      },
+      "10": {
+        "ic_mean": 0.10431272570121741,
+        "n_samples": 145632
+      },
+      "20": {
+        "ic_mean": 0.1028191231337845,
+        "n_samples": 145572
+      }
+    },
+    "val_ic": {
+      "5": {
+        "ic_mean": 0.12252897631705506,
+        "n_samples": 57495
+      },
+      "10": {
+        "ic_mean": 0.12819930582020655,
+        "n_samples": 57380
+      },
+      "20": {
+        "ic_mean": 0.13842153055897022,
+        "n_samples": 57137
+      }
+    }
+  },
+  "details": {
+    "baseline": {
+      "weights": {
+        "high_vol": 0.5,
+        "mid_vol": 0.3,
+        "low_vol": 0.2
+      },
+      "train_ic": {
+        "5": {
+          "ic_mean": 0.09790612400068022,
+          "n_samples": 145662
+        },
+        "10": {
+          "ic_mean": 0.10431272570121741,
+          "n_samples": 145632
+        },
+        "20": {
+          "ic_mean": 0.1028191231337845,
+          "n_samples": 145572
+        }
+      },
+      "val_ic": {
+        "5": {
+          "ic_mean": 0.12252897631705506,
+          "n_samples": 57495
+        },
+        "10": {
+          "ic_mean": 0.12819930582020655,
+          "n_samples": 57380
+        },
+        "20": {
+          "ic_mean": 0.13842153055897022,
+          "n_samples": 57137
+        }
+      }
+    },
+    "high_vol_-20%": {
+      "weights": {
+        "high_vol": 0.4,
+        "mid_vol": 0.3,
+        "low_vol": 0.2
+      },
+      "train_ic": {
+        "5": {
+          "ic_mean": 0.0992620115598416,
+          "n_samples": 145662
+        },
+        "10": {
+          "ic_mean": 0.10662198512159049,
+          "n_samples": 145632
+        },
+        "20": {
+          "ic_mean": 0.10702040467697871,
+          "n_samples": 145572
+        }
+      },
+      "val_ic": {
+        "5": {
+          "ic_mean": 0.12161549239430514,
+          "n_samples": 57495
+        },
+        "10": {
+          "ic_mean": 0.12679036658626486,
+          "n_samples": 57380
+        },
+        "20": {
+          "ic_mean": 0.1379432811470106,
+          "n_samples": 57137
+        }
+      },
+      "direction_consistent": {
+        "train": {
+          "5": true,
+          "10": true,
+          "20": true
+        },
+        "val": {
+          "5": true,
+          "10": true,
+          "20": true
+        }
+      },
+      "ic_positive": {
+        "train": {
+          "5": true,
+          "10": true,
+          "20": true
+        },
+        "val": {
+          "5": true,
+          "10": true,
+          "20": true
+        }
+      }
+    },
+    "high_vol_+20%": {
+      "weights": {
+        "high_vol": 0.6,
+        "mid_vol": 0.3,
+        "low_vol": 0.2
+      },
+      "train_ic": {
+        "5": {
+          "ic_mean": 0.09602965027735555,
+          "n_samples": 145662
+        },
+        "10": {
+          "ic_mean": 0.10195210709130942,
+          "n_samples": 145632
+        },
+        "20": {
+          "ic_mean": 0.09912347357274354,
+          "n_samples": 145572
+        }
+      },
+      "val_ic": {
+        "5": {
+          "ic_mean": 0.12221981874832522,
+          "n_samples": 57495
+        },
+        "10": {
+          "ic_mean": 0.1281644707861782,
+          "n_samples": 57380
+        },
+        "20": {
+          "ic_mean": 0.13768154432930435,
+          "n_samples": 57137
+        }
+      },
+      "direction_consistent": {
+        "train": {
+          "5": true,
+          "10": true,
+          "20": true
+        },
+        "val": {
+          "5": true,
+          "10": true,
+          "20": true
+        }
+      },
+      "ic_positive": {
+        "train": {
+          "5": true,
+          "10": true,
+          "20": true
+        },
+        "val": {
+          "5": true,
+          "10": true,
+          "20": true
+        }
+      }
+    },
+    "mid_vol_-20%": {
+      "weights": {
+        "high_vol": 0.5,
+        "mid_vol": 0.24,
+        "low_vol": 0.2
+      },
+      "train_ic": {
+        "5": {
+          "ic_mean": 0.0934066000578131,
+          "n_samples": 145662
+        },
+        "10": {
+          "ic_mean": 0.0996502964374687,
+          "n_samples": 145632
+        },
+        "20": {
+          "ic_mean": 0.0981179325865208,
+          "n_samples": 145572
+        }
+      },
+      "val_ic": {
+        "5": {
+          "ic_mean": 0.11702446379631903,
+          "n_samples": 57495
+        },
+        "10": {
+          "ic_mean": 0.12272917784155768,
+          "n_samples": 57380
+        },
+        "20": {
+          "ic_mean": 0.13427152943120846,
+          "n_samples": 57137
+        }
+      },
+      "direction_consistent": {
+        "train": {
+          "5": true,
+          "10": true,
+          "20": true
+        },
+        "val": {
+          "5": true,
+          "10": true,
+          "20": true
+        }
+      },
+      "ic_positive": {
+        "train": {
+          "5": true,
+          "10": true,
+          "20": true
+        },
+        "val": {
+          "5": true,
+          "10": true,
+          "20": true
+        }
+      }
+    },
+    "mid_vol_+20%": {
+      "weights": {
+        "high_vol": 0.5,
+        "mid_vol": 0.36,
+        "low_vol": 0.2
+      },
+      "train_ic": {
+        "5": {
+          "ic_mean": 0.09859324227486677,
+          "n_samples": 145662
+        },
+        "10": {
+          "ic_mean": 0.10502779201209511,
+          "n_samples": 145632
+        },
+        "20": {
+          "ic_mean": 0.10396123762989062,
+          "n_samples": 145572
+        }
+      },
+      "val_ic": {
+        "5": {
+          "ic_mean": 0.12299752704515066,
+          "n_samples": 57495
+        },
+        "10": {
+          "ic_mean": 0.12830418339043326,
+          "n_samples": 57380
+        },
+        "20": {
+          "ic_mean": 0.13791310987560135,
+          "n_samples": 57137
+        }
+      },
+      "direction_consistent": {
+        "train": {
+          "5": true,
+          "10": true,
+          "20": true
+        },
+        "val": {
+          "5": true,
+          "10": true,
+          "20": true
+        }
+      },
+      "ic_positive": {
+        "train": {
+          "5": true,
+          "10": true,
+          "20": true
+        },
+        "val": {
+          "5": true,
+          "10": true,
+          "20": true
+        }
+      }
+    },
+    "low_vol_-20%": {
+      "weights": {
+        "high_vol": 0.5,
+        "mid_vol": 0.3,
+        "low_vol": 0.16
+      },
+      "train_ic": {
+        "5": {
+          "ic_mean": 0.0970453412372152,
+          "n_samples": 145662
+        },
+        "10": {
+          "ic_mean": 0.10270425058425525,
+          "n_samples": 145632
+        },
+        "20": {
+          "ic_mean": 0.10009639493030043,
+          "n_samples": 145572
+        }
+      },
+      "val_ic": {
+        "5": {
+          "ic_mean": 0.1232318145894079,
+          "n_samples": 57495
+        },
+        "10": {
+          "ic_mean": 0.1288917667695323,
+          "n_samples": 57380
+        },
+        "20": {
+          "ic_mean": 0.1376999447655488,
+          "n_samples": 57137
+        }
+      },
+      "direction_consistent": {
+        "train": {
+          "5": true,
+          "10": true,
+          "20": true
+        },
+        "val": {
+          "5": true,
+          "10": true,
+          "20": true
+        }
+      },
+      "ic_positive": {
+        "train": {
+          "5": true,
+          "10": true,
+          "20": true
+        },
+        "val": {
+          "5": true,
+          "10": true,
+          "20": true
+        }
+      }
+    },
+    "low_vol_+20%": {
+      "weights": {
+        "high_vol": 0.5,
+        "mid_vol": 0.3,
+        "low_vol": 0.24
+      },
+      "train_ic": {
+        "5": {
+          "ic_mean": 0.09642800591308842,
+          "n_samples": 145662
+        },
+        "10": {
+          "ic_mean": 0.10332192674187968,
+          "n_samples": 145632
+        },
+        "20": {
+          "ic_mean": 0.10323626767622918,
+          "n_samples": 145572
+        }
+      },
+      "val_ic": {
+        "5": {
+          "ic_mean": 0.11854072458532539,
+          "n_samples": 57495
+        },
+        "10": {
+          "ic_mean": 0.12397487520988804,
+          "n_samples": 57380
+        },
+        "20": {
+          "ic_mean": 0.13609751106370915,
+          "n_samples": 57137
+        }
+      },
+      "direction_consistent": {
+        "train": {
+          "5": true,
+          "10": true,
+          "20": true
+        },
+        "val": {
+          "5": true,
+          "10": true,
+          "20": true
+        }
+      },
+      "ic_positive": {
+        "train": {
+          "5": true,
+          "10": true,
+          "20": true
+        },
+        "val": {
+          "5": true,
+          "10": true,
+          "20": true
+        }
+      }
+    },
+    "all_-20%_normed": {
+      "weights": {
+        "high_vol": 0.5,
+        "mid_vol": 0.3,
+        "low_vol": 0.2
+      },
+      "train_ic": {
+        "5": {
+          "ic_mean": 0.09790612400068022,
+          "n_samples": 145662
+        },
+        "10": {
+          "ic_mean": 0.10431272570121741,
+          "n_samples": 145632
+        },
+        "20": {
+          "ic_mean": 0.1028191231337845,
+          "n_samples": 145572
+        }
+      },
+      "val_ic": {
+        "5": {
+          "ic_mean": 0.12252897631705506,
+          "n_samples": 57495
+        },
+        "10": {
+          "ic_mean": 0.12819930582020655,
+          "n_samples": 57380
+        },
+        "20": {
+          "ic_mean": 0.13842153055897022,
+          "n_samples": 57137
+        }
+      },
+      "direction_consistent": {
+        "train": {
+          "5": true,
+          "10": true,
+          "20": true
+        },
+        "val": {
+          "5": true,
+          "10": true,
+          "20": true
+        }
+      },
+      "ic_positive": {
+        "train": {
+          "5": true,
+          "10": true,
+          "20": true
+        },
+        "val": {
+          "5": true,
+          "10": true,
+          "20": true
+        }
+      }
+    },
+    "all_+20%_normed": {
+      "weights": {
+        "high_vol": 0.5,
+        "mid_vol": 0.3,
+        "low_vol": 0.2
+      },
+      "train_ic": {
+        "5": {
+          "ic_mean": 0.09790612400068022,
+          "n_samples": 145662
+        },
+        "10": {
+          "ic_mean": 0.10431272570121741,
+          "n_samples": 145632
+        },
+        "20": {
+          "ic_mean": 0.1028191231337845,
+          "n_samples": 145572
+        }
+      },
+      "val_ic": {
+        "5": {
+          "ic_mean": 0.12252897631705506,
+          "n_samples": 57495
+        },
+        "10": {
+          "ic_mean": 0.12819930582020655,
+          "n_samples": 57380
+        },
+        "20": {
+          "ic_mean": 0.13842153055897022,
+          "n_samples": 57137
+        }
+      },
+      "direction_consistent": {
+        "train": {
+          "5": true,
+          "10": true,
+          "20": true
+        },
+        "val": {
+          "5": true,
+          "10": true,
+          "20": true
+        }
+      },
+      "ic_positive": {
+        "train": {
+          "5": true,
+          "10": true,
+          "20": true
+        },
+        "val": {
+          "5": true,
+          "10": true,
+          "20": true
+        }
+      }
+    }
+  }
+}

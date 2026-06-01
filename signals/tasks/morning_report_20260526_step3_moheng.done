@@ -1,9 +1,0 @@
-{
-  "status": "DONE",
-  "task_id": "morning_report_20260526_step3",
-  "step": 3,
-  "verdict": "PASS",
-  "summary": "质量审查通过，草稿在事实准确性、逻辑完整性、风险披露充分性、操作建议合规性四维度均无问题，可直接进入 Step4 发布",
-  "reviewer": "moheng",
-  "completed_time": "2026-05-26T08:07:30+08:00"
-}

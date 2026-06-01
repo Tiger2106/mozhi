@@ -1,8 +1,0 @@
-done
----
-task: review_guide_moxuan
-agent: 墨萱
-completed_at: 2026-05-20T16:40+08:00
-elapsed_minutes: 17
-output: C:\Users\17699\mozhi_platform\reports\reviews\guide_review_moxuan.md
-summary: 审查完成，发现 11 个问题（1 个 CRITICAL + 3 个 MAJOR + 3 个 MINOR + 4 个 INFO），主要问题：附录A与正文§7.3冲突；Layer Q等级跨章节不一致；§5 MACD引用错误的章节号；"可信度"概念在§3和§7之间混淆。

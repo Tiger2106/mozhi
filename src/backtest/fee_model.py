@@ -68,13 +68,13 @@ class CNStockFeeModel(FeeModel):
     A股标准手续费模型。
 
     - 佣金：万分之2.5（最低5元）
-    - 印花税：千分之1（仅卖出时收取）
+    - 印花税：万分之5（仅卖出时收取，2023.8起）
     - 过户费：万分之0.2（买入和卖出均收取）
     """
 
     commission_rate: float = 0.00025       # 佣金万分之2.5
     min_commission: float = 5.0            # 佣金最低5元
-    stamp_tax_rate: float = 0.001          # 印花税千分之1
+    stamp_tax_rate: float = 0.0005          # 印花税万分之5（千分之0.5）
     transfer_fee_rate: float = 0.00002     # 过户费万分之0.2
 
     def calc_buy_fee(self, price: float, quantity: int) -> float:

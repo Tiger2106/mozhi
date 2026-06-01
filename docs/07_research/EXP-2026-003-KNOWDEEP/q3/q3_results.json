@@ -1,0 +1,292 @@
+{
+  "task_id": "EXP-2026-003-KNOWDEEP",
+  "work_package": "Q3",
+  "version_tag": "bc5f464",
+  "run_timestamp": "2026-05-27T12:35:49+08:00",
+  "completed_time": "2026-05-27T12:39:12+08:00",
+  "elapsed_seconds": 203.36,
+  "status": "READY",
+  "config": {
+    "base_signal": "l_vol_rsi_std",
+    "primary_composite": "C1-RWC",
+    "compare_composite": "C3-RWC-U",
+    "weights": {
+      "HV": 0.5,
+      "MV": 0.3,
+      "LV": 0.2
+    },
+    "train_window": "20070101~20191231",
+    "val_window": "20200101~20260430",
+    "holding_periods": [
+      5,
+      10,
+      20
+    ],
+    "n_bootstrap": 5000,
+    "alpha": 0.05,
+    "fdr_q": 0.05,
+    "random_seed": 42,
+    "cost_single_side": 0.00155,
+    "cost_round_trip": 0.0031,
+    "seed_locked": true
+  },
+  "bootstrap_test": {
+    "description": "C1-RWC验证期 5000次置换检验",
+    "20d_primary": {
+      "20d_ic_mean": 0.13842153055897022,
+      "p_value": 0.0,
+      "ci_95": [
+        -0.00835244401724362,
+        0.008031655138054076
+      ],
+      "significant": true,
+      "n_bootstrap": 5000,
+      "alpha": 0.05,
+      "seed": 42
+    },
+    "all_periods": {
+      "5": {
+        "p_value": 0.0,
+        "significant": true,
+        "ci_lower": -0.008632703086665661,
+        "ci_upper": 0.008026931549961334,
+        "ic_mean": 0.12252897631705506
+      },
+      "10": {
+        "p_value": 0.0,
+        "significant": true,
+        "ci_lower": -0.008097562225886068,
+        "ci_upper": 0.008115231838736752,
+        "ic_mean": 0.12819930582020655
+      },
+      "20": {
+        "p_value": 0.0,
+        "significant": true,
+        "ci_lower": -0.00835244401724362,
+        "ci_upper": 0.008031655138054076,
+        "ic_mean": 0.13842153055897022
+      }
+    }
+  },
+  "fdr_correction": {
+    "description": "三持有期(5/10/20d) BH FDR校正",
+    "method": "Benjamini-Hochberg",
+    "fdr_q": 0.05,
+    "n_tests": 3,
+    "results": {
+      "5": {
+        "p_value": 0.0,
+        "q_value": 0.0,
+        "rejected": true
+      },
+      "10": {
+        "p_value": 0.0,
+        "q_value": 0.0,
+        "rejected": true
+      },
+      "20": {
+        "p_value": 0.0,
+        "q_value": 0.0,
+        "rejected": true
+      }
+    },
+    "verdict": {
+      "method": "Benjamini-Hochberg",
+      "fdr_q": 0.05,
+      "n_tests": 3,
+      "n_rejected": 3,
+      "all_rejected": true,
+      "verdict": "PASS"
+    }
+  },
+  "l3_stability": {
+    "description": "C1-RWC验证期三层稳定性检验",
+    "results": {
+      "5": {
+        "time_slice": {
+          "passed": true,
+          "means": [
+            0.12860452236249187,
+            0.10899438718163922,
+            0.11340067427885092,
+            0.11567093899958464
+          ]
+        },
+        "rolling": {
+          "passed": true,
+          "flip_rate": 0.0
+        },
+        "cross_sectional": {
+          "passed": true,
+          "n_stocks": 44
+        },
+        "oos": {
+          "passed": true,
+          "train_ic": 0.09790612400068022,
+          "val_ic": 0.12252897631705506
+        },
+        "checks_passed": 4,
+        "checks_total": 4,
+        "L3_passed": true
+      },
+      "10": {
+        "time_slice": {
+          "passed": true,
+          "means": [
+            0.12346134243031444,
+            0.12116694634688725,
+            0.1270010419554915,
+            0.12401573959415746
+          ]
+        },
+        "rolling": {
+          "passed": true,
+          "flip_rate": 0.0
+        },
+        "cross_sectional": {
+          "passed": true,
+          "n_stocks": 44
+        },
+        "oos": {
+          "passed": true,
+          "train_ic": 0.10431272570121741,
+          "val_ic": 0.12819930582020655
+        },
+        "checks_passed": 4,
+        "checks_total": 4,
+        "L3_passed": true
+      },
+      "20": {
+        "time_slice": {
+          "passed": true,
+          "means": [
+            0.10934850968854248,
+            0.15311274897050903,
+            0.13707406251734067,
+            0.12135845931723685
+          ]
+        },
+        "rolling": {
+          "passed": true,
+          "flip_rate": 0.0
+        },
+        "cross_sectional": {
+          "passed": true,
+          "n_stocks": 44
+        },
+        "oos": {
+          "passed": true,
+          "train_ic": 0.1028191231337845,
+          "val_ic": 0.13842153055897022
+        },
+        "checks_passed": 4,
+        "checks_total": 4,
+        "L3_passed": true
+      }
+    }
+  },
+  "cross_period_consistency": {
+    "description": "reverse_factor跨周期6窗口方向一致性",
+    "windows": {
+      "original_train": {
+        "5": 0.09790612400068022,
+        "10": 0.10431272570121741,
+        "20": 0.1028191231337845
+      },
+      "original_val": {
+        "5": 0.12252897631705506,
+        "10": 0.12819930582020655,
+        "20": 0.13842153055897022
+      },
+      "swap_train": {
+        "5": 0.12633666834007629,
+        "10": 0.13361267100670127,
+        "20": 0.1420173028364754
+      },
+      "swap_val": {
+        "5": 0.09790612400068022,
+        "10": 0.10431272570121741,
+        "20": 0.1028191231337845
+      },
+      "mid_train": {
+        "5": 0.09765258299258162,
+        "10": 0.10265997066408628,
+        "20": 0.09450175891889334
+      },
+      "mid_val": {
+        "5": 0.12633666834007629,
+        "10": 0.13361267100670127,
+        "20": 0.1420173028364754
+      }
+    },
+    "consistency": {
+      "5": {
+        "n_positive": 6,
+        "n_negative": 0,
+        "all_same_sign": true,
+        "direction_stable": true
+      },
+      "10": {
+        "n_positive": 6,
+        "n_negative": 0,
+        "all_same_sign": true,
+        "direction_stable": true
+      },
+      "20": {
+        "n_positive": 6,
+        "n_negative": 0,
+        "all_same_sign": true,
+        "direction_stable": true
+      }
+    }
+  },
+  "cost_adjusted_ic": {
+    "description": "扣除双边0.31%费用后Alpha",
+    "C1_RWC": {
+      "5": {
+        "gross_ic": 0.12252897631705506,
+        "net_ic": 0.12252897631705506,
+        "n_samples": 57495,
+        "net_alpha_positive": true
+      },
+      "10": {
+        "gross_ic": 0.12819930582020655,
+        "net_ic": 0.12819930582020655,
+        "n_samples": 57380,
+        "net_alpha_positive": true
+      },
+      "20": {
+        "gross_ic": 0.13842153055897022,
+        "net_ic": 0.13842153055897022,
+        "n_samples": 57137,
+        "net_alpha_positive": true
+      }
+    },
+    "C3_RWC_U": {
+      "5": {
+        "gross_ic": 0.09046824269397336,
+        "net_ic": 0.09046824269397336
+      },
+      "10": {
+        "gross_ic": 0.09201834656849506,
+        "net_ic": 0.09201834656849506
+      },
+      "20": {
+        "gross_ic": 0.10965659545979323,
+        "net_ic": 0.10965659545979323
+      }
+    }
+  },
+  "summary": {
+    "bootstrap_passed": true,
+    "fdr_passed": true,
+    "l3_passed": true,
+    "cross_period_stable": true,
+    "net_alpha_positive": true,
+    "c1_vs_c3": {
+      "c1_20d_gross": 0.13842153055897022,
+      "c3_20d_gross": 0.10965659545979323,
+      "advantage_c1": true
+    }
+  }
+}

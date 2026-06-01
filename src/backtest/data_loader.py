@@ -173,23 +173,32 @@ def load_stock_bars(
     cur = conn.cursor()
 
     query = (
-        "SELECT date, open, high, low, close, volume, amount "
-        "FROM stock_daily WHERE code=?"
+        "SELECT trade_date, open, high, low, close, volume, amount "
+        "FROM stock_daily WHERE ts_code=?"
     )
     # 兼容 "601857.SH" 或 "000001.SZ" 或 "600519" 格式
-    query_code = symbol.split(".")[0]
+    # 统一补全 .SH 或 .SZ 后缀
+    query_code = symbol
+    if "." not in query_code:
+        # 无后缀，自动识别
+        if symbol.startswith("6"):
+            query_code = symbol + ".SH"
+        elif symbol.startswith(("0", "3")):
+            query_code = symbol + ".SZ"
+        else:
+            query_code = symbol  # 保持原样
     params: List[Any] = [query_code]
 
     if start_date:
         start_date_clean = start_date.replace("-", "")
-        query += " AND date >= ?"
+        query += " AND trade_date >= ?"
         params.append(start_date_clean)
     if end_date:
         end_date_clean = end_date.replace("-", "")
-        query += " AND date <= ?"
+        query += " AND trade_date <= ?"
         params.append(end_date_clean)
 
-    query += " ORDER BY date ASC"
+    query += " ORDER BY trade_date ASC"
 
     cur.execute(query, params)
     rows = cur.fetchall()

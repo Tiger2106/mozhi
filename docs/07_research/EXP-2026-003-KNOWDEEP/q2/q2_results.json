@@ -1,0 +1,335 @@
+{
+  "task_id": "EXP-2026-003-KNOWDEEP",
+  "work_package": "Q2",
+  "version_tag": "0bec5f6",
+  "run_timestamp": "2026-05-27T09:28:20+08:00",
+  "completed_time": "2026-05-27T09:28:46+08:00",
+  "elapsed_seconds": 25.9,
+  "status": "READY",
+  "config": {
+    "base_signal": "l_vol_rsi_std",
+    "composite_signals": [
+      "C1_rwc",
+      "C2_rfs",
+      "C3_ewc",
+      "C4_vss"
+    ],
+    "observation_only": [
+      "TrendQuality"
+    ],
+    "n_stocks": 50,
+    "train_window": "20070101~20191231",
+    "val_window": "20200101~20260430",
+    "holding_periods": [
+      5,
+      10,
+      20
+    ],
+    "cost_round_trip": 0.0031,
+    "sample_size_threshold": 3000
+  },
+  "owner_constraints_applied": {
+    "only_l_vol_rsi_std_as_base": true,
+    "trendquality_observation_only": true,
+    "kid_exp003_001_not_activated": true,
+    "sample_size_degradation_enabled": true
+  },
+  "composite_analysis": {
+    "C1_rwc": {
+      "description": "Regime-Weighted: HV=0.5/MV=0.3/LV=0.2",
+      "train_ic": {
+        "5": {
+          "ic_mean": 0.09790612400068022,
+          "n_samples": 145662
+        },
+        "10": {
+          "ic_mean": 0.10431272570121741,
+          "n_samples": 145632
+        },
+        "20": {
+          "ic_mean": 0.1028191231337845,
+          "n_samples": 145572
+        }
+      },
+      "val_ic": {
+        "5": {
+          "ic_mean": 0.12252897631705506,
+          "n_samples": 57495
+        },
+        "10": {
+          "ic_mean": 0.12819930582020655,
+          "n_samples": 57380
+        },
+        "20": {
+          "ic_mean": 0.13842153055897022,
+          "n_samples": 57137
+        }
+      },
+      "decay": {
+        "5": {
+          "verdict": "PASS",
+          "verdict_base": "PASS",
+          "train_ic": 0.09790612400068022,
+          "val_ic": 0.12252897631705506,
+          "decay_rate": -0.2514945062701468,
+          "direction_consistent": true,
+          "n_samples_val": 57495,
+          "sample_size_degraded": false,
+          "degradation_note": ""
+        },
+        "10": {
+          "verdict": "PASS",
+          "verdict_base": "PASS",
+          "train_ic": 0.10431272570121741,
+          "val_ic": 0.12819930582020655,
+          "decay_rate": -0.22899008686061367,
+          "direction_consistent": true,
+          "n_samples_val": 57380,
+          "sample_size_degraded": false,
+          "degradation_note": ""
+        },
+        "20": {
+          "verdict": "PASS",
+          "verdict_base": "PASS",
+          "train_ic": 0.1028191231337845,
+          "val_ic": 0.13842153055897022,
+          "decay_rate": -0.3462625077910961,
+          "direction_consistent": true,
+          "n_samples_val": 57137,
+          "sample_size_degraded": false,
+          "degradation_note": ""
+        }
+      }
+    },
+    "C2_rfs": {
+      "description": "Regime-Filtered: LV+MV only",
+      "train_ic": {
+        "5": {
+          "ic_mean": 0.0007648178492835056,
+          "n_samples": 145745
+        },
+        "10": {
+          "ic_mean": 0.004069826357687045,
+          "n_samples": 145715
+        },
+        "20": {
+          "ic_mean": 0.010086647539029325,
+          "n_samples": 145655
+        }
+      },
+      "val_ic": {
+        "5": {
+          "ic_mean": 0.014978722852693638,
+          "n_samples": 57495
+        },
+        "10": {
+          "ic_mean": 0.0106553741580927,
+          "n_samples": 57380
+        },
+        "20": {
+          "ic_mean": 0.017282075590566492,
+          "n_samples": 57137
+        }
+      },
+      "decay": {
+        "5": {
+          "verdict": "PASS",
+          "verdict_base": "PASS",
+          "train_ic": 0.0007648178492835056,
+          "val_ic": 0.014978722852693638,
+          "decay_rate": -18.584693096174416,
+          "direction_consistent": true,
+          "n_samples_val": 57495,
+          "sample_size_degraded": false,
+          "degradation_note": ""
+        },
+        "10": {
+          "verdict": "PASS",
+          "verdict_base": "PASS",
+          "train_ic": 0.004069826357687045,
+          "val_ic": 0.0106553741580927,
+          "decay_rate": -1.618139748878215,
+          "direction_consistent": true,
+          "n_samples_val": 57380,
+          "sample_size_degraded": false,
+          "degradation_note": ""
+        },
+        "20": {
+          "verdict": "PASS",
+          "verdict_base": "PASS",
+          "train_ic": 0.010086647539029325,
+          "val_ic": 0.017282075590566492,
+          "decay_rate": -0.7133617015658712,
+          "direction_consistent": true,
+          "n_samples_val": 57137,
+          "sample_size_degraded": false,
+          "degradation_note": ""
+        }
+      }
+    },
+    "C3_ewc": {
+      "description": "Equal-Weight: all states",
+      "train_ic": {
+        "5": {
+          "ic_mean": 0.0797498858375163,
+          "n_samples": 145662
+        },
+        "10": {
+          "ic_mean": 0.08938058719728303,
+          "n_samples": 145632
+        },
+        "20": {
+          "ic_mean": 0.09666110328425592,
+          "n_samples": 145572
+        }
+      },
+      "val_ic": {
+        "5": {
+          "ic_mean": 0.09046824269397336,
+          "n_samples": 57495
+        },
+        "10": {
+          "ic_mean": 0.09201834656849506,
+          "n_samples": 57380
+        },
+        "20": {
+          "ic_mean": 0.10965659545979323,
+          "n_samples": 57137
+        }
+      },
+      "decay": {
+        "5": {
+          "verdict": "PASS",
+          "verdict_base": "PASS",
+          "train_ic": 0.0797498858375163,
+          "val_ic": 0.09046824269397336,
+          "decay_rate": -0.134399651408841,
+          "direction_consistent": true,
+          "n_samples_val": 57495,
+          "sample_size_degraded": false,
+          "degradation_note": ""
+        },
+        "10": {
+          "verdict": "PASS",
+          "verdict_base": "PASS",
+          "train_ic": 0.08938058719728303,
+          "val_ic": 0.09201834656849506,
+          "decay_rate": -0.029511546678361995,
+          "direction_consistent": true,
+          "n_samples_val": 57380,
+          "sample_size_degraded": false,
+          "degradation_note": ""
+        },
+        "20": {
+          "verdict": "PASS",
+          "verdict_base": "PASS",
+          "train_ic": 0.09666110328425592,
+          "val_ic": 0.10965659545979323,
+          "decay_rate": -0.13444386349823506,
+          "direction_consistent": true,
+          "n_samples_val": 57137,
+          "sample_size_degraded": false,
+          "degradation_note": ""
+        }
+      }
+    },
+    "C4_vss": {
+      "description": "Vol-Scaled: HV compressed",
+      "train_ic": {
+        "5": {
+          "ic_mean": 0.0685474489731468,
+          "n_samples": 145662
+        },
+        "10": {
+          "ic_mean": 0.07456497621571645,
+          "n_samples": 145632
+        },
+        "20": {
+          "ic_mean": 0.08196990284715144,
+          "n_samples": 145572
+        }
+      },
+      "val_ic": {
+        "5": {
+          "ic_mean": 0.09280130972892808,
+          "n_samples": 57495
+        },
+        "10": {
+          "ic_mean": 0.09417763098485388,
+          "n_samples": 57380
+        },
+        "20": {
+          "ic_mean": 0.10723304028307146,
+          "n_samples": 57137
+        }
+      },
+      "decay": {
+        "5": {
+          "verdict": "PASS",
+          "verdict_base": "PASS",
+          "train_ic": 0.0685474489731468,
+          "val_ic": 0.09280130972892808,
+          "decay_rate": -0.3538258698041797,
+          "direction_consistent": true,
+          "n_samples_val": 57495,
+          "sample_size_degraded": false,
+          "degradation_note": ""
+        },
+        "10": {
+          "verdict": "PASS",
+          "verdict_base": "PASS",
+          "train_ic": 0.07456497621571645,
+          "val_ic": 0.09417763098485388,
+          "decay_rate": -0.2630277077055322,
+          "direction_consistent": true,
+          "n_samples_val": 57380,
+          "sample_size_degraded": false,
+          "degradation_note": ""
+        },
+        "20": {
+          "verdict": "PASS",
+          "verdict_base": "PASS",
+          "train_ic": 0.08196990284715144,
+          "val_ic": 0.10723304028307146,
+          "decay_rate": -0.3082001632114651,
+          "direction_consistent": true,
+          "n_samples_val": 57137,
+          "sample_size_degraded": false,
+          "degradation_note": ""
+        }
+      }
+    }
+  },
+  "trendquality_observation": {
+    "description": "TrendQuality Q2独立观察（不作为信号输入）",
+    "note": "验证Q1反衰减结论稳定性（HVol n≈1,312<3,000）",
+    "train_ic": {
+      "5": {
+        "ic_mean": 0.35803351836523645,
+        "n_samples": 146362
+      },
+      "10": {
+        "ic_mean": 0.347130604951399,
+        "n_samples": 146332
+      },
+      "20": {
+        "ic_mean": 0.33310433263530537,
+        "n_samples": 146272
+      }
+    },
+    "val_ic": {
+      "5": {
+        "ic_mean": 0.4007150820798149,
+        "n_samples": 57495
+      },
+      "10": {
+        "ic_mean": 0.40626348114675803,
+        "n_samples": 57380
+      },
+      "20": {
+        "ic_mean": 0.39814954075537634,
+        "n_samples": 57137
+      }
+    }
+  }
+}

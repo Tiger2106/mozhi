@@ -1,9 +1,0 @@
-﻿{
-    "agent":  "mochen",
-    "step":  5,
-    "task_id":  "morning_report_20260526_step5",
-    "output_file":  "飞书已推送",
-    "summary":  "飞书推送完成",
-    "completed_time":  "2026-05-26T08:12:24+08:00",
-    "status":  "DONE"
-}

@@ -1,0 +1,10 @@
+{
+  "status": "READY",
+  "type": "format_notification",
+  "strategy": "S002",
+  "to": "moxuan",
+  "from": "moheng",
+  "created_time": "2026-05-25T10:46:00+08:00",
+  "content": "S002 三线格式统一规范 v1 已发布。请按 docs/10_strategies/S002/format_spec_v1.md 中的 §3.2 格式每日产出 mismatch_heatmap_{date}.json。输出路径: reports/{report_type}/{date}/s002/mismatch_heatmap_{date}.json",
+  "confirm_by": "2026-05-27T10:46:00+08:00"
+}

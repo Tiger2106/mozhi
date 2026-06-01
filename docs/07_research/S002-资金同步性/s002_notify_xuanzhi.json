@@ -1,0 +1,10 @@
+{
+  "status": "READY",
+  "type": "format_notification",
+  "strategy": "S002",
+  "to": "xuanzhi",
+  "from": "moheng",
+  "created_time": "2026-05-25T10:46:00+08:00",
+  "content": "S002 三线格式统一规范 v1 已发布。请按 docs/10_strategies/S002/format_spec_v1.md 中的 §3.3 格式产出 historical_reference_{case_id}.json（按需）。另外，S004 Phase2 将于 5/29 交付给你，请做好准备接手 Layer2/Layer3 的向量检索和算法完善工作。",
+  "confirm_by": "2026-05-27T10:46:00+08:00"
+}

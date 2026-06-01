@@ -428,13 +428,195 @@ def build_symbol_config(
 
 
 # ──────────────────────────────────────────────
-# 7. 版本号管理
+# 7. A50 估值字段定义（daily_basic）
+#    Phase 2 — C组估值链路修复，2026-05-31
 # ──────────────────────────────────────────────
 
-CURRENT_VERSION: str = "v1.0"
+A50_DAILY_BASIC_FIELDS: List[FieldMeta] = [
+    # ── 标识字段 ──
+    FieldMeta(
+        db_name="code",
+        db_type="VARCHAR(20)",
+        unit="—",
+        description="股票代码（6位数字，不含后缀）",
+        constraint=ConstraintType.NOT_NULL,
+        tushare_name="ts_code",
+        normalization_rule="由 ts_code 截取前6位",
+        example="601857",
+    ),
+    FieldMeta(
+        db_name="date",
+        db_type="INT",
+        unit="YYYYMMDD",
+        description="交易日",
+        constraint=ConstraintType.DATE_FORMAT_YYYYMMDD,
+        tushare_name="trade_date",
+        normalization_rule="直接映射",
+        example=20260522,
+    ),
+
+    # ── 估值字段 ──
+    FieldMeta(
+        db_name="pe",
+        db_type="DECIMAL(12,4)",
+        unit="倍",
+        description="动态市盈率（PE TTM）",
+        constraint=ConstraintType.NON_NEGATIVE,
+        tushare_name="pe",
+        normalization_rule="直接映射",
+        nullable=True,
+        example=13.5315,
+    ),
+    FieldMeta(
+        db_name="pe_ttm",
+        db_type="DECIMAL(12,4)",
+        unit="倍",
+        description="滚动市盈率（PE TTM）",
+        constraint=ConstraintType.NON_NEGATIVE,
+        tushare_name="pe_ttm",
+        normalization_rule="直接映射",
+        nullable=True,
+        example=13.4016,
+    ),
+    FieldMeta(
+        db_name="pb",
+        db_type="DECIMAL(12,4)",
+        unit="倍",
+        description="市净率",
+        constraint=ConstraintType.NON_NEGATIVE,
+        tushare_name="pb",
+        normalization_rule="直接映射",
+        nullable=True,
+        example=1.3102,
+    ),
+    FieldMeta(
+        db_name="ps_ttm",
+        db_type="DECIMAL(12,4)",
+        unit="倍",
+        description="市销率（TTM，需≥2000积分）",
+        constraint=ConstraintType.NON_NEGATIVE,
+        tushare_name="ps_ttm",
+        normalization_rule="直接映射，缺少时不报错",
+        nullable=True,
+        example=0.7474,
+    ),
+
+    # ── 流通 / 市值字段 ──
+    FieldMeta(
+        db_name="float_share",
+        db_type="DECIMAL(16,4)",
+        unit="万股",
+        description="流通股本（万股）",
+        constraint=ConstraintType.NON_NEGATIVE,
+        tushare_name="float_share",
+        normalization_rule="直接映射",
+        nullable=True,
+        example=16192207.78,
+    ),
+    FieldMeta(
+        db_name="total_share",
+        db_type="DECIMAL(16,4)",
+        unit="万股",
+        description="总股本（万股）",
+        constraint=ConstraintType.NON_NEGATIVE,
+        tushare_name="total_share",
+        normalization_rule="直接映射",
+        nullable=True,
+        example=18302097.78,
+    ),
+    FieldMeta(
+        db_name="circ_mv",
+        db_type="DECIMAL(20,4)",
+        unit="万元",
+        description="流通市值（万元）",
+        constraint=ConstraintType.NON_NEGATIVE,
+        tushare_name="circ_mv",
+        normalization_rule="直接映射",
+        nullable=True,
+        example=188315376.50,
+    ),
+
+    # ── premium 字段（条件性存在） ──
+    FieldMeta(
+        db_name="pcf_ttm",
+        db_type="DECIMAL(12,4)",
+        unit="倍",
+        description="市现率（TTM，需≥2000积分，当前Token无此字段）",
+        constraint=ConstraintType.NON_NEGATIVE,
+        tushare_name="pcf_ttm",
+        normalization_rule="需升级Token积分才有，缺失时不报错",
+        nullable=True,
+        example=None,
+    ),
+    FieldMeta(
+        db_name="dividend_yield",
+        db_type="DECIMAL(12,4)",
+        unit="%",
+        description="股息率（需≥2000积分，当前Token无此字段）",
+        constraint=ConstraintType.NON_NEGATIVE,
+        tushare_name="dv_ratio",  # Bugfix: Tushare API 实际字段名为 dv_ratio
+        normalization_rule="需升级Token积分才有，缺失时不报错",
+        nullable=True,
+        example=None,
+    ),
+
+    # ── 元数据字段 ──
+    FieldMeta(
+        db_name="source_version",
+        db_type="VARCHAR(8)",
+        unit="—",
+        description="数据源版本号",
+        constraint=ConstraintType.NOT_NULL,
+        tushare_name=None,
+        normalization_rule="由采集脚本填充 'v1'",
+        nullable=False,
+        example="v1",
+    ),
+    FieldMeta(
+        db_name="created_at",
+        db_type="TEXT",
+        unit="—",
+        description="入库时间",
+        constraint=ConstraintType.NONE,
+        tushare_name=None,
+        normalization_rule="SQLite DEFAULT datetime('now','localtime')",
+        nullable=False,
+        example="2026-05-31 16:30:00",
+    ),
+]
+
+
+# ──────────────────────────────────────────────
+# 8. DDL 生成：a50_daily_basic
+# ──────────────────────────────────────────────
+
+A50_DAILY_BASIC_DDL_TEMPLATE = """
+CREATE TABLE IF NOT EXISTS a50_daily_basic (
+{columns},
+    PRIMARY KEY (code, date)
+);
+"""
+
+
+def generate_a50_daily_basic_ddl() -> str:
+    """生成 a50_daily_basic 表的 DDL"""
+    col_defs = []
+    for f in A50_DAILY_BASIC_FIELDS:
+        nullable = "NULL" if f.nullable else "NOT NULL"
+        col_defs.append(f"    `{f.db_name}` {f.db_type} DEFAULT NULL COMMENT '{f.description} [{f.unit}]'")
+    return A50_DAILY_BASIC_DDL_TEMPLATE.format(columns=",\n".join(col_defs))
+
+
+# ──────────────────────────────────────────────
+# 9. 版本号管理
+# ──────────────────────────────────────────────
+
+CURRENT_VERSION: str = "v1.1"
 
 # 版本号：v<major>.<minor>
 # 递增规则：
 #   - 新增字段、新增校验规则 → minor +1
 #   - 归一化逻辑变更、字段类型变更 → major +1
 #   - 仅修改映射但未改变值语义（如字段重命名） → minor +1
+#
+# v1.0 → v1.1 (2026-05-31): 新增 A50_DAILY_BASIC_FIELDS + generate_a50_daily_basic_ddl()

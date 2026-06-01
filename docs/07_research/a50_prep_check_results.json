@@ -1,0 +1,394 @@
+{
+  "summary": {
+    "total_stocks": 39,
+    "api_available": 13,
+    "api_unavailable": 26,
+    "api_availability_rate": "33.3%",
+    "full_test_count": 5,
+    "light_test_count": 34,
+    "full_test_rows": 4662,
+    "estimated_light_to_full_rows": 11100,
+    "estimated_full_rows_total": 15762,
+    "check_time": "2026-05-26 13:49:54"
+  },
+  "full_test": [
+    {
+      "code": "601166",
+      "exchange": "SH",
+      "api_available": true,
+      "earliest_date": "2007-02-05",
+      "latest_date": "2026-05-25",
+      "total_rows": 4662,
+      "fields_complete": true,
+      "fields_missing": "[]",
+      "adj_factor_available": true,
+      "has_gaps": true,
+      "gap_dates": "['2007-04-27 -> 2007-05-08 (11d)', '2020-01-23 -> 2020-02-03 (11d)', '2023-09-28 -> 2023-10-09 (11d)', '2024-02-08 -> 2024-02-19 (11d)', '2026-02-13 -> 2026-02-24 (11d)']",
+      "error": null
+    },
+    {
+      "code": "000333",
+      "exchange": "SZ",
+      "api_available": false,
+      "earliest_date": null,
+      "latest_date": null,
+      "total_rows": 0,
+      "fields_complete": false,
+      "fields_missing": "[]",
+      "adj_factor_available": false,
+      "has_gaps": false,
+      "gap_dates": "[]",
+      "error": "HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=0&secid=0.000333&beg=20000101&end=20260525 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))"
+    },
+    {
+      "code": "300059",
+      "exchange": "SZ",
+      "api_available": false,
+      "earliest_date": null,
+      "latest_date": null,
+      "total_rows": 0,
+      "fields_complete": false,
+      "fields_missing": "[]",
+      "adj_factor_available": false,
+      "has_gaps": false,
+      "gap_dates": "[]",
+      "error": "HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=0&secid=0.300059&beg=20000101&end=20260525 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))"
+    },
+    {
+      "code": "002714",
+      "exchange": "SZ",
+      "api_available": false,
+      "earliest_date": null,
+      "latest_date": null,
+      "total_rows": 0,
+      "fields_complete": false,
+      "fields_missing": "[]",
+      "adj_factor_available": false,
+      "has_gaps": false,
+      "gap_dates": "[]",
+      "error": "HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=0&secid=0.002714&beg=20000101&end=20260525 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))"
+    },
+    {
+      "code": "688981",
+      "exchange": "SH",
+      "api_available": false,
+      "earliest_date": null,
+      "latest_date": null,
+      "total_rows": 0,
+      "fields_complete": false,
+      "fields_missing": "[]",
+      "adj_factor_available": false,
+      "has_gaps": false,
+      "gap_dates": "[]",
+      "error": "HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=0&secid=1.688981&beg=20000101&end=20260525 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))"
+    }
+  ],
+  "light_test": [
+    {
+      "code": "600276",
+      "exchange": "SH",
+      "api_available": false,
+      "rows_estimate": 0,
+      "earliest_date": null,
+      "latest_date": null,
+      "error": "HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=0&secid=1.600276&beg=20230101&end=20260525 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))"
+    },
+    {
+      "code": "600887",
+      "exchange": "SH",
+      "api_available": false,
+      "rows_estimate": 0,
+      "earliest_date": null,
+      "latest_date": null,
+      "error": "HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=0&secid=1.600887&beg=20230101&end=20260525 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))"
+    },
+    {
+      "code": "600030",
+      "exchange": "SH",
+      "api_available": false,
+      "rows_estimate": 0,
+      "earliest_date": null,
+      "latest_date": null,
+      "error": "HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=0&secid=1.600030&beg=20230101&end=20260525 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))"
+    },
+    {
+      "code": "600028",
+      "exchange": "SH",
+      "api_available": false,
+      "rows_estimate": 0,
+      "earliest_date": null,
+      "latest_date": null,
+      "error": "HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=0&secid=1.600028&beg=20230101&end=20260525 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))"
+    },
+    {
+      "code": "601088",
+      "exchange": "SH",
+      "api_available": false,
+      "rows_estimate": 0,
+      "earliest_date": null,
+      "latest_date": null,
+      "error": "HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=0&secid=1.601088&beg=20230101&end=20260525 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))"
+    },
+    {
+      "code": "600585",
+      "exchange": "SH",
+      "api_available": false,
+      "rows_estimate": 0,
+      "earliest_date": null,
+      "latest_date": null,
+      "error": "HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=0&secid=1.600585&beg=20230101&end=20260525 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))"
+    },
+    {
+      "code": "600690",
+      "exchange": "SH",
+      "api_available": false,
+      "rows_estimate": 0,
+      "earliest_date": null,
+      "latest_date": null,
+      "error": "HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=0&secid=1.600690&beg=20230101&end=20260525 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))"
+    },
+    {
+      "code": "601398",
+      "exchange": "SH",
+      "api_available": false,
+      "rows_estimate": 0,
+      "earliest_date": null,
+      "latest_date": null,
+      "error": "HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=0&secid=1.601398&beg=20230101&end=20260525 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))"
+    },
+    {
+      "code": "601939",
+      "exchange": "SH",
+      "api_available": true,
+      "rows_estimate": 818,
+      "earliest_date": "2023-01-03",
+      "latest_date": "2026-05-25",
+      "error": null
+    },
+    {
+      "code": "600000",
+      "exchange": "SH",
+      "api_available": false,
+      "rows_estimate": 0,
+      "earliest_date": null,
+      "latest_date": null,
+      "error": "HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=0&secid=1.600000&beg=20230101&end=20260525 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))"
+    },
+    {
+      "code": "600016",
+      "exchange": "SH",
+      "api_available": false,
+      "rows_estimate": 0,
+      "earliest_date": null,
+      "latest_date": null,
+      "error": "HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=0&secid=1.600016&beg=20230101&end=20260525 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))"
+    },
+    {
+      "code": "600019",
+      "exchange": "SH",
+      "api_available": true,
+      "rows_estimate": 818,
+      "earliest_date": "2023-01-03",
+      "latest_date": "2026-05-25",
+      "error": null
+    },
+    {
+      "code": "600104",
+      "exchange": "SH",
+      "api_available": true,
+      "rows_estimate": 818,
+      "earliest_date": "2023-01-03",
+      "latest_date": "2026-05-25",
+      "error": null
+    },
+    {
+      "code": "601328",
+      "exchange": "SH",
+      "api_available": true,
+      "rows_estimate": 818,
+      "earliest_date": "2023-01-03",
+      "latest_date": "2026-05-25",
+      "error": null
+    },
+    {
+      "code": "601288",
+      "exchange": "SH",
+      "api_available": true,
+      "rows_estimate": 818,
+      "earliest_date": "2023-01-03",
+      "latest_date": "2026-05-25",
+      "error": null
+    },
+    {
+      "code": "601988",
+      "exchange": "SH",
+      "api_available": true,
+      "rows_estimate": 818,
+      "earliest_date": "2023-01-03",
+      "latest_date": "2026-05-25",
+      "error": null
+    },
+    {
+      "code": "601668",
+      "exchange": "SH",
+      "api_available": true,
+      "rows_estimate": 818,
+      "earliest_date": "2023-01-03",
+      "latest_date": "2026-05-25",
+      "error": null
+    },
+    {
+      "code": "000002",
+      "exchange": "SZ",
+      "api_available": true,
+      "rows_estimate": 818,
+      "earliest_date": "2023-01-03",
+      "latest_date": "2026-05-25",
+      "error": null
+    },
+    {
+      "code": "002304",
+      "exchange": "SZ",
+      "api_available": true,
+      "rows_estimate": 818,
+      "earliest_date": "2023-01-03",
+      "latest_date": "2026-05-25",
+      "error": null
+    },
+    {
+      "code": "000568",
+      "exchange": "SZ",
+      "api_available": true,
+      "rows_estimate": 818,
+      "earliest_date": "2023-01-03",
+      "latest_date": "2026-05-25",
+      "error": null
+    },
+    {
+      "code": "000725",
+      "exchange": "SZ",
+      "api_available": true,
+      "rows_estimate": 818,
+      "earliest_date": "2023-01-03",
+      "latest_date": "2026-05-25",
+      "error": null
+    },
+    {
+      "code": "002230",
+      "exchange": "SZ",
+      "api_available": true,
+      "rows_estimate": 818,
+      "earliest_date": "2023-01-03",
+      "latest_date": "2026-05-25",
+      "error": null
+    },
+    {
+      "code": "000651",
+      "exchange": "SZ",
+      "api_available": false,
+      "rows_estimate": 0,
+      "earliest_date": null,
+      "latest_date": null,
+      "error": "HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=0&secid=0.000651&beg=20230101&end=20260525 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))"
+    },
+    {
+      "code": "002142",
+      "exchange": "SZ",
+      "api_available": false,
+      "rows_estimate": 0,
+      "earliest_date": null,
+      "latest_date": null,
+      "error": "HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=0&secid=0.002142&beg=20230101&end=20260525 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))"
+    },
+    {
+      "code": "000100",
+      "exchange": "SZ",
+      "api_available": false,
+      "rows_estimate": 0,
+      "earliest_date": null,
+      "latest_date": null,
+      "error": "HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=0&secid=0.000100&beg=20230101&end=20260525 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))"
+    },
+    {
+      "code": "002013",
+      "exchange": "SZ",
+      "api_available": false,
+      "rows_estimate": 0,
+      "earliest_date": null,
+      "latest_date": null,
+      "error": "HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=0&secid=0.002013&beg=20230101&end=20260525 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))"
+    },
+    {
+      "code": "300124",
+      "exchange": "SZ",
+      "api_available": false,
+      "rows_estimate": 0,
+      "earliest_date": null,
+      "latest_date": null,
+      "error": "HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=0&secid=0.300124&beg=20230101&end=20260525 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))"
+    },
+    {
+      "code": "000538",
+      "exchange": "SZ",
+      "api_available": false,
+      "rows_estimate": 0,
+      "earliest_date": null,
+      "latest_date": null,
+      "error": "HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=0&secid=0.000538&beg=20230101&end=20260525 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))"
+    },
+    {
+      "code": "002049",
+      "exchange": "SZ",
+      "api_available": false,
+      "rows_estimate": 0,
+      "earliest_date": null,
+      "latest_date": null,
+      "error": "HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=0&secid=0.002049&beg=20230101&end=20260525 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))"
+    },
+    {
+      "code": "002352",
+      "exchange": "SZ",
+      "api_available": false,
+      "rows_estimate": 0,
+      "earliest_date": null,
+      "latest_date": null,
+      "error": "HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=0&secid=0.002352&beg=20230101&end=20260525 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))"
+    },
+    {
+      "code": "300782",
+      "exchange": "SZ",
+      "api_available": false,
+      "rows_estimate": 0,
+      "earliest_date": null,
+      "latest_date": null,
+      "error": "HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=0&secid=0.300782&beg=20230101&end=20260525 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))"
+    },
+    {
+      "code": "002916",
+      "exchange": "SZ",
+      "api_available": false,
+      "rows_estimate": 0,
+      "earliest_date": null,
+      "latest_date": null,
+      "error": "HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=0&secid=0.002916&beg=20230101&end=20260525 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))"
+    },
+    {
+      "code": "300274",
+      "exchange": "SZ",
+      "api_available": false,
+      "rows_estimate": 0,
+      "earliest_date": null,
+      "latest_date": null,
+      "error": "HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=0&secid=0.300274&beg=20230101&end=20260525 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))"
+    },
+    {
+      "code": "002129",
+      "exchange": "SZ",
+      "api_available": false,
+      "rows_estimate": 0,
+      "earliest_date": null,
+      "latest_date": null,
+      "error": "HTTPSConnectionPool(host='push2his.eastmoney.com', port=443): Max retries exceeded with url: /api/qt/stock/kline/get?fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61%2Cf116&ut=7eea3edcaed734bea9cbfc24409ed989&klt=101&fqt=0&secid=0.002129&beg=20230101&end=20260525 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))"
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "task_id": "EXP-2026-INVFAC-002",
+  "step": "2_dryrun",
+  "completed_time": "2026-05-26T03:04:58+08:00",
+  "status": "READY",
+  "checks": [
+    {
+      "name": "  601857: loaded 1545 days [20200102~20260522]",
+      "passed": true,
+      "detail": "adj_latest=1.7972"
+    },
+    {
+      "name": "  000001: loaded 1545 days [20200102~20260522]",
+      "passed": true,
+      "detail": "adj_latest=134.5794"
+    },
+    {
+      "name": "  600519: loaded 1545 days [20200102~20260522]",
+      "passed": true,
+      "detail": "adj_latest=8.4464"
+    },
+    {
+      "name": "  601318: loaded 1545 days [20200102~20260522]",
+      "passed": true,
+      "detail": "adj_latest=3.1328"
+    },
+    {
+      "name": "  600036: loaded 1545 days [20200102~20260522]",
+      "passed": true,
+      "detail": "adj_latest=6.4834"
+    },
+    {
+      "name": "  300750: loaded 1545 days [20200102~20260522]",
+      "passed": true,
+      "detail": "adj_latest=1.9495"
+    },
+    {
+      "name": "  600276: loaded 1545 days [20200102~20260522]",
+      "passed": true,
+      "detail": "adj_latest=65.2107"
+    },
+    {
+      "name": "  600887: loaded 1545 days [20200102~20260522]",
+      "passed": true,
+      "detail": "adj_latest=90.9470"
+    },
+    {
+      "name": "  600030: loaded 1539 days [20200102~20260522]",
+      "passed": true,
+      "detail": "adj_latest=6.6369"
+    },
+    {
+      "name": "  000333: loaded 1545 days [20200102~20260522]",
+      "passed": true,
+      "detail": "adj_latest=5.6406"
+    },
+    {
+      "name": "  002415: loaded 1545 days [20200102~20260522]",
+      "passed": true,
+      "detail": "adj_latest=24.3649"
+    },
+    {
+      "name": "  600436: loaded 1545 days [20200102~20260522]",
+      "passed": true,
+      "detail": "adj_latest=6.8144"
+    },
+    {
+      "name": "All 12 stocks loaded",
+      "passed": true,
+      "detail": "codes=12"
+    },
+    {
+      "name": "300750 present",
+      "passed": true,
+      "detail": "rows=1545"
+    },
+    {
+      "name": "Stock data uniformity (all >= 1500 days)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "  TrendQuality/300750: 1526 valid values",
+      "passed": true,
+      "detail": "total=1545"
+    },
+    {
+      "name": "  l_vol_rsi_std/300750: 1512 valid values",
+      "passed": true,
+      "detail": "total=1545"
+    },
+    {
+      "name": "  l_str_kdj_k/300750: 1537 valid values",
+      "passed": true,
+      "detail": "total=1545"
+    },
+    {
+      "name": "All 3 factors computed for all 12 stocks",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "  300750 states: hi=182, mid=493, low=870",
+      "passed": true,
+      "detail": "hi_thr=0.6125, lo_thr=0.4311"
+    },
+    {
+      "name": "All stocks have 3 market states",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Bootstrap IC tests completed: 27 combinations",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "FDR BH correction completed",
+      "passed": true,
+      "detail": "17/27 rejected"
+    },
+    {
+      "name": "Stability tests completed",
+      "passed": true,
+      "detail": "L3_pass_rate=100%"
+    },
+    {
+      "name": "QC module importable",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "STABILITY config matches design",
+      "passed": true,
+      "detail": "N=12, min_agree=8"
+    }
+  ],
+  "summary": {
+    "total": 26,
+    "passed": 26,
+    "failed": 0
+  },
+  "dry_run_verdict": {
+    "no_crash": true,
+    "output_files_exist": true,
+    "metrics_reasonable": true
+  }
+}

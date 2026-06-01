@@ -1,0 +1,618 @@
+=== EXP-002-INVFAC Full Pipeline Run ===
+Start time: 2026-05-27T21:40:19.361355
+EXP-2026-INVFAC-002: 负向因子反转可行性验证
+==================================================
+dry_run=False, skip_qc=True, skip_sensitivity=False
+报告目录: C:\Users\17699\mozhi_platform\reports\EXP-2026-INVFAC-002
+
+[Skipped] 数据质量前置检查 (§2.3) — skip_qc=True
+
+[Step 1] 加载数据...
+  601857.SH: 4499 交易日, [20071105 ~ 20260526]
+  000001.SZ: 4599 交易日, [20070104 ~ 20260526]
+  600519.SH: 4697 交易日, [20070104 ~ 20260526]
+  601318.SH: 4608 交易日, [20070301 ~ 20260526]
+  600036.SH: 4681 交易日, [20070104 ~ 20260526]
+  300750.SZ: 1929 交易日, [20180611 ~ 20260526]
+  600276.SH: 4699 交易日, [20070104 ~ 20260526]
+  600887.SH: 4663 交易日, [20070104 ~ 20260526]
+  600030.SH: 4649 交易日, [20070104 ~ 20260526]
+  000333.SZ: 3017 交易日, [20130918 ~ 20260526]
+  002415.SZ: 3827 交易日, [20100528 ~ 20260526]
+  600585.SH: 4687 交易日, [20070104 ~ 20260526]
+
+[Step 2] 计算三因子...
+
+[Step 3] 市场状态分类 (滚动波动率分位数)...
+  601857.SH: hi_thr=0.3181, lo_thr=0.1972, 高:989, 中:1250, 低:2260
+  000001.SZ: hi_thr=0.4637, lo_thr=0.3222, 高:879, 中:1105, 低:2615
+  600519.SH: hi_thr=0.4478, lo_thr=0.2955, 高:441, 中:1568, 低:2688
+  601318.SH: hi_thr=0.3261, lo_thr=0.2037, 高:1577, 中:1998, 低:1033
+  600036.SH: hi_thr=0.3934, lo_thr=0.2522, 高:923, 中:1478, 低:2280
+  300750.SZ: hi_thr=0.6125, lo_thr=0.4312, 高:217, 中:561, 低:1151
+  600276.SH: hi_thr=0.4296, lo_thr=0.3170, 高:699, 中:1297, 低:2703
+  600887.SH: hi_thr=0.3775, lo_thr=0.2763, 高:1475, 中:1371, 低:1817
+  600030.SH: hi_thr=0.3293, lo_thr=0.2269, 高:2099, 中:1491, 低:1059
+  000333.SZ: hi_thr=0.4360, lo_thr=0.3112, 高:401, 中:882, 低:1734
+  002415.SZ: hi_thr=0.4115, lo_thr=0.3000, 高:1001, 中:1239, 低:1587
+  600585.SH: hi_thr=0.4482, lo_thr=0.2257, 高:1124, 中:2525, 低:1038
+
+[Step 4 & 5] IC 计算及三层检验...
+  TrendQuality/low_vol/p5d: IC=-0.0304, p=0.0001 [SIG]
+  TrendQuality/low_vol/p10d: IC=-0.0543, p=0.0000 [SIG]
+  TrendQuality/low_vol/p20d: IC=-0.0519, p=0.0000 [SIG]
+  TrendQuality/mid_vol/p5d: IC=-0.0026, p=0.7319 [NS]
+  TrendQuality/mid_vol/p10d: IC=-0.0356, p=0.0000 [SIG]
+  TrendQuality/mid_vol/p20d: IC=-0.0089, p=0.2623 [NS]
+  TrendQuality/high_vol/p5d: IC=0.0558, p=0.0000 [SIG]
+  TrendQuality/high_vol/p10d: IC=0.0256, p=0.0073 [SIG]
+  TrendQuality/high_vol/p20d: IC=0.0050, p=0.5931 [NS]
+  l_vol_rsi_std/low_vol/p5d: IC=0.0026, p=0.7048 [NS]
+  l_vol_rsi_std/low_vol/p10d: IC=-0.0059, p=0.3863 [NS]
+  l_vol_rsi_std/low_vol/p20d: IC=0.0085, p=0.2097 [NS]
+  l_vol_rsi_std/mid_vol/p5d: IC=-0.0152, p=0.0518 [NS]
+  l_vol_rsi_std/mid_vol/p10d: IC=-0.0219, p=0.0045 [SIG]
+  l_vol_rsi_std/mid_vol/p20d: IC=-0.0042, p=0.5858 [NS]
+  l_vol_rsi_std/high_vol/p5d: IC=0.0119, p=0.2020 [NS]
+  l_vol_rsi_std/high_vol/p10d: IC=0.0115, p=0.2099 [NS]
+  l_vol_rsi_std/high_vol/p20d: IC=0.0464, p=0.0000 [SIG]
+  l_str_kdj_k/low_vol/p5d: IC=-0.0095, p=0.1662 [NS]
+  l_str_kdj_k/low_vol/p10d: IC=-0.0398, p=0.0000 [SIG]
+  l_str_kdj_k/low_vol/p20d: IC=-0.0526, p=0.0000 [SIG]
+  l_str_kdj_k/mid_vol/p5d: IC=0.0090, p=0.2500 [NS]
+  l_str_kdj_k/mid_vol/p10d: IC=-0.0232, p=0.0020 [SIG]
+  l_str_kdj_k/mid_vol/p20d: IC=-0.0180, p=0.0208 [SIG]
+  l_str_kdj_k/high_vol/p5d: IC=0.0688, p=0.0000 [SIG]
+  l_str_kdj_k/high_vol/p10d: IC=0.0342, p=0.0002 [SIG]
+  l_str_kdj_k/high_vol/p20d: IC=0.0061, p=0.5040 [NS]
+
+[Step 5.2] FDR BH 多重比较校正 (§5.2)...
+──────────────────────────────────────────────────
+
+  FDR BH 校正结果 (q* = 0.05, m = 27):
+  #    Factor           State      Period p_raw      q_BH       Reject  Orig_Sig
+  ───────────────────────────────────────────────────────────────────────────
+  1    TrendQuality     low_vol    10    d 0.0000     0.0000     YES     SIG     
+  2    TrendQuality     low_vol    20    d 0.0000     0.0000     YES     SIG     
+  3    TrendQuality     mid_vol    10    d 0.0000     0.0000     YES     SIG     
+  4    TrendQuality     high_vol   5     d 0.0000     0.0000     YES     SIG     
+  5    l_vol_rsi_std    high_vol   20    d 0.0000     0.0000     YES     SIG     
+  6    l_str_kdj_k      low_vol    10    d 0.0000     0.0000     YES     SIG     
+  7    l_str_kdj_k      low_vol    20    d 0.0000     0.0000     YES     SIG     
+  8    l_str_kdj_k      high_vol   5     d 0.0000     0.0000     YES     SIG     
+  9    TrendQuality     low_vol    5     d 0.0001     0.0003     YES     SIG     
+  10   l_str_kdj_k      high_vol   10    d 0.0002     0.0005     YES     SIG     
+  11   l_str_kdj_k      mid_vol    10    d 0.0020     0.0049     YES     SIG     
+  12   l_vol_rsi_std    mid_vol    10    d 0.0045     0.0101     YES     SIG     
+  13   TrendQuality     high_vol   10    d 0.0073     0.0152     YES     SIG     
+  14   l_str_kdj_k      mid_vol    20    d 0.0208     0.0401     YES     SIG     
+  15   l_vol_rsi_std    mid_vol    5     d 0.0518     0.0932     NO      NS      
+  16   l_str_kdj_k      low_vol    5     d 0.1662     0.2805     NO      NS      
+  17   l_vol_rsi_std    high_vol   5     d 0.2020     0.2983     NO      NS      
+  18   l_vol_rsi_std    low_vol    20    d 0.2097     0.2983     NO      NS      
+  19   l_vol_rsi_std    high_vol   10    d 0.2099     0.2983     NO      NS      
+  20   l_str_kdj_k      mid_vol    5     d 0.2500     0.3372     NO      NS      
+  21   TrendQuality     mid_vol    20    d 0.2623     0.3372     NO      NS      
+  22   l_vol_rsi_std    low_vol    10    d 0.3863     0.4741     NO      NS      
+  23   l_str_kdj_k      high_vol   20    d 0.5040     0.5917     NO      NS      
+  24   l_vol_rsi_std    mid_vol    20    d 0.5858     0.6405     NO      NS      
+  25   TrendQuality     high_vol   20    d 0.5931     0.6405     NO      NS      
+  26   l_vol_rsi_std    low_vol    5     d 0.7048     0.7319     NO      NS      
+  27   TrendQuality     mid_vol    5     d 0.7319     0.7319     NO      NS      
+
+  共 27 组检验，14 组通过 BH 校正 (q<0.05)
+
+[Step 5.3] 三层稳定性检验集成 (§5.3)...
+──────────────────────────────────────────────────
+
+  ── TrendQuality/low_vol/5d ──
+    总体 IC = -0.0323 (n=21910)
+    [PASS] 时间切片: 切片均值=[2.6144, 0.393, -0.977, 0.9815]
+    [PASS] 滚动窗口: 翻转率=1.07%
+    [PASS] 标的交叉: 正向=9, 负向=3
+    [PASS] 样本外稳定: IS_IC=-0.0362, OOS_IC=-0.0257
+    L3 整体: 4/4 通过 -> PASS
+
+  ── TrendQuality/low_vol/10d ──
+    总体 IC = -0.0548 (n=21858)
+    [PASS] 时间切片: 切片均值=[2.6, 0.3027, -0.9866, 0.9791]
+    [PASS] 滚动窗口: 翻转率=1.09%
+    [PASS] 标的交叉: 正向=9, 负向=3
+    [PASS] 样本外稳定: IS_IC=-0.0485, OOS_IC=-0.0587
+    L3 整体: 4/4 通过 -> PASS
+
+  ── TrendQuality/low_vol/20d ──
+    总体 IC = -0.0519 (n=21774)
+    [PASS] 时间切片: 切片均值=[2.6608, 0.1768, -0.9672, 0.9847]
+    [PASS] 滚动窗口: 翻转率=1.11%
+    [PASS] 标的交叉: 正向=9, 负向=3
+    [PASS] 样本外稳定: IS_IC=-0.0455, OOS_IC=-0.0550
+    L3 整体: 4/4 通过 -> PASS
+
+  ── TrendQuality/mid_vol/5d ──
+    总体 IC = -0.0016 (n=16532)
+    [PASS] 时间切片: 切片均值=[-1.2562, -1.0009, -0.3894, -0.9337]
+    [PASS] 滚动窗口: 翻转率=1.19%
+    [PASS] 标的交叉: 正向=2, 负向=10
+    [FAIL] 样本外稳定: IS_IC=-0.0075, OOS_IC=0.0052
+    L3 整体: 3/4 通过 -> PASS
+
+  ── TrendQuality/mid_vol/10d ──
+    总体 IC = -0.0341 (n=16524)
+    [PASS] 时间切片: 切片均值=[-1.258, -1.0183, -0.3841, -0.9379]
+    [PASS] 滚动窗口: 翻转率=1.19%
+    [PASS] 标的交叉: 正向=2, 负向=10
+    [PASS] 样本外稳定: IS_IC=-0.0429, OOS_IC=-0.0241
+    L3 整体: 4/4 通过 -> PASS
+
+  ── TrendQuality/mid_vol/20d ──
+    总体 IC = -0.0089 (n=16488)
+    [PASS] 时间切片: 切片均值=[-1.2705, -0.9955, -0.3584, -0.9315]
+    [PASS] 滚动窗口: 翻转率=1.17%
+    [PASS] 标的交叉: 正向=2, 负向=10
+    [FAIL] 样本外稳定: IS_IC=-0.0338, OOS_IC=0.0180
+    L3 整体: 3/4 通过 -> PASS
+
+  ── TrendQuality/high_vol/5d ──
+    总体 IC = 0.0558 (n=11825)
+    [PASS] 时间切片: 切片均值=[0.1223, -1.1477, -0.4502, -1.0846]
+    [PASS] 滚动窗口: 翻转率=1.21%
+    [PASS] 标的交叉: 正向=2, 负向=10
+    [PASS] 样本外稳定: IS_IC=0.0506, OOS_IC=0.0623
+    L3 整体: 4/4 通过 -> PASS
+
+  ── TrendQuality/high_vol/10d ──
+    总体 IC = 0.0256 (n=11825)
+    [PASS] 时间切片: 切片均值=[0.1223, -1.1477, -0.4502, -1.0846]
+    [PASS] 滚动窗口: 翻转率=1.21%
+    [PASS] 标的交叉: 正向=2, 负向=10
+    [PASS] 样本外稳定: IS_IC=0.0071, OOS_IC=0.0444
+    L3 整体: 4/4 通过 -> PASS
+
+  ── TrendQuality/high_vol/20d ──
+    总体 IC = 0.0050 (n=11825)
+    [PASS] 时间切片: 切片均值=[0.1223, -1.1477, -0.4502, -1.0846]
+    [PASS] 滚动窗口: 翻转率=1.21%
+    [PASS] 标的交叉: 正向=2, 负向=10
+    [FAIL] 样本外稳定: IS_IC=-0.0253, OOS_IC=0.0358
+    L3 整体: 3/4 通过 -> PASS
+
+  ── l_vol_rsi_std/low_vol/5d ──
+    总体 IC = 0.0070 (n=21908)
+    [PASS] 时间切片: 切片均值=[-3.8675, -3.7505, -3.8516, -3.7367]
+    [PASS] 滚动窗口: 翻转率=0.00%
+    [PASS] 标的交叉: 正向=0, 负向=12
+    [FAIL] 样本外稳定: IS_IC=0.0293, OOS_IC=-0.0112
+    L3 整体: 3/4 通过 -> PASS
+
+  ── l_vol_rsi_std/low_vol/10d ──
+    总体 IC = -0.0018 (n=21856)
+    [PASS] 时间切片: 切片均值=[-3.8679, -3.7433, -3.8508, -3.7328]
+    [PASS] 滚动窗口: 翻转率=0.00%
+    [PASS] 标的交叉: 正向=0, 负向=12
+    [FAIL] 样本外稳定: IS_IC=0.0239, OOS_IC=-0.0222
+    L3 整体: 3/4 通过 -> PASS
+
+  ── l_vol_rsi_std/low_vol/20d ──
+    总体 IC = 0.0085 (n=21772)
+    [PASS] 时间切片: 切片均值=[-3.8673, -3.7319, -3.853, -3.7189]
+    [PASS] 滚动窗口: 翻转率=0.00%
+    [PASS] 标的交叉: 正向=0, 负向=12
+    [FAIL] 样本外稳定: IS_IC=0.0290, OOS_IC=-0.0060
+    L3 整体: 3/4 通过 -> PASS
+
+  ── l_vol_rsi_std/mid_vol/5d ──
+    总体 IC = -0.0152 (n=16490)
+    [PASS] 时间切片: 切片均值=[-4.3544, -4.1256, -4.2275, -4.1785]
+    [PASS] 滚动窗口: 翻转率=0.00%
+    [PASS] 标的交叉: 正向=0, 负向=12
+    [PASS] 样本外稳定: IS_IC=-0.0050, OOS_IC=-0.0246
+    L3 整体: 4/4 通过 -> PASS
+
+  ── l_vol_rsi_std/mid_vol/10d ──
+    总体 IC = -0.0219 (n=16482)
+    [PASS] 时间切片: 切片均值=[-4.3558, -4.1261, -4.2276, -4.1782]
+    [PASS] 滚动窗口: 翻转率=0.00%
+    [PASS] 标的交叉: 正向=0, 负向=12
+    [PASS] 样本外稳定: IS_IC=-0.0182, OOS_IC=-0.0252
+    L3 整体: 4/4 通过 -> PASS
+
+  ── l_vol_rsi_std/mid_vol/20d ──
+    总体 IC = -0.0042 (n=16446)
+    [PASS] 时间切片: 切片均值=[-4.3598, -4.1261, -4.2254, -4.1781]
+    [PASS] 滚动窗口: 翻转率=0.00%
+    [PASS] 标的交叉: 正向=0, 负向=12
+    [FAIL] 样本外稳定: IS_IC=-0.0234, OOS_IC=0.0146
+    L3 整体: 3/4 通过 -> PASS
+
+  ── l_vol_rsi_std/high_vol/5d ──
+    总体 IC = 0.0119 (n=11701)
+    [PASS] 时间切片: 切片均值=[-4.9158, -4.8522, -4.7656, -5.1165]
+    [PASS] 滚动窗口: 翻转率=0.00%
+    [PASS] 标的交叉: 正向=0, 负向=12
+    [FAIL] 样本外稳定: IS_IC=-0.0024, OOS_IC=0.0278
+    L3 整体: 3/4 通过 -> PASS
+
+  ── l_vol_rsi_std/high_vol/10d ──
+    总体 IC = 0.0115 (n=11701)
+    [PASS] 时间切片: 切片均值=[-4.9158, -4.8522, -4.7656, -5.1165]
+    [PASS] 滚动窗口: 翻转率=0.00%
+    [PASS] 标的交叉: 正向=0, 负向=12
+    [FAIL] 样本外稳定: IS_IC=-0.0211, OOS_IC=0.0458
+    L3 整体: 3/4 通过 -> PASS
+
+  ── l_vol_rsi_std/high_vol/20d ──
+    总体 IC = 0.0464 (n=11701)
+    [PASS] 时间切片: 切片均值=[-4.9158, -4.8522, -4.7656, -5.1165]
+    [PASS] 滚动窗口: 翻转率=0.00%
+    [PASS] 标的交叉: 正向=0, 负向=12
+    [PASS] 样本外稳定: IS_IC=0.0045, OOS_IC=0.0896
+    L3 整体: 4/4 通过 -> PASS
+
+  ── l_str_kdj_k/low_vol/5d ──
+    总体 IC = -0.0113 (n=21910)
+    [PASS] 时间切片: 切片均值=[-46.667, -48.7977, -50.5838, -48.6925]
+    [PASS] 滚动窗口: 翻转率=0.00%
+    [PASS] 标的交叉: 正向=0, 负向=12
+    [PASS] 样本外稳定: IS_IC=-0.0168, OOS_IC=-0.0036
+    L3 整体: 4/4 通过 -> PASS
+
+  ── l_str_kdj_k/low_vol/10d ──
+    总体 IC = -0.0407 (n=21858)
+    [PASS] 时间切片: 切片均值=[-46.7023, -48.8963, -50.6255, -48.6994]
+    [PASS] 滚动窗口: 翻转率=0.00%
+    [PASS] 标的交叉: 正向=0, 负向=12
+    [PASS] 样本外稳定: IS_IC=-0.0307, OOS_IC=-0.0472
+    L3 整体: 4/4 通过 -> PASS
+
+  ── l_str_kdj_k/low_vol/20d ──
+    总体 IC = -0.0526 (n=21774)
+    [PASS] 时间切片: 切片均值=[-46.6199, -49.0686, -50.6509, -48.6783]
+    [PASS] 滚动窗口: 翻转率=0.00%
+    [PASS] 标的交叉: 正向=0, 负向=12
+    [PASS] 样本外稳定: IS_IC=-0.0300, OOS_IC=-0.0702
+    L3 整体: 4/4 通过 -> PASS
+
+  ── l_str_kdj_k/mid_vol/5d ──
+    总体 IC = 0.0099 (n=16664)
+    [PASS] 时间切片: 切片均值=[-51.3347, -51.0983, -49.729, -51.0203]
+    [PASS] 滚动窗口: 翻转率=0.00%
+    [PASS] 标的交叉: 正向=0, 负向=12
+    [FAIL] 样本外稳定: IS_IC=-0.0008, OOS_IC=0.0216
+    L3 整体: 3/4 通过 -> PASS
+
+  ── l_str_kdj_k/mid_vol/10d ──
+    总体 IC = -0.0224 (n=16656)
+    [PASS] 时间切片: 切片均值=[-51.3408, -51.1214, -49.7448, -51.0212]
+    [PASS] 滚动窗口: 翻转率=0.00%
+    [PASS] 标的交叉: 正向=0, 负向=12
+    [PASS] 样本外稳定: IS_IC=-0.0357, OOS_IC=-0.0082
+    L3 整体: 4/4 通过 -> PASS
+
+  ── l_str_kdj_k/mid_vol/20d ──
+    总体 IC = -0.0180 (n=16620)
+    [PASS] 时间切片: 切片均值=[-51.3252, -51.1411, -49.7209, -50.9888]
+    [PASS] 滚动窗口: 翻转率=0.00%
+    [PASS] 标的交叉: 正向=0, 负向=12
+    [FAIL] 样本外稳定: IS_IC=-0.0419, OOS_IC=0.0066
+    L3 整体: 3/4 通过 -> PASS
+
+  ── l_str_kdj_k/high_vol/5d ──
+    总体 IC = 0.0688 (n=11825)
+    [PASS] 时间切片: 切片均值=[-48.3985, -52.0278, -50.3218, -51.1727]
+    [PASS] 滚动窗口: 翻转率=0.00%
+    [PASS] 标的交叉: 正向=0, 负向=12
+    [PASS] 样本外稳定: IS_IC=0.0901, OOS_IC=0.0483
+    L3 整体: 4/4 通过 -> PASS
+
+  ── l_str_kdj_k/high_vol/10d ──
+    总体 IC = 0.0342 (n=11825)
+    [PASS] 时间切片: 切片均值=[-48.3985, -52.0278, -50.3218, -51.1727]
+    [PASS] 滚动窗口: 翻转率=0.00%
+    [PASS] 标的交叉: 正向=0, 负向=12
+    [PASS] 样本外稳定: IS_IC=0.0402, OOS_IC=0.0288
+    L3 整体: 4/4 通过 -> PASS
+
+  ── l_str_kdj_k/high_vol/20d ──
+    总体 IC = 0.0061 (n=11825)
+    [PASS] 时间切片: 切片均值=[-48.3985, -52.0278, -50.3218, -51.1727]
+    [PASS] 滚动窗口: 翻转率=0.00%
+    [PASS] 标的交叉: 正向=0, 负向=12
+    [PASS] 样本外稳定: IS_IC=0.0020, OOS_IC=0.0111
+    L3 整体: 4/4 通过 -> PASS
+
+  ── L3 稳定性检验汇总 ──
+  27/27 组合通过 L3 (通过率=100.0%)
+
+[Step 4.1] 分位数阈值敏感性分析 (§4.1)...
+──────────────────────────────────────────────────
+  扫描网格: high_p=[0.75, 0.8, 0.85] × low_p=[0.25, 0.3, 0.35]
+  Baseline: high_p=0.8, low_p=0.3
+
+  ── 网格 pct_0.75_0.25 ──
+    IC 摘要: -0.0323 | -0.0553 | -0.0571 | -0.0127 | -0.0405 | -0.0097...
+
+  ── 网格 pct_0.75_0.30 ──
+    IC 摘要: -0.0323 | -0.0548 | -0.0519 | -0.0103 | -0.0408 | -0.0133...
+
+  ── 网格 pct_0.75_0.35 ──
+    IC 摘要: -0.0346 | -0.0551 | -0.0506 | -0.0014 | -0.0382 | -0.0106...
+
+  ── 网格 pct_0.80_0.25 ──
+    IC 摘要: -0.0323 | -0.0553 | -0.0571 | -0.0047 | -0.0344 | -0.0060...
+
+  ── 网格 pct_0.80_0.30 ──
+    IC 摘要: -0.0323 | -0.0548 | -0.0519 | -0.0016 | -0.0341 | -0.0089...
+
+  ── 网格 pct_0.80_0.35 ──
+    IC 摘要: -0.0346 | -0.0551 | -0.0506 | 0.0073 | -0.0311 | -0.0059...
+
+  ── 网格 pct_0.85_0.25 ──
+    IC 摘要: -0.0323 | -0.0553 | -0.0571 | -0.0010 | -0.0305 | -0.0050...
+
+  ── 网格 pct_0.85_0.30 ──
+    IC 摘要: -0.0323 | -0.0548 | -0.0519 | 0.0024 | -0.0297 | -0.0076...
+
+  ── 网格 pct_0.85_0.35 ──
+    IC 摘要: -0.0346 | -0.0551 | -0.0506 | 0.0110 | -0.0265 | -0.0047...
+
+  ── 敏感性分析对比表 (§4.1) ──
+  Percentile       Factor           State      Period IC_Baseline  IC_Grid      Delta      Signal  
+  ──────────────────────────────────────────────────────────────────────────────────────────
+  (0.75,0.25)      TrendQuality     low_vol    5d     -0.0323      -0.0323      -0.0001    SAME    
+  (0.75,0.25)      TrendQuality     low_vol    10d    -0.0548      -0.0553      -0.0006    SAME    
+  (0.75,0.25)      TrendQuality     low_vol    20d    -0.0519      -0.0571      -0.0052    SAME    
+  (0.75,0.25)      TrendQuality     mid_vol    5d     -0.0016      -0.0127      -0.0112    SAME    
+  (0.75,0.25)      TrendQuality     mid_vol    10d    -0.0341      -0.0405      -0.0064    SAME    
+  (0.75,0.25)      TrendQuality     mid_vol    20d    -0.0089      -0.0097      -0.0009    SAME    
+  (0.75,0.25)      TrendQuality     high_vol   5d     0.0558       0.0572       +0.0014    SAME    
+  (0.75,0.25)      TrendQuality     high_vol   10d    0.0256       0.0232       -0.0025    SAME    
+  (0.75,0.25)      TrendQuality     high_vol   20d    0.0050       0.0080       +0.0030    SAME    
+  (0.75,0.25)      l_vol_rsi_std    low_vol    5d     0.0070       0.0115       +0.0046    SAME    
+  (0.75,0.25)      l_vol_rsi_std    low_vol    10d    -0.0018      0.0041       +0.0059    FLIP    
+  (0.75,0.25)      l_vol_rsi_std    low_vol    20d    0.0085       0.0085       -0.0000    SAME    
+  (0.75,0.25)      l_vol_rsi_std    mid_vol    5d     -0.0152      -0.0145      +0.0007    SAME    
+  (0.75,0.25)      l_vol_rsi_std    mid_vol    10d    -0.0219      -0.0208      +0.0011    SAME    
+  (0.75,0.25)      l_vol_rsi_std    mid_vol    20d    -0.0042      -0.0016      +0.0026    SAME    
+  (0.75,0.25)      l_vol_rsi_std    high_vol   5d     0.0119       0.0096       -0.0023    SAME    
+  (0.75,0.25)      l_vol_rsi_std    high_vol   10d    0.0115       0.0070       -0.0045    SAME    
+  (0.75,0.25)      l_vol_rsi_std    high_vol   20d    0.0464       0.0412       -0.0052    SAME    
+  (0.75,0.25)      l_str_kdj_k      low_vol    5d     -0.0113      -0.0123      -0.0010    SAME    
+  (0.75,0.25)      l_str_kdj_k      low_vol    10d    -0.0407      -0.0434      -0.0027    SAME    
+  (0.75,0.25)      l_str_kdj_k      low_vol    20d    -0.0526      -0.0599      -0.0073    SAME    
+  (0.75,0.25)      l_str_kdj_k      mid_vol    5d     0.0099       0.0043       -0.0056    SAME    
+  (0.75,0.25)      l_str_kdj_k      mid_vol    10d    -0.0224      -0.0246      -0.0022    SAME    
+  (0.75,0.25)      l_str_kdj_k      mid_vol    20d    -0.0180      -0.0181      -0.0000    SAME    
+  (0.75,0.25)      l_str_kdj_k      high_vol   5d     0.0688       0.0664       -0.0024    SAME    
+  (0.75,0.25)      l_str_kdj_k      high_vol   10d    0.0342       0.0306       -0.0036    SAME    
+  (0.75,0.25)      l_str_kdj_k      high_vol   20d    0.0061       0.0069       +0.0007    SAME    
+  (0.75,0.3)       TrendQuality     low_vol    5d     -0.0323      -0.0323      +0.0000    SAME    
+  (0.75,0.3)       TrendQuality     low_vol    10d    -0.0548      -0.0548      +0.0000    SAME    
+  (0.75,0.3)       TrendQuality     low_vol    20d    -0.0519      -0.0519      +0.0000    SAME    
+  (0.75,0.3)       TrendQuality     mid_vol    5d     -0.0016      -0.0103      -0.0087    SAME    
+  (0.75,0.3)       TrendQuality     mid_vol    10d    -0.0341      -0.0408      -0.0067    SAME    
+  (0.75,0.3)       TrendQuality     mid_vol    20d    -0.0089      -0.0133      -0.0045    SAME    
+  (0.75,0.3)       TrendQuality     high_vol   5d     0.0558       0.0572       +0.0014    SAME    
+  (0.75,0.3)       TrendQuality     high_vol   10d    0.0256       0.0232       -0.0025    SAME    
+  (0.75,0.3)       TrendQuality     high_vol   20d    0.0050       0.0080       +0.0030    SAME    
+  (0.75,0.3)       l_vol_rsi_std    low_vol    5d     0.0070       0.0070       +0.0000    SAME    
+  (0.75,0.3)       l_vol_rsi_std    low_vol    10d    -0.0018      -0.0018      +0.0000    SAME    
+  (0.75,0.3)       l_vol_rsi_std    low_vol    20d    0.0085       0.0085       +0.0000    SAME    
+  (0.75,0.3)       l_vol_rsi_std    mid_vol    5d     -0.0152      -0.0134      +0.0017    SAME    
+  (0.75,0.3)       l_vol_rsi_std    mid_vol    10d    -0.0219      -0.0180      +0.0040    SAME    
+  (0.75,0.3)       l_vol_rsi_std    mid_vol    20d    -0.0042      -0.0032      +0.0010    SAME    
+  (0.75,0.3)       l_vol_rsi_std    high_vol   5d     0.0119       0.0096       -0.0023    SAME    
+  (0.75,0.3)       l_vol_rsi_std    high_vol   10d    0.0115       0.0070       -0.0045    SAME    
+  (0.75,0.3)       l_vol_rsi_std    high_vol   20d    0.0464       0.0412       -0.0052    SAME    
+  (0.75,0.3)       l_str_kdj_k      low_vol    5d     -0.0113      -0.0113      +0.0000    SAME    
+  (0.75,0.3)       l_str_kdj_k      low_vol    10d    -0.0407      -0.0407      +0.0000    SAME    
+  (0.75,0.3)       l_str_kdj_k      low_vol    20d    -0.0526      -0.0526      +0.0000    SAME    
+  (0.75,0.3)       l_str_kdj_k      mid_vol    5d     0.0099       0.0042       -0.0057    SAME    
+  (0.75,0.3)       l_str_kdj_k      mid_vol    10d    -0.0224      -0.0271      -0.0047    SAME    
+  (0.75,0.3)       l_str_kdj_k      mid_vol    20d    -0.0180      -0.0228      -0.0048    SAME    
+  (0.75,0.3)       l_str_kdj_k      high_vol   5d     0.0688       0.0664       -0.0024    SAME    
+  (0.75,0.3)       l_str_kdj_k      high_vol   10d    0.0342       0.0306       -0.0036    SAME    
+  (0.75,0.3)       l_str_kdj_k      high_vol   20d    0.0061       0.0069       +0.0007    SAME    
+  (0.75,0.35)      TrendQuality     low_vol    5d     -0.0323      -0.0346      -0.0023    SAME    
+  (0.75,0.35)      TrendQuality     low_vol    10d    -0.0548      -0.0551      -0.0003    SAME    
+  (0.75,0.35)      TrendQuality     low_vol    20d    -0.0519      -0.0506      +0.0013    SAME    
+  (0.75,0.35)      TrendQuality     mid_vol    5d     -0.0016      -0.0014      +0.0001    SAME    
+  (0.75,0.35)      TrendQuality     mid_vol    10d    -0.0341      -0.0382      -0.0042    SAME    
+  (0.75,0.35)      TrendQuality     mid_vol    20d    -0.0089      -0.0106      -0.0018    SAME    
+  (0.75,0.35)      TrendQuality     high_vol   5d     0.0558       0.0572       +0.0014    SAME    
+  (0.75,0.35)      TrendQuality     high_vol   10d    0.0256       0.0232       -0.0025    SAME    
+  (0.75,0.35)      TrendQuality     high_vol   20d    0.0050       0.0080       +0.0030    SAME    
+  (0.75,0.35)      l_vol_rsi_std    low_vol    5d     0.0070       0.0065       -0.0005    SAME    
+  (0.75,0.35)      l_vol_rsi_std    low_vol    10d    -0.0018      -0.0049      -0.0030    SAME    
+  (0.75,0.35)      l_vol_rsi_std    low_vol    20d    0.0085       0.0081       -0.0004    SAME    
+  (0.75,0.35)      l_vol_rsi_std    mid_vol    5d     -0.0152      -0.0140      +0.0012    SAME    
+  (0.75,0.35)      l_vol_rsi_std    mid_vol    10d    -0.0219      -0.0141      +0.0078    SAME    
+  (0.75,0.35)      l_vol_rsi_std    mid_vol    20d    -0.0042      -0.0038      +0.0004    SAME    
+  (0.75,0.35)      l_vol_rsi_std    high_vol   5d     0.0119       0.0096       -0.0023    SAME    
+  (0.75,0.35)      l_vol_rsi_std    high_vol   10d    0.0115       0.0070       -0.0045    SAME    
+  (0.75,0.35)      l_vol_rsi_std    high_vol   20d    0.0464       0.0412       -0.0052    SAME    
+  (0.75,0.35)      l_str_kdj_k      low_vol    5d     -0.0113      -0.0156      -0.0043    SAME    
+  (0.75,0.35)      l_str_kdj_k      low_vol    10d    -0.0407      -0.0408      -0.0000    SAME    
+  (0.75,0.35)      l_str_kdj_k      low_vol    20d    -0.0526      -0.0531      -0.0005    SAME    
+  (0.75,0.35)      l_str_kdj_k      mid_vol    5d     0.0099       0.0137       +0.0038    SAME    
+  (0.75,0.35)      l_str_kdj_k      mid_vol    10d    -0.0224      -0.0252      -0.0028    SAME    
+  (0.75,0.35)      l_str_kdj_k      mid_vol    20d    -0.0180      -0.0181      -0.0001    SAME    
+  (0.75,0.35)      l_str_kdj_k      high_vol   5d     0.0688       0.0664       -0.0024    SAME    
+  (0.75,0.35)      l_str_kdj_k      high_vol   10d    0.0342       0.0306       -0.0036    SAME    
+  (0.75,0.35)      l_str_kdj_k      high_vol   20d    0.0061       0.0069       +0.0007    SAME    
+  (0.8,0.25)       TrendQuality     low_vol    5d     -0.0323      -0.0323      -0.0001    SAME    
+  (0.8,0.25)       TrendQuality     low_vol    10d    -0.0548      -0.0553      -0.0006    SAME    
+  (0.8,0.25)       TrendQuality     low_vol    20d    -0.0519      -0.0571      -0.0052    SAME    
+  (0.8,0.25)       TrendQuality     mid_vol    5d     -0.0016      -0.0047      -0.0032    SAME    
+  (0.8,0.25)       TrendQuality     mid_vol    10d    -0.0341      -0.0344      -0.0004    SAME    
+  (0.8,0.25)       TrendQuality     mid_vol    20d    -0.0089      -0.0060      +0.0028    SAME    
+  (0.8,0.25)       TrendQuality     high_vol   5d     0.0558       0.0558       +0.0000    SAME    
+  (0.8,0.25)       TrendQuality     high_vol   10d    0.0256       0.0256       +0.0000    SAME    
+  (0.8,0.25)       TrendQuality     high_vol   20d    0.0050       0.0050       +0.0000    SAME    
+  (0.8,0.25)       l_vol_rsi_std    low_vol    5d     0.0070       0.0115       +0.0046    SAME    
+  (0.8,0.25)       l_vol_rsi_std    low_vol    10d    -0.0018      0.0041       +0.0059    FLIP    
+  (0.8,0.25)       l_vol_rsi_std    low_vol    20d    0.0085       0.0085       -0.0000    SAME    
+  (0.8,0.25)       l_vol_rsi_std    mid_vol    5d     -0.0152      -0.0159      -0.0007    SAME    
+  (0.8,0.25)       l_vol_rsi_std    mid_vol    10d    -0.0219      -0.0240      -0.0021    SAME    
+  (0.8,0.25)       l_vol_rsi_std    mid_vol    20d    -0.0042      -0.0026      +0.0016    SAME    
+  (0.8,0.25)       l_vol_rsi_std    high_vol   5d     0.0119       0.0119       +0.0000    SAME    
+  (0.8,0.25)       l_vol_rsi_std    high_vol   10d    0.0115       0.0115       +0.0000    SAME    
+  (0.8,0.25)       l_vol_rsi_std    high_vol   20d    0.0464       0.0464       +0.0000    SAME    
+  (0.8,0.25)       l_str_kdj_k      low_vol    5d     -0.0113      -0.0123      -0.0010    SAME    
+  (0.8,0.25)       l_str_kdj_k      low_vol    10d    -0.0407      -0.0434      -0.0027    SAME    
+  (0.8,0.25)       l_str_kdj_k      low_vol    20d    -0.0526      -0.0599      -0.0073    SAME    
+  (0.8,0.25)       l_str_kdj_k      mid_vol    5d     0.0099       0.0095       -0.0004    SAME    
+  (0.8,0.25)       l_str_kdj_k      mid_vol    10d    -0.0224      -0.0205      +0.0019    SAME    
+  (0.8,0.25)       l_str_kdj_k      mid_vol    20d    -0.0180      -0.0142      +0.0038    SAME    
+  (0.8,0.25)       l_str_kdj_k      high_vol   5d     0.0688       0.0688       +0.0000    SAME    
+  (0.8,0.25)       l_str_kdj_k      high_vol   10d    0.0342       0.0342       +0.0000    SAME    
+  (0.8,0.25)       l_str_kdj_k      high_vol   20d    0.0061       0.0061       +0.0000    SAME    
+  (0.8,0.3)        TrendQuality     low_vol    5d     -0.0323      -0.0323      +0.0000    SAME    
+  (0.8,0.3)        TrendQuality     low_vol    10d    -0.0548      -0.0548      +0.0000    SAME    
+  (0.8,0.3)        TrendQuality     low_vol    20d    -0.0519      -0.0519      +0.0000    SAME    
+  (0.8,0.3)        TrendQuality     mid_vol    5d     -0.0016      -0.0016      +0.0000    SAME    
+  (0.8,0.3)        TrendQuality     mid_vol    10d    -0.0341      -0.0341      +0.0000    SAME    
+  (0.8,0.3)        TrendQuality     mid_vol    20d    -0.0089      -0.0089      +0.0000    SAME    
+  (0.8,0.3)        TrendQuality     high_vol   5d     0.0558       0.0558       +0.0000    SAME    
+  (0.8,0.3)        TrendQuality     high_vol   10d    0.0256       0.0256       +0.0000    SAME    
+  (0.8,0.3)        TrendQuality     high_vol   20d    0.0050       0.0050       +0.0000    SAME    
+  (0.8,0.3)        l_vol_rsi_std    low_vol    5d     0.0070       0.0070       +0.0000    SAME    
+  (0.8,0.3)        l_vol_rsi_std    low_vol    10d    -0.0018      -0.0018      +0.0000    SAME    
+  (0.8,0.3)        l_vol_rsi_std    low_vol    20d    0.0085       0.0085       +0.0000    SAME    
+  (0.8,0.3)        l_vol_rsi_std    mid_vol    5d     -0.0152      -0.0152      +0.0000    SAME    
+  (0.8,0.3)        l_vol_rsi_std    mid_vol    10d    -0.0219      -0.0219      +0.0000    SAME    
+  (0.8,0.3)        l_vol_rsi_std    mid_vol    20d    -0.0042      -0.0042      +0.0000    SAME    
+  (0.8,0.3)        l_vol_rsi_std    high_vol   5d     0.0119       0.0119       +0.0000    SAME    
+  (0.8,0.3)        l_vol_rsi_std    high_vol   10d    0.0115       0.0115       +0.0000    SAME    
+  (0.8,0.3)        l_vol_rsi_std    high_vol   20d    0.0464       0.0464       +0.0000    SAME    
+  (0.8,0.3)        l_str_kdj_k      low_vol    5d     -0.0113      -0.0113      +0.0000    SAME    
+  (0.8,0.3)        l_str_kdj_k      low_vol    10d    -0.0407      -0.0407      +0.0000    SAME    
+  (0.8,0.3)        l_str_kdj_k      low_vol    20d    -0.0526      -0.0526      +0.0000    SAME    
+  (0.8,0.3)        l_str_kdj_k      mid_vol    5d     0.0099       0.0099       +0.0000    SAME    
+  (0.8,0.3)        l_str_kdj_k      mid_vol    10d    -0.0224      -0.0224      +0.0000    SAME    
+  (0.8,0.3)        l_str_kdj_k      mid_vol    20d    -0.0180      -0.0180      +0.0000    SAME    
+  (0.8,0.3)        l_str_kdj_k      high_vol   5d     0.0688       0.0688       +0.0000    SAME    
+  (0.8,0.3)        l_str_kdj_k      high_vol   10d    0.0342       0.0342       +0.0000    SAME    
+  (0.8,0.3)        l_str_kdj_k      high_vol   20d    0.0061       0.0061       +0.0000    SAME    
+  (0.8,0.35)       TrendQuality     low_vol    5d     -0.0323      -0.0346      -0.0023    SAME    
+  (0.8,0.35)       TrendQuality     low_vol    10d    -0.0548      -0.0551      -0.0003    SAME    
+  (0.8,0.35)       TrendQuality     low_vol    20d    -0.0519      -0.0506      +0.0013    SAME    
+  (0.8,0.35)       TrendQuality     mid_vol    5d     -0.0016      0.0073       +0.0088    FLIP    
+  (0.8,0.35)       TrendQuality     mid_vol    10d    -0.0341      -0.0311      +0.0030    SAME    
+  (0.8,0.35)       TrendQuality     mid_vol    20d    -0.0089      -0.0059      +0.0029    SAME    
+  (0.8,0.35)       TrendQuality     high_vol   5d     0.0558       0.0558       +0.0000    SAME    
+  (0.8,0.35)       TrendQuality     high_vol   10d    0.0256       0.0256       +0.0000    SAME    
+  (0.8,0.35)       TrendQuality     high_vol   20d    0.0050       0.0050       +0.0000    SAME    
+  (0.8,0.35)       l_vol_rsi_std    low_vol    5d     0.0070       0.0065       -0.0005    SAME    
+  (0.8,0.35)       l_vol_rsi_std    low_vol    10d    -0.0018      -0.0049      -0.0030    SAME    
+  (0.8,0.35)       l_vol_rsi_std    low_vol    20d    0.0085       0.0081       -0.0004    SAME    
+  (0.8,0.35)       l_vol_rsi_std    mid_vol    5d     -0.0152      -0.0158      -0.0006    SAME    
+  (0.8,0.35)       l_vol_rsi_std    mid_vol    10d    -0.0219      -0.0189      +0.0030    SAME    
+  (0.8,0.35)       l_vol_rsi_std    mid_vol    20d    -0.0042      -0.0048      -0.0006    SAME    
+  (0.8,0.35)       l_vol_rsi_std    high_vol   5d     0.0119       0.0119       +0.0000    SAME    
+  (0.8,0.35)       l_vol_rsi_std    high_vol   10d    0.0115       0.0115       +0.0000    SAME    
+  (0.8,0.35)       l_vol_rsi_std    high_vol   20d    0.0464       0.0464       +0.0000    SAME    
+  (0.8,0.35)       l_str_kdj_k      low_vol    5d     -0.0113      -0.0156      -0.0043    SAME    
+  (0.8,0.35)       l_str_kdj_k      low_vol    10d    -0.0407      -0.0408      -0.0000    SAME    
+  (0.8,0.35)       l_str_kdj_k      low_vol    20d    -0.0526      -0.0531      -0.0005    SAME    
+  (0.8,0.35)       l_str_kdj_k      mid_vol    5d     0.0099       0.0189       +0.0089    SAME    
+  (0.8,0.35)       l_str_kdj_k      mid_vol    10d    -0.0224      -0.0203      +0.0021    SAME    
+  (0.8,0.35)       l_str_kdj_k      mid_vol    20d    -0.0180      -0.0134      +0.0046    SAME    
+  (0.8,0.35)       l_str_kdj_k      high_vol   5d     0.0688       0.0688       +0.0000    SAME    
+  (0.8,0.35)       l_str_kdj_k      high_vol   10d    0.0342       0.0342       +0.0000    SAME    
+  (0.8,0.35)       l_str_kdj_k      high_vol   20d    0.0061       0.0061       +0.0000    SAME    
+  (0.85,0.25)      TrendQuality     low_vol    5d     -0.0323      -0.0323      -0.0001    SAME    
+  (0.85,0.25)      TrendQuality     low_vol    10d    -0.0548      -0.0553      -0.0006    SAME    
+  (0.85,0.25)      TrendQuality     low_vol    20d    -0.0519      -0.0571      -0.0052    SAME    
+  (0.85,0.25)      TrendQuality     mid_vol    5d     -0.0016      -0.0010      +0.0006    SAME    
+  (0.85,0.25)      TrendQuality     mid_vol    10d    -0.0341      -0.0305      +0.0036    SAME    
+  (0.85,0.25)      TrendQuality     mid_vol    20d    -0.0089      -0.0050      +0.0039    SAME    
+  (0.85,0.25)      TrendQuality     high_vol   5d     0.0558       0.0568       +0.0010    SAME    
+  (0.85,0.25)      TrendQuality     high_vol   10d    0.0256       0.0264       +0.0008    SAME    
+  (0.85,0.25)      TrendQuality     high_vol   20d    0.0050       0.0050       +0.0001    SAME    
+  (0.85,0.25)      l_vol_rsi_std    low_vol    5d     0.0070       0.0115       +0.0046    SAME    
+  (0.85,0.25)      l_vol_rsi_std    low_vol    10d    -0.0018      0.0041       +0.0059    FLIP    
+  (0.85,0.25)      l_vol_rsi_std    low_vol    20d    0.0085       0.0085       -0.0000    SAME    
+  (0.85,0.25)      l_vol_rsi_std    mid_vol    5d     -0.0152      -0.0131      +0.0021    SAME    
+  (0.85,0.25)      l_vol_rsi_std    mid_vol    10d    -0.0219      -0.0206      +0.0014    SAME    
+  (0.85,0.25)      l_vol_rsi_std    mid_vol    20d    -0.0042      0.0042       +0.0084    FLIP    
+  (0.85,0.25)      l_vol_rsi_std    high_vol   5d     0.0119       0.0104       -0.0015    SAME    
+  (0.85,0.25)      l_vol_rsi_std    high_vol   10d    0.0115       0.0088       -0.0026    SAME    
+  (0.85,0.25)      l_vol_rsi_std    high_vol   20d    0.0464       0.0432       -0.0032    SAME    
+  (0.85,0.25)      l_str_kdj_k      low_vol    5d     -0.0113      -0.0123      -0.0010    SAME    
+  (0.85,0.25)      l_str_kdj_k      low_vol    10d    -0.0407      -0.0434      -0.0027    SAME    
+  (0.85,0.25)      l_str_kdj_k      low_vol    20d    -0.0526      -0.0599      -0.0073    SAME    
+  (0.85,0.25)      l_str_kdj_k      mid_vol    5d     0.0099       0.0145       +0.0046    SAME    
+  (0.85,0.25)      l_str_kdj_k      mid_vol    10d    -0.0224      -0.0163      +0.0061    SAME    
+  (0.85,0.25)      l_str_kdj_k      mid_vol    20d    -0.0180      -0.0125      +0.0055    SAME    
+  (0.85,0.25)      l_str_kdj_k      high_vol   5d     0.0688       0.0676       -0.0012    SAME    
+  (0.85,0.25)      l_str_kdj_k      high_vol   10d    0.0342       0.0343       +0.0000    SAME    
+  (0.85,0.25)      l_str_kdj_k      high_vol   20d    0.0061       0.0063       +0.0001    SAME    
+  (0.85,0.3)       TrendQuality     low_vol    5d     -0.0323      -0.0323      +0.0000    SAME    
+  (0.85,0.3)       TrendQuality     low_vol    10d    -0.0548      -0.0548      +0.0000    SAME    
+  (0.85,0.3)       TrendQuality     low_vol    20d    -0.0519      -0.0519      +0.0000    SAME    
+  (0.85,0.3)       TrendQuality     mid_vol    5d     -0.0016      0.0024       +0.0040    FLIP    
+  (0.85,0.3)       TrendQuality     mid_vol    10d    -0.0341      -0.0297      +0.0043    SAME    
+  (0.85,0.3)       TrendQuality     mid_vol    20d    -0.0089      -0.0076      +0.0013    SAME    
+  (0.85,0.3)       TrendQuality     high_vol   5d     0.0558       0.0568       +0.0010    SAME    
+  (0.85,0.3)       TrendQuality     high_vol   10d    0.0256       0.0264       +0.0008    SAME    
+  (0.85,0.3)       TrendQuality     high_vol   20d    0.0050       0.0050       +0.0001    SAME    
+  (0.85,0.3)       l_vol_rsi_std    low_vol    5d     0.0070       0.0070       +0.0000    SAME    
+  (0.85,0.3)       l_vol_rsi_std    low_vol    10d    -0.0018      -0.0018      +0.0000    SAME    
+  (0.85,0.3)       l_vol_rsi_std    low_vol    20d    0.0085       0.0085       +0.0000    SAME    
+  (0.85,0.3)       l_vol_rsi_std    mid_vol    5d     -0.0152      -0.0123      +0.0029    SAME    
+  (0.85,0.3)       l_vol_rsi_std    mid_vol    10d    -0.0219      -0.0184      +0.0035    SAME    
+  (0.85,0.3)       l_vol_rsi_std    mid_vol    20d    -0.0042      0.0033       +0.0074    FLIP    
+  (0.85,0.3)       l_vol_rsi_std    high_vol   5d     0.0119       0.0104       -0.0015    SAME    
+  (0.85,0.3)       l_vol_rsi_std    high_vol   10d    0.0115       0.0088       -0.0026    SAME    
+  (0.85,0.3)       l_vol_rsi_std    high_vol   20d    0.0464       0.0432       -0.0032    SAME    
+  (0.85,0.3)       l_str_kdj_k      low_vol    5d     -0.0113      -0.0113      +0.0000    SAME    
+  (0.85,0.3)       l_str_kdj_k      low_vol    10d    -0.0407      -0.0407      +0.0000    SAME    
+  (0.85,0.3)       l_str_kdj_k      low_vol    20d    -0.0526      -0.0526      +0.0000    SAME    
+  (0.85,0.3)       l_str_kdj_k      mid_vol    5d     0.0099       0.0154       +0.0054    SAME    
+  (0.85,0.3)       l_str_kdj_k      mid_vol    10d    -0.0224      -0.0178      +0.0046    SAME    
+  (0.85,0.3)       l_str_kdj_k      mid_vol    20d    -0.0180      -0.0159      +0.0021    SAME    
+  (0.85,0.3)       l_str_kdj_k      high_vol   5d     0.0688       0.0676       -0.0012    SAME    
+  (0.85,0.3)       l_str_kdj_k      high_vol   10d    0.0342       0.0343       +0.0000    SAME    
+  (0.85,0.3)       l_str_kdj_k      high_vol   20d    0.0061       0.0063       +0.0001    SAME    
+  (0.85,0.35)      TrendQuality     low_vol    5d     -0.0323      -0.0346      -0.0023    SAME    
+  (0.85,0.35)      TrendQuality     low_vol    10d    -0.0548      -0.0551      -0.0003    SAME    
+  (0.85,0.35)      TrendQuality     low_vol    20d    -0.0519      -0.0506      +0.0013    SAME    
+  (0.85,0.35)      TrendQuality     mid_vol    5d     -0.0016      0.0110       +0.0126    FLIP    
+  (0.85,0.35)      TrendQuality     mid_vol    10d    -0.0341      -0.0265      +0.0076    SAME    
+  (0.85,0.35)      TrendQuality     mid_vol    20d    -0.0089      -0.0047      +0.0042    SAME    
+  (0.85,0.35)      TrendQuality     high_vol   5d     0.0558       0.0568       +0.0010    SAME    
+  (0.85,0.35)      TrendQuality     high_vol   10d    0.0256       0.0264       +0.0008    SAME    
+  (0.85,0.35)      TrendQuality     high_vol   20d    0.0050       0.0050       +0.0001    SAME    
+  (0.85,0.35)      l_vol_rsi_std    low_vol    5d     0.0070       0.0065       -0.0005    SAME    
+  (0.85,0.35)      l_vol_rsi_std    low_vol    10d    -0.0018      -0.0049      -0.0030    SAME    
+  (0.85,0.35)      l_vol_rsi_std    low_vol    20d    0.0085       0.0081       -0.0004    SAME    
+  (0.85,0.35)      l_vol_rsi_std    mid_vol    5d     -0.0152      -0.0125      +0.0027    SAME    
+  (0.85,0.35)      l_vol_rsi_std    mid_vol    10d    -0.0219      -0.0152      +0.0067    SAME    
+  (0.85,0.35)      l_vol_rsi_std    mid_vol    20d    -0.0042      0.0033       +0.0074    FLIP    
+  (0.85,0.35)      l_vol_rsi_std    high_vol   5d     0.0119       0.0104       -0.0015    SAME    
+  (0.85,0.35)      l_vol_rsi_std    high_vol   10d    0.0115       0.0088       -0.0026    SAME    
+  (0.85,0.35)      l_vol_rsi_std    high_vol   20d    0.0464       0.0432       -0.0032    SAME    
+  (0.85,0.35)      l_str_kdj_k      low_vol    5d     -0.0113      -0.0156      -0.0043    SAME    
+  (0.85,0.35)      l_str_kdj_k      low_vol    10d    -0.0407      -0.0408      -0.0000    SAME    
+  (0.85,0.35)      l_str_kdj_k      low_vol    20d    -0.0526      -0.0531      -0.0005    SAME    
+  (0.85,0.35)      l_str_kdj_k      mid_vol    5d     0.0099       0.0241       +0.0142    SAME    
+  (0.85,0.35)      l_str_kdj_k      mid_vol    10d    -0.0224      -0.0154      +0.0070    SAME    
+  (0.85,0.35)      l_str_kdj_k      mid_vol    20d    -0.0180      -0.0115      +0.0065    SAME    
+  (0.85,0.35)      l_str_kdj_k      high_vol   5d     0.0688       0.0676       -0.0012    SAME    
+  (0.85,0.35)      l_str_kdj_k      high_vol   10d    0.0342       0.0343       +0.0000    SAME    
+  (0.85,0.35)      l_str_kdj_k      high_vol   20d    0.0061       0.0063       +0.0001    SAME    
+
+  信号翻转率: 9/243 = 3.7%
+  [PASS] 信号翻转率在可接受范围内。
+
+[Step 6] 生成输出报告...
+  [OK] C:\Users\17699\mozhi_platform\reports\EXP-2026-INVFAC-002\exp_results.json
+  [OK] C:\Users\17699\mozhi_platform\reports\EXP-2026-INVFAC-002\sensitivity_analysis.json
+  [OK] C:\Users\17699\mozhi_platform\reports\EXP-2026-INVFAC-002\stability_results.json
+  [OK] C:\Users\17699\mozhi_platform\reports\EXP-2026-INVFAC-002\exp_summary.md
+
+==================================================
+回测完成。（完整流水线含 §2.3 QC / §4.1 敏感性 / §5.2 FDR / §5.3 稳定性）
+
+End time: 2026-05-27T21:56:05.418091

@@ -1,20 +1,9 @@
-2026-05-25 03:01:14 [INFO] reports_archiver: ============================================================
-2026-05-25 03:01:14 [INFO] reports_archiver: reports_archiver 启动
-2026-05-25 03:01:14 [INFO] reports_archiver: 开始归档，保留期=30天，截止日期=2026-04-25
-2026-05-25 03:01:14 [INFO] reports_archiver: 扫描目录不存在: C:\Users\17699\mo_zhi_sharereports\reports\midday
-2026-05-25 03:01:14 [INFO] reports_archiver: 扫描目录: C:\Users\17699\mo_zhi_sharereports\reports\morning
-2026-05-25 03:01:14 [INFO] reports_archiver: 没有需要归档的目录
-2026-05-25 03:01:14 [INFO] reports_archiver: 清理旧归档，保留期=180天，截止月份=202511
-2026-05-25 03:01:14 [INFO] reports_archiver: 没有需要清理的过期归档
-2026-05-25 03:01:14 [INFO] reports_archiver: reports_archiver 正常结束
-2026-05-25 03:01:14 [INFO] reports_archiver: ============================================================
-2026-05-25 03:01:19 [INFO] reports_archiver: ============================================================
-2026-05-25 03:01:19 [INFO] reports_archiver: reports_archiver 启动
-2026-05-25 03:01:19 [INFO] reports_archiver: 开始归档，保留期=30天，截止日期=2026-04-25
-2026-05-25 03:01:19 [INFO] reports_archiver: 扫描目录不存在: C:\Users\17699\mo_zhi_sharereports\reports\midday
-2026-05-25 03:01:19 [INFO] reports_archiver: 扫描目录: C:\Users\17699\mo_zhi_sharereports\reports\morning
-2026-05-25 03:01:19 [INFO] reports_archiver: 没有需要归档的目录
-2026-05-25 03:01:19 [INFO] reports_archiver: 清理旧归档，保留期=180天，截止月份=202511
-2026-05-25 03:01:19 [INFO] reports_archiver: 没有需要清理的过期归档
-2026-05-25 03:01:19 [INFO] reports_archiver: reports_archiver 正常结束
-2026-05-25 03:01:19 [INFO] reports_archiver: ============================================================
+2026-06-01 03:02:11 [INFO] reports_archiver: ============================================================
+2026-06-01 03:02:11 [INFO] reports_archiver: reports_archiver 启动
+2026-06-01 03:02:11 [INFO] reports_archiver: 开始归档，保留期=30天，截止日期=2026-05-02
+2026-06-01 03:02:11 [INFO] reports_archiver: 扫描目录不存在: C:\Users\17699\mo_zhi_sharereports\reports\midday
+2026-06-01 03:02:11 [INFO] reports_archiver: 扫描目录: C:\Users\17699\mo_zhi_sharereports\reports\morning
+2026-06-01 03:02:11 [INFO] reports_archiver: 没有需要归档的目录
+2026-06-01 03:02:11 [INFO] reports_archiver: 跳过过期归档清理（--skip-cleanup）
+2026-06-01 03:02:11 [INFO] reports_archiver: reports_archiver 正常结束
+2026-06-01 03:02:11 [INFO] reports_archiver: ============================================================
